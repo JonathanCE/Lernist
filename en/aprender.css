@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.nav {
+    background-color: #353b48;
+}
+
+.nav a {
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav .icon {
+    display: none;
+}
+
+.Presentacion {
+    background: linear-gradient(35deg, #CCFFFF, #FFCCCC);
+    padding: 30px 100px;
+}
+
+.presentacion-texto {
+    background-color: white;
+    border-radius: 7px;
+    padding: 40px;
+}
+
+.Presentacion h1{
+    font-family: 'Chelsea Market', cursive;
+    text-align: center;
+}
+
+.temas {
+    padding: 20px 20px;
+    background-color: #f8f8f8;
+}
+
+.temas p {
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.contenedor-temas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+}
+
+.contenedor-temas a{
+    display: block;
+    text-decoration: none;
+    color: black;
+
+    padding: 10px;
+    border: 1.5px solid #95a5a6;
+    border-radius: 3px;
+    font-size: 35px;
+    font-family: 'Amatic SC', cursive;
+    cursor: pointer;
+    text-align: center;
+    background-color: white;
+}
+
+.contenedor-temas img{
+    width: 100%;
+}
+
+.tema {
+    padding: 10px;
+    border: 1.5px solid #95a5a6;
+    border-radius: 3px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.tema p {
+    font-size: 35px;
+    font-family: 'Amatic SC', cursive;
+}
+
+.tema img {
+    width: 100%;
+}
+
+footer {
+    text-align: right;
+    background-color: rgb(52, 58, 64);
+    padding: 50px 50px;
+    font-weight: bold;
+    color: white;
+}
+
+footer p{
+    font-size: 17px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.main-footer {
+    margin-bottom: 80px;
+    display: block;
+}
+
+.main-footer p{
+    font-family: 'Chelsea Market', cursive;
+    font-size: 27px;
+    float: left;
+}
+
+.main-footer img{
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.nav a:hover {
+    color: #95a5a6;
+}
+
+.tema:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.contenedor-temas a:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+@media screen and (max-width: 1070px) {
+    .social img {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .nav a {
+        font-size: 23px;
+    }
+
+    .nav a:not(:first-child) {display: none;}
+    .nav a.icon {
+        float: right;
+        display: block;
+      }
+
+      .nav.responsive {position: relative;}
+      .nav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .nav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+}
+
+@media screen and (max-width: 850px) {
+    .contenedor-temas {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .contenedor-temas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .contenedor-temas {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-gap: 20px;
+    }
+    .Presentacion {
+        padding: 30px 50px;
+    }
+    .presentacion-texto {
+        padding: 10px;
+    }
+}

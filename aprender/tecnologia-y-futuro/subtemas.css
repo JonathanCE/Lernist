@@ -80,6 +80,17 @@
     margin-top: 20px;
 }
 
+.videos div{
+    cursor: pointer;
+}
+.videos iframe{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+
 footer {
     text-align: right;
     background-color: rgb(52, 58, 64);
@@ -109,11 +120,29 @@ footer p{
     cursor: pointer;
 }
 
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+  }
+
 .nav a:hover {
     color: #95a5a6;
 }
 
 .main a:hover{
+    text-decoration: underline;
+}
+
+.videos div:hover{
     text-decoration: underline;
 }
 
