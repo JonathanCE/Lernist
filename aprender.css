@@ -3,8 +3,13 @@
     font-family: sans-serif;
 }
 
+body {
+    background-color: #3a4750;
+    color: #f0ece2;
+}
+
 .nav {
-    background-color: #353b48;
+    background-color: #303841;
 }
 
 .nav a {
@@ -29,7 +34,7 @@
 }
 
 .presentacion-texto {
-    background-color: white;
+    background-color: #3a4750;
     border-radius: 7px;
     padding: 40px;
 }
@@ -41,7 +46,6 @@
 
 .temas {
     padding: 20px 20px;
-    background-color: #f8f8f8;
 }
 
 .temas p {
@@ -60,16 +64,16 @@
 .contenedor-temas a{
     display: block;
     text-decoration: none;
-    color: black;
+    color: #f0ece2;
 
     padding: 10px;
-    border: 1.5px solid #95a5a6;
+    border: 1.5px solid #222831;
     border-radius: 3px;
     font-size: 35px;
     font-family: 'Amatic SC', cursive;
     cursor: pointer;
     text-align: center;
-    background-color: white;
+    background-color: #303841;
 }
 
 .contenedor-temas img{
@@ -80,7 +84,7 @@
     padding: 10px;
     border: 1.5px solid #95a5a6;
     border-radius: 3px;
-    background-color: white;
+    background-color: #303841;
     cursor: pointer;
 }
 
@@ -95,7 +99,7 @@
 
 footer {
     text-align: right;
-    background-color: rgb(52, 58, 64);
+    background-color: #303841;
     padding: 50px 50px;
     font-weight: bold;
     color: white;

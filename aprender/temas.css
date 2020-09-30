@@ -3,8 +3,13 @@
     font-family: sans-serif;
 }
 
+body {
+    background-color: #3a4750;
+    color: #f0ece2;
+}
+
 .nav {
-    background-color: #353b48;
+    background-color: #303841;
 }
 
 .nav a {
@@ -25,17 +30,16 @@
 
 .title {
     padding: 20px 40px;
-    background-color: #353b48;
+    background-color: #303841;
     color: white;
 }
 .main {
     padding: 30px 50px;
-    background-color: #f7f8fa;
 }
 
 .main a{
     text-decoration: none;
-    color: black;
+    color: #f0ece2;
 }
 
 .main h2{
@@ -70,9 +74,9 @@
 
 .subtema {
     padding: 20px;
-    background-color: white;
+    background-color: #303841;
     border-radius: 3px;
-    border: 0.3px solid #bec1c7;
+    border: 0.3px solid #222831;
     margin-bottom: 20px;
 }
 .subtema hr{
@@ -82,6 +86,7 @@
     margin-bottom: 20px;
     font-size: 22px;
     font-family:'Lato', sans-serif;
+    color: #f0ece2;
 }
 .lecciones {
     display: grid;
@@ -94,7 +99,7 @@
 
 footer {
     text-align: right;
-    background-color: rgb(52, 58, 64);
+    background-color: #303841;
     padding: 50px 50px;
     font-weight: bold;
     color: white;

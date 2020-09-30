@@ -3,8 +3,13 @@
     font-family: sans-serif;
 }
 
+body {
+  background-color: #3a4750;
+  color: #f0ece2;
+}
+
 .nav {
-    background-color: #353b48;
+    background-color: #303841;
 }
 
 .nav a {

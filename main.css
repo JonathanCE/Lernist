@@ -4,11 +4,12 @@
 }
 
 body {
-    background-color: #f8f8f8;
+    background-color: #3a4750;
+    color: #f0ece2;
 }
 
 .nav {
-    background-color: #353b48;
+    background-color: #303841;
 }
 
 .nav a {
@@ -31,7 +32,6 @@ body {
 .Presentacion {
     padding: 20px 20px;
     position: relative;
-    background-color: #f8f8f8;
 }
 
 .Presentacion img {
@@ -71,8 +71,8 @@ body {
 }
 
 .frase {
-    border-right: 5px solid black;
-    border-left: 5px solid black;
+    border-right: 5px solid white;
+    border-left: 5px solid white;
     border-radius: 4px;
 }
 
@@ -83,7 +83,6 @@ body {
 
 .temas {
     padding: 20px 20px;
-    background-color: #f8f8f8;
 }
 
 .temas p {
@@ -102,16 +101,16 @@ body {
 .contenedor-temas a{
     display: block;
     text-decoration: none;
-    color: black;
+    color: white;
 
     padding: 10px;
-    border: 1.5px solid #95a5a6;
+    border: 1.5px solid #222831;
     border-radius: 3px;
     font-size: 35px;
     font-family: 'Amatic SC', cursive;
     cursor: pointer;
     text-align: center;
-    background-color: white;
+    background-color: #303841;
 }
 
 .contenedor-temas img{
@@ -121,7 +120,7 @@ body {
 .todos a{
     display: block;
     text-decoration: none;
-    color: black;
+    color: #303841;
 
     text-align: center;
     width: 25%;
@@ -133,14 +132,14 @@ body {
 
     border: 1.5px solid #95a5a6;
     border-radius: 3px;
-    font-size: 35px;
+    font-size: 45px;
     font-family: 'Amatic SC', cursive;
     cursor: pointer;
 }
 
 footer {
     text-align: right;
-    background-color: rgb(52, 58, 64);
+    background-color: #303841;
     padding: 50px 50px;
     font-weight: bold;
     color: white;
