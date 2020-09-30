@@ -44,20 +44,25 @@ body {
 .presentacion-title {
     font-size: 50px;
     font-family: 'Pangolin', cursive;
-    width: 50%;
-    position: absolute;
-    top: 20%;
-    left: 40px;
+    width: auto;
+    position: relative;
+    text-align: center;
+    top: 20px;
+    left: 0;
 }
 
 .presentacion-description {
-    width: 50%;
-    position: absolute;
-    top: 30%;
+    width: 100%;
+    position: static;
+    top: 20px;
+    text-align: center;
+    padding: 20px 20px;
+    box-sizing: border-box;
     left: 40px;
 }
 
 .presentacion-description p {
+    text-align: center;
     font-size: 30px;
     line-height: 40px;
     margin-top: 40px;
@@ -65,8 +70,15 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+.frase {
+    border-right: 5px solid black;
+    border-left: 5px solid black;
+    border-radius: 4px;
+}
+
 .frase p{
     font-family: 'Chelsea Market', cursive;
+    text-align: center;
 }
 
 .temas {
@@ -168,9 +180,7 @@ footer p{
 }
 
 @media screen and (max-width: 1110px) {
-    .presentacion-title {
-        top: 10%;
-    }
+
     .presentacion-description p {
         margin-top: 60px;
     }
@@ -178,17 +188,7 @@ footer p{
 
 @media screen and (max-width: 1070px) {
     .Presentacion {
-        padding: 0;
-    }
-    .Presentacion img {
-        border-radius: 0;
-        box-shadow: none;
-    }
-    .presentacion-description {
-        width: 49%;
-    }
-    .presentacion-description p {
-        margin-top: 40px;
+        padding: 10px 10px;
     }
     .todos a{
         width: 40%;
@@ -201,26 +201,9 @@ footer p{
 @media screen and (max-width: 1000px) {
     .presentacion-title {
         font-size: 65px;
-        width: 50%;
-        position: absolute;
-        top: 20%;
-        left: 40px;
-    }
-    .presentacion-description {
-        width: 100%;
-        position: static;
-        top: 20px;
-        text-align: center;
-        padding: 20px 20px;
-        box-sizing: border-box;
     }
     .presentacion-description p{
         text-align: center;
-    }
-    .frase {
-        border-right: 5px solid black;
-        border-left: 5px solid black;
-        border-radius: 4px;
     }
 
     .nav a {
@@ -249,10 +232,6 @@ footer p{
 @media screen and (max-width: 850px) {
     .presentacion-title {
         font-size: 57px;
-        width: 50%;
-        position: absolute;
-        top: 15%;
-        left: 20px;
     }
     .contenedor-temas {
         display: grid;
@@ -270,10 +249,6 @@ footer p{
 @media screen and (max-width: 630px) {
     .presentacion-title {
         font-size: 50px;
-        width: 50%;
-        position: absolute;
-        top: 12%;
-        left: 20px;
     }
     .contenedor-temas {
         display: grid;
@@ -287,16 +262,7 @@ footer p{
 }
 
 @media screen and (max-width: 550px) {
-    .Presentacion img {
-        display: none;
-    }
-    .presentacion-title {
-        position: relative;
-        text-align: center;
-        width: auto;
-        top: 20px;
-        left: 0; 
-    }
+
     .descripcion {
         background-color: #f5f6fa;
         border-radius: 10px;
