@@ -263,7 +263,6 @@ footer p{
 @media screen and (max-width: 550px) {
 
     .descripcion {
-        background-color: #f5f6fa;
         border-radius: 10px;
     }
 }
