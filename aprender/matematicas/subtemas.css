@@ -38,7 +38,7 @@ body {
 
 .main a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .main h2{
@@ -87,7 +87,6 @@ body {
 .videos div{
     cursor: pointer;
 }
-
 
 
 .one {
