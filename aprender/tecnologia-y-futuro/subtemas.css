@@ -38,7 +38,7 @@ body {
 
 .main a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .main h2{
@@ -74,6 +74,7 @@ body {
     margin-bottom: 20px;
     font-size: 22px;
     font-family:'Lato', sans-serif;
+    color: #f0ece2;
 }
 .videos {
     display: grid;
@@ -84,80 +85,7 @@ body {
     margin-top: 20px;
 }
 
-.videos div{
-    cursor: pointer;
-}
 
-
-
-.one {
-    position: fixed; visibility: hidden; width: 100%; height: 100%; top: 0; left: 0;
-    right: 0; bottom: 0; background-color: rgba(0,0,0,0.5); z-index: 2;
-}
-.one.active{ visibility: visible; }
-
-.two {
-    position: fixed; visibility: hidden; width: 100%; height: 100%; top: 0; left: 0;
-    right: 0; bottom: 0; background-color: rgba(0,0,0,0.5); z-index: 2;
-}
-.two.active{ visibility: visible; }
-
-.three {
-    position: fixed; visibility: hidden; width: 100%; height: 100%; top: 0; left: 0;
-    right: 0; bottom: 0; background-color: rgba(0,0,0,0.5); z-index: 2;
-}
-.three.active{ visibility: visible; }
-
-.four {
-    position: fixed; visibility: hidden; width: 100%; height: 100%; top: 0; left: 0;
-    right: 0; bottom: 0; background-color: rgba(0,0,0,0.5); z-index: 2;
-}
-.four.active{ visibility: visible; }
-
-.five {
-    position: fixed; visibility: hidden; width: 100%; height: 100%; top: 0; left: 0;
-    right: 0; bottom: 0; background-color: rgba(0,0,0,0.5); z-index: 2;
-}
-.five.active{ visibility: visible; }
-
-.six {
-    position: fixed; visibility: hidden; width: 100%; height: 100%; top: 0; left: 0;
-    right: 0; bottom: 0; background-color: rgba(0,0,0,0.5); z-index: 2;
-}
-.six.active{ visibility: visible; }
-
-.seven {
-    position: fixed; visibility: hidden; width: 100%; height: 100%; top: 0; left: 0;
-    right: 0; bottom: 0; background-color: rgba(0,0,0,0.5); z-index: 2;
-}
-.seven.active{ visibility: visible; }
-
-.eight {
-    position: fixed; visibility: hidden; width: 100%; height: 100%; top: 0; left: 0;
-    right: 0; bottom: 0; background-color: rgba(0,0,0,0.5); z-index: 2;
-}
-.eight.active{ visibility: visible; }
-
-
-
-.iframe-container{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  width: 864px;
-  height: 486px;
-}
-.close {
-    position: absolute;
-    top: 30px;
-    right: 40px;
-    cursor: pointer;
-    filter: invert(1);
-    max-width: 32px;
-    font-size: 70px;
-}
 
 footer {
     text-align: right;
