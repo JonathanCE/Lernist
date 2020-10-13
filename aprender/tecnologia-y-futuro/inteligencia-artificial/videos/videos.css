@@ -32,6 +32,10 @@ body {
     padding: 20px 40px;
     background-color: #303841;
 }
+.title p{
+    margin-top: 15px;
+    font-size: 18px;
+}
 
 main {
     display: grid;
@@ -96,6 +100,13 @@ main {
     transition: 0.5s;
     overflow-y: auto;
 }
+.content hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.content a{
+    font-weight: 500;
+}
 .active .content {
     height: auto;
     padding: 10px;
@@ -103,7 +114,6 @@ main {
 
 
 footer {
-    text-align: right;
     background-color: #303841;
     padding: 50px 50px;
     font-weight: bold;
@@ -117,18 +127,24 @@ footer p{
 
 .main-footer {
     margin-bottom: 80px;
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr 0.3fr;
 }
 
 .main-footer p{
     font-family: 'Chelsea Market', cursive;
     font-size: 27px;
-    float: left;
 }
-
-.main-footer img{
+/* primer cambio */
+.main-footer a{
     margin: 0 10px;
     cursor: pointer;
+}
+.social {
+    text-align: right;
+}
+.legal {
+    text-align: right;
 }
 
 .nav a:hover {
@@ -145,8 +161,9 @@ footer p{
 }
 
 @media screen and (max-width: 1070px) {
-    .social img {
-        margin-top: 20px;
+    .main-footer{
+        grid-template-columns: 1fr;
+        grid-row-gap: 30px;
     }
 }
 
@@ -180,5 +197,22 @@ footer p{
     }
     .temario {
         padding: 10px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    
+    .main-footer{
+        grid-row-gap: 50px;
+        margin-bottom: 50px;
+    }
+    .main-footer p{
+        text-align: center;
+    }
+    .social{
+        text-align: center;
+    }
+    .legal{
+        text-align: center;
     }
 }

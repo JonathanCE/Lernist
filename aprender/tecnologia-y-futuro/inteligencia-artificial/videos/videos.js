@@ -5,7 +5,7 @@ function myFunction() {
     } else {
       x.className = "nav";
     }
-  } 
+  }
 
 
 const temario = document.getElementsByClassName ('contentBox');
