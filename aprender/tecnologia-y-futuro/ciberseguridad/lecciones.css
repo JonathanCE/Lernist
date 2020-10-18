@@ -32,26 +32,59 @@ body {
     padding: 20px 40px;
     background-color: #303841;
 }
+.main {
+    padding: 30px 50px;
+}
 
-main {
+.main a{
+    text-decoration: none;
+    color: white;
+}
+
+.main h2{
+    font-family: 'Lato', sans-serif;
+}
+.descripcion {
+    padding: 0 180px;
+    text-align: center;
+}
+.descripcion p{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-family:'Lato', sans-serif;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.lecciones {
+    padding-top: 45px;
+}
+
+.leccion {
+    padding: 20px;
+    background-color: #303841;
+    border-radius: 3px;
+    border: 0.3px solid #222831;
+    margin-bottom: 20px;
+}
+.leccion hr{
+    color: #fff9f9;
+}
+.leccion h3{
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-family:'Lato', sans-serif;
+    color: #f0ece2;
+}
+.videos {
     display: grid;
-    grid-template-columns: 1fr 0.4fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 30px;
+    grid-column-gap: 10px;
+    margin-top: 20px;
 }
-.video {
-    width: 100%;
-    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-    position: relative;
-    height: 0;
-}
-.video iframe{
-    box-sizing: border-box;
-    padding: 15px 20px 15px 25px;
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
+
 .temario {
     width: 100%;
     padding: 10px 5px 0 0;
@@ -77,6 +110,7 @@ main {
 .label span {
     display: block;
     width: 90%;
+    font-size: 20px;
 }
 .label::before {
     content: "+";
@@ -96,14 +130,21 @@ main {
     transition: 0.5s;
     overflow-y: auto;
 }
+.content hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.content a{
+    font-weight: 500;
+}
 .active .content {
     height: auto;
     padding: 10px;
 }
 
 
+
 footer {
-    text-align: right;
     background-color: #303841;
     padding: 50px 50px;
     font-weight: bold;
@@ -117,36 +158,42 @@ footer p{
 
 .main-footer {
     margin-bottom: 80px;
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr 0.3fr;
 }
 
 .main-footer p{
     font-family: 'Chelsea Market', cursive;
     font-size: 27px;
-    float: left;
 }
-
-.main-footer img{
+/* primer cambio */
+.main-footer a{
     margin: 0 10px;
     cursor: pointer;
+}
+.social {
+    text-align: right;
+}
+.legal {
+    text-align: right;
 }
 
 .nav a:hover {
     color: #95a5a6;
 }
-.content a:hover {
+
+.main a:hover{
     text-decoration: underline;
 }
 
-@media screen and (max-width: 1135px) {
-    .video iframe {
-        padding: 15px;
-    }
+.videos div:hover{
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 1070px) {
-    .social img {
-        margin-top: 20px;
+    .main-footer{
+        grid-template-columns: 1fr;
+        grid-row-gap: 30px;
     }
 }
 
@@ -175,10 +222,43 @@ footer p{
 }
 
 @media screen and (max-width: 900px) {
-    main {
-        grid-template-columns: 1fr;
-    }
+    
     .temario {
         padding: 10px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .descripcion {
+        padding: 0 60px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    
+    .main-footer{
+        grid-row-gap: 50px;
+        margin-bottom: 50px;
+    }
+    .main-footer p{
+        text-align: center;
+    }
+    .social{
+        text-align: center;
+    }
+    .legal{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .descripcion {
+        padding: 0 0px;
+    }
+    .main {
+        padding: 30px 32px;
+    }
+    .contentBox {
+        margin: 10px 0;
     }
 }
