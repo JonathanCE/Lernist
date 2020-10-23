@@ -31,7 +31,6 @@ body {
 .title {
     padding: 20px 40px;
     background-color: #303841;
-    color: white;
 }
 .main {
     padding: 30px 50px;
@@ -39,7 +38,7 @@ body {
 
 .main a{
     text-decoration: none;
-    color: #f0ece2;
+    color: white;
 }
 
 .main h2{
@@ -57,38 +56,27 @@ body {
     line-height: 35px;
 }
 
-.top-videos {
-    padding-top: 20px;
-}
-.top-videos h2{
-    font-size: 30px;
+.lecciones {
+    padding-top: 45px;
 }
 
-.contenedor-top-videos {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-gap: 10px;
-    padding: 20px 0;
-}
-
-.subtema {
+.leccion {
     padding: 20px;
     background-color: #303841;
     border-radius: 3px;
     border: 0.3px solid #222831;
     margin-bottom: 20px;
 }
-.subtema hr{
+.leccion hr{
     color: #fff9f9;
 }
-.subtema h3{
+.leccion h3{
     margin-bottom: 20px;
     font-size: 22px;
     font-family:'Lato', sans-serif;
     color: #f0ece2;
 }
-.lecciones {
+.videos {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -96,6 +84,65 @@ body {
     grid-column-gap: 10px;
     margin-top: 20px;
 }
+
+.temario {
+    width: 100%;
+    padding: 10px 5px 0 0;
+    box-sizing: border-box;
+    line-height: 27px;
+}
+.temario a{
+    text-decoration: none;
+    color: white;
+}
+.contentBox {
+    position: relative;
+    margin: 10px 10px;
+}
+.label {
+    position: relative;
+    padding: 10px;
+    background-color: #303841;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+}
+.label span {
+    display: block;
+    width: 90%;
+    font-size: 20px;
+}
+.label::before {
+    content: "+";
+    position: absolute;
+    right: 20px;
+    font-size: 1.5em;    
+    top: 50%;
+    transform: translateY(-50%);
+}
+.active .label::before{
+    content: "-";
+}
+.content {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+}
+.content hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.content a{
+    font-weight: 500;
+}
+.active .content {
+    height: auto;
+    padding: 10px;
+}
+
+
 
 footer {
     background-color: #303841;
@@ -134,7 +181,12 @@ footer p{
 .nav a:hover {
     color: #95a5a6;
 }
+
 .main a:hover{
+    text-decoration: underline;
+}
+
+.videos div:hover{
     text-decoration: underline;
 }
 
@@ -169,6 +221,13 @@ footer p{
       }
 }
 
+@media screen and (max-width: 900px) {
+    
+    .temario {
+        padding: 10px 0 0 0;
+    }
+}
+
 @media screen and (max-width: 800px) {
     .descripcion {
         padding: 0 60px;
@@ -176,7 +235,7 @@ footer p{
 }
 
 @media screen and (max-width: 650px) {
-
+    
     .main-footer{
         grid-row-gap: 50px;
         margin-bottom: 50px;
@@ -199,13 +258,7 @@ footer p{
     .main {
         padding: 30px 32px;
     }
-}
-
-@media screen and (max-width: 420px) {
-    .lecciones {
-        grid-template-columns: 1fr;
-    }
-    .subtema a{
-        text-align: center;
+    .contentBox {
+        margin: 10px 0;
     }
 }

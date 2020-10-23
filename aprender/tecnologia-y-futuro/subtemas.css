@@ -163,27 +163,17 @@ footer p{
         text-align: left;
       }
     
-      .iframe-container{
-          width: 704px;
-          height: 396px;
-      }
 }
 
 @media screen and (max-width: 800px) {
     .descripcion {
         padding: 0 60px;
     }
-    .iframe-container {
-        width: 592px;
-        height: 333px;
-    }
+
 }
 
 @media screen and (max-width: 650px) {
-    .iframe-container {
-        width: 464px;
-        height: 261px;
-    }
+
     .main-footer{
         grid-row-gap: 50px;
         margin-bottom: 50px;
@@ -208,16 +198,14 @@ footer p{
     }
 }
 
-@media screen and (max-width: 530px) {
-    .iframe-container {
-        width: 384px;
-        height: 216px;
-    }
-}
-
 @media screen and (max-width: 430px) {
-    .iframe-container {
-        width: 320px;
-        height: 180px;
+    .videos {
+        grid-template-columns: 1fr;
+    }
+    .lecciones h3{
+        text-align: center;
+    }
+    .lecciones a{
+        text-align: center;
     }
 }
