@@ -85,6 +85,63 @@ body {
     margin-top: 20px;
 }
 
+.temario {
+    width: 100%;
+    padding: 10px 5px 0 0;
+    box-sizing: border-box;
+    line-height: 27px;
+}
+.temario a{
+    text-decoration: none;
+    color: white;
+}
+.contentBox {
+    position: relative;
+    margin: 10px 10px;
+}
+.label {
+    position: relative;
+    padding: 10px;
+    background-color: #303841;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+}
+.label span {
+    display: block;
+    width: 90%;
+    font-size: 20px;
+}
+.label::before {
+    content: "+";
+    position: absolute;
+    right: 20px;
+    font-size: 1.5em;    
+    top: 50%;
+    transform: translateY(-50%);
+}
+.active .label::before{
+    content: "-";
+}
+.content {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+}
+.content hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.content a{
+    font-weight: 500;
+}
+.active .content {
+    height: auto;
+    padding: 10px;
+}
+
 
 
 footer {
@@ -162,18 +219,23 @@ footer p{
         display: block;
         text-align: left;
       }
+}
+
+@media screen and (max-width: 900px) {
     
+    .temario {
+        padding: 10px 0 0 0;
+    }
 }
 
 @media screen and (max-width: 800px) {
     .descripcion {
         padding: 0 60px;
     }
-
 }
 
 @media screen and (max-width: 650px) {
-
+    
     .main-footer{
         grid-row-gap: 50px;
         margin-bottom: 50px;
@@ -196,16 +258,7 @@ footer p{
     .main {
         padding: 30px 32px;
     }
-}
-
-@media screen and (max-width: 430px) {
-    .videos {
-        grid-template-columns: 1fr;
-    }
-    .lecciones h3{
-        text-align: center;
-    }
-    .lecciones a{
-        text-align: center;
+    .contentBox {
+        margin: 10px 0;
     }
 }
