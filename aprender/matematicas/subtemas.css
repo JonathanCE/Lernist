@@ -61,28 +61,59 @@ body {
 }
 
 .leccion {
-    padding: 20px;
+    padding: 0;
     background-color: #303841;
     border-radius: 3px;
     border: 0.3px solid #222831;
     margin-bottom: 20px;
+
+    position: relative;
 }
-.leccion hr{
-    color: #fff9f9;
+.label {
+    position: relative;
+    padding: 20px 20px 10px 20px;
+    background-color: #303841;
+    cursor: pointer;
+    font-weight: bold;
+    border-bottom: solid white;
+}
+.label::before {
+    content: "+";
+    position: absolute;
+    right: 20px;
+    font-size: 2em;    
+    top: 50%;
+    transform: translateY(-50%);
+}
+.active .label::before{
+    content: "-";
 }
 .leccion h3{
     margin-bottom: 20px;
     font-size: 22px;
     font-family:'Lato', sans-serif;
     color: #f0ece2;
+    display: inline-block;
 }
 .videos {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-row-gap: 30px;
-    grid-column-gap: 10px;
-    margin-top: 20px;
+    grid-column-gap: 20px;
+    margin: 15px 15px 15px 15px;
+
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+    background-color: #3a4750;
+    border-radius: 3px;
+}
+.active .videos {
+    height: auto;
+    padding: 20px 10px 20px 25px;
 }
 
 
@@ -128,6 +159,9 @@ footer p{
 .main a:hover{
     text-decoration: underline;
 }
+.leccion h3:hover{
+    text-decoration: underline;
+}
 
 .videos div:hover{
     text-decoration: underline;
@@ -169,6 +203,10 @@ footer p{
     .descripcion {
         padding: 0 60px;
     }
+    .leccion h3{
+        margin-bottom: 10px;
+        max-width: 75%;
+    }
 
 }
 
@@ -203,9 +241,12 @@ footer p{
         grid-template-columns: 1fr;
     }
     .lecciones h3{
-        text-align: center;
+        text-align: left;
     }
     .lecciones a{
         text-align: center;
+    }
+    .active .videos {
+        padding: 20px 10px 10px 10px;
     }
 }

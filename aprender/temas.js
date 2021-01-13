@@ -6,3 +6,11 @@ function myFunction() {
       x.className = "nav";
     }
   } 
+
+const subtemas = document.getElementsByClassName ('subtema');
+
+  for (i = 0; i<subtemas.length; i++) {
+    subtemas[i].addEventListener('click', function(){
+      this.classList.toggle('active')
+    })
+  }

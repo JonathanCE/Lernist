@@ -14,8 +14,6 @@
 
 <body>
 
-    <script src="temas.js"></script>
-
     <div class="nav" id="myNav">
         <nav>
             <a href="/index.html">Inicio</a>
@@ -42,18 +40,20 @@
                 (antiguo y moderno), el arte, el dinero, la ingeniería, e incluso los deportes.
             </p>
         </div>
-        <hr>
+        <!-- <hr>
 
         <div class="top-videos"> 
             <h2>Top Videos</h2>
 
             <div class="contenedor-top-videos">
             </div>
-        </div>
+        </div> -->
 
         <div class="subtema">
-            <a href=""><h3>Introduccion a las Matematicas</h3></a>
-            <hr>
+            <div class="label">
+                <a href=""><h3>Introduccion a las Matematicas</h3></a>
+            </div>
+            
             <div class="lecciones">
                 <a href="">¿Por que son importantes las matemáticas?</a>
                 <a href="">Tips para aprender matemáticas</a>
@@ -61,8 +61,10 @@
         </div>
 
         <div class="subtema">
-            <a href=""><h3>Aritmetica</h3></a>
-            <hr>
+            <div class="label">
+                <a href=""><h3>Aritmetica</h3></a>
+            </div>
+            
             <div class="lecciones">
                 <a href="">Números enteros</a>
                 <a href="">Números decimales</a>
@@ -81,11 +83,28 @@
         </div>
 
         <div class="subtema">
-            <a href="matematicas/algebra.html"><h3>Algebra</h3></a>
-            <hr>
+            <div class="label">
+                <a href=""><h3>Geometría</h3></a>
+            </div>
+            
             <div class="lecciones">
-                <a href="">Fundamentos para Algebra</a>
-                <a href="">Lenguaje algebraico</a>
+                <a href="">Área y perimetro</a>
+                <a href="">Ángulos</a>
+                <a href="">Volumen y Area de solidos</a>
+                <a href="">Teorema de Pitágoras</a>
+                <!-- <a href="">Teorema de Tales</a> -->
+                <a href="">Poligonos</a>
+            </div>
+        </div>
+
+        <div class="subtema">
+            <div class="label">
+                <a href="matematicas/algebra.html"><h3>Algebra</h3></a>
+            </div>
+            
+            <div class="lecciones">
+                <!-- <a href="">Fundamentos para Algebra</a> -->
+                <a href="matematicas/algebra/videos/lenguaje-algebraico-parte-1.html">Lenguaje algebraico</a>
                 <a href="">Plano cartesiano</a>
                 <a href="">Valor numerico de expresiones algebraicas</a>
                 <a href="">Reduccion de terminos semejantes | Suma y resta</a>
@@ -110,32 +129,21 @@
         </div>
 
         <div class="subtema">
-            <a href=""><h3>Probabilidad y estadistica</h3></a>
-            <hr>
+            <div class="label">
+                <a href=""><h3>Probabilidad y estadistica</h3></a>
+            </div>
+            
             <div class="lecciones">
                 <a href="">Conceptos básicos</a>
+                <a href="">Probabilidad</a>
                 <a href="">Tabla de frecuencias</a>
                 <a href="">Media, moda y mediana</a>
                 <a href="">Varianza y desviacion</a>
                 <a href="">Combinaciones, permutaciones y variaciones</a>
-                <a href="">Probabilidad</a>
             </div>
         </div>
 
-        <div class="subtema">
-            <a href=""><h3>Geometría</h3></a>
-            <hr>
-            <div class="lecciones">
-                <a href="">Área y perimetro</a>
-                <a href="">Ángulos</a>
-                <a href="">Volumen y Area de solidos</a>
-                <a href="">Teorema de Pitágoras</a>
-                <a href="">Teorema de Tales</a>
-                <a href="">Poligonos</a>
-            </div>
-        </div>
-
-        <div class="subtema">
+        <!-- <div class="subtema">
             <a href=""><h3>Trigonometría</h3></a>
             <hr>
             <div class="lecciones">
@@ -183,7 +191,7 @@
                 <a href="">Ecuaciones diferenciales</a>
                 <a href="">Sumatoria - Notacion sigma</a>
             </div>
-        </div>
+        </div> -->
 
     </div>
 
@@ -199,6 +207,7 @@
         <p class="legal">&copy; Derechos Reservados Lernist 2020.</p>
     </footer>
 
+    <script src="temas.js"></script>
 </body>
 
 </html>
