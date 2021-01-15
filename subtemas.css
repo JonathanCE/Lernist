@@ -115,6 +115,14 @@ body {
     height: auto;
     padding: 20px 10px 20px 25px;
 }
+.videos a{
+    font-style: italic;
+}
+.videos span{
+    font-weight: bold;
+    font-size: 1.1em;
+    font-style: normal;
+}
 
 
 

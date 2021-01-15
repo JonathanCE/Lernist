@@ -70,7 +70,8 @@ body {
     border: 1.5px solid #222831;
     border-radius: 3px;
     font-size: 35px;
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Shadows Into Light', cursive;
+    /* font-family: 'Amatic SC', cursive; */
     cursor: pointer;
     text-align: center;
     background-color: #303841;
@@ -86,11 +87,6 @@ body {
     border-radius: 3px;
     background-color: #303841;
     cursor: pointer;
-}
-
-.tema p {
-    font-size: 35px;
-    font-family: 'Amatic SC', cursive;
 }
 
 .tema img {
