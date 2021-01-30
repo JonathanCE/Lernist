@@ -107,6 +107,14 @@ main {
     margin-bottom: 10px;
 }
 .content a{
+    font-style: italic;
+}
+.content span{
+    font-weight: bold;
+    font-size: 1.1em;
+    font-style: normal;
+}
+.content a{
     font-weight: 500;
 }
 .active .content {
