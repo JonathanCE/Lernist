@@ -62,6 +62,7 @@ main {
 .video-info {
     padding: 15px 20px 15px 25px;
     grid-area: descripcion;
+    display: none;
 }
 
 
