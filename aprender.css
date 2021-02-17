@@ -83,8 +83,11 @@ body {
 
 .tema {
     padding: 10px;
-    border: 1.5px solid #95a5a6;
+    border: 1.5px solid #222831;
     border-radius: 3px;
+    font-size: 35px;
+    font-family: 'Shadows Into Light', cursive;
+    text-align: center;
     background-color: #303841;
     cursor: pointer;
 }
