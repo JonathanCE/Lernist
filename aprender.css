@@ -4,12 +4,12 @@
 }
 
 body {
-    background-color: #3a4750;
+    background-color: #15191f;
     color: #f0ece2;
 }
 
 .nav {
-    background-color: #303841;
+    background-color: #090c0f;
 }
 
 .nav a {
@@ -29,12 +29,12 @@ body {
 }
 
 .Presentacion {
-    background: linear-gradient(35deg, #CCFFFF, #FFCCCC);
+    background: linear-gradient(35deg, #0c5c5c, #b84e4e);
     padding: 30px 100px;
 }
 
 .presentacion-texto {
-    background-color: #3a4750;
+    background-color: #15191f;
     border-radius: 7px;
     padding: 40px;
 }
@@ -67,14 +67,14 @@ body {
     color: #f0ece2;
 
     padding: 10px;
-    border: 1.5px solid #222831;
+    border: 1.5px solid black;
     border-radius: 3px;
     font-size: 35px;
     font-family: 'Shadows Into Light', cursive;
     /* font-family: 'Amatic SC', cursive; */
     cursor: pointer;
     text-align: center;
-    background-color: #303841;
+    background-color: #090c0f;
 }
 
 .contenedor-temas img{
@@ -83,12 +83,12 @@ body {
 
 .tema {
     padding: 10px;
-    border: 1.5px solid #222831;
+    border: 1.5px solid black;
     border-radius: 3px;
     font-size: 35px;
     font-family: 'Shadows Into Light', cursive;
     text-align: center;
-    background-color: #303841;
+    background-color: #090c0f;
     cursor: pointer;
 }
 
@@ -97,7 +97,7 @@ body {
 }
 
 footer {
-    background-color: #303841;
+    background-color: #090c0f;
     padding: 50px 50px;
     font-weight: bold;
     color: white;

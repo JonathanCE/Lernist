@@ -4,12 +4,12 @@
 }
 
 body {
-    background-color: #3a4750;
+    background-color: #15191f;
     color: #f0ece2;
 }
 
 .nav {
-    background-color: #303841;
+    background-color: #090c0f;
 }
 
 .nav a {
@@ -30,7 +30,7 @@ body {
 
 .title {
     padding: 20px 40px;
-    background-color: #303841;
+    background-color: #090c0f;
     color: white;
 }
 .main {
@@ -74,9 +74,9 @@ body {
 
 .subtema {
     padding: 0;
-    background-color: #303841;
+    background-color: #090c0f;
     border-radius: 3px;
-    border: 0.3px solid #222831;
+    border: 0.3px solid black;
     margin-bottom: 20px;
 
     position: relative;
@@ -84,7 +84,7 @@ body {
 .label {
     position: relative;
     padding: 20px 20px 10px 20px;
-    background-color: #303841;
+    background-color: #090c0f;
     cursor: pointer;
     font-weight: bold;
     border-bottom: solid white;
@@ -121,7 +121,7 @@ body {
     overflow: hidden;
     transition: 0.5s;
     overflow-y: auto;
-    background-color: #3a4750;
+    background-color: #15191f;
     border-radius: 3px;
 }
 .active .lecciones {
@@ -130,7 +130,7 @@ body {
 }
 
 footer {
-    background-color: #303841;
+    background-color: #090c0f;
     padding: 50px 50px;
     font-weight: bold;
     color: white;

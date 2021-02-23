@@ -4,12 +4,12 @@
 }
 
 body {
-    background-color: #3a4750;
+    background-color: #15191f;
     color: #f0ece2;
 }
 
 .nav {
-    background-color: #303841;
+    background-color: #090c0f;
 }
 
 .nav a {
@@ -30,55 +30,34 @@ body {
 
 
 .Presentacion {
-    padding: 20px 20px;
-    position: relative;
-}
-
-.Presentacion img {
-    height: auto;
-    max-width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    padding: 50px 20px;
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 50px;
+    text-align: center;
 }
 
 .presentacion-title {
-    font-size: 50px;
+    font-size: 55px;
     font-family: 'Pangolin', cursive;
-    width: auto;
-    position: relative;
-    text-align: center;
-    top: 20px;
-    left: 0;
-}
-
-.presentacion-description {
-    width: 100%;
-    position: static;
-    top: 20px;
-    text-align: center;
-    padding: 20px 20px;
-    box-sizing: border-box;
-    left: 40px;
-}
-
-.presentacion-description p {
-    text-align: center;
-    font-size: 30px;
-    line-height: 40px;
-    margin-top: 40px;
-    text-align: justify;
-    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .frase {
-    border-right: 5px solid white;
-    border-left: 5px solid white;
-    border-radius: 4px;
+    font-family: 'Chelsea Market', cursive;
+    font-size: 25px;
+    margin-top: 50px;
 }
 
-.frase p{
-    font-family: 'Chelsea Market', cursive;
+.presentacion-description {
     text-align: center;
+}
+
+.presentacion-description p {
+    font-size: 25px;
+    line-height: 40px;
+    text-align: justify;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .temas {
@@ -104,13 +83,13 @@ body {
     color: white;
 
     padding: 10px;
-    border: 1.5px solid #222831;
+    border: 1.5px solid black;
     border-radius: 3px;
     font-size: 35px;
     font-family: 'Shadows Into Light', cursive;
     cursor: pointer;
     text-align: center;
-    background-color: #303841;
+    background-color: #090c0f;
 }
 
 .contenedor-temas img{
@@ -120,17 +99,17 @@ body {
 .todos a{
     display: block;
     text-decoration: none;
-    color: #303841;
+    color: white;
 
     text-align: center;
     width: 25%;
     margin: auto;
     margin-bottom: 25px;
     margin-top: 5px;
-    padding: 130px 0;
-    background: linear-gradient(35deg, #CCFFFF, #FFCCCC);
+    padding: 100px 0;
+    background: linear-gradient(35deg, #0c5c5c, #b84e4e);
 
-    border: 1.5px solid #95a5a6;
+    border: 1.5px solid black;
     border-radius: 3px;
     font-size: 45px;
     font-family: 'Shadows Into Light', cursive;
@@ -138,7 +117,7 @@ body {
 }
 
 footer {
-    background-color: #303841;
+    background-color: #090c0f;
     padding: 50px 50px;
     font-weight: bold;
     color: white;
@@ -180,13 +159,13 @@ footer p{
 }
 .todos a:hover{
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    background: linear-gradient(35deg, #FFCCCC, #CCFFFF);
+    background: linear-gradient(35deg, #b84e4e, #0c5c5c);
 }
 
 @media screen and (max-width: 1110px) {
 
     .presentacion-description p {
-        margin-top: 60px;
+        margin-top: 50px;
     }
 }
 
@@ -235,6 +214,10 @@ footer p{
 }
 
 @media screen and (max-width: 850px) {
+    .Presentacion {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
     .presentacion-title {
         font-size: 57px;
     }

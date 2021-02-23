@@ -4,12 +4,12 @@
 }
 
 body {
-    background-color: #3a4750;
+    background-color: #15191f;
     color: #f0ece2;
 }
 
 .nav {
-    background-color: #303841;
+    background-color: #090c0f;
 }
 
 .nav a {
@@ -30,7 +30,7 @@ body {
 
 .title {
     padding: 20px 40px;
-    background-color: #303841;
+    background-color: #090c0f;
 }
 .title p{
     margin-top: 15px;
@@ -73,7 +73,7 @@ main {
 .label {
     position: relative;
     padding: 10px;
-    background-color: #303841;
+    background-color: #090c0f;
     cursor: pointer;
     font-weight: bold;
     border-radius: 4px;
@@ -114,7 +114,7 @@ main {
 
 
 footer {
-    background-color: #303841;
+    background-color: #090c0f;
     padding: 50px 50px;
     font-weight: bold;
     color: white;
