@@ -34,7 +34,7 @@ body {
     display: grid;
     grid-template-columns: 0.8fr 1fr;
     grid-template-rows: auto;
-    grid-column-gap: 50px;
+    grid-column-gap: 30px;
     text-align: center;
     background-color: #090c0f;
 }
@@ -56,9 +56,12 @@ body {
 
 .presentacion-description p {
     font-size: 25px;
-    line-height: 40px;
+    line-height: 38px;
     text-align: justify;
     font-family: 'Source Sans Pro', sans-serif;
+}
+.descripcion-2 {
+    margin-top: 15px;
 }
 
 .temas {
@@ -107,12 +110,12 @@ body {
     margin: auto;
     margin-bottom: 25px;
     margin-top: 5px;
-    padding: 100px 0;
+    padding: 80px 0;
     background: linear-gradient(35deg, #0c5c5c, #b84e4e);
 
     border: 1.5px solid black;
     border-radius: 3px;
-    font-size: 45px;
+    font-size: 60px;
     font-family: 'Shadows Into Light', cursive;
     cursor: pointer;
 }
@@ -161,13 +164,6 @@ footer p{
 .todos a:hover{
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     background: linear-gradient(35deg, #b84e4e, #0c5c5c);
-}
-
-@media screen and (max-width: 1110px) {
-
-    .presentacion-description p {
-        margin-top: 50px;
-    }
 }
 
 @media screen and (max-width: 1070px) {
@@ -222,6 +218,12 @@ footer p{
     .presentacion-title {
         font-size: 57px;
     }
+    .frase {
+        margin-top: 10px;
+    }
+    .presentacion-description {
+        margin-top: 70px;
+    }
     .contenedor-temas {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -249,6 +251,9 @@ footer p{
     }
     .legal{
         text-align: center;
+    }
+    .descripcion-2 {
+        margin-top: 15px;
     }
 }
 
