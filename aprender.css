@@ -95,6 +95,9 @@ body {
 .tema img {
     width: 100%;
 }
+.hide {
+    display: none;
+}
 
 footer {
     background-color: #090c0f;
