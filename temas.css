@@ -33,11 +33,11 @@ body {
     background-color: #090c0f;
     color: white;
 }
-.main {
+main {
     padding: 30px 50px;
 }
 
-.main a{
+main a{
     text-decoration: none;
     color: #f0ece2;
 }
@@ -226,7 +226,7 @@ footer p{
 .nav a:hover {
     color: #95a5a6;
 }
-.main a:hover{
+main a:hover{
     text-decoration: underline;
 }
 .temarios-introduccion:hover {
