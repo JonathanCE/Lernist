@@ -134,33 +134,47 @@ main {
 
 footer {
     background-color: #090c0f;
-    padding: 50px 50px;
+    padding: 50px 50px 30px 50px;
     font-weight: bold;
     color: white;
 }
 
 footer p{
-    font-size: 17px;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
 }
 
 .main-footer {
-    margin-bottom: 80px;
+    margin-bottom: 60px;
     display: grid;
-    grid-template-columns: 1fr 0.3fr;
+    grid-template-columns: 1fr 250px;
+    padding: 10px 0;
+    align-items: center;
 }
 
 .main-footer p{
     font-family: 'Chelsea Market', cursive;
     font-size: 27px;
 }
-/* primer cambio */
-.main-footer a{
-    margin: 0 10px;
+
+.social {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.social a{
     cursor: pointer;
 }
-.social {
+.informacion {
+    margin-bottom: 40px;
+    padding: 10px 0;
     text-align: right;
+}
+.informacion a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Chelsea Market', cursive;
+    font-size: 20px;
+    margin-left: 30px;
 }
 .legal {
     text-align: right;
@@ -171,6 +185,18 @@ footer p{
 }
 .content a:hover {
     text-decoration: underline;
+}
+.social img:hover{
+    background-color: black;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.informacion a:hover {
+    background-color: black;
+    border-radius: 5px;
+    border: 4px solid black;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 @media screen and (max-width: 1135px) {
@@ -183,6 +209,16 @@ footer p{
     .main-footer{
         grid-template-columns: 1fr;
         grid-row-gap: 30px;
+        margin-bottom: 50px;
+    }
+    .main-footer p{
+        text-align: center;
+    }
+    .social {
+        display: inline;
+    }
+    .social a{
+        margin: 0 10px;
     }
 }
 
@@ -221,19 +257,31 @@ footer p{
     }
 }
 
+@media screen and (max-width: 800px) {
+    .informacion {
+        text-align: center;
+    }
+}
+
 @media screen and (max-width: 650px) {
     
     .main-footer{
         grid-row-gap: 50px;
-        margin-bottom: 50px;
-    }
-    .main-footer p{
-        text-align: center;
+        margin-bottom: 40px;
     }
     .social{
         text-align: center;
     }
+    .informacion a{
+        margin: 0 15px;
+    }
     .legal{
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .informacion a{
+        line-height: 35px;
     }
 }
