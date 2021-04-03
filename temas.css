@@ -406,6 +406,9 @@ main a:hover{
 }
 
 @media screen and (max-width: 420px) {
+    main {
+        padding: 30px 40px;
+    }
     .lecciones {
         grid-template-columns: 1fr;
     }

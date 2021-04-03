@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-STPM17KL3C"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-STPM17KL3C');
+</script>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Open+Sans:wght@700&family=Pangolin&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Tenali+Ramakrishna&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="contacto.css">
+    <link rel="icon" href="Lernist-mini.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script data-ad-client="ca-pub-8087632256608585" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <title>Lernist | Contacto</title>
+</head>
+<body>
+
+    <div class="nav" id="myNav">
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="aprender.html">Aprender</a>
+            <!-- <a href="enseñar.html">Enseñar</a> -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </div>
+
+    <main>
+
+        <section class="inicio">
+            <div class="inicio-contenedor">
+                <h2>Contáctanos</h2>
+                <p>¿Tienes alguna duda, sugerencia o comentario? ¡Adelante! escríbenos desde nuestras
+                redes sociales o directamente desde el formulario que se encuentra debajo.
+                </p>
+            </div>
+        </section> <!--Mensaje Bienvenida y motivos, razones o opciones para contactarnos-->
+
+        <section class="redes-sociales">
+            <h2>Redes sociales</h2>
+            <div class="links-sociales">
+                <a href="https://www.facebook.com/LernistOficial" target="_blank"><img src="/social_icons/facebook.png" alt=""></a>
+                <a href="https://twitter.com/Lernist_Oficial" target="_blank"><img src="/social_icons/twitter2.png" alt=""></a>
+                <a href="https://www.instagram.com/Lernist_Oficial/" target="_blank"><img src="/social_icons/instagram.png" alt=""></a>
+            </div>
+        </section> <!--Redes Sociales-->
+
+        <section class="formulario">
+
+            <form name="contacto" netlify>
+                <label for="email">Correo y Nombre:</label><br><br>
+                <input type="email" name="email" id="email" placeholder="Email..." required>
+
+                <br><br>
+
+                <input type="text" id="nombre" placeholder="Tu nombre..." required>
+
+                <br><br>
+
+                <label for="asunto">Motivo del mensaje:</label><br><br>
+                <select name="asunto" id="asunto" required>
+                    <option value="">Sugerencia</option>
+                    <option value="">Duda</option>
+                </select>
+
+                <br><br>
+
+                <label for="mensaje">Mensaje:</label><br><br>
+                <textarea name="" id="mensaje" cols="30" rows="6" placeholder="Escribe tu mensaje..." required></textarea>
+
+                <br><br><br>
+                <button type="submit" id="enviar">Enviar</button>
+            </form>
+            
+        </section> <!--Formulario de Contacto-->
+
+    </main>
+
+    <footer>
+        <div class="main-footer">
+            <p>Aprende cosas Increíbles, con contenido Increíble.</p>
+            <div class="social">
+                <a href="https://www.facebook.com/LernistOficial" target="_blank"><img src="/social_icons/face.png" alt=""></a>
+                <a href="https://twitter.com/Lernist_Oficial" target="_blank"><img src="/social_icons/twitter.png" alt=""></a>
+                <a href="https://www.instagram.com/Lernist_Oficial/" target="_blank"><img src="/social_icons/insta.png" alt=""></a>
+            </div>
+        </div>
+        <div class="informacion">
+            <a href="contacto.html" target="_blank">Contacto</a>
+            <a href="nosotros.html" target="_blank">Nosotros</a>
+            <!-- <a href="" target="_blank">Anunciantes</a> -->
+        </div>
+        <p class="legal">&copy; Derechos Reservados Lernist 2021.</p>
+    </footer>
+    
+    <script src="contacto.js"></script>
+</body>
+</html>
