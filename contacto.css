@@ -86,7 +86,7 @@ body {
     border: 1px solid transparent;
     background-color: #090c0f;
 }
-input, select, textarea, label {
+input, select, textarea, label, button {
     width: 400px;
     font-size: 18px;
     box-sizing: border-box;
@@ -99,11 +99,6 @@ label {
     font-weight: bold;
 }
 button {
-    width: 400px;
-    font-size: 18px;
-    box-sizing: border-box;
-    border-radius: 2px;
-    border: 1px solid transparent;
     padding: 6px;
     color: black;
 }
@@ -252,7 +247,7 @@ footer p{
     .formulario form {
         width: 420px;
     }
-    input, select, textarea, label {
+    input, select, textarea, label, button {
         width: 330px;
     }
     .social{
@@ -283,7 +278,7 @@ footer p{
     .formulario form {
         width: 370px;
     }
-    input, select, textarea, label {
+    input, select, textarea, label, button {
         width: 300px;
     }
     .informacion a{
@@ -298,7 +293,7 @@ footer p{
     .formulario form {
         width: 315px;
     }
-    input, select, textarea, label {
+    input, select, textarea, label, button {
         width: 270px;
     }
 }
