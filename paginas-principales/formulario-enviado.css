@@ -31,6 +31,32 @@ body {
 main {
     padding: 30px 30px;
     text-align: center;
+    margin: 40px auto;
+    width: 85%;
+    font-family: 'Chelsea Market', cursive;
+    border: 6px solid white;
+    border-style: ridge;
+    border-radius: 10px;
+    background-color: #090c0f;
+}
+main h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+main p {
+    font-size: 25px;
+}
+main a {
+    display: block;
+    text-decoration: none;
+    padding: 15px 50px;
+    color: white;
+    margin: 30px auto;
+    background-color: rgb(46, 94, 46);
+    width: 90px;
+    font-size: 25px;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -84,6 +110,9 @@ footer p{
 
 .nav a:hover {
     color: #95a5a6;
+}
+main a:hover {
+    border: 2px solid transparent;
 }
 
 .social img:hover{
@@ -140,6 +169,10 @@ footer p{
         text-align: left;
       }
 
+    main {
+        padding: 30px 10px;
+    }
+
 }
 
 @media screen and (max-width: 800px) {
@@ -149,6 +182,10 @@ footer p{
 }
 
 @media screen and (max-width: 650px) {
+
+    main {
+        width: 80%;
+    }
     
     .main-footer{
         grid-row-gap: 50px;
