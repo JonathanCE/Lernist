@@ -28,85 +28,11 @@ body {
     display: none;
 }
 
-.inicio {
-    padding: 20px 300px;
+main {
+    padding: 30px 30px;
     text-align: center;
-    background-color: #090c0f;
-}
-.inicio h2 {
-    margin-bottom: 30px;
-    font-size: 50px;
-    font-family: 'Chelsea Market', cursive;
-}
-.inicio p {
-    line-height: 25px;
-    font-size: 25px;
-}
-.inicio-contenedor {
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 35px;
-    padding: 30px 20px;
-    border: 6px solid white;
-    border-style: ridge;
-    border-radius: 10px;
-    background-color: black;
-    cursor: pointer;
 }
 
-.redes-sociales {
-    background-color: #090c0f;
-    padding: 30px 40px;
-    text-align: center;
-}
-.redes-sociales h2 {
-    margin-bottom: 40px;
-    font-size: 35px;
-    font-family: 'Chelsea Market', cursive;
-}
-.links-sociales {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-.links-sociales img{
-    width: 120px;
-    height: auto;
-}
-.formulario {
-    padding: 30px 20px;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    box-sizing: border-box;
-}
-.formulario form {
-    width: 500px;
-    margin: 0 auto;
-    padding: 35px 0;
-    border-radius: 3px;
-    border: 1px solid transparent;
-    background-color: #090c0f;
-}
-input, select, textarea, label, button {
-    width: 400px;
-    font-size: 18px;
-    box-sizing: border-box;
-    border-radius: 2px;
-    border: 1px solid transparent;
-    padding: 6px;
-}
-label {
-    font-size: 22px;
-    font-weight: bold;
-}
-button {
-    padding: 6px;
-    background-color: white;
-    color: black;
-}
-#enviar {
-    cursor: pointer;
-    height: 50px;
-}
 
 footer {
     background-color: #090c0f;
@@ -159,15 +85,7 @@ footer p{
 .nav a:hover {
     color: #95a5a6;
 }
-#enviar:hover {
-    background-color: #95a5a6;
-}
 
-.redes-sociales img:hover {
-    border-radius: 2px;
-    border: 2px solid transparent;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-}
 .social img:hover{
     background-color: black;
     border-radius: 10px;
@@ -182,9 +100,6 @@ footer p{
 }
 
 @media screen and (max-width: 1070px) {
-    .inicio {
-        padding: 20px 100px;
-    }
     .main-footer{
         grid-template-columns: 1fr;
         grid-row-gap: 30px;
@@ -225,12 +140,6 @@ footer p{
         text-align: left;
       }
 
-    .inicio h2 {
-        font-size: 40px;
-    }
-    .inicio p {
-        font-size: 25px;
-    }
 }
 
 @media screen and (max-width: 800px) {
@@ -245,12 +154,6 @@ footer p{
         grid-row-gap: 50px;
         margin-bottom: 40px;
     }
-    .formulario form {
-        width: 420px;
-    }
-    input, select, textarea, label, button {
-        width: 330px;
-    }
     .social{
         text-align: center;
     }
@@ -263,38 +166,7 @@ footer p{
 }
 
 @media screen and (max-width: 610px) {
-    .inicio {
-        padding: 20px 30px;
-    }
-    .inicio h2 {
-        font-size: 35px;
-    }
-    .inicio p {
-        font-size: 22px;
-    }
-    .links-sociales img{
-        width: 90px;
-        height: auto;
-    }
-    .formulario form {
-        width: 370px;
-    }
-    input, select, textarea, label, button {
-        width: 300px;
-    }
     .informacion a{
         line-height: 35px;
-    }
-}
-@media screen and (max-width: 450px) {
-    .links-sociales img{
-        width: 60px;
-        height: auto;
-    }
-    .formulario form {
-        width: 315px;
-    }
-    input, select, textarea, label, button {
-        width: 270px;
     }
 }
