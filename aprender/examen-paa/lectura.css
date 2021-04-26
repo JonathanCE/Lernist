@@ -108,7 +108,6 @@ body {
 }
 .contenedor-videos {
     padding: 17px 15px 14px 15px;
-    overflow: hidden;
 }
 .videos {
     display: grid;

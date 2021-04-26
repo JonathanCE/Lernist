@@ -18,7 +18,31 @@ function myFunction() {
 $(document).ready(function() {
   $(".videos").hide();
 
-  $(".leccion-title").click(function() {
-    $(".videos").slideToggle(400);
+  $(".le1").click(function() {
+    $(".vi1").slideToggle(400);
+  });
+
+  $(".le2").click(function() {
+    $(".vi2").slideToggle(400);
+  });
+
+  $(".le3").click(function() {
+    $(".vi3").slideToggle(400);
+  });
+
+  $(".le4").click(function() {
+    $(".vi4").slideToggle(400);
+  });
+
+  $(".le5").click(function() {
+    $(".vi5").slideToggle(400);
+  });
+
+  $(".le6").click(function() {
+    $(".vi6").slideToggle(400);
+  });
+
+  $(".le7").click(function() {
+    $(".vi7").slideToggle(400);
   });
 });
