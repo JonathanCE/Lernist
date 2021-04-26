@@ -14,3 +14,11 @@ function myFunction() {
       this.classList.toggle('active')
     })
   } */
+
+$(document).ready(function() {
+  $(".videos").hide();
+
+  $(".leccion-title").click(function() {
+    $(".videos").slideToggle(400);
+  });
+});
