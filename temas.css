@@ -107,6 +107,13 @@ main a{
 .top-videos h2{
     font-size: 30px;
 }
+.contenedor-top-videos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    padding: 20px 0;
+}
 
 .subtemas {
     padding: 0 80px;
@@ -123,13 +130,6 @@ main a{
     border-radius: 10px;
     background-color: #090c0f;
     cursor: pointer;
-}
-.contenedor-top-videos {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-gap: 10px;
-    padding: 20px 0;
 }
 
 .subtema {

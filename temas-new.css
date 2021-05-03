@@ -29,45 +29,136 @@ body {
 }
 
 .title {
-    padding: 20px 40px;
+    padding: 20px 40px 70px 40px;
+    font-size: 25px;
     background-color: #090c0f;
+    text-align: center;
 }
-.main {
+.Presentacion {
+    padding: 30px 70px 70px 70px;
+    background-color: #090c0f;
+
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 30px;
+    text-align: center;
+}
+.Presentacion img {
+    width: 100%;
+    border: 5px solid white;
+    border-radius: 3px;
+}
+.presentacion-description {
+    text-align: center;
+    padding: 0 0 0 20px;
+}
+.presentacion-description h2 {
+    font-family: 'Lato', sans-serif;
+}
+.presentacion-description p {
+    font-size: 22px;
+    line-height: 33px;
+    text-align: justify;
+    font-family:'Lato', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+
+main {
     padding: 30px 50px;
 }
 
 main a{
     text-decoration: none;
-    color: white;
+    color: #f0ece2;
 }
 
-main h2{
-    font-family: 'Lato', sans-serif;
+
+.temarios {
+    padding: 0 90px;
 }
-.descripcion {
-    padding: 0 180px;
+.temarios-introduccion {
     text-align: center;
-}
-.descripcion p{
-    margin-top: 20px;
     margin-bottom: 40px;
-    font-family:'Lato', sans-serif;
-    font-size: 20px;
-    line-height: 35px;
+    font-size: 35px;
+    font-family: 'Chelsea Market', cursive;
+    text-decoration: underline;
+    padding: 30px 0px;
+    border: 6px solid white;
+    border-style: ridge;
+    border-radius: 10px;
+    background-color: #090c0f;
+    cursor: pointer;
+}
+.temarios-venta {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 30px;
+    margin-bottom: 50px;
+}
+.temarios-venta img {
+    width: 100%;
+}
+.temarios-venta a{
+    display: block;
+    text-decoration: none;
+
+    padding: 10px 15px 15px 15px;
+    border: 1.5px solid black;
+    border-radius: 3px;
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    background-color: #090c0f;
+    cursor: pointer;
+}
+.t-texto {
+    padding: 15px 0px 0px 0px;
 }
 
-.lecciones {
-    padding-top: 45px;
+/* .top-videos {
+    padding-top: 20px;
+}
+.top-videos h2{
+    font-size: 30px;
+}
+.contenedor-top-videos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    padding: 20px 0;
+} */
+
+.subtemas {
+    padding: 0 80px;
+}
+.subtemas-introduccion {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-family: 'Chelsea Market', cursive;
+    text-decoration: underline;
+    padding: 50px 0px;
+    border: 6px solid white;
+    border-style: ridge;
+    border-radius: 10px;
+    background-color: #090c0f;
+    cursor: pointer;
 }
 
-.leccion {
+.subtema {
     padding: 0;
     background-color: #090c0f;
     border-radius: 3px;
     border: 0.3px solid black;
     margin-bottom: 20px;
 }
-.leccion-title {
+.subtema-title {
     position: relative;
     padding: 20px 20px 10px 20px;
     background-color: #090c0f;
@@ -75,7 +166,7 @@ main h2{
     font-weight: bold;
     border-bottom: solid white;
 }
-.leccion-title span {
+.subtema-title span {
     position: absolute;
     right: 20px;
     font-size: 2em;
@@ -99,17 +190,18 @@ main h2{
 .active .label::before{
     content: "-";
 } */
-.leccion h3{
+
+.subtema h3{
     margin-bottom: 20px;
     font-size: 1.5em;
     font-family:'Lato', sans-serif;
     color: #f0ece2;
     display: inline-block;
 }
-.contenedor-videos {
+.contenedor-lecciones {
     padding: 17px 15px 14px 15px;
 }
-.videos {
+.lecciones {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
@@ -120,7 +212,7 @@ main h2{
     background-color: #15191f;
     border-radius: 3px;
 }
-/* .videos {
+/* .lecciones {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -136,11 +228,11 @@ main h2{
     background-color: #15191f;
     border-radius: 3px;
 }
-.active .videos {
+.active .lecciones {
     height: auto;
     padding: 20px 10px 20px 25px;
 } */
-.videos a{
+.lecciones a{
     font-style: italic;
     display: block;
     background-color: #090c0f;
@@ -149,12 +241,11 @@ main h2{
     font-size: 18px;
     text-align: center;
 }
-.videos span{
+.lecciones span{
     font-weight: bold;
     font-size: 1.3em;
     font-style: normal;
 }
-
 
 
 footer {
@@ -208,15 +299,28 @@ footer p{
 .nav a:hover {
     color: #95a5a6;
 }
-.leccion h3:hover {
+
+.temarios-introduccion:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.temarios-venta a:hover{
+    text-decoration: none;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.subtemas-introduccion:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.subtema h3:hover{
     text-decoration: underline;
 }
-.videos a:hover {
+.lecciones a:hover {
     background-color: black;
     border-radius: 3px;
     border: 2px solid black;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
+
 
 .social img:hover{
     background-color: black;
@@ -231,7 +335,13 @@ footer p{
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
-@media screen and (max-width: 1070px) {
+@media screen and (max-width: 1100px) {
+    .Presentacion {
+        display: grid;
+        grid-template-columns: 0.6fr 1fr;
+        grid-template-rows: auto;
+        grid-column-gap: 20px;
+    }
     .main-footer{
         grid-template-columns: 1fr;
         grid-row-gap: 30px;
@@ -249,6 +359,30 @@ footer p{
 }
 
 @media screen and (max-width: 1000px) {
+    .temarios {
+        padding: 0 50px;
+    }
+
+    .subtemas {
+        padding: 0 40px;
+    }
+    .presentacion-description p{
+        text-align: center;
+    }
+
+    .Presentacion {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 30px 40px 20px 40px;
+    }
+    .presentacion-description {
+        padding: 30px 0 0 20px;
+    }
+    .Presentacion img {
+        height: 400px;
+        width: auto;
+    }
+
     .nav a {
         font-size: 23px;
     }
@@ -271,25 +405,34 @@ footer p{
         text-align: left;
       }
 
-    .videos {
+      .lecciones {
         grid-template-columns: 1fr 1fr;
     }
-    
+}
+
+@media screen and (max-width: 910px) {
+    .temarios-venta {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
 }
 
 @media screen and (max-width: 800px) {
-    .descripcion {
-        padding: 0 60px;
-    }
-    .leccion h3{
+    .subtema h3{
         margin-bottom: 10px;
         max-width: 75%;
     }
 
+    .temarios {
+        padding: 0 30px;
+    }
+    .subtemas {
+        padding: 0 20px;
+    }
     .informacion {
         text-align: center;
     }
-
 }
 
 @media screen and (max-width: 650px) {
@@ -307,34 +450,77 @@ footer p{
     .legal{
         text-align: center;
     }
+
+    .temarios {
+        padding: 0 10px;
+    }
+
+    .subtemas {
+        padding: 0px;
+    }
 }
 
 @media screen and (max-width: 610px) {
-    .videos {
+    .lecciones {
         grid-template-columns: 1fr;
     }
     .descripcion {
         padding: 0 0px;
     }
-    .main {
-        padding: 30px 32px;
+    .temarios {
+        padding: 0px;
+    }
+    .temarios-venta {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 20px;
     }
     .informacion a{
         line-height: 35px;
     }
 }
 
-@media screen and (max-width: 430px) {
-    .lecciones h3{
+@media screen and (max-width: 550px) {
+    .title {
+        padding: 20px 40px;
+    }
+
+    .Presentacion {
+        padding: 20px 30px 20px 25px;
+    }
+    .Presentacion img {
+        width: 100%;
+        height: auto;
+    }
+    .presentacion-description {
+        padding: 30px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .temarios-venta {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    main {
+        padding: 30px 40px;
+    }
+    .subtema h3{
         text-align: left;
     }
-    .lecciones a{
+    .subtema a{
         text-align: center;
     }
-    .videos {
+    .lecciones {
         padding: 20px 10px 10px 10px;
     }
-    .videos {
+    .lecciones {
         grid-row-gap: 25px;
     }
 }
