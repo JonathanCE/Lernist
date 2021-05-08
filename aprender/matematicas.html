@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Lato:wght@400;700&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/temas.css">
+    <link rel="stylesheet" href="/temas-new.css">
     <link rel="icon" href="/lernist-mini.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <meta charset="UTF-8">
@@ -39,17 +39,24 @@
         <h1>Matemáticas</h1>
     </div>
 
-    <main>
-
-        <div class="descripcion">
-            <h2>¿Que son las Matemáticas?</h2>
-            <p>
-                Las matemáticas son la ciencia que se ocupa de la lógica de la forma, la cantidad y 
-                arreglo. Las matemáticas están a nuestro alrededor, en todo lo que hacemos. Es el edificio 
-                bloque para todo en nuestra vida diaria, incluyendo dispositivos móviles, arquitectura 
-                (antiguo y moderno), el arte, el dinero, la ingeniería, e incluso los deportes.
-            </p>
+    <section class="Presentacion">
+        <div>
+            <img src="/i_temas/Matematicas-min.jpg" alt="">
         </div>
+        <div class="presentacion-description">
+            <h2>¿Que son las Matemáticas?</h2>
+            <div class="descripcion">
+                <p>
+                    Las matemáticas son la ciencia que se ocupa de la lógica de la forma, la cantidad y 
+                    arreglo. Las matemáticas están a nuestro alrededor, en todo lo que hacemos. Es el edificio 
+                    bloque para todo en nuestra vida diaria, incluyendo dispositivos móviles, arquitectura 
+                    (antiguo y moderno), el arte, el dinero, la ingeniería, e incluso los deportes.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <main>
         <!-- <hr>
 
         <div class="top-videos"> 
@@ -58,6 +65,10 @@
             <div class="contenedor-top-videos">
             </div>
         </div> -->
+
+        <div class="subtemas">
+            <div class="subtemas-introduccion">Matemáticas</div>
+        </div>
 
         <!-- <div class="subtema">
             <div class="label">
@@ -71,86 +82,98 @@
         </div> -->
 
         <div class="subtema">
-            <div class="label">
+            <div class="subtema-title sub2">
                 <a href="matematicas/aritmetica.html"><h3>Aritmetica</h3></a>
+                <span>+</span>
             </div>
             
-            <div class="lecciones">
-                <!-- <a href="">Números enteros</a> -->
-                <a href="matematicas/aritmetica/videos/numeros-decimales-introduccion.html">Números decimales</a>
-                <a href="matematicas/aritmetica/videos/como-graficar-una-fraccion-representacion-grafica-de-numeros-fraccionarios.html">Fracciones</a>
-                <!-- <a href="">Conjuntos</a>
-                <a href="">Divisibilidad MCM y MCD</a>
-                <a href="">Conversion de unidades</a> -->
-                <a href="matematicas/aritmetica/videos/porcentaje.html">Porcentaje</a>
-                <a href="matematicas/aritmetica/videos/razones-que-es-una-razon-ejemplos.html">Razones y proporciones | Regla de 3</a>
-                <a href="matematicas/aritmetica/videos/operaciones-con-parentesis-suma-y-resta-ejemplo-1.html">Operaciones con paréntesis & combinadas</a>
-                <a href="matematicas/aritmetica/videos/introduccion-a-los-numeros-racionales-fracciones-positivas-o-negativas.html">Números racionales</a>
-                <a href="matematicas/aritmetica/videos/que-es-la-potenciacion.html">Propiedades de la potenciación</a>
-                <!-- <a href="">Logaritmos y Ecuaciones</a> -->
-                <a href="matematicas/aritmetica/videos/interes-conceptos-basicos.html">Interes simple y compuesto</a>
+            <div class="contenedor-lecciones">
+                <div class="lecciones le2">
+                    <!-- <a href="">Números enteros</a> -->
+                    <a href="matematicas/aritmetica/videos/numeros-decimales-introduccion.html">Números decimales</a>
+                    <a href="matematicas/aritmetica/videos/como-graficar-una-fraccion-representacion-grafica-de-numeros-fraccionarios.html">Fracciones</a>
+                    <!-- <a href="">Conjuntos</a>
+                    <a href="">Divisibilidad MCM y MCD</a>
+                    <a href="">Conversion de unidades</a> -->
+                    <a href="matematicas/aritmetica/videos/porcentaje.html">Porcentaje</a>
+                    <a href="matematicas/aritmetica/videos/razones-que-es-una-razon-ejemplos.html">Razones y proporciones | Regla de 3</a>
+                    <a href="matematicas/aritmetica/videos/operaciones-con-parentesis-suma-y-resta-ejemplo-1.html">Operaciones con paréntesis & combinadas</a>
+                    <a href="matematicas/aritmetica/videos/introduccion-a-los-numeros-racionales-fracciones-positivas-o-negativas.html">Números racionales</a>
+                    <a href="matematicas/aritmetica/videos/que-es-la-potenciacion.html">Propiedades de la potenciación</a>
+                    <!-- <a href="">Logaritmos y Ecuaciones</a> -->
+                    <a href="matematicas/aritmetica/videos/interes-conceptos-basicos.html">Interes simple y compuesto</a>
+                </div>
             </div>
         </div>
 
         <div class="subtema">
-            <div class="label">
+            <div class="subtema-title sub3">
                 <a href="matematicas/geometria.html"><h3>Geometría</h3></a>
+                <span>+</span>
             </div>
             
-            <div class="lecciones">
-                <a href="matematicas/geometria/videos/area-que-es-el-area.html">Área y perimetro</a>
-                <a href="matematicas/geometria/videos/que-es-y-como-dibujar-un-angulo.html">Ángulos</a>
-                <a href="matematicas/geometria/videos/volumen-del-prisma-recto-introduccion.html">Volumen y Area de solidos</a>
-                <a href="matematicas/geometria/videos/teorema-de-pitagoras-introduccion.html">Teorema de Pitágoras</a>
-                <!-- <a href="">Teorema de Tales</a> -->
-                <a href="matematicas/geometria/videos/clasificacion-de-cuadrilateros-y-caracteristicas.html">Poligonos</a>
+            <div class="contenedor-lecciones">
+                <div class="lecciones le3">
+                    <a href="matematicas/geometria/videos/area-que-es-el-area.html">Área y perimetro</a>
+                    <a href="matematicas/geometria/videos/que-es-y-como-dibujar-un-angulo.html">Ángulos</a>
+                    <a href="matematicas/geometria/videos/volumen-del-prisma-recto-introduccion.html">Volumen y Area de solidos</a>
+                    <a href="matematicas/geometria/videos/teorema-de-pitagoras-introduccion.html">Teorema de Pitágoras</a>
+                    <!-- <a href="">Teorema de Tales</a> -->
+                    <a href="matematicas/geometria/videos/clasificacion-de-cuadrilateros-y-caracteristicas.html">Poligonos</a>
+                </div>
             </div>
         </div>
 
         <div class="subtema">
-            <div class="label">
+            <div class="subtema-title sub4">
                 <a href="matematicas/algebra.html"><h3>Algebra</h3></a>
+                <span>+</span>
             </div>
             
-            <div class="lecciones">
-                <!-- <a href="">Fundamentos para Algebra</a> -->
-                <a href="matematicas/algebra/videos/lenguaje-algebraico-parte-1.html">Lenguaje algebraico</a>
-                <a href="matematicas/algebra/videos/plano-cartesiano-introduccion-como-dibujar-el-plano.html">Plano cartesiano</a>
-                <a href="matematicas/algebra/videos/valor-numerico-de-expresiones-algebraicas-ejemplo-1.html">Valor numerico de expresiones algebraicas</a>
-                <a href="matematicas/algebra/videos/que-son-terminos-semejantes.html">Reduccion de terminos semejantes | Suma y resta</a>
-                <a href="matematicas/algebra/videos/suma-de-expresiones-algebraicas-introduccion.html">Suma y Resta de expresiones algebraicas</a>
-                <a href="matematicas/algebra/videos/multiplicacion-de-expresiones-algebraicas-monomio-por-monomio-ejemplo-1.html">Multiplicacion de expresiones algebraicas</a>
-                <a href="matematicas/algebra/videos/division-de-monomios-ejemplo-1.html">Division de expresiones algebraicas</a>
-                <a href="matematicas/algebra/videos/productos-notables-conceptos-previos.html">Productos Notables</a>
-                <a href="matematicas/algebra/videos/que-es-factorizar.html">Factorizacion</a>
-                <a href="matematicas/algebra/videos/solucion-de-ecuaciones-resolver-una-ecuacion-introduccion.html">Ecuaciones lineales y racionales o de primer grado</a>
-                <a href="matematicas/algebra/videos/ecuacion-cuadratica-introduccion.html">Ecuaciones  cuadraticas o de segundo grado</a>
-                <a href="matematicas/algebra/videos/producto-de-potencias-con-bases-iguales-propiedades-de-la-potenciacion.html">Propiedades de la potenciación</a>
-                <a href="matematicas/algebra/videos/simplificacion-de-radicales-parte-1-principiantes.html">Raiz | Radicales | Racionalizacion</a>
-                <!-- <a href="">Sistemas de Ecuaciones</a>
-                <a href="">Despeje de Ecuaciones</a>
-                <a href="">Funciones</a>
-                <a href="">Intervalos | Inecuaciones</a>
-                <a href="">Sucesiones | Progresiones</a>
-                <a href="">Ecuaciones exponenciales</a>
-                <a href="">Logaritmos y Ecuaciones</a>
-                <a href="">Numeros complejos</a> -->
-                <!-- <a href="">Matrices</a> -->
+            <div class="contenedor-lecciones">
+                <div class="lecciones le4">
+                    <!-- <a href="">Fundamentos para Algebra</a> -->
+                    <a href="matematicas/algebra/videos/lenguaje-algebraico-parte-1.html">Lenguaje algebraico</a>
+                    <a href="matematicas/algebra/videos/plano-cartesiano-introduccion-como-dibujar-el-plano.html">Plano cartesiano</a>
+                    <a href="matematicas/algebra/videos/valor-numerico-de-expresiones-algebraicas-ejemplo-1.html">Valor numerico de expresiones algebraicas</a>
+                    <a href="matematicas/algebra/videos/que-son-terminos-semejantes.html">Reduccion de terminos semejantes | Suma y resta</a>
+                    <a href="matematicas/algebra/videos/suma-de-expresiones-algebraicas-introduccion.html">Suma y Resta de expresiones algebraicas</a>
+                    <a href="matematicas/algebra/videos/multiplicacion-de-expresiones-algebraicas-monomio-por-monomio-ejemplo-1.html">Multiplicacion de expresiones algebraicas</a>
+                    <a href="matematicas/algebra/videos/division-de-monomios-ejemplo-1.html">Division de expresiones algebraicas</a>
+                    <a href="matematicas/algebra/videos/productos-notables-conceptos-previos.html">Productos Notables</a>
+                    <a href="matematicas/algebra/videos/que-es-factorizar.html">Factorizacion</a>
+                    <a href="matematicas/algebra/videos/solucion-de-ecuaciones-resolver-una-ecuacion-introduccion.html">Ecuaciones lineales y racionales o de primer grado</a>
+                    <a href="matematicas/algebra/videos/ecuacion-cuadratica-introduccion.html">Ecuaciones  cuadraticas o de segundo grado</a>
+                    <a href="matematicas/algebra/videos/producto-de-potencias-con-bases-iguales-propiedades-de-la-potenciacion.html">Propiedades de la potenciación</a>
+                    <a href="matematicas/algebra/videos/simplificacion-de-radicales-parte-1-principiantes.html">Raiz | Radicales | Racionalizacion</a>
+                    <!-- <a href="">Sistemas de Ecuaciones</a>
+                    <a href="">Despeje de Ecuaciones</a>
+                    <a href="">Funciones</a>
+                    <a href="">Intervalos | Inecuaciones</a>
+                    <a href="">Sucesiones | Progresiones</a>
+                    <a href="">Ecuaciones exponenciales</a>
+                    <a href="">Logaritmos y Ecuaciones</a>
+                    <a href="">Numeros complejos</a> -->
+                    <!-- <a href="">Matrices</a> -->
+                </div>
             </div>
         </div>
 
         <div class="subtema">
-            <div class="label">
+            <div class="subtema-title sub5">
                 <a href="matematicas/probabilidad-y-estadistica.html"><h3>Probabilidad y estadistica</h3></a>
+                <span>+</span>
             </div>
             
-            <div class="lecciones">
-                <a href="matematicas/probabilidad-y-estadistica/videos/conceptos-basicos-de-estadistica.html">Conceptos básicos</a>
-                <a href="matematicas/probabilidad-y-estadistica/videos/experimento-aleatorio-espacio-muestral-y-evento-o-sucesor.html">Probabilidad</a>
-                <a href="matematicas/probabilidad-y-estadistica/videos/tablas-de-frecuencia-ejemplo-1.html">Tabla de frecuencias</a>
-                <a href="matematicas/probabilidad-y-estadistica/videos/media-mediana-y-moda-datos-sin-agrupar.html">Media, moda y mediana</a>
-                <a href="matematicas/probabilidad-y-estadistica/videos/que-es-la-desviacion-estandar-tipica.html">Varianza y desviacion</a>
-                <!-- <a href="">Combinaciones, permutaciones y variaciones</a> -->
+            <div class="contenedor-lecciones">
+                <div class="lecciones le5">
+                    <a href="matematicas/probabilidad-y-estadistica/videos/conceptos-basicos-de-estadistica.html">Conceptos básicos</a>
+                    <a href="matematicas/probabilidad-y-estadistica/videos/experimento-aleatorio-espacio-muestral-y-evento-o-sucesor.html">Probabilidad</a>
+                    <a href="matematicas/probabilidad-y-estadistica/videos/tablas-de-frecuencia-ejemplo-1.html">Tabla de frecuencias</a>
+                    <a href="matematicas/probabilidad-y-estadistica/videos/media-mediana-y-moda-datos-sin-agrupar.html">Media, moda y mediana</a>
+                    <a href="matematicas/probabilidad-y-estadistica/videos/que-es-la-desviacion-estandar-tipica.html">Varianza y desviacion</a>
+                    <!-- <a href="">Combinaciones, permutaciones y variaciones</a> -->
+                </div>
             </div>
         </div>
 
@@ -223,7 +246,7 @@
         <p class="legal">&copy; Derechos Reservados Lernist 2021.</p>
     </footer>
 
-    <script src="/temas.js"></script>
+    <script src="/temas-new.js"></script>
 </body>
 
 </html>

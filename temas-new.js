@@ -54,4 +54,20 @@ $(document).ready(function() {
   $(".sub11").click(function() {
     $(".le11").slideToggle(400);
   });
+
+  $(".sub12").click(function() {
+    $(".le12").slideToggle(400);
+  });
+
+  $(".sub13").click(function() {
+    $(".le13").slideToggle(400);
+  });
+
+  $(".sub14").click(function() {
+    $(".le14").slideToggle(400);
+  });
+
+  $(".sub15").click(function() {
+    $(".le15").slideToggle(400);
+  });
 });
