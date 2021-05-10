@@ -484,6 +484,10 @@ footer p{
 @media screen and (max-width: 550px) {
     .title {
         padding: 20px 40px;
+        font-size: 21px;
+    }
+    .subtemas-introduccion {
+        font-size: 30px;
     }
 
     .Presentacion {
