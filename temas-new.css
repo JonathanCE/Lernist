@@ -81,6 +81,7 @@ main a{
 }
 .temarios-introduccion {
     text-align: center;
+    margin-top: 50px;
     margin-bottom: 40px;
     font-size: 35px;
     font-family: 'Chelsea Market', cursive;
@@ -97,7 +98,6 @@ main a{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-gap: 30px;
-    margin-bottom: 50px;
 }
 .temarios-venta img {
     width: 100%;
