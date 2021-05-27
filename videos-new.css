@@ -130,6 +130,46 @@ main {
     height: auto;
     padding: 10px;
 } */
+.botones-control {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    margin-bottom: 30px;
+}
+.botones-control a {
+    display: grid;
+    font-size: 50px;
+    font-family:'Lato', sans-serif;
+    font-weight: bold;
+    background-color: #090c0f;
+    border-radius: 2px;
+    border: 5px solid black;
+    padding: 8px;
+}
+.previous {
+    grid-template-columns: 0.5fr 1fr;
+    grid-column-gap: 15px;
+    align-items: center;
+}
+.previous p {
+    text-align: left;
+}
+.next  {
+    grid-template-columns: 1fr 0.5fr;
+    grid-column-gap: 15px;
+    align-items: center;
+}
+.next p {
+    text-align: right;
+}
+.botones-control p {
+    font-size: 19px;
+}
+.botones-control img {
+    width: 45px;
+    height: auto;
+}
 .leccion {
     background-color: #090c0f;
     border-radius: 5px;
@@ -236,6 +276,12 @@ footer p{
 
 .nav a:hover {
     color: #95a5a6;
+}
+.botones-control a:hover {
+    background-color: black;
+    border-radius: 3px;
+    border: 2px solid black;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 .videos a:hover {
     background-color: black;
