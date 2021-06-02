@@ -64,10 +64,17 @@ main {
     grid-area: descripcion;
     display: none;
 }
+.video-info h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.video-info p {
+    font-size: 19px;
+}
 
 
 .temario {
-    width: 100%;
+    width: 100%; 
     padding: 5px 5px 0 0;
     box-sizing: border-box;
     line-height: 27px;
@@ -135,10 +142,9 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 .botones-control a {
-    display: grid;
     font-size: 50px;
     font-family:'Lato', sans-serif;
     font-weight: bold;
@@ -148,6 +154,7 @@ main {
     padding: 8px;
 }
 .previous {
+    display: grid;
     grid-template-columns: 0.5fr 1fr;
     grid-column-gap: 15px;
     align-items: center;
@@ -156,6 +163,7 @@ main {
     text-align: left;
 }
 .next  {
+    display: grid;
     grid-template-columns: 1fr 0.5fr;
     grid-column-gap: 15px;
     align-items: center;
@@ -169,6 +177,35 @@ main {
 .botones-control img {
     width: 45px;
     height: auto;
+}
+#VideosMensajeInicio {
+    text-align: center;
+    font-family:'Lato', sans-serif;
+    font-weight: bold;
+    background-color: #090c0f;
+    border-radius: 2px;
+    border: 5px solid black;
+    padding: 8px;
+    font-size: 18px;
+}
+#VideosMensajeFinal {
+    text-align: center;
+    font-family:'Lato', sans-serif;
+    font-weight: bold;
+    background-color: #090c0f;
+    border-radius: 2px;
+    border: 5px solid black;
+    padding: 8px;
+    font-size: 18px;
+}
+.lecciones {
+    height: 420px;
+    overflow: auto;
+    scrollbar-width: none; /* esto es para que no se vea la scroll bar en Firefox */
+    -ms-overflow-style: none; /* esto es para IE y viejo Edge */
+}
+.lecciones::-webkit-scrollbar { /* esto es para Chromium y Safari */
+    display: none;
 }
 .leccion {
     background-color: #090c0f;
@@ -191,10 +228,11 @@ main {
 }
 
 .leccion h3{
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-family:'Lato', sans-serif;
     color: #f0ece2;
     display: inline-block;
+    margin-right: 35px;
 }
 /* .contenedor-videos {
     padding: 17px 15px 14px 15px;
@@ -211,18 +249,13 @@ main {
 }
 
 .videos a{
-    font-style: italic;
+    font-weight: bold;
     display: block;
     background-color: #090c0f;
     border-radius: 3px;
     padding: 10px;
-    font-size: 16px;
+    font-size: 17px;
     text-align: center;
-}
-.videos span{
-    font-weight: bold;
-    font-size: 1.2em;
-    font-style: normal;
 }
 
 
@@ -231,6 +264,7 @@ footer {
     padding: 50px 50px 30px 50px;
     font-weight: bold;
     color: white;
+    margin-top: 20px;
 }
 
 footer p{
@@ -326,6 +360,9 @@ footer p{
 }
 
 @media screen and (max-width: 1000px) {
+    .lecciones {
+        height: 350px;
+    }
     .leccion {
         margin: 10px 10px 20px 10px;
     }
