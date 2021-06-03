@@ -30,13 +30,19 @@ body {
 
 
 .Presentacion {
-    padding: 50px 20px;
+    padding: 110px 30px;
     display: grid;
     grid-template-columns: 0.8fr 1fr;
     grid-template-rows: auto;
     grid-column-gap: 30px;
     text-align: center;
-    background-color: #090c0f;
+    align-items: center;
+    background-image: url(i_temas/black3-background.jpg);
+
+    background-attachment: fixed; /* Codigo para el efecto parallax */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .presentacion-title {
@@ -52,6 +58,9 @@ body {
 
 .presentacion-description {
     text-align: center;
+    background-color: #090c0f;
+    padding: 20px 10px;
+    border-radius: 5px;
 }
 
 .presentacion-description p {
@@ -86,9 +95,9 @@ body {
     text-decoration: none;
     color: white;
 
-    padding: 10px;
+    padding: 13px;
     border: 1.5px solid black;
-    border-radius: 3px;
+    border-radius: 7px;
     font-size: 35px;
     font-family: 'Shadows Into Light', cursive;
     cursor: pointer;
@@ -98,6 +107,7 @@ body {
 
 .contenedor-temas img{
     width: 100%;
+    border-radius: 3px;
 }
 
 .todos a{
@@ -106,18 +116,66 @@ body {
     color: white;
 
     text-align: center;
-    width: 25%;
+    width: 40%;
     margin: auto;
     margin-bottom: 25px;
     margin-top: 5px;
-    padding: 80px 0;
+    padding: 70px 0;
     background: linear-gradient(35deg, #0c5c5c, #b84e4e);
 
     border: 1.5px solid black;
-    border-radius: 3px;
+    border-radius: 9px;
     font-size: 60px;
     font-family: 'Shadows Into Light', cursive;
     cursor: pointer;
+}
+
+.instrucciones {
+    background-image: url(i_temas/black7-background.jpg);
+    padding: 50px 20px;
+
+    background-attachment: fixed; /* Codigo para el efecto parallax */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.instrucciones h1 {
+    margin: 0 240px;
+    padding: 15px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 100;
+    border: 5px solid white;
+    color: white;
+    font-family: 'Chelsea Market', cursive;
+}
+.pasos-instrucciones {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 30px;
+    margin: 40px 150px 0 150px;
+    align-items: center;
+    text-align: center;
+}
+.pasos-instrucciones h2 {
+    padding: 20px;
+    background-color: #090c0f;
+    border: 5px solid #090c0f;
+    color: white;
+    margin-bottom: 30px;
+}
+.pasos-instrucciones ul {
+    border: 4px solid white;
+    padding: 13px;
+    background-color: #090c0f;
+    text-align: left;
+    list-style-position: inside;
+}
+.pasos-instrucciones li {
+    line-height: 25px;
+    margin: 15px 0;
+    font-size: 19px;
 }
 
 footer {
@@ -192,9 +250,21 @@ footer p{
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
+@media screen and (max-width: 1270px) {
+    .instrucciones {
+        padding: 20px;
+    }
+    .instrucciones h1 {
+        margin: 0 150px;
+    }
+    .pasos-instrucciones {
+        margin: 40px 50px 0 50px;
+    }
+}
+
 @media screen and (max-width: 1070px) {
     .Presentacion {
-        padding: 10px 10px;
+        padding: 10px;
     }
     .todos a{
         width: 40%;
@@ -221,6 +291,14 @@ footer p{
     }
     .presentacion-description p{
         text-align: center;
+    }
+
+    .instrucciones h1 {
+        margin: 0 100px;
+    }
+    .pasos-instrucciones {
+        margin: 40px 50px 0 50px;
+        grid-template-columns: 1fr 1fr;
     }
 
     .nav a {
@@ -250,6 +328,7 @@ footer p{
     .Presentacion {
         display: grid;
         grid-template-columns: 1fr;
+        padding: 30px 20px 20px 20px;
     }
     .presentacion-title {
         font-size: 57px;
@@ -268,8 +347,16 @@ footer p{
     }
     .todos a{
         width: 45%;
-        padding: 90px 0;
+        padding: 50px 0;
         margin-top: 15px;
+    }
+
+    .instrucciones h1 {
+        margin: 0 70px;
+    }
+    .pasos-instrucciones {
+        margin: 40px 20px 0 20px;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -296,6 +383,14 @@ footer p{
     }
     .descripcion-2 {
         margin-top: 15px;
+    }
+
+    .instrucciones h1 {
+        margin: 0 30px;
+    }
+    .pasos-instrucciones {
+        margin: 40px 0 0 0;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -324,6 +419,18 @@ footer p{
 
     .descripcion {
         border-radius: 10px;
+    }
+
+    .instrucciones h1 {
+        margin: 0;
+    }
+    .pasos-instrucciones {
+        margin: 40px 0 0 0;
+        grid-template-columns: 1fr;
+        grid-row-gap: 40px;
+    }
+    .pasos-instrucciones h2 {
+        margin-bottom: 10px;
     }
 }
 
