@@ -15,17 +15,37 @@ body {
 .nav a {
     display: inline-block;
     text-align: center;
-    padding: 20px;
+    padding: 40px 20px;
     font-size: 20px;
-    font-weight: bold;
     color: white;
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
     cursor: pointer;
     font-size: 21px;
 }
-.menuPrincipal {
+#homepageLink {
+    padding: 16px 20px;
+    position: relative;
+}
+#homepageLink img {
+    width: auto;
+    height: 70px;
+    margin-right: 20px;
+    border-radius: 4px;
+}
+.Inicio {
     display: inline-block;
+    font-size: 1.3em;
+    font-weight: bold;
+
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.menuPrincipal {
+    float: right;
 }
 
 /* .nav .icon {
@@ -332,16 +352,31 @@ footer p{
         font-size: 24px;
         display: block;
         text-align: left;
+        padding: 20px;
+    }
+    #homepageLink {
+        padding: 15px 20px;
+    }
+    #homepageLink img {
+        width: auto;
+        height: 60px;
+        margin-right: 10px;
+        border-radius: 4px;
+    }
+    .Inicio {
+        display: inline-block;
+        font-size: 1.2em;
     }
     .menuPrincipal {
         display: none;
         padding-bottom: 10px;
+        float: none;
     }
     #menuHamburguesa {
         display: initial;
         position: absolute;
         right: 0;
-        top: 0;
+        top: 10px;
         cursor: pointer;
     }
 
@@ -364,6 +399,19 @@ footer p{
       } */
 }
 
+@media screen and (max-width: 950px) {
+    .contenedor-temas {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .contenedor-temas a{
+        display: grid;
+        grid-template-columns: 0.5fr 1fr;
+        grid-column-gap: 10px;
+        align-items: center;
+    }
+}
+
 @media screen and (max-width: 850px) {
     .Presentacion {
         display: grid;
@@ -379,17 +427,6 @@ footer p{
     .presentacion-description {
         margin-top: 70px;
     }
-    .contenedor-temas {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto;
-        grid-gap: 20px;
-    }
-    .todos a{
-        width: 45%;
-        padding: 50px 0;
-        margin-top: 15px;
-    }
 
     .instrucciones h1 {
         margin: 0 70px;
@@ -401,6 +438,9 @@ footer p{
 }
 
 @media screen and (max-width: 800px) {
+    .contenedor-temas {
+        grid-template-columns: 1fr;
+    }
     .informacion {
         text-align: center;
     }
@@ -438,12 +478,6 @@ footer p{
     .presentacion-title {
         font-size: 50px;
     }
-    .contenedor-temas {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-        grid-gap: 20px;
-    }
     .todos a{
         width: 60%;
     }
@@ -476,10 +510,13 @@ footer p{
 
 @media screen and (max-width: 450px) {
     .contenedor-temas {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
         grid-gap: 20px;
+    }
+    .contenedor-temas a{
+        display: grid;
+        grid-template-columns: 0.7fr 1fr;
+        grid-column-gap: 10px;
+        align-items: center;
     }
     .todos a{
         width: 90%;
