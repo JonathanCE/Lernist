@@ -64,24 +64,34 @@ body {
 
 @media screen and (max-width: 1000px) {
     .nav a {
-        font-size: 23px;
-    }
-
-    .nav a:not(:first-child) {display: none;}
-    .nav a.icon {
-        float: right;
-        display: block;
-      }
-
-      .nav.responsive {position: relative;}
-      .nav.responsive a.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-      }
-      .nav.responsive a {
-        float: none;
+        font-size: 24px;
         display: block;
         text-align: left;
-      }
+        padding: 20px;
+    }
+    #homepageLink {
+        padding: 15px 20px;
+    }
+    #homepageLink img {
+        width: auto;
+        height: 60px;
+        margin-right: 10px;
+        border-radius: 4px;
+    }
+    .Inicio {
+        display: inline-block;
+        font-size: 1.2em;
+    }
+    .menuPrincipal {
+        display: none;
+        padding-bottom: 10px;
+        float: none;
+    }
+    #menuHamburguesa {
+        display: initial;
+        position: absolute;
+        right: 0;
+        top: 10px;
+        cursor: pointer;
+    }
 }

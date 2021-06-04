@@ -15,17 +15,64 @@ body {
 .nav a {
     display: inline-block;
     text-align: center;
-    padding: 20px;
+    padding: 40px 20px;
     font-size: 20px;
-    font-weight: bold;
     color: white;
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
     cursor: pointer;
+    font-size: 21px;
+}
+#homepageLink {
+    padding: 16px 20px;
+    position: relative;
+}
+#homepageLink img {
+    width: auto;
+    height: 70px;
+    margin-right: 20px;
+    border-radius: 4px;
+}
+.Inicio {
+    display: inline-block;
+    font-size: 1.3em;
+    font-weight: bold;
+
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.menuPrincipal {
+    float: right;
 }
 
-.nav .icon {
+/* .nav .icon {
     display: none;
+} */
+#menuHamburguesa {
+    padding: 18px;
+    display: none;
+}
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.3s;
+    border-radius: 1px;
+}
+.change-bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+.change-bar2 {
+    opacity: 0;
+}
+.change-bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
 }
 
 .inicio {
@@ -208,26 +255,36 @@ footer p{
 @media screen and (max-width: 1000px) {
 
     .nav a {
-        font-size: 23px;
-    }
-
-    .nav a:not(:first-child) {display: none;}
-    .nav a.icon {
-        float: right;
-        display: block;
-      }
-
-      .nav.responsive {position: relative;}
-      .nav.responsive a.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-      }
-      .nav.responsive a {
-        float: none;
+        font-size: 24px;
         display: block;
         text-align: left;
-      }
+        padding: 20px;
+    }
+    #homepageLink {
+        padding: 15px 20px;
+    }
+    #homepageLink img {
+        width: auto;
+        height: 60px;
+        margin-right: 10px;
+        border-radius: 4px;
+    }
+    .Inicio {
+        display: inline-block;
+        font-size: 1.2em;
+    }
+    .menuPrincipal {
+        display: none;
+        padding-bottom: 10px;
+        float: none;
+    }
+    #menuHamburguesa {
+        display: initial;
+        position: absolute;
+        right: 0;
+        top: 10px;
+        cursor: pointer;
+    }
 
     .inicio h2 {
         font-size: 40px;
