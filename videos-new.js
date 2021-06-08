@@ -1,11 +1,32 @@
-function myFunction() {
-    var x = document.getElementById("myNav");
-    if (x.className === "nav") {
-      x.className += " responsive";
-    } else {
-      x.className = "nav";
-    }
- } 
+var anunciosSuperiores = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("anuncios-superiores");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  anunciosSuperiores++;
+  if (anunciosSuperiores > x.length) {anunciosSuperiores = 1}
+  x[anunciosSuperiores-1].style.display = "block";
+  setTimeout(carousel, 7000); // Change image every 2 seconds
+}
+
+var anunciosSuperioresMovil = 0;
+carouselMovil();
+
+function carouselMovil() {
+  var i;
+  var x = document.getElementsByClassName("anuncios-superiores-movil");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  anunciosSuperioresMovil++;
+  if (anunciosSuperioresMovil > x.length) {anunciosSuperioresMovil = 1}
+  x[anunciosSuperioresMovil-1].style.display = "block";
+  setTimeout(carouselMovil, 7000); // Change image every 2 seconds
+}
 
 // INDICE
 // ELEMENTOS MADRE: linea 16

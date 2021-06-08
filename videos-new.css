@@ -84,6 +84,20 @@ body {
     font-size: 18px;
 }
 
+#anuncio-superior {
+    padding: 15px;
+}
+#anuncio-superior img {
+    margin: auto;
+}
+#anuncio-superior-movil {
+    padding: 15px;
+    display: none;
+}
+#anuncio-superior-movil img {
+    margin: auto;
+}
+
 main {
     display: grid;
     grid-template-columns: 1fr 0.4fr;
@@ -462,6 +476,14 @@ footer p{
     .informacion {
         text-align: center;
     }
+    #anuncio-superior {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .anuncios-superiores {
+        width: 100%;
+        height: auto;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -478,6 +500,17 @@ footer p{
     }
     .legal{
         text-align: center;
+    }
+    #anuncio-superior {
+        display: none;
+    }
+    #anuncio-superior-movil {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .anuncios-superiores-moviles {
+        width: 100%;
+        height: auto;
     }
 }
 
