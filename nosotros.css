@@ -75,6 +75,94 @@ body {
     transform: rotate(45deg) translate(-8px, -8px) ;
 }
 
+.divisor {
+    padding: 30px;
+    text-align: center;
+    font-size: 37px;
+    background-color: #090c0f;
+}
+.objetivo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 50px;
+    align-items: center;
+    padding: 60px 30px;
+    text-align: center;
+    background-image: url(/i_temas/black-background.jpg);
+
+    background-attachment: fixed; /* Codigo para el efecto parallax */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.objetivo-introduccion {
+    width: 70%;
+    padding: 20px;
+    background-color: rgb(9, 12, 15,.9);
+    font-size: 40px;
+    line-height: 50px;
+    font-family: 'Chelsea Market', cursive;
+}
+.objetivo-texto {
+    padding: 20px;
+    background-color: rgb(9, 12, 15,.7);
+    font-size: 21px;
+    line-height: 30px;
+}
+.creacion {
+    display: grid;
+    grid-template-columns: 0.7fr 0.8fr;
+    grid-column-gap: 70px;
+    padding: 40px;
+    background-image: url(/i_temas/other/Vallarta.jpg);
+
+    background-attachment: fixed; /* Codigo para el efecto parallax */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.creacion-texto {
+    padding: 20px;
+    background-color: rgb(9, 12, 15,.9);
+    font-size: 21px;
+    line-height: 30px;
+}
+.formulario {
+    padding: 30px 20px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+.formulario form {
+    width: 500px;
+    margin: 0 auto;
+    padding: 35px 0;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    background-color: #090c0f;
+}
+input, select, textarea, label, button {
+    width: 400px;
+    font-size: 18px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    border: 1px solid transparent;
+    padding: 6px;
+}
+label {
+    font-size: 22px;
+    font-weight: bold;
+}
+button {
+    padding: 6px;
+    background-color: white;
+    color: black;
+}
+#enviar {
+    cursor: pointer;
+    height: 50px;
+}
+
 footer {
     background-color: #090c0f;
     padding: 50px 50px 30px 50px;
@@ -125,6 +213,9 @@ footer p{
 
 .nav a:hover {
     color: #95a5a6;
+}
+#enviar:hover {
+    background-color: #95a5a6;
 }
 
 .social img:hover{
@@ -190,15 +281,46 @@ footer p{
         top: 10px;
         cursor: pointer;
     }
+
+    .objetivo {
+        background-attachment: scroll;
+    }
+    .objetivo-introduccion {
+        width: auto;
+    }
+    .creacion {
+        background-attachment: scroll;
+        grid-template-columns: 1fr 0.7fr;
+        grid-column-gap: 20px;
+    }
 }
 
 @media screen and (max-width: 800px) {
+    .objetivo {
+        grid-template-columns: 1fr;
+    }
     .informacion {
         text-align: center;
+    }
+    .creacion {
+        grid-template-columns: 0.8fr;
     }
 }
 
 @media screen and (max-width: 650px) {
+    .objetivo-introduccion {
+        font-size: 35px;
+        padding: 15px;
+    }
+    .creacion {
+        grid-template-columns: 1fr;
+    }
+    .creacion-texto {
+        background-color: rgb(9, 12, 15,.7);
+    }
+    input, select, textarea, label, button {
+        width: 330px;
+    }
     
     .main-footer{
         grid-row-gap: 50px;
@@ -216,7 +338,22 @@ footer p{
 }
 
 @media screen and (max-width: 610px) {
+    .formulario form {
+        width: 370px;
+    }
+    input, select, textarea, label, button {
+        width: 300px;
+    }
     .informacion a{
         line-height: 35px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .formulario form {
+        width: 315px;
+    }
+    input, select, textarea, label, button {
+        width: 270px;
     }
 }

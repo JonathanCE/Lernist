@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Tenali+Ramakrishna&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="nosotros.css">
     <link rel="icon" href="lernist-mini.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <meta charset="UTF-8">
@@ -43,10 +43,66 @@
 
     <main>
 
-        <section></section> <!--Que es Lernist | Video de Youtube-->
-        <section></section> <!--Donde fue creado-->
-        <section></section> <!--El objetivo-->
-        <section></section> <!--Contacto-->
+        <div class="divisor">
+            Un gran meta nos aguarda.
+        </div>
+        <section class="objetivo">
+            <div class="objetivo-introduccion">
+                En Lernist tenemos un objetivo, y vamos a darlo todo para lograrlo.
+            </div>
+            <div class="objetivo-texto">
+                La misión de lernist.com es ser un sitio web de aprendizaje de excelencia, ofreciendo
+                explicaciones interactivas, dinámicas, innovadoras y porque no, divertidas. <br><br>
+                Usamos y le damos preferencia a contenido creado por los mejores explicadores de la web.
+                Creemos que ellos merecen una plataforma donde su trabajo, dedicacion y conocimiento
+                se valore como debe ser.
+            </div>
+        </section> <!--El objetivo-->
+        <div class="divisor">
+            ¿Dónde fue creado?
+        </div>
+        <section class="creacion">
+            <div class="creacion-texto">
+                Lernist.com fue imaginado, diseñado y creado orgullosamente en la ciudad de Puerto Vallarta, México.
+                <br><br> Desde esta pequeña ciudad, decidimos comenzar esta idea con la finalidad de ofrecer un servicio
+                de alta calidad para que todas las personas del mundo puedan aprender practicamente cualquier tema o cosa
+                de una forma sencilla, creativa y gratis; al mismo tiempo que apoyamos a creadores digitales de contenido
+                educativo, para que su trabajo llegue a muchas mas personas y sea valorado como se merece
+            </div>
+        </section> <!--Donde fue creado-->
+        <section class="que-es"></section> <!--Que es Lernist | Video de Youtube-->
+        <div class="divisor">
+            Contáctanos para conocer más
+        </div>
+        <section class="formulario">
+
+            <form name="contacto" method="POST" data-netlify="true" action="/paginas-principales/formulario-enviado.html">
+                <label for="email">Correo y Nombre:</label><br><br>
+                <input type="email" name="email" id="email" placeholder="Email..." required>
+
+                <br><br>
+
+                <input type="text" name="nombre" id="nombre" placeholder="Tu nombre..." required>
+
+                <br><br>
+
+                <label for="asunto">Motivo del mensaje:</label><br><br>
+                <select name="asunto" id="asunto" required>
+                    <option value="Sugerencia">Sugerencia</option>
+                    <option value="Duda">Duda</option>
+                    <option value="Error">Reportar error</option>
+                </select>
+
+                <br><br>
+
+                <label for="mensaje">Mensaje:</label><br><br>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="6" placeholder="Escribe tu mensaje..." required></textarea>
+
+                <br><br><br>
+                <button type="submit" id="enviar">Enviar</button>
+            </form>
+            
+        </section> <!--Formulario de Contacto-->
 
     </main>
 
@@ -67,6 +123,6 @@
         <p class="legal">&copy; Derechos Reservados Lernist 2021.</p>
     </footer>
     
-    <script src="main.js"></script>
+    <script src="nosotros.js"></script>
 </body>
 </html>

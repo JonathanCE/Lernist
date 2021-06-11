@@ -333,6 +333,12 @@ footer p{
 }
 
 @media screen and (max-width: 1000px) {
+    .Presentacion {
+        background-attachment: scroll;
+    }
+    .instrucciones {
+        background-attachment: scroll;
+    }
     .presentacion-title {
         font-size: 65px;
     }
