@@ -1,4 +1,4 @@
-/* var anunciosSuperiores = 0;
+var anunciosSuperiores = 0;
 carousel();
 
 function carousel() {
@@ -26,7 +26,7 @@ function carouselMovil() {
   if (anunciosSuperioresMovil > x.length) {anunciosSuperioresMovil = 1}
   x[anunciosSuperioresMovil-1].style.display = "block";
   setTimeout(carouselMovil, 7000); // Change image every 2 seconds
-} */
+}
 
 // INDICE
 // ELEMENTOS MADRE: linea 16
