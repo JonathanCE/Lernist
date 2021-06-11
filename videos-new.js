@@ -52,7 +52,6 @@ $(document).ready(function() {
   $("#footerContacto").text("Contacto");
   $("#footerNosotros").attr("href", "/nosotros.html");
   $("#footerNosotros").text("Nosotros");
-  $("#footerNosotros").hide();
   $("#footerAnunciantes").attr("href", "");
   $("#footerAnunciantes").text("Anunciantes");
   $("#footerAnunciantes").hide();
