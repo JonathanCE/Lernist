@@ -276,117 +276,117 @@ $(document).ready(function() {
 
   // DATOS DE CADA VIDEO
   $("#paaVideosMate1Titulo").text("1. Jerarquía de las Operaciones | Super fácil");
-  $("#paaVideosMate1Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate1Video").attr("src", "https://www.youtube.com/embed/XV5PiV2-91U");
   $("#paaVideosMate1BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/aritmetica/video1.html");
   $("#paaVideosMate1BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/aritmetica/video2.html");
 
   $("#paaVideosMate2Titulo").text("2. Ley de los signos | Super fácil");
-  $("#paaVideosMate2Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate2Video").attr("src", "https://www.youtube.com/embed/6f40XK7nssY");
   $("#paaVideosMate2BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/aritmetica/video1.html");
   $("#paaVideosMate2BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/aritmetica/video3.html");
 
   $("#paaVideosMate3Titulo").text("3. Si te parecen difícil las fracciones debes ver este video");
-  $("#paaVideosMate3Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate3Video").attr("src", "https://www.youtube.com/embed/LgMptyzudXU");
   $("#paaVideosMate3BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/aritmetica/video2.html");
   $("#paaVideosMate3BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/aritmetica/video4.html");
 
   $("#paaVideosMate4Titulo").text("4. Operaciones combinadas con fracciones");
-  $("#paaVideosMate4Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate4Video").attr("src", "https://www.youtube.com/embed/ebJYzTM5lnc");
   $("#paaVideosMate4BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/aritmetica/video3.html");
   $("#paaVideosMate4BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/aritmetica/video5.html");
 
   $("#paaVideosMate5Titulo").text("5. Números decimales introducción");
-  $("#paaVideosMate5Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate5Video").attr("src", "https://www.youtube.com/embed/fae6X1jg3nE");
   $("#paaVideosMate5BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/aritmetica/video4.html");
   $("#paaVideosMate5BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/aritmetica/video6.html");
 
   $("#paaVideosMate6Titulo").text("6. ¿Qué son los números decimales?");
-  $("#paaVideosMate6Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate6Video").attr("src", "https://www.youtube.com/embed/Ta4cS9uwpTI");
   $("#paaVideosMate6BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/aritmetica/video5.html");
   $("#paaVideosMate6BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/aritmetica/video7.html");
 
   $("#paaVideosMate7Titulo").text("7. Convertir fraccion a decimal | Super fácil");
-  $("#paaVideosMate7Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate7Video").attr("src", "https://www.youtube.com/embed/pOm1azhMuYM");
   $("#paaVideosMate7BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/aritmetica/video6.html");
   $("#paaVideosMate7BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/aritmetica/video8.html");
 
   $("#paaVideosMate8Titulo").text("8. Como leer números decimales | Super fácil");
-  $("#paaVideosMate8Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate8Video").attr("src", "https://www.youtube.com/embed/bVFExqCCwfE");
   $("#paaVideosMate8BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/aritmetica/video7.html");
   $("#paaVideosMate8BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/aritmetica/video9.html");
 
   $("#paaVideosMate9Titulo").text("9. Suma y resta de números decimales");
-  $("#paaVideosMate9Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate9Video").attr("src", "https://www.youtube.com/embed/y_F5eXD8Cb0");
   $("#paaVideosMate9BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/aritmetica/video8.html");
   $("#paaVideosMate9BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/aritmetica/video10.html");
 
   $("#paaVideosMate10Titulo").text("10. Lenguaje algebraico | Parte 1");
-  $("#paaVideosMate10Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate10Video").attr("src", "https://www.youtube.com/embed/DV3C_RawfBg");
   $("#paaVideosMate10BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/aritmetica/video9.html");
   $("#paaVideosMate10BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/aritmetica/video11.html");
 
   $("#paaVideosMate11Titulo").text("11. Lenguaje algebraico | Super fácil");
-  $("#paaVideosMate11Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate11Video").attr("src", "https://www.youtube.com/embed/UNWFLuUfiX4");
   $("#paaVideosMate11BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/aritmetica/video10.html");
   $("#paaVideosMate11BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/aritmetica/video12.html");
 
   $("#paaVideosMate12Titulo").text("12. Mínimo común múltiplo MCM explicación completa");
-  $("#paaVideosMate12Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate12Video").attr("src", "https://www.youtube.com/embed/Hxkb3i85qDw");
   $("#paaVideosMate12BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/aritmetica/video11.html");
   $("#paaVideosMate12BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/aritmetica/video13.html");
 
   $("#paaVideosMate13Titulo").text("13. Mínimo común múltiplo | Super fácil");
-  $("#paaVideosMate13Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate13Video").attr("src", "https://www.youtube.com/embed/NRJdBgOEjdI");
   $("#paaVideosMate13BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/aritmetica/video12.html");
   $("#paaVideosMate13BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/aritmetica/video14.html");
 
   $("#paaVideosMate14Titulo").text("14. Máximo común divisor MCD");
-  $("#paaVideosMate14Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate14Video").attr("src", "https://www.youtube.com/embed/JoHfq8hswmY");
   $("#paaVideosMate14BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/aritmetica/video13.html");
   $("#paaVideosMate14BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/aritmetica/video15.html");
 
   $("#paaVideosMate15Titulo").text("15. Máximo común divisor | Super fácil");
-  $("#paaVideosMate15Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate15Video").attr("src", "https://www.youtube.com/embed/WD4rGWCRBYY");
   $("#paaVideosMate15BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/aritmetica/video14.html");
   $("#paaVideosMate15BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/aritmetica/video16.html");
 
   $("#paaVideosMate16Titulo").text("16. Valor absoluto de un número");
-  $("#paaVideosMate16Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate16Video").attr("src", "https://www.youtube.com/embed/aQN8cn4gzpE");
   $("#paaVideosMate16BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/aritmetica/video15.html");
   $("#paaVideosMate16BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/aritmetica/video17.html");
 
   $("#paaVideosMate17Titulo").text("17. Valor absoluto | Super fácil");
-  $("#paaVideosMate17Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate17Video").attr("src", "https://www.youtube.com/embed/O5PjnphvXaI");
   $("#paaVideosMate17BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/aritmetica/video16.html");
   $("#paaVideosMate17BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/aritmetica/video18.html");
 
   $("#paaVideosMate18Titulo").text("18. Qué es la potenciación");
-  $("#paaVideosMate18Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate18Video").attr("src", "https://www.youtube.com/embed/vwzZEB0SzCI");
   $("#paaVideosMate18BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/aritmetica/video17.html");
   $("#paaVideosMate18BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/aritmetica/video19.html");
 
   $("#paaVideosMate19Titulo").text("19. Potencias | Super fácil");
-  $("#paaVideosMate19Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate19Video").attr("src", "https://www.youtube.com/embed/-K0ZSm9lPeY");
   $("#paaVideosMate19BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/aritmetica/video18.html");
   $("#paaVideosMate19BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/aritmetica/video20.html");
 
   $("#paaVideosMate20Titulo").text("20. Leyes de los exponentes");
-  $("#paaVideosMate20Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate20Video").attr("src", "https://www.youtube.com/embed/CfbspxOf0lA");
   $("#paaVideosMate20BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/aritmetica/video19.html");
   $("#paaVideosMate20BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/aritmetica/video21.html");
 
   $("#paaVideosMate21Titulo").text("21. Raíz cuadrada | Super fácil");
-  $("#paaVideosMate21Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate21Video").attr("src", "https://www.youtube.com/embed/gPV5VqQ3Ajg");
   $("#paaVideosMate21BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/aritmetica/video20.html");
   $("#paaVideosMate21BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/aritmetica/video22.html");
 
   $("#paaVideosMate22Titulo").text("22. La raíz cuadrada");
-  $("#paaVideosMate22Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate22Video").attr("src", "https://www.youtube.com/embed/Ua9_FIARcs0");
   $("#paaVideosMate22BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/aritmetica/video21.html");
   $("#paaVideosMate22BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/aritmetica/video23.html");
 
   $("#paaVideosMate23Titulo").text("23. Leyes de los radicales");
-  $("#paaVideosMate23Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate23Video").attr("src", "https://www.youtube.com/embed/ptP3J7pXVX4");
   $("#paaVideosMate23BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/aritmetica/video22.html");
   $("#paaVideosMate23BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/algebra/video14.html");
 
@@ -404,237 +404,237 @@ $(document).ready(function() {
   $("#paaVideosMate25BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/algebra/video26.html");
 
   $("#paaVideosMate26Titulo").text("26. Como solucionar una ecuación entera de primer grado");
-  $("#paaVideosMate26Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate26Video").attr("src", "https://www.youtube.com/embed/4AixPIIV05E");
   $("#paaVideosMate26BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/algebra/video25.html");
   $("#paaVideosMate26BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/algebra/video27.html");
 
   $("#paaVideosMate27Titulo").text("27. Ecuaciones de primer grado con paréntesis | Super fácil");
-  $("#paaVideosMate27Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate27Video").attr("src", "https://www.youtube.com/embed/kRGwE6OKN9M");
   $("#paaVideosMate27BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/algebra/video26.html");
   $("#paaVideosMate27BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/algebra/video28.html");
 
   $("#paaVideosMate28Titulo").text("28. Que es factorizar");
-  $("#paaVideosMate28Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate28Video").attr("src", "https://www.youtube.com/embed/sSfO1CsKJ4g");
   $("#paaVideosMate28BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/algebra/video27.html");
   $("#paaVideosMate28BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/algebra/video29.html");
 
   $("#paaVideosMate29Titulo").text("29. Factorizacion | Super fácil");
-  $("#paaVideosMate29Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate29Video").attr("src", "https://www.youtube.com/embed/4bCKKe3mR08");
   $("#paaVideosMate29BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/algebra/video28.html");
   $("#paaVideosMate29BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/algebra/video30.html");
 
   $("#paaVideosMate30Titulo").text("30. Qué es una función | Concepto de función");
-  $("#paaVideosMate30Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate30Video").attr("src", "https://www.youtube.com/embed/Ll7xfe3HoZE");
   $("#paaVideosMate30BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/algebra/video29.html");
   $("#paaVideosMate30BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/algebra/video31.html");
 
   $("#paaVideosMate31Titulo").text("31. Gráfica de la función lineal");
-  $("#paaVideosMate31Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate31Video").attr("src", "https://www.youtube.com/embed/AoZpzAoC1Qg");
   $("#paaVideosMate31BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/algebra/video30.html");
   $("#paaVideosMate31BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/algebra/video32.html");
 
   $("#paaVideosMate32Titulo").text("32. Funciones lineales grafica dominio y rango");
-  $("#paaVideosMate32Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate32Video").attr("src", "https://www.youtube.com/embed/R38_FohTJPc");
   $("#paaVideosMate32BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/algebra/video31.html");
   $("#paaVideosMate32BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/algebra/video33.html");
 
   $("#paaVideosMate33Titulo").text("33. Inecuaciones introducción | conceptos básicos");
-  $("#paaVideosMate33Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate33Video").attr("src", "https://www.youtube.com/embed/y9vDsarVxtg");
   $("#paaVideosMate33BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/algebra/video32.html");
   $("#paaVideosMate33BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/algebra/video34.html");
   
   $("#paaVideosMate34Titulo").text("34. Inecuaciones de primer grado - lineales");
-  $("#paaVideosMate34Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate34Video").attr("src", "https://www.youtube.com/embed/CkVXbU-PNRs");
   $("#paaVideosMate34BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/algebra/video33.html");
   $("#paaVideosMate34BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/algebra/video35.html");
 
   $("#paaVideosMate35Titulo").text("35. Inecuaciones con valor absoluto");
-  $("#paaVideosMate35Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate35Video").attr("src", "https://www.youtube.com/embed/Bfb0efPKb-0");
   $("#paaVideosMate35BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/algebra/video34.html");
   $("#paaVideosMate35BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/algebra/video36.html");
 
   $("#paaVideosMate36Titulo").text("36. Como graficar desigualdades de una o dos variables");
-  $("#paaVideosMate36Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate36Video").attr("src", "https://www.youtube.com/embed/Oky9FswBKbU");
   $("#paaVideosMate36BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/algebra/video35.html");
   $("#paaVideosMate36BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/geometria/video37.html");
 
   $("#paaVideosMate37Titulo").text("37. Perímetro de todas las figuras | Super fácil");
-  $("#paaVideosMate37Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate37Video").attr("src", "https://www.youtube.com/embed/OTT8SKMdBD8");
   $("#paaVideosMate37BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/algebra/video36.html");
   $("#paaVideosMate37BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/geometria/video38.html");
 
   $("#paaVideosMate38Titulo").text("38. Área de todas las figuras | Super fácil");
-  $("#paaVideosMate38Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate38Video").attr("src", "https://www.youtube.com/embed/TZDgCnfDrIE");
   $("#paaVideosMate38BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/geometria/video37.html");
   $("#paaVideosMate38BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/geometria/video39.html");
 
   $("#paaVideosMate39Titulo").text("39. Perímetro y Área del cuadrado | Super fácil");
-  $("#paaVideosMate39Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate39Video").attr("src", "https://www.youtube.com/embed/S-P4y9paTPc");
   $("#paaVideosMate39BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/geometria/video38.html");
   $("#paaVideosMate39BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/geometria/video40.html");
 
   $("#paaVideosMate40Titulo").text("40. Perímetro y Área del triangulo | Super fácil");
-  $("#paaVideosMate40Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate40Video").attr("src", "https://www.youtube.com/embed/BPl5ecBvsiY");
   $("#paaVideosMate40BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/geometria/video39.html");
   $("#paaVideosMate40BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/geometria/video41.html");
 
   $("#paaVideosMate41Titulo").text("41. Perímetro del círculo | Super fácil");
-  $("#paaVideosMate41Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate41Video").attr("src", "https://www.youtube.com/embed/GUAA75tXiko");
   $("#paaVideosMate41BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/geometria/video40.html");
   $("#paaVideosMate41BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/geometria/video42.html");
 
   $("#paaVideosMate42Titulo").text("42. Área del círculo");
-  $("#paaVideosMate42Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate42Video").attr("src", "https://www.youtube.com/embed/5z3h53xQVq0");
   $("#paaVideosMate42BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/geometria/video41.html");
   $("#paaVideosMate42BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/geometria/video43.html");
 
   $("#paaVideosMate43Titulo").text("43. Áreas sombreadas | Super fácil");
-  $("#paaVideosMate43Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate43Video").attr("src", "https://www.youtube.com/embed/Blh-DzaCQww");
   $("#paaVideosMate43BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/geometria/video42.html");
   $("#paaVideosMate43BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/geometria/video44.html");
 
   $("#paaVideosMate44Titulo").text("44. ¿Puedes calcular el área sombreada?");
-  $("#paaVideosMate44Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate44Video").attr("src", "https://www.youtube.com/embed/h0jlLOTFX3o");
   $("#paaVideosMate44BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/geometria/video43.html");
   $("#paaVideosMate44BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/geometria/video45.html");
 
   $("#paaVideosMate45Titulo").text("45. Área de polígonos irregulares");
-  $("#paaVideosMate45Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate45Video").attr("src", "https://www.youtube.com/embed/tMK6ce8Gz8o");
   $("#paaVideosMate45BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/geometria/video44.html");
   $("#paaVideosMate45BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/geometria/video46.html");
 
   $("#paaVideosMate46Titulo").text("46. Perímetro y Área con expresiones algebraicas");
-  $("#paaVideosMate46Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate46Video").attr("src", "https://www.youtube.com/embed/7iC-GAsvzcM");
   $("#paaVideosMate46BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/geometria/video45.html");
   $("#paaVideosMate46BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/geometria/video47.html");
 
   $("#paaVideosMate47Titulo").text("47. Volumen de prismas | Super fácil");
-  $("#paaVideosMate47Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate47Video").attr("src", "https://www.youtube.com/embed/n0j1XwaroHs");
   $("#paaVideosMate47BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/geometria/video46.html");
   $("#paaVideosMate47BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/geometria/video48.html");
 
   $("#paaVideosMate48Titulo").text("48. Volumen de pirámides | Super fácil");
-  $("#paaVideosMate48Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate48Video").attr("src", "https://www.youtube.com/embed/VpOKrHNLcEM");
   $("#paaVideosMate48BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/geometria/video47.html");
   $("#paaVideosMate48BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/geometria/video49.html");
 
   $("#paaVideosMate49Titulo").text("49. Diferencias Perímetro, Área y Volumen | Super fácil");
-  $("#paaVideosMate49Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate49Video").attr("src", "https://www.youtube.com/embed/jogZRNrihac");
   $("#paaVideosMate49BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/geometria/video48.html");
   $("#paaVideosMate49BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/geometria/video50.html");
 
   $("#paaVideosMate50Titulo").text("50. Ángulos entre paralelas y una transversal | Super fácil");
-  $("#paaVideosMate50Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate50Video").attr("src", "https://www.youtube.com/embed/2OPoYzg_E58");
   $("#paaVideosMate50BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/geometria/video49.html");
   $("#paaVideosMate50BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/geometria/video51.html");
 
   $("#paaVideosMate51Titulo").text("51. Rectas paralelas cortadas por una secante");
-  $("#paaVideosMate51Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate51Video").attr("src", "https://www.youtube.com/embed/IADOo1DD0-w");
   $("#paaVideosMate51BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/geometria/video50.html");
   $("#paaVideosMate51BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/geometria/video52.html");
 
   $("#paaVideosMate52Titulo").text("52. Teorema de Pitágoras introducción");
-  $("#paaVideosMate52Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate52Video").attr("src", "https://www.youtube.com/embed/XfVWlO3sRw0");
   $("#paaVideosMate52BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/geometria/video51.html");
   $("#paaVideosMate52BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/geometria/video53.html");
 
   $("#paaVideosMate53Titulo").text("53. Teorema de Pitágoras | Super fácil");
-  $("#paaVideosMate53Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate53Video").attr("src", "https://www.youtube.com/embed/eTEBvBIz8Ok");
   $("#paaVideosMate53BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/geometria/video52.html");
   $("#paaVideosMate53BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/geometria/video54.html");
 
   $("#paaVideosMate54Titulo").text("54. Teorema de Pitágoras | Encontrar un cateto");
-  $("#paaVideosMate54Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate54Video").attr("src", "https://www.youtube.com/embed/CJ8bpjhwA2k");
   $("#paaVideosMate54BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/geometria/video53.html");
   $("#paaVideosMate54BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/geometria/video55.html");
 
   $("#paaVideosMate55Titulo").text("55. Teorema de Pitágoras | Encontrar la hipotenusa");
-  $("#paaVideosMate55Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate55Video").attr("src", "https://www.youtube.com/embed/2UbdPiqAiHY");
   $("#paaVideosMate55BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/geometria/video54.html");
   $("#paaVideosMate55BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/probabilidad/video56.html");
 
   $("#paaVideosMate56Titulo").text("56. Porcentaje de un número");
-  $("#paaVideosMate56Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate56Video").attr("src", "https://www.youtube.com/embed/PjXpBwI6P0M");
   $("#paaVideosMate56BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/geometria/video55.html");
   $("#paaVideosMate56BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/probabilidad/video57.html");
 
   $("#paaVideosMate57Titulo").text("57. Porcentaje problemas de aplicación");
-  $("#paaVideosMate57Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate57Video").attr("src", "https://www.youtube.com/embed/_Wnv1t9ca3I");
   $("#paaVideosMate57BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/probabilidad/video56.html");
   $("#paaVideosMate57BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/probabilidad/video58.html");
 
   $("#paaVideosMate58Titulo").text("58. Porcentajes | Super fácil");
-  $("#paaVideosMate58Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate58Video").attr("src", "https://www.youtube.com/embed/ETvdnLWIFhU");
   $("#paaVideosMate58BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/probabilidad/video57.html");
   $("#paaVideosMate58BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/probabilidad/video59.html");
 
   $("#paaVideosMate59Titulo").text("59. Como calcular un porcentaje | Super fácil");
-  $("#paaVideosMate59Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate59Video").attr("src", "https://www.youtube.com/embed/RE3XoDORMys");
   $("#paaVideosMate59BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/probabilidad/video58.html");
   $("#paaVideosMate59BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/probabilidad/video60.html");
 
   $("#paaVideosMate60Titulo").text("60. Probabilidad | Super fácil");
-  $("#paaVideosMate60Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate60Video").attr("src", "https://www.youtube.com/embed/WeeEE8o1aqM");
   $("#paaVideosMate60BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/probabilidad/video59.html");
   $("#paaVideosMate60BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/probabilidad/video61.html");
 
   $("#paaVideosMate61Titulo").text("61. Probabilidad de un evento simple");
-  $("#paaVideosMate61Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate61Video").attr("src", "https://www.youtube.com/embed/xYco67hkECs");
   $("#paaVideosMate61BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/probabilidad/video60.html");
   $("#paaVideosMate61BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/probabilidad/video62.html");
 
   $("#paaVideosMate62Titulo").text("62. Probabilidad de eventos independientes");
-  $("#paaVideosMate62Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate62Video").attr("src", "https://www.youtube.com/embed/uTRqUX48Fn8");
   $("#paaVideosMate62BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/probabilidad/video61.html");
   $("#paaVideosMate62BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/probabilidad/video63.html");
 
   $("#paaVideosMate63Titulo").text("63. Probabilidad de eventos dependientes");
-  $("#paaVideosMate63Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate63Video").attr("src", "https://www.youtube.com/embed/iUOnVO7yAfA");
   $("#paaVideosMate63BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/probabilidad/video62.html");
   $("#paaVideosMate63BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/probabilidad/video64.html");
 
   $("#paaVideosMate64Titulo").text("64. Media, moda y mediana | Super fácil");
-  $("#paaVideosMate64Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate64Video").attr("src", "https://www.youtube.com/embed/0DA7Wtz1ddg");
   $("#paaVideosMate64BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/probabilidad/video63.html");
   $("#paaVideosMate64BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/probabilidad/video65.html");
 
   $("#paaVideosMate65Titulo").text("65. Media, moda y mediana | Datos sin agrupar");
-  $("#paaVideosMate65Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate65Video").attr("src", "https://www.youtube.com/embed/fOuRqk1nzgY");
   $("#paaVideosMate65BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/probabilidad/video64.html");
   $("#paaVideosMate65BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/probabilidad/video66.html");
 
   $("#paaVideosMate66Titulo").text("66. Regla de 3 simple directa");
-  $("#paaVideosMate66Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate66Video").attr("src", "https://www.youtube.com/embed/uQO_oBKqypQ");
   $("#paaVideosMate66BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/probabilidad/video65.html");
   $("#paaVideosMate66BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/probabilidad/video67.html");
 
   $("#paaVideosMate67Titulo").text("67. Regla de 3 simple | Super fácil");
-  $("#paaVideosMate67Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate67Video").attr("src", "https://www.youtube.com/embed/Xphb-tzJj24");
   $("#paaVideosMate67BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/probabilidad/video66.html");
   $("#paaVideosMate67BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/probabilidad/video68.html");
 
   $("#paaVideosMate68Titulo").text("68. Regla de 3 inversa | Super fácil");
-  $("#paaVideosMate68Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate68Video").attr("src", "https://www.youtube.com/embed/yPhxJO4Waw8");
   $("#paaVideosMate68BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/probabilidad/video67.html");
   $("#paaVideosMate68BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/probabilidad/video69.html");
 
   $("#paaVideosMate69Titulo").text("69. Regla de 3 simple inversa");
-  $("#paaVideosMate69Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate69Video").attr("src", "https://www.youtube.com/embed/twwRNF9Jm-E");
   $("#paaVideosMate69BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/probabilidad/video68.html");
   $("#paaVideosMate69BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/probabilidad/video70.html");
 
   $("#paaVideosMate70Titulo").text("70. Regla de 3 | Como identificar si es directa o inversa");
-  $("#paaVideosMate70Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate70Video").attr("src", "https://www.youtube.com/embed/OyEcoAV3oFY");
   $("#paaVideosMate70BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/probabilidad/video69.html");
   $("#paaVideosMate70BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/probabilidad/video71.html");
 
   $("#paaVideosMate71Titulo").text("71. Combinaciones | Super fácil");
-  $("#paaVideosMate71Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate71Video").attr("src", "https://www.youtube.com/embed/k8etJmnDrYc");
   $("#paaVideosMate71BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/probabilidad/video70.html");
   $("#paaVideosMate71BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/probabilidad/video72.html");
 
   $("#paaVideosMate72Titulo").text("72. Combinación con repetición y sin repetición");
-  $("#paaVideosMate72Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
+  $("#paaVideosMate72Video").attr("src", "https://www.youtube.com/embed/YLuZ2IGEgDo");
   $("#paaVideosMate72BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/probabilidad/video71.html");
   $("#paaVideosMate72BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/probabilidad/video73.html");
 
