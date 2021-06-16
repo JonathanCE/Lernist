@@ -89,6 +89,7 @@ body {
 .Presentacion h1{
     font-family: 'Chelsea Market', cursive;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .temas {
@@ -307,6 +308,9 @@ footer p{
 }
 
 @media screen and (max-width: 610px) {
+    .presentacion-texto {
+        padding: 15px;
+    }
     .informacion a{
         line-height: 35px;
     }
@@ -322,7 +326,7 @@ footer p{
     .Presentacion {
         padding: 30px 50px;
     }
-    .presentacion-texto {
+    #search {
         padding: 10px;
     }
 }

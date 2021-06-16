@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  $("#homepageLink").attr("href", "index.html");
+  $("#homepageLink").attr("href", "/");
   $("#logoNavbar").attr("src", "i_temas/Logo Lernist.png")
   $(".Inicio").text("Inicio");
   $("#aprenderLink").text("Aprender");

@@ -18,6 +18,31 @@
     <link rel="stylesheet" href="aprender.css">
     <link rel="icon" href="lernist-mini.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Codigo para busqueda -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
+    <script type="text/javascript">
+        algoliasearchNetlify({
+            appId: 'HZTEEHSOEV',
+            apiKey: 'ed770afc3ed0d5e2d280db81deb63ee8',
+            siteId: 'ce1564a0-793f-4cda-b98a-ec3086587215',
+            branch: 'master',
+            selector: 'div#search',
+            placeholder: 'Busca en lernist...',
+            analytics: 'true',
+            theme: {
+                mark: '#fff',
+                background: '#23263b',
+                selected: '#111432',
+                text: '#d6d6e7',
+                colorSourceIcon: '#d6d6e7'
+            },
+            hitsPerPage: '8',
+        });
+    </script>
+    <!-- Linea de separamiento -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lernist | Aprender</title>
@@ -43,7 +68,7 @@
     <div class="Presentacion">
         <div class="presentacion-texto">
             <h1>Aprende cosas Increíbles, con contenido Increíble</h1>
-            <p></p>
+            <div id="search"></div>
         </div>
     </div>
 
