@@ -79,9 +79,14 @@ body {
     padding: 20px 40px;
     background-color: #090c0f;
 }
+.title h1 {
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 40px;
+}
 .title p{
     margin-top: 15px;
     font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #anuncio-superior {
@@ -121,16 +126,52 @@ main {
     height: 100%;
 }
 .video-info {
-    padding: 15px 20px 15px 25px;
+    padding: 0 20px 0 25px;
     grid-area: descripcion;
-    display: none;
 }
-.video-info h3 {
-    font-size: 25px;
-    margin-bottom: 10px;
+.video-info-title {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #090c0f;
+    border-radius: 3px;
+    cursor: pointer;
 }
-.video-info p {
-    font-size: 19px;
+.video-info-title h3 {
+    font-size: 30px;
+    padding: 15px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.video-info-title span {
+    font-size: 50px;
+    text-align: right;
+}
+.datos-video {
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    padding: 15px 0;
+}
+.datos-video-texto-principal {
+    font-size: 27px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+}
+.datos-video p {
+    font-size: 20px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
+    line-height: 30px;
+}
+.datos-video a {
+    font-size: 20px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
+    line-height: 30px;
+    color: white;
 }
 
 
@@ -147,16 +188,13 @@ main {
 }
 
 .botones-control {
-    margin: 10px;
+    margin: 10px 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 10px;
-    margin-bottom: 25px;
 }
 .botones-control a {
     font-size: 50px;
-    font-family:'Lato', sans-serif;
-    font-weight: bold;
     background-color: #090c0f;
     border-radius: 2px;
     border: 5px solid black;
@@ -181,16 +219,18 @@ main {
     text-align: right;
 }
 .botones-control p {
-    font-size: 19px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
 }
 .botones-control img {
     width: 45px;
     height: auto;
 }
 #VideosMensajeInicio {
+    display: grid;
+    align-items: center;
     text-align: center;
-    font-family:'Lato', sans-serif;
-    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
     background-color: #090c0f;
     border-radius: 2px;
     border: 5px solid black;
@@ -198,9 +238,10 @@ main {
     font-size: 18px;
 }
 #VideosMensajeFinal {
+    display: grid;
+    align-items: center;
     text-align: center;
-    font-family:'Lato', sans-serif;
-    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
     background-color: #090c0f;
     border-radius: 2px;
     border: 5px solid black;
@@ -209,6 +250,9 @@ main {
 }
 .lecciones {
     height: 420px;
+    border: 6px solid black;
+    background-color: black;
+    border-radius: 4px;
     overflow: auto;
     scrollbar-width: none; /* esto es para que no se vea la scroll bar en Firefox */
     -ms-overflow-style: none; /* esto es para IE y viejo Edge */
@@ -216,32 +260,42 @@ main {
 .lecciones::-webkit-scrollbar { /* esto es para Chromium y Safari */
     display: none;
 }
+#titulo-lecciones {
+    text-align: center;
+    font-size: 38px;
+    line-height: 45px;
+    padding: 15px 10px;
+    margin: 15px 0;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 200;
+}
+.lecciones h1 {
+    padding: 15px 0;
+    text-align: center;
+    border-bottom: 4px solid black;
+    font-family: 'Montserrat', sans-serif;
+}
 .leccion {
-    background-color: #090c0f;
-    border-radius: 5px;
-    border: 5px solid black;
-    margin: 10px;
+    margin-bottom: 5px;
 }
 .leccion-title {
     position: relative;
     padding: 10px;
     background-color: #090c0f;
     cursor: pointer;
-    font-weight: bold;
-    border-radius: 4px;
 }
 .leccion-title span {
     position: absolute;
-    right: 20px;
+    right: 15px;
     font-size: 2em;
 }
 
 .leccion h3{
-    font-size: 1.3em;
-    font-family:'Lato', sans-serif;
+    font-size: 1.2em;
+    font-family: 'Fira Sans', sans-serif;
     color: #f0ece2;
     display: inline-block;
-    margin-right: 35px;
+    margin-right: 30px;
 }
 /* .contenedor-videos {
     padding: 17px 15px 14px 15px;
@@ -254,17 +308,17 @@ main {
 
     padding: 15px 10px;
     background-color: #15191f;
-    border-radius: 3px;
 }
 
 .videos a{
-    font-weight: bold;
     display: block;
     background-color: #090c0f;
     border-radius: 3px;
     padding: 10px;
     font-size: 17px;
     text-align: center;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 200;
 }
 
 .recomendado {
@@ -274,6 +328,7 @@ main {
     margin-bottom: 25px;
     text-align: center;
     font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
 }
 .recomendado-content {
     display: grid;
@@ -285,6 +340,7 @@ main {
     display: block;
     text-decoration: none;
     color: white;
+    font-family: 'Fira Sans', sans-serif;
 
     text-align: center;
     padding: 20px;
@@ -344,6 +400,7 @@ footer p{
 }
 .legal {
     text-align: right;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .nav a:hover {
@@ -404,9 +461,6 @@ footer p{
     .lecciones {
         height: 350px;
     }
-    .leccion {
-        margin: 10px 10px 20px 10px;
-    }
 
     .nav a {
         font-size: 24px;
@@ -446,6 +500,18 @@ footer p{
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;
         grid-template-areas: "video" "descripcion" "temario";
+    }
+    .botones-control {
+        margin: 10px;
+    }
+    .datos-video {
+        grid-template-columns: 0.6fr 1fr;
+    }
+    .video-info {
+        padding: 0 10px;
+    }
+    .informacion-video {
+        padding: 0 5px;
     }
     .temario {
         padding: 10px 0 0 0;
@@ -494,6 +560,10 @@ footer p{
     .anuncios-superiores-moviles {
         width: 100%;
         height: auto;
+    }
+    .datos-video {
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px;
     }
 }
 

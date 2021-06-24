@@ -65,6 +65,8 @@ $(document).ready(function() {
 
   // ELEMENTOS MADRE
   $(".videos").hide();
+  $(".datos-video").hide();
+  $("#titulo-lecciones").text("Navega por el curso:");
   $(".paaVideosLeccionBotonMas").text("+"); // este codigo se podria repetir para todos los videos de Lernist
   $("#VideosBotonPrevious").attr("src", "/i_temas/previous.png");
   $("#VideosBotonPreviousText").text("Anterior");
@@ -76,19 +78,36 @@ $(document).ready(function() {
   // ESTUDIA PARA EL PAA
   // ESTUDIA PARA EL PAA
 
-  // PAA | LECTURA
+  // DATOS PRINCIPALES PAA CONSEJOS GENERALES
+  $("#consejosGenerales").text("Consejos generales para el PAA");
 
   // DATOS PRINCIPALES PAA LECTURA
   $("#generosLiterarios").text("Generos y Subgeneros Literarios");
   $("#tiposDiscurso").text("Tipos de Discurso");
   $("#figurasRetoricas").text("Figuras retoricas o literarias")
 
+  // DATOS PRINCIPALES PAA MATE
+  $("#paaAlgebra").text("Álgebra");
+  $("#paaAritmetica").text("Aritmética");
+  $("#paaGeometria").text("Geometría");
+  $("#paaProbabilidad").text("Probabilidad");
+
   // TITULOS DE MENU ACORDION
+  $("#paaVideosConsejosGeneralesPAA").text("Consejos generales para el PAA");
+
   $("#paaVideosLecturaGenerosLiterarios").text("Generos y Subgeneros Literarios");
   $("#paaVideosLecturaTiposDiscurso").text("Tipos de Discurso");
   $("#paaVideosLecturaFigurasRetoricas").text("Figuras retóricas o literarias")
 
+  $("#paaVideosMateLeccionAritmetica").text("Aritmética");
+  $("#paaVideosMateLeccionAlgebra").text("Álgebra");
+  $("#paaVideosMateLeccionGeometria").text("Geometría");
+  $("#paaVideosMateLeccionProbabilidad").text("Probabilidad");
+
   // LINKS DE CADA VIDEO | MENU ACORDION
+  // CONSEJOS GENERALES
+  $("#paaVideosConsejosGenerales1Menu").attr("href", "/aprender/examen-paa/consejos-generales/videos/trucos-para-aprobar-los-examenes.html").text("1. Trucos para aprobar los exámenes")
+  // LECTURA 
   $("#paaVideosLectura1Menu").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video1.html").text("1. Géneros literarios");
   $("#paaVideosLectura2Menu").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video2.html").text("2. ¿Qué es una novela?");
   $("#paaVideosLectura3Menu").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video3.html").text("3. El cuento y sus partes");
@@ -106,98 +125,7 @@ $(document).ready(function() {
   $("#paaVideosLectura14Menu").attr("href", "/aprender/examen-paa/lectura/videos/tipos-de-discurso/video14.html").text("14. Tipos de discurso: narrativo, descriptivo, argumentativo");
 
   $("#paaVideosLectura15Menu").attr("href", "/aprender/examen-paa/lectura/videos/figuras-retoricas/video15.html").text("15. Figuras literarias o retóricas");
-
-  // DATOS DE CADA VIDEO
-  $("#paaVideosLectura1Titulo").text("1. Géneros literarios");
-  $("#paaVideosLectura1Video").attr("src", "https://www.youtube.com/embed/Q9bh83Oc1lY");
-  $("#paaVideosLectura1BotonAnterior").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video1.html");
-  $("#paaVideosLectura1BotonSiguiente").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video2.html");
-
-  $("#paaVideosLectura2Titulo").text("2. ¿Qué es una novela?");
-  $("#paaVideosLectura2Video").attr("src", "https://www.youtube.com/embed/zkJ_PKu7VoU");
-  $("#paaVideosLectura2BotonAnterior").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video1.html");
-  $("#paaVideosLectura2BotonSiguiente").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video3.html");
-
-  $("#paaVideosLectura3Titulo").text("3. El cuento y sus partes");
-  $("#paaVideosLectura3Video").attr("src", "https://www.youtube.com/embed/LiJG7LdO1mA");
-  $("#paaVideosLectura3BotonAnterior").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video2.html");
-  $("#paaVideosLectura3BotonSiguiente").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video4.html");
-
-  $("#paaVideosLectura4Titulo").text("4. La fábula y sus características");
-  $("#paaVideosLectura4Video").attr("src", "https://www.youtube.com/embed/LvRgOAiYxzo");
-  $("#paaVideosLectura4BotonAnterior").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video3.html");
-  $("#paaVideosLectura4BotonSiguiente").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video5.html");
-
-  $("#paaVideosLectura5Titulo").text("5. Mitos y Leyendas");
-  $("#paaVideosLectura5Video").attr("src", "https://www.youtube.com/embed/sAQnrOhQt8M");
-  $("#paaVideosLectura5BotonAnterior").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video4.html");
-  $("#paaVideosLectura5BotonSiguiente").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video6.html");
-
-  $("#paaVideosLectura6Titulo").text("6. El poema y sus características");
-  $("#paaVideosLectura6Video").attr("src", "https://www.youtube.com/embed/_krsy8ba1gg");
-  $("#paaVideosLectura6BotonAnterior").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video5.html");
-  $("#paaVideosLectura6BotonSiguiente").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video7.html");
-
-  $("#paaVideosLectura7Titulo").text("7. Shrek - La sátira perfecta");
-  $("#paaVideosLectura7Video").attr("src", "https://www.youtube.com/embed/kVyV1n7oyQA");
-  $("#paaVideosLectura7BotonAnterior").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video6.html");
-  $("#paaVideosLectura7BotonSiguiente").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video8.html");
-
-  $("#paaVideosLectura8Titulo").text("8. ¿Qué es drama?");
-  $("#paaVideosLectura8Video").attr("src", "https://www.youtube.com/embed/MkaovqQn6d4");
-  $("#paaVideosLectura8BotonAnterior").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video7.html");
-  $("#paaVideosLectura8BotonSiguiente").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video9.html");
-
-  $("#paaVideosLectura9Titulo").text("9. Definición de Tragedia");
-  $("#paaVideosLectura9Video").attr("src", "https://www.youtube.com/embed/G0Y3_oyL72Q");
-  $("#paaVideosLectura9BotonAnterior").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video8.html");
-  $("#paaVideosLectura9BotonSiguiente").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video10.html");
-
-  $("#paaVideosLectura10Titulo").text("10. Género dramático ¿Qué es la comedia?");
-  $("#paaVideosLectura10Video").attr("src", "https://www.youtube.com/embed/KJJAXKTAVN4");
-  $("#paaVideosLectura10BotonAnterior").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video9.html");
-  $("#paaVideosLectura10BotonSiguiente").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video11.html");
-
-  $("#paaVideosLectura11Titulo").text("11. El ensayo: Definición, características y escritura");
-  $("#paaVideosLectura11Video").attr("src", "https://www.youtube.com/embed/Qfo7v2LqJWk");
-  $("#paaVideosLectura11BotonAnterior").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video10.html");
-  $("#paaVideosLectura11BotonSiguiente").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video12.html");
-
-  $("#paaVideosLectura12Titulo").text("12. La biografía y sus características");
-  $("#paaVideosLectura12Video").attr("src", "https://www.youtube.com/embed/hfIwp6Zf1AQ");
-  $("#paaVideosLectura12BotonAnterior").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video11.html");
-  $("#paaVideosLectura12BotonSiguiente").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video13.html");
-
-  $("#paaVideosLectura13Titulo").text("13. ¿Qué es una Crónica?");
-  $("#paaVideosLectura13Video").attr("src", "https://www.youtube.com/embed/RctfBT6J-64");
-  $("#paaVideosLectura13BotonAnterior").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video12.html");
-  $("#paaVideosLectura13BotonSiguiente").attr("href", "/aprender/examen-paa/lectura/videos/tipos-de-discurso/video14.html");
-
-  $("#paaVideosLectura14Titulo").text("14. Tipos de discurso: narrativo, descriptivo, argumentativo");
-  $("#paaVideosLectura14Video").attr("src", "https://www.youtube.com/embed/u7GKzqmAB84");
-  $("#paaVideosLectura14BotonAnterior").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video13.html");
-  $("#paaVideosLectura14BotonSiguiente").attr("href", "/aprender/examen-paa/lectura/videos/figuras-retoricas/video15.html");
-
-  $("#paaVideosLectura15Titulo").text("15. Figuras literarias o retóricas");
-  $("#paaVideosLectura15Video").attr("src", "https://www.youtube.com/embed/Oeg7cPGxbKw");
-  $("#paaVideosLectura15BotonAnterior").attr("href", "/aprender/examen-paa/lectura/videos/tipos-de-discurso/video14.html");
-  $("#paaVideosLectura15BotonSiguiente").attr("href", "/aprender/examen-paa/lectura/videos/figuras-retoricas/video16.html");
-
-  // PAA | MATEMATICAS
-
-  // DATOS PRINCIPALES PAA MATE
-  $("#paaAlgebra").text("Álgebra");
-  $("#paaAritmetica").text("Aritmética");
-  $("#paaGeometria").text("Geometría");
-  $("#paaProbabilidad").text("Probabilidad");
-
-  // TITULOS DE MENU ACORDION
-  $("#paaVideosMateLeccionAritmetica").text("Aritmética");
-  $("#paaVideosMateLeccionAlgebra").text("Álgebra");
-  $("#paaVideosMateLeccionGeometria").text("Geometría");
-  $("#paaVideosMateLeccionProbabilidad").text("Probabilidad");
-
-  // LINKS DE CADA VIDEO | MENU ACORDION
+  // MATEMATICAS
   $("#paaVideosMate1Menu").attr("href", "/aprender/examen-paa/matematicas/videos/aritmetica/video1.html").text("1. Jerarquía de las Operaciones | Super fácil");
   $("#paaVideosMate2Menu").attr("href", "/aprender/examen-paa/matematicas/videos/aritmetica/video2.html").text("2. Ley de los signos | Super fácil");
   $("#paaVideosMate3Menu").attr("href", "/aprender/examen-paa/matematicas/videos/aritmetica/video3.html").text("3. Si te parecen difícil las fracciones debes ver este video");
@@ -274,7 +202,88 @@ $(document).ready(function() {
   $("#paaVideosMate71Menu").attr("href", "/aprender/examen-paa/matematicas/videos/probabilidad/video71.html").text("71. Combinaciones | Super fácil");
   $("#paaVideosMate72Menu").attr("href", "/aprender/examen-paa/matematicas/videos/probabilidad/video72.html").text("72. Combinación con repetición y sin repetición");
 
-  // DATOS DE CADA VIDEO
+  // DATOS DE CADA VIDEO CONSEJOS GENERALES
+  $("#paaVideosConsejosGenerales1Titulo").text("1. Trucos para aprobar los exámenes");
+  $("#paaVideosConsejosGenerales1Video").attr("src", "https://www.youtube.com/embed/IRwrAMdpd18");
+  $("#paaVideosConsejosGenerales1BotonAnterior").attr("href", "/aprender/examen-paa/consejos-generales/videos/trucos-para-aprobar-los-examenes.html");
+  $("#paaVideosConsejosGenerales1BotonSiguiente").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video1.html");
+  // DATOS DE CADA VIDEO LECTURA
+  $("#paaVideosLectura1Titulo").text("1. Géneros literarios");
+  $("#paaVideosLectura1Video").attr("src", "https://www.youtube.com/embed/Q9bh83Oc1lY");
+  $("#paaVideosLectura1BotonAnterior").attr("href", "/aprender/examen-paa/consejos-generales/videos/trucos-para-aprobar-los-examenes.html");
+  $("#paaVideosLectura1BotonSiguiente").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video2.html");
+
+  $("#paaVideosLectura2Titulo").text("2. ¿Qué es una novela?");
+  $("#paaVideosLectura2Video").attr("src", "https://www.youtube.com/embed/zkJ_PKu7VoU");
+  $("#paaVideosLectura2BotonAnterior").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video1.html");
+  $("#paaVideosLectura2BotonSiguiente").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video3.html");
+
+  $("#paaVideosLectura3Titulo").text("3. El cuento y sus partes");
+  $("#paaVideosLectura3Video").attr("src", "https://www.youtube.com/embed/LiJG7LdO1mA");
+  $("#paaVideosLectura3BotonAnterior").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video2.html");
+  $("#paaVideosLectura3BotonSiguiente").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video4.html");
+
+  $("#paaVideosLectura4Titulo").text("4. La fábula y sus características");
+  $("#paaVideosLectura4Video").attr("src", "https://www.youtube.com/embed/LvRgOAiYxzo");
+  $("#paaVideosLectura4BotonAnterior").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video3.html");
+  $("#paaVideosLectura4BotonSiguiente").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video5.html");
+
+  $("#paaVideosLectura5Titulo").text("5. Mitos y Leyendas");
+  $("#paaVideosLectura5Video").attr("src", "https://www.youtube.com/embed/sAQnrOhQt8M");
+  $("#paaVideosLectura5BotonAnterior").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video4.html");
+  $("#paaVideosLectura5BotonSiguiente").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video6.html");
+
+  $("#paaVideosLectura6Titulo").text("6. El poema y sus características");
+  $("#paaVideosLectura6Video").attr("src", "https://www.youtube.com/embed/_krsy8ba1gg");
+  $("#paaVideosLectura6BotonAnterior").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video5.html");
+  $("#paaVideosLectura6BotonSiguiente").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video7.html");
+
+  $("#paaVideosLectura7Titulo").text("7. Shrek - La sátira perfecta");
+  $("#paaVideosLectura7Video").attr("src", "https://www.youtube.com/embed/kVyV1n7oyQA");
+  $("#paaVideosLectura7BotonAnterior").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video6.html");
+  $("#paaVideosLectura7BotonSiguiente").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video8.html");
+
+  $("#paaVideosLectura8Titulo").text("8. ¿Qué es drama?");
+  $("#paaVideosLectura8Video").attr("src", "https://www.youtube.com/embed/MkaovqQn6d4");
+  $("#paaVideosLectura8BotonAnterior").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video7.html");
+  $("#paaVideosLectura8BotonSiguiente").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video9.html");
+
+  $("#paaVideosLectura9Titulo").text("9. Definición de Tragedia");
+  $("#paaVideosLectura9Video").attr("src", "https://www.youtube.com/embed/G0Y3_oyL72Q");
+  $("#paaVideosLectura9BotonAnterior").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video8.html");
+  $("#paaVideosLectura9BotonSiguiente").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video10.html");
+
+  $("#paaVideosLectura10Titulo").text("10. Género dramático ¿Qué es la comedia?");
+  $("#paaVideosLectura10Video").attr("src", "https://www.youtube.com/embed/KJJAXKTAVN4");
+  $("#paaVideosLectura10BotonAnterior").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video9.html");
+  $("#paaVideosLectura10BotonSiguiente").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video11.html");
+
+  $("#paaVideosLectura11Titulo").text("11. El ensayo: Definición, características y escritura");
+  $("#paaVideosLectura11Video").attr("src", "https://www.youtube.com/embed/Qfo7v2LqJWk");
+  $("#paaVideosLectura11BotonAnterior").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video10.html");
+  $("#paaVideosLectura11BotonSiguiente").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video12.html");
+
+  $("#paaVideosLectura12Titulo").text("12. La biografía y sus características");
+  $("#paaVideosLectura12Video").attr("src", "https://www.youtube.com/embed/hfIwp6Zf1AQ");
+  $("#paaVideosLectura12BotonAnterior").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video11.html");
+  $("#paaVideosLectura12BotonSiguiente").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video13.html");
+
+  $("#paaVideosLectura13Titulo").text("13. ¿Qué es una Crónica?");
+  $("#paaVideosLectura13Video").attr("src", "https://www.youtube.com/embed/RctfBT6J-64");
+  $("#paaVideosLectura13BotonAnterior").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video12.html");
+  $("#paaVideosLectura13BotonSiguiente").attr("href", "/aprender/examen-paa/lectura/videos/tipos-de-discurso/video14.html");
+
+  $("#paaVideosLectura14Titulo").text("14. Tipos de discurso: narrativo, descriptivo, argumentativo");
+  $("#paaVideosLectura14Video").attr("src", "https://www.youtube.com/embed/u7GKzqmAB84");
+  $("#paaVideosLectura14BotonAnterior").attr("href", "/aprender/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video13.html");
+  $("#paaVideosLectura14BotonSiguiente").attr("href", "/aprender/examen-paa/lectura/videos/figuras-retoricas/video15.html");
+
+  $("#paaVideosLectura15Titulo").text("15. Figuras literarias o retóricas");
+  $("#paaVideosLectura15Video").attr("src", "https://www.youtube.com/embed/Oeg7cPGxbKw");
+  $("#paaVideosLectura15BotonAnterior").attr("href", "/aprender/examen-paa/lectura/videos/tipos-de-discurso/video14.html");
+  $("#paaVideosLectura15BotonSiguiente").attr("href", "/aprender/examen-paa/lectura/videos/figuras-retoricas/video16.html");
+
+  // DATOS DE CADA VIDEO MATEMATICAS
   $("#paaVideosMate1Titulo").text("1. Jerarquía de las Operaciones | Super fácil");
   $("#paaVideosMate1Video").attr("src", "https://www.youtube.com/embed/XV5PiV2-91U");
   $("#paaVideosMate1BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/aritmetica/video1.html");
@@ -638,6 +647,13 @@ $(document).ready(function() {
   $("#paaVideosMate72BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/probabilidad/video71.html");
   $("#paaVideosMate72BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/probabilidad/video73.html");
 
+  // ESTUDIA PARA EL PAA
+  // ESTUDIA PARA EL PAA
+
+  // ANIMACION PARA MENU VIDEO-INFO
+  $(".video-info-title").click(function() {
+    $(".datos-video").slideToggle(400);
+  });
   // ANIMACION PARA MENU ACORDION
   $(".le1").click(function() {
     $(".vi1").slideToggle(400);
@@ -681,5 +697,33 @@ $(document).ready(function() {
 
   $(".le11").click(function() {
     $(".vi11").slideToggle(400);
+  });
+
+  $(".le12").click(function() {
+    $(".vi12").slideToggle(400);
+  });
+
+  $(".le13").click(function() {
+    $(".vi13").slideToggle(400);
+  });
+
+  $(".le14").click(function() {
+    $(".vi14").slideToggle(400);
+  });
+
+  $(".le15").click(function() {
+    $(".vi15").slideToggle(400);
+  });
+
+  $(".le16").click(function() {
+    $(".vi16").slideToggle(400);
+  });
+
+  $(".le17").click(function() {
+    $(".vi17").slideToggle(400);
+  });
+
+  $(".le18").click(function() {
+    $(".vi18").slideToggle(400);
   });
 });
