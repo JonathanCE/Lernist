@@ -1,3 +1,13 @@
+/* font-family: 'Chelsea Market', cursive;
+
+font-family: 'Dela Gothic One', cursive;
+
+font-family: 'Fira Sans', sans-serif;
+
+font-family: 'Montserrat', sans-serif;
+
+font-family: 'Open Sans', sans-serif; */
+
 * {
     margin: 0;
     font-family: sans-serif;
@@ -169,7 +179,7 @@ main {
 .datos-video a {
     font-size: 20px;
     font-family: 'Fira Sans', sans-serif;
-    font-weight: 300;
+    font-weight: 600;
     line-height: 30px;
     color: white;
 }

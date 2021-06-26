@@ -647,6 +647,27 @@ $(document).ready(function() {
   $("#paaVideosMate72BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/probabilidad/video71.html");
   $("#paaVideosMate72BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/probabilidad/video73.html");
 
+  // ACERCA DE
+  $("#creadorPAAVideo").text("Creador del video");
+  $("#creadorVideoTexto1").prepend('El video fue creado por el creador de youtube ');
+  $("#creadorVideoTexto2").text("Lernist.com no es el propietario de este video. Distribuimos este video mediante"
+                                + " la herramienta pública de Youtube que permite insertar videos de la plataforma en sitios web"
+                                + "  externos.");
+  $("#descripcionCursoPAA").text("Descripción del curso");
+  $("#descripcionCursoPAATexto").text("El curso de estudio para el examen PAA esta diseñado para enseñarte todos los conocimientos"
+                                      + " necesarios para lograr una super calificación en el examen. A lo largo de las lecciones y videos"
+                                      + " que lo componen, aprenderás y pondrás en practica habilidades de lectura, redacción y matemáticas,"
+                                      + " explicadas de la mano de expertos y de una forma clara y rápida.");
+  $("#tipsCursoPAA").text("Tips para el curso");
+  $("#tipsCursoPAATexto").text("En partes del curso como en matemáticas, notarás que dos videos cubren el mismo tema o"
+                              + " concepto, esto es a propósito, para darte a ti la elección de tu preferencia, además que"
+                              + " así tienes más opciones de estudio por si un tema te parece algo complicado y necesitas"
+                              + " verlo un poco más.");
+  $("#duracionCursoPAA").text("Duración y cantidad de videos del curso");
+  $("#duracionCursoPAATexto").text("- 88 videos");
+
+  $("#creadorVideoPAALecturaLink1").attr("href", "https://www.youtube.com/channel/UCqod258jC_Cn8UIW5g0LqqA").text("Wayraeduca.");
+
   // ESTUDIA PARA EL PAA
   // ESTUDIA PARA EL PAA
 
