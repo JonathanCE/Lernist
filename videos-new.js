@@ -281,12 +281,12 @@ $(document).ready(function() {
   $("#paaVideosLectura15Titulo").text("15. Figuras literarias o retóricas");
   $("#paaVideosLectura15Video").attr("src", "https://www.youtube.com/embed/Oeg7cPGxbKw");
   $("#paaVideosLectura15BotonAnterior").attr("href", "/aprender/examen-paa/lectura/videos/tipos-de-discurso/video14.html");
-  $("#paaVideosLectura15BotonSiguiente").attr("href", "/aprender/examen-paa/lectura/videos/figuras-retoricas/video16.html");
+  $("#paaVideosLectura15BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/aritmetica/video1.html");
 
   // DATOS DE CADA VIDEO MATEMATICAS
   $("#paaVideosMate1Titulo").text("1. Jerarquía de las Operaciones | Super fácil");
   $("#paaVideosMate1Video").attr("src", "https://www.youtube.com/embed/XV5PiV2-91U");
-  $("#paaVideosMate1BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/aritmetica/video1.html");
+  $("#paaVideosMate1BotonAnterior").attr("href", "/aprender/examen-paa/lectura/videos/figuras-retoricas/video15.html");
   $("#paaVideosMate1BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/aritmetica/video2.html");
 
   $("#paaVideosMate2Titulo").text("2. Ley de los signos | Super fácil");
@@ -403,9 +403,6 @@ $(document).ready(function() {
   $("#paaVideosMate24Video").attr("src", "https://www.youtube.com/embed/N3vD22wJfyw");
   $("#paaVideosMate24BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/aritmetica/video23.html");
   $("#paaVideosMate24BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/algebra/video25.html");
-  //$("#paaVideosMate24Info").css({"display":"initial"});
-  $("#paaVideosMate24InfoTitulo").text("Acerca de");
-  $("#paaVideosMate24InfoTexto").text("En este video entenderas como sumar y restar monomios. Creditos a ... todas las analiticas y anuncios que aparecen dentro del video se van al creador, lernist no se queda con nada");
 
   $("#paaVideosMate25Titulo").text("25.- Ecuaciones de primer grado | Super fácil");
   $("#paaVideosMate25Video").attr("src", "https://www.youtube.com/embed/IHblqjW8RY8");
@@ -649,7 +646,7 @@ $(document).ready(function() {
 
   // ACERCA DE
   $("#creadorPAAVideo").text("Creador del video");
-  $("#creadorVideoTexto1").prepend('El video fue creado por el creador de youtube ');
+  $("#creadorVideoTexto1").prepend('El video fue creado por el canal de youtube ');
   $("#creadorVideoTexto2").text("Lernist.com no es el propietario de este video. Distribuimos este video mediante"
                                 + " la herramienta pública de Youtube que permite insertar videos de la plataforma en sitios web"
                                 + "  externos.");
