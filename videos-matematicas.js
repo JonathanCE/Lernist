@@ -221,6 +221,7 @@ $(document).ready(function() {
 
   // ACERCA DE
   $("#creadorPAAVideo").text("Creador del video");
+  $("#descripcionCursoPAAVideo").text("Descripción del video");
   $("#creadorVideoTexto1").prepend('El video fue creado por el canal de youtube ');
   $("#creadorVideoTexto2").text("Lernist.com no es el propietario de este video. Distribuimos este video mediante"
                                 + " la herramienta pública de Youtube que permite insertar videos de la plataforma en sitios web"
@@ -239,6 +240,7 @@ $(document).ready(function() {
   $("#duracionCursoPAATexto").text("- 88 videos");
 
   $("#creadorVideoPAALecturaLink1").attr("href", "https://www.youtube.com/channel/UCqod258jC_Cn8UIW5g0LqqA").text("Wayraeduca.");
+  $("#descripcionCursoPAAVideo1Texto").text("Texto de prueba");
 
   // ESTUDIA PARA EL PAA
   // ESTUDIA PARA EL PAA
