@@ -664,6 +664,7 @@ $(document).ready(function() {
   $("#duracionCursoPAA").text("Duración y cantidad de videos del curso");
   $("#duracionCursoPAATexto").text("- 88 videos");
 
+  // :VIDEOS DE LECTURA
   $("#creadorVideoPAALecturaLink1").attr("href", "https://www.youtube.com/channel/UCqod258jC_Cn8UIW5g0LqqA").text("Wayraeduca.");
   $("#descripcionCursoPAAVideo1Texto").text("Texto de prueba");
 
