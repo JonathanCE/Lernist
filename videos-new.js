@@ -397,7 +397,7 @@ $(document).ready(function() {
   $("#paaVideosMate23Titulo").text("23. Leyes de los radicales");
   $("#paaVideosMate23Video").attr("src", "https://www.youtube.com/embed/ptP3J7pXVX4");
   $("#paaVideosMate23BotonAnterior").attr("href", "/aprender/examen-paa/matematicas/videos/aritmetica/video22.html");
-  $("#paaVideosMate23BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/algebra/video14.html");
+  $("#paaVideosMate23BotonSiguiente").attr("href", "/aprender/examen-paa/matematicas/videos/algebra/video24.html");
 
   $("#paaVideosMate24Titulo").text("24.- Suma y resta de monomios | Super fácil");
   $("#paaVideosMate24Video").attr("src", "https://www.youtube.com/embed/N3vD22wJfyw");
@@ -664,9 +664,275 @@ $(document).ready(function() {
   $("#duracionCursoPAA").text("Duración y cantidad de videos del curso");
   $("#duracionCursoPAATexto").text("- 88 videos");
 
+  // :VIDEOS CONSEJOS GENERALES
+  $("#creadorVideoPAAConsejosGeneralesLink1").attr("href", "https://www.youtube.com/channel/UCQX_MZRCaluNKxkywkLEgfA").text("Date Un Vlog.");
+  $("#descripcionCursoPAAVideo1Texto").text("-");
   // :VIDEOS DE LECTURA
   $("#creadorVideoPAALecturaLink1").attr("href", "https://www.youtube.com/channel/UCqod258jC_Cn8UIW5g0LqqA").text("Wayraeduca.");
-  $("#descripcionCursoPAAVideo1Texto").text("Texto de prueba");
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAALecturaLink2").attr("href", "https://www.youtube.com/channel/UCQQ3tfaS0NZpObwUMhzIAlw").text("Isabella Cervantes.");
+  $("#descripcionCursoPAAVideo2Texto").text("-");
+
+  $("#creadorVideoPAALecturaLink3").attr("href", "https://www.youtube.com/channel/UC0BWQN53Ylroa4hzqMTTsvg").text("DiverTicDos.");
+  $("#descripcionCursoPAAVideo3Texto").text("-");
+
+  $("#creadorVideoPAALecturaLink4").attr("href", "https://www.youtube.com/channel/UCZuV2hpGjAxA3wdY96vqKhw").text("Escuela de Aprendices.");
+  $("#descripcionCursoPAAVideo4Texto").text("-");
+
+  $("#creadorVideoPAALecturaLink5").attr("href", "https://www.youtube.com/channel/UCBdq2IZdl8bp1OOg5BNawuQ").text("Rocio Carreon.");
+  $("#descripcionCursoPAAVideo5Texto").text("-");
+
+  $("#creadorVideoPAALecturaLink6").attr("href", "https://www.youtube.com/channel/UCZuV2hpGjAxA3wdY96vqKhw").text("Escuela de Aprendices.");
+  $("#descripcionCursoPAAVideo6Texto").text("-");
+
+  $("#creadorVideoPAALecturaLink7").attr("href", "https://www.youtube.com/channel/UCtWtGtjNv0qAtZ0DocQjnHQ").text("The Gordo Rizes.");
+  $("#descripcionCursoPAAVideo7Texto").text("-");
+
+  $("#creadorVideoPAALecturaLink8").attr("href", "https://www.youtube.com/channel/UCxs-JFQGUPzIY2CkpeEaUkQ").text("DramaQueen.");
+  $("#descripcionCursoPAAVideo8Texto").text("-");
+
+  $("#creadorVideoPAALecturaLink9").attr("href", "https://www.youtube.com/channel/UCQW0JoI6GRBvOxqgbzbSWog").text("Libros, libritos y librotes.");
+  $("#descripcionCursoPAAVideo9Texto").text("-");
+
+  $("#creadorVideoPAALecturaLink10").attr("href", "https://www.youtube.com/channel/UCE3m5uW9fUnf_tuKsVAmVPw").text("Aula365.");
+  $("#descripcionCursoPAAVideo10Texto").text("-");
+
+  $("#creadorVideoPAALecturaLink11").attr("href", "https://www.youtube.com/channel/UCBxLniUP9Fd-D7nQHDN7K_w").text("Stav Guxt.");
+  $("#descripcionCursoPAAVideo11Texto").text("-");
+
+  $("#creadorVideoPAALecturaLink12").attr("href", "https://www.youtube.com/channel/UCZuV2hpGjAxA3wdY96vqKhw").text("Escuela de Aprendices.");
+  $("#descripcionCursoPAAVideo12Texto").text("-");
+
+  $("#creadorVideoPAALecturaLink13").attr("href", "https://www.youtube.com/channel/UCE3m5uW9fUnf_tuKsVAmVPw").text("Aula365.");
+  $("#descripcionCursoPAAVideo13Texto").text("-");
+
+  $("#creadorVideoPAALecturaLink14").attr("href", "https://www.youtube.com/channel/UCJok4N-aJSFTl63LJ16o9VQ").text("Academia Internet.");
+  $("#descripcionCursoPAAVideo14Texto").text("-");
+
+  $("#creadorVideoPAALecturaLink15").attr("href", "https://www.youtube.com/channel/UCqod258jC_Cn8UIW5g0LqqA").text("Wayraeduca.");
+  $("#descripcionCursoPAAVideo15Texto").text("-");
+
+  // :VIDEOS DE MATEMATICAS
+  var DC = "Daniel Carreon.";
+  var DCLink = "https://www.youtube.com/channel/UCwScwtu5zVqc_wHtRx9XvDA";
+  var PA = "Profe Alex.";
+  var PALink = "https://www.youtube.com/channel/UCanMxWvOoiwtjLYm08Bo8QQ";
+  $("#creadorVideoPAAMatematicasLink1").attr("href", DCLink).text(DC);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink2").attr("href", DCLink).text(DC);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink3").attr("href", PALink).text(PA);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink4").attr("href", PALink).text(PA);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink5").attr("href", PALink).text(PA);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink6").attr("href", "https://www.youtube.com/channel/UCHjMp24HKtWACYwqcRpx8LA").text("Aprendopolis.");
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink7").attr("href", DCLink).text(DC);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink8").attr("href", DCLink).text(DC);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink9").attr("href", PALink).text(PA);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink10").attr("href", PALink).text(PA);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink11").attr("href", DCLink).text(DC);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink12").attr("href", PALink).text(PA);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink13").attr("href", DCLink).text(DC);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink14").attr("href", PALink).text(PA);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink15").attr("href", DCLink).text(DC);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink16").attr("href", PALink).text(PA);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink17").attr("href", DCLink).text(DC);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink18").attr("href", PALink).text(PA);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink19").attr("href", DCLink).text(DC);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink20").attr("href", "https://www.youtube.com/channel/UCB34YbuG6ThXJzJsDAII5Dw").text("math2me.");
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink21").attr("href", DCLink).text(DC);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink22").attr("href", "https://www.youtube.com/channel/UCHjMp24HKtWACYwqcRpx8LA").text("Aprendopolis,");
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink23").attr("href", "https://www.youtube.com/channel/UC6UUKWYnkmek45zkkDBVPfg").text("Vitual Preparatoria,");
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink24").attr("href", DCLink).text(DC);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink25").attr("href", DCLink).text(DC);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink26").attr("href", PALink).text(PA);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink27").attr("href", DCLink).text(DC);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink28").attr("href", PALink).text(PA);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink29").attr("href", DCLink).text(DC);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink30").attr("href", PALink).text(PA);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink31").attr("href", PALink).text(PA);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink32").attr("href", "https://www.youtube.com/channel/UCixEOr5vqNVOfV4rbA0iH9w").text("quidimat Matematica Guillermo.");
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink33").attr("href", PALink).text(PA);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink34").attr("href", PALink).text(PA);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink35").attr("href", PALink).text(PA);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink36").attr("href", "https://www.youtube.com/channel/UCJok4N-aJSFTl63LJ16o9VQ").text("Academia Internet.");
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink37").attr("href", DCLink).text(DC);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink38").attr("href", DCLink).text(DC);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink39").attr("href", DCLink).text(DC);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink40").attr("href", DCLink).text(DC);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink41").attr("href", DCLink).text(DC);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink42").attr("href", PALink).text(PA);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink43").attr("href", DCLink).text(DC);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink44").attr("href", "https://www.youtube.com/channel/UCJok4N-aJSFTl63LJ16o9VQ").text("Academia Internet.");
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink45").attr("href", DCLink).text(DC);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink46").attr("href", DCLink).text(DC);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink47").attr("href", DCLink).text(DC);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink48").attr("href", DCLink).text(DC);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink49").attr("href", DCLink).text(DC);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink50").attr("href", DCLink).text(DC);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink51").attr("href", "https://www.youtube.com/channel/UCiK7AWtx45RztDoDWNC_Xmw").text("Epsilon AKdemy.");
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink52").attr("href", PALink).text(PA);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink53").attr("href", DCLink).text(DC);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink54").attr("href", PALink).text(PA);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink55").attr("href", PALink).text(PA);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink56").attr("href", PALink).text(PA);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink57").attr("href", PALink).text(PA);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink58").attr("href", DCLink).text(DC);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink59").attr("href", DCLink).text(DC);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink60").attr("href", DCLink).text(DC);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink61").attr("href", PALink).text(PA);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink62").attr("href", DCLink).text(DC);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink63").attr("href", DCLink).text(DC);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink64").attr("href", DCLink).text(DC);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink65").attr("href", PALink).text(PA);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink66").attr("href", PALink).text(PA);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink67").attr("href", DCLink).text(DC);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink68").attr("href", DCLink).text(DC);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink69").attr("href", PALink).text(PA);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink70").attr("href", PALink).text(PA);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink71").attr("href", DCLink).text(DC);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
+
+  $("#creadorVideoPAAMatematicasLink72").attr("href", PALink).text(PA);
+  $("#descripcionCursoPAAVideo1Texto").text("-");
 
   // ESTUDIA PARA EL PAA
   // ESTUDIA PARA EL PAA

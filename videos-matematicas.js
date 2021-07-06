@@ -240,7 +240,7 @@ $(document).ready(function() {
   $("#duracionCursoPAATexto").text("- 88 videos");
 
   $("#creadorVideoPAALecturaLink1").attr("href", "https://www.youtube.com/channel/UCqod258jC_Cn8UIW5g0LqqA").text("Wayraeduca.");
-  $("#descripcionCursoPAAVideo1Texto").text("Texto de prueba");
+  $("#descripcionCursoPAAVideo1Texto").text("-");
 
   // ESTUDIA PARA EL PAA
   // ESTUDIA PARA EL PAA
