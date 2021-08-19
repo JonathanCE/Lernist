@@ -647,7 +647,7 @@ $(document).ready(function() {
                                       + " explicadas de la mano de expertos y de una forma clara y rápida.");
   
   $("#duracionCurso").text("Duración y cantidad de videos del curso");
-  $("#duracionCursoTexto").text("- 88 videos");
+  $("#duracionCursoTexto").text("- 81 videos");
 
   // uso de variables para insertar link de canales y nombre de un creador - ejemplos:
   var DanielC = "Daniel Carreon.";
