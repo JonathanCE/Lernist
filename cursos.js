@@ -107,4 +107,84 @@ $(document).ready(function() {
   $(".le11").click(function() {
     $(".vi11").slideToggle(400);
   });
+
+  $(".le11").click(function() {
+    $(".vi11").slideToggle(400);
+  });
+
+  $(".le12").click(function() {
+    $(".vi12").slideToggle(400);
+  });
+
+  $(".le13").click(function() {
+    $(".vi13").slideToggle(400);
+  });
+
+  $(".le14").click(function() {
+    $(".vi14").slideToggle(400);
+  });
+
+  $(".le15").click(function() {
+    $(".vi15").slideToggle(400);
+  });
+
+  $(".le16").click(function() {
+    $(".vi16").slideToggle(400);
+  });
+
+  $(".le17").click(function() {
+    $(".vi17").slideToggle(400);
+  });
+
+  $(".le18").click(function() {
+    $(".vi18").slideToggle(400);
+  });
+
+  $(".le19").click(function() {
+    $(".vi19").slideToggle(400);
+  });
+
+  $(".le20").click(function() {
+    $(".vi20").slideToggle(400);
+  });
+
+  $(".le21").click(function() {
+    $(".vi21").slideToggle(400);
+  });
+
+  $(".le22").click(function() {
+    $(".vi22").slideToggle(400);
+  });
+
+  $(".le23").click(function() {
+    $(".vi23").slideToggle(400);
+  });
+
+  $(".le24").click(function() {
+    $(".vi24").slideToggle(400);
+  });
+
+  $(".le25").click(function() {
+    $(".vi25").slideToggle(400);
+  });
+
+  $(".le26").click(function() {
+    $(".vi26").slideToggle(400);
+  });
+
+  $(".le27").click(function() {
+    $(".vi27").slideToggle(400);
+  });
+
+  $(".le28").click(function() {
+    $(".vi28").slideToggle(400);
+  });
+
+  $(".le29").click(function() {
+    $(".vi29").slideToggle(400);
+  });
+
+  $(".le30").click(function() {
+    $(".vi30").slideToggle(400);
+  });
 });

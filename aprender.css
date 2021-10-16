@@ -104,20 +104,23 @@ body {
 
 .contenedor-temas {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-gap: 20px;
 }
 
 .contenedor-temas a{
-    display: block;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-column-gap: 10px;
+    align-items: center;
     text-decoration: none;
     color: #f0ece2;
 
     padding: 10px;
     border: 1.5px solid black;
-    border-radius: 3px;
-    font-size: 35px;
+    border-radius: 7px;
+    font-size: 30px;
     font-family: 'Shadows Into Light', cursive;
     /* font-family: 'Amatic SC', cursive; */
     cursor: pointer;
@@ -127,6 +130,7 @@ body {
 
 .contenedor-temas img{
     width: 100%;
+    border-radius: 3px;
 }
 
 .tema {
@@ -216,6 +220,10 @@ footer p{
 }
 
 @media screen and (max-width: 1070px) {
+    .contenedor-temas {
+        grid-template-columns: 1fr 1fr;
+    }
+
     .main-footer{
         grid-template-columns: 1fr;
         grid-row-gap: 30px;
@@ -266,16 +274,10 @@ footer p{
     }
 }
 
-@media screen and (max-width: 850px) {
-    .contenedor-temas {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto;
-        grid-gap: 20px;
-    }
-}
-
 @media screen and (max-width: 800px) {
+    .contenedor-temas {
+        grid-template-columns: 1fr;
+    }
     .informacion {
         text-align: center;
     }
@@ -298,15 +300,6 @@ footer p{
     }
 }
 
-@media screen and (max-width: 630px) {
-    .contenedor-temas {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-        grid-gap: 20px;
-    }
-}
-
 @media screen and (max-width: 610px) {
     .presentacion-texto {
         padding: 15px;
@@ -318,10 +311,13 @@ footer p{
 
 @media screen and (max-width: 450px) {
     .contenedor-temas {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
         grid-gap: 20px;
+    }
+    .contenedor-temas a{
+        display: grid;
+        grid-template-columns: 0.7fr 1fr;
+        grid-column-gap: 10px;
+        align-items: center;
     }
     .Presentacion {
         padding: 30px 50px;
