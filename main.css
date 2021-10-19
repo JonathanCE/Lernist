@@ -1,3 +1,12 @@
+/* 
+    font-family: 'Fira Sans', sans-serif;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-family: 'Poppins', sans-serif;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;400&family=Montserrat:wght@200;300;400;500&family=Poppins:wght@400;500;600&display=swap');
 * {
     margin: 0;
     font-family: sans-serif;
@@ -17,7 +26,7 @@ body {
     text-align: center;
     padding: 40px 20px;
     color: white;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     cursor: pointer;
     font-size: 21px;
@@ -36,6 +45,7 @@ body {
     display: inline-block;
     font-size: 1.3em;
     font-weight: bold;
+    font-family: 'Poppins', sans-serif;
 
     margin: 0;
     position: absolute;
@@ -93,11 +103,11 @@ body {
 
 .presentacion-title {
     font-size: 55px;
-    font-family: 'Chelsea Market', cursive;
+    font-family: 'Poppins', sans-serif;
 }
 
 .frase {
-    font-family: 'Chelsea Market', cursive;
+    font-family: 'Poppins', sans-serif;
     font-size: 25px;
     margin-top: 50px;
 }
@@ -113,7 +123,7 @@ body {
     font-size: 25px;
     line-height: 38px;
     text-align: justify;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
 }
 .descripcion-2 {
     margin-top: 15px;
@@ -126,7 +136,7 @@ body {
 .temas p {
     font-size: 60px;
     text-align: center;
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Fira Sans', sans-serif;
 }
 
 .contenedor-temas {
@@ -144,8 +154,9 @@ body {
     padding: 13px;
     border: 1.5px solid black;
     border-radius: 7px;
-    font-size: 35px;
-    font-family: 'Shadows Into Light', cursive;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
     cursor: pointer;
     text-align: center;
     background-color: #090c0f;
@@ -172,7 +183,8 @@ body {
     border: 1.5px solid black;
     border-radius: 9px;
     font-size: 60px;
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
     cursor: pointer;
 }
 
@@ -190,10 +202,10 @@ body {
     padding: 15px;
     text-align: center;
     font-size: 50px;
-    font-weight: 100;
+    font-weight: 500;
     border: 5px solid white;
     color: white;
-    font-family: 'Chelsea Market', cursive;
+    font-family: 'Montserrat', sans-serif;
 }
 .pasos-instrucciones {
     display: grid;
@@ -210,6 +222,7 @@ body {
     border: 5px solid #090c0f;
     color: white;
     margin-bottom: 30px;
+    font-family: 'Fira Sans', sans-serif;
 }
 .pasos-instrucciones ul {
     border: 4px solid white;
@@ -222,6 +235,7 @@ body {
     line-height: 25px;
     margin: 15px 0;
     font-size: 19px;
+    font-family: 'Poppins', sans-serif;
 }
 
 footer {
@@ -244,7 +258,7 @@ footer p{
 }
 
 .main-footer p{
-    font-family: 'Chelsea Market', cursive;
+    font-family: 'Poppins', sans-serif;
     font-size: 27px;
 }
 
@@ -264,7 +278,7 @@ footer p{
 .informacion a{
     text-decoration: none;
     color: white;
-    font-family: 'Chelsea Market', cursive;
+    font-family: 'Poppins', sans-serif;
     font-size: 20px;
     margin-left: 30px;
 }
