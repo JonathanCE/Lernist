@@ -159,6 +159,9 @@ main {
     font-size: 50px;
     text-align: right;
 }
+.infoBtnMenos {
+    display: none;
+}
 .datos-video {
     display: grid;
     grid-template-columns: 0.4fr 1fr;
@@ -300,6 +303,9 @@ main {
     position: absolute;
     right: 15px;
     font-size: 2em;
+}
+.leccionBotonMenos {
+    display: none;
 }
 
 .leccion h3{

@@ -1,3 +1,12 @@
+/* 
+    font-family: 'Fira Sans', sans-serif;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-family: 'Poppins', sans-serif;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;400&family=Montserrat:wght@200;300;400;500&family=Poppins:wght@400;500;600&display=swap');
 * {
     margin: 0;
     font-family: sans-serif;
@@ -18,7 +27,7 @@ body {
     padding: 40px 20px;
     font-size: 20px;
     color: white;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     cursor: pointer;
     font-size: 21px;
@@ -37,6 +46,7 @@ body {
     display: inline-block;
     font-size: 1.3em;
     font-weight: bold;
+    font-family: 'Poppins', sans-serif;
 
     margin: 0;
     position: absolute;
@@ -175,7 +185,7 @@ footer p{
 }
 
 .main-footer p{
-    font-family: 'Chelsea Market', cursive;
+    font-family: 'Poppins', sans-serif;
     font-size: 27px;
 }
 
@@ -195,7 +205,7 @@ footer p{
 .informacion a{
     text-decoration: none;
     color: white;
-    font-family: 'Chelsea Market', cursive;
+    font-family: 'Poppins', sans-serif;
     font-size: 20px;
     margin-left: 30px;
 }
