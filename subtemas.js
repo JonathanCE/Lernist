@@ -5,6 +5,8 @@ $(document).ready(function() {
   $(".Inicio").text("Inicio");
   $("#aprenderLink").text("Aprender");
   $("#aprenderLink").attr("href", "/aprender.html")
+  $("#articulosLink").text("Artículos");
+  $("#articulosLink").attr("href", "/articulos.html")
   $("#enseñarLink").hide();
   $("#enseñarLink").text("Enseñar");
   $("#enseñarLink").attr("href", "/enseñar.html")

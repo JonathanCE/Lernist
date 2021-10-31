@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-STPM17KL3C"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-STPM17KL3C');
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Open+Sans:wght@700&family=Pangolin&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Tenali+Ramakrishna&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="articulos.css">
+    <link rel="icon" href="lernist-mini.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Codigo para busqueda -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
+    <script type="text/javascript">
+        algoliasearchNetlify({
+            appId: 'HZTEEHSOEV',
+            apiKey: 'ed770afc3ed0d5e2d280db81deb63ee8',
+            siteId: 'ce1564a0-793f-4cda-b98a-ec3086587215',
+            branch: 'master',
+            selector: 'div#search',
+            placeholder: 'Busca cursos y videos en lernist...',
+            analytics: 'true',
+            theme: {
+                mark: '#fff',
+                background: '#23263b',
+                selected: '#111432',
+                text: '#d6d6e7',
+                colorSourceIcon: '#d6d6e7'
+            },
+            hitsPerPage: '8',
+        });
+    </script>
+    <!-- Linea de separamiento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lernist | Artículos</title>
+</head>
+<body>
+
+    <nav class="nav" id="myNav">
+        <a id="homepageLink" href="">
+            <img id="logoNavbar" src="" alt="">
+            <div class="Inicio"></div>
+        </a>
+        <div class="menuPrincipal">
+            <a id="aprenderLink" href=""></a>
+            <a id="articulosLink" href=""></a>
+            <a id="enseñarLink" href=""></a>
+        </div>
+        <div id="menuHamburguesa" class="icon">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </nav>
+
+    <footer>
+        <div class="main-footer">
+            <p id="fraseFooter"></p>
+            <div class="social">
+                <a id="footerFacebook" href="" target="_blank"><img src="/social_icons/face.png" alt=""></a>
+                <a id="footerTwitter" href="" target="_blank"><img src="/social_icons/twitter.png" alt=""></a>
+                <a id="footerInstagram" href="" target="_blank"><img src="/social_icons/insta.png" alt=""></a>
+            </div>
+        </div>
+        <div class="informacion">
+            <a id="footerContacto" href="" target="_blank"></a>
+            <a id="footerNosotros" href="" target="_blank"></a>
+            <a id="footerAnunciantes" href="" target="_blank"></a>
+        </div>
+        <p class="legal">&copy; Derechos Reservados Lernist 2021.</p>
+    </footer>
+
+    <script src="articulos.js"></script>
+</body>
+</html>
