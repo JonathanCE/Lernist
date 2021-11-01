@@ -638,16 +638,18 @@ $(document).ready(function() {
   $("#descripcionCursoVideo").text("Descripción del video");
 
   $("#tipsCurso").text("Tips para el curso"); // Tips para el curso
-  $("#tipsCursoTexto").text("En partes del curso como en matemáticas, notarás que dos videos cubren el mismo tema o"
+  $("#tipsCursoTexto").text("En partes del curso , notarás que dos videos cubren el mismo tema o"
                               + " concepto, esto es a propósito, para darte a ti la elección de tu preferencia, además que"
                               + " así tienes más opciones de estudio por si un tema te parece algo complicado y necesitas"
                               + " verlo un poco más.");
 
   $("#descripcionCurso").text("Descripción del curso"); // Descripcion del curso
-  $("#descripcionCursoTexto").text("El curso de estudio para el examen PAA esta diseñado para enseñarte todos los conocimientos"
-                                      + " necesarios para lograr una super calificación en el examen. A lo largo de las lecciones y videos"
-                                      + " que lo componen, aprenderás y pondrás en practica habilidades de lectura, redacción y matemáticas,"
-                                      + " explicadas de la mano de expertos y de una forma clara y rápida.");
+  $("#descripcionCursoTexto").text("Este curso fue diseñado para ser el repaso definitivo de matemáticas."
+                                  + " Ya sea que vas a volver a la escuela, a entrar a la universidad, o ya eres grande"
+                                  + " y no recuerdas prácticamente nada de las matemáticas, con este curso tu lograrás"
+                                  + " recordar y dominar los conceptos básicos de este bello y complejo mundo. Aquí"
+                                  + " encontrarás las absolutas bases mátematicas que debes conocer tanto si deseas irte"
+                                  + " a temas más avanzados como por mera cultura general.");
   
   $("#duracionCurso").text("Duración y cantidad de videos del curso");
   $("#duracionCursoTexto").text("- 81 videos");

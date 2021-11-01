@@ -191,19 +191,22 @@ $(document).ready(function() {
   $("#descripcionCursoVideo").text("Descripción del video");
 
   $("#tipsCurso").text("Tips para el curso"); // Tips para el curso
-  $("#tipsCursoTexto").text("En partes del curso como en matemáticas, notarás que dos videos cubren el mismo tema o"
-                              + " concepto, esto es a propósito, para darte a ti la elección de tu preferencia, además que"
-                              + " así tienes más opciones de estudio por si un tema te parece algo complicado y necesitas"
-                              + " verlo un poco más.");
+  $("#tipsCursoTexto").text("Este curso es bastante sencillo de seguir, sus videos son cortos y muy dinámicos."
+                            + " Si quieres sacar lo mejor del contenido, te recomendamos que tomes pequeños apuntes,"
+                            + " de los aspectos más importantes. La acción de escribir a mano mejora la comprensión"
+                            + " y retención del conocimiento");
 
   $("#descripcionCurso").text("Descripción del curso"); // Descripcion del curso
-  $("#descripcionCursoTexto").text("El curso de estudio para el examen PAA esta diseñado para enseñarte todos los conocimientos"
-                                      + " necesarios para lograr una super calificación en el examen. A lo largo de las lecciones y videos"
-                                      + " que lo componen, aprenderás y pondrás en practica habilidades de lectura, redacción y matemáticas,"
-                                      + " explicadas de la mano de expertos y de una forma clara y rápida.");
+  $("#descripcionCursoTexto").text("Este curso expone de una manera visual y dinámica muchos de los temas que comprenden el"
+                                  + " algebra lineal, el creador usa animaciones y elementos visuales para explicar"
+                                  + " detalladamente los conceptos. Esto es una enorme ventaja, ya que en muchas ocasiones"
+                                  + " esta materia solo o se ve fuertemente desde el lado matemático, pero es crucial"
+                                  + " verla desde la parte gráfica para comprenderla correctamente. Al finalizar, tendrás"
+                                  + " una idea clara de la mayoría de los conceptos, y te permitirá desarrollar y entender"
+                                  + " las matemáticas detrás de ellos con más facilidad");
   
   $("#duracionCurso").text("Duración y cantidad de videos del curso");
-  $("#duracionCursoTexto").text("- 81 videos");
+  $("#duracionCursoTexto").text("- 15 videos");
 
   // uso de variables para insertar link de canales y nombre de un creador - ejemplos:
   var Blue1Brown = "3Blue1Brown Español.";

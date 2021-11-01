@@ -179,19 +179,21 @@ $(document).ready(function() {
   $("#descripcionCursoVideo").text("Descripción del video");
 
   $("#tipsCurso").text("Tips para el curso"); // Tips para el curso
-  $("#tipsCursoTexto").text("En partes del curso como en matemáticas, notarás que dos videos cubren el mismo tema o"
-                              + " concepto, esto es a propósito, para darte a ti la elección de tu preferencia, además que"
-                              + " así tienes más opciones de estudio por si un tema te parece algo complicado y necesitas"
-                              + " verlo un poco más.");
+  $("#tipsCursoTexto").text("Llevar este curso es todo un deleite, si gustas puedes tener una libreta para"
+                            + " tomar uno que otro apunte, pero no es necesario. Es extremadamente entretenido"
+                            + " y fácil de seguir. Recomendación: ponte comod@, preparate algún snack o comidita"
+                            + " y disfruta, que papi Santaolalla, te va a enamorar de esta ciencia.");
 
   $("#descripcionCurso").text("Descripción del curso"); // Descripcion del curso
-  $("#descripcionCursoTexto").text("El curso de estudio para el examen PAA esta diseñado para enseñarte todos los conocimientos"
-                                      + " necesarios para lograr una super calificación en el examen. A lo largo de las lecciones y videos"
-                                      + " que lo componen, aprenderás y pondrás en practica habilidades de lectura, redacción y matemáticas,"
-                                      + " explicadas de la mano de expertos y de una forma clara y rápida.");
+  $("#descripcionCursoTexto").text("Esta aventura te va a llevar a conocer y descubrir muchos fenómenos populares"
+                                  + " de la Física. Javier Santaolalla los explica de una manera muy divertida y"
+                                  + " entretenida, usando un lenguaje sencillo que hace que cualquiera pueda"
+                                  + " entender. Con su carisma, animaciones y gráficos interactivos, el explica"
+                                  + " con facilidad algunos conceptos e ideas fascinantes de nuestro mundo,"
+                                  + " universo y existencia misma.");
   
   $("#duracionCurso").text("Duración y cantidad de videos del curso");
-  $("#duracionCursoTexto").text("- 81 videos");
+  $("#duracionCursoTexto").text("- 13 videos");
 
   // uso de variables para insertar link de canales y nombre de un creador - ejemplos:
   var Date = "Date un Vlog.";
