@@ -124,6 +124,7 @@ main {
 }
 main img {
     width: 100%;
+    max-width: 600px;
 }
 main iframe {
     width: 100%;
