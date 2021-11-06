@@ -90,7 +90,7 @@ $(document).ready(function() {
   // LINKS DE CADA VIDEO | MENU ACORDION
   // LeccionName
   $("#videoAcordion1").attr("href", "video1.html").text("1. Probando pizzas REALMENTE ITALIANAS | Gran diferencia!");
-  $("#videoAcordion2").attr("href", "video2.html").text("2. Tour express imperdible por MADRID 🇪🇸🥩");
+  $("#videoAcordion2").attr("href", "video2.html").text("2. Tour express imperdible por MADRID 🥩");
   $("#videoAcordion3").attr("href", "video3.html").text("3. ¿Es verdad que los alemanes AMAN las salchichas?");
   $("#videoAcordion4").attr("href", "video4.html").text("4. Un día en ÁMSTERDAM: Tips útiles");
   $("#videoAcordion5").attr("href", "video5.html").text("5. No creí que BÉLGICA fuera tan divertido!");
@@ -107,7 +107,7 @@ $(document).ready(function() {
   $("#video1LinkAnterior").attr("href", ""); // video anterior
   $("#video1LinkSiguiente").attr("href", "video2.html"); // video siguiente
 
-  $("#tituloVideo2").text("2. Tour express imperdible por MADRID 🇪🇸🥩");
+  $("#tituloVideo2").text("2. Tour express imperdible por MADRID 🥩");
   $("#urlVideo2").attr("src", "https://www.youtube.com/embed/PAiKqQ51IW8?cc_lang_pref=es&cc_load_policy=1"); // url del video
   $("#video2LinkAnterior").attr("href", "video1.html"); // video anterior
   $("#video2LinkSiguiente").attr("href", "video3.html"); // video siguiente
