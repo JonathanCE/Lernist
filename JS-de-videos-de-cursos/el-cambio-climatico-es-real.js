@@ -105,16 +105,16 @@ $(document).ready(function() {
   $("#videoAcordion6").attr("href", "video6.html").text("6. ¿Que es el efecto invernadero?");
   $("#videoAcordion7").attr("href", "video7.html").text("7. ¿Qué es el efecto invernadero? | Sostenibilidad - ACCIONA");
   // ¿Cuáles son las causas?
-  $("#videoAcordion8").attr("href", "video8.html").text("8. ¿Quien es responsable por el cambio climatico? ¿Y quien debe solucionarlo?");
+  $("#videoAcordion8").attr("href", "video8.html").text("8. ¿Quien es responsable por el cambio climático? ¿Y quien debe solucionarlo?");
   $("#videoAcordion9").attr("href", "video9.html").text("9. El Cambio Climático es Culpa Nuestra y Puedo Convencerte");
   $("#videoAcordion10").attr("href", "video10.html").text("10. ¿Por qué la carne es la mejor PEOR cosa del mundo?");
-  $("#videoAcordion11").attr("href", "video11.html").text("11. ¿Por que estos 3 paises contaminan mas que el resto del mundo?");
-  $("#videoAcordion12").attr("href", "video12.html").text("12. Por que los humanos son muy malos al pensar en el cambio climatico (Inglés)");
+  $("#videoAcordion11").attr("href", "video11.html").text("11. ¿Por que estos 3 países contaminan mas que el resto del mundo?");
+  $("#videoAcordion12").attr("href", "video12.html").text("12. Por que los humanos son muy malos al pensar en el cambio climático (Inglés)");
   // ¿Cómo detener el cambio climático?
-  $("#videoAcordion13").attr("href", "video13.html").text("13. 26 Formas de Luchar contra el Cambio Climatico");
-  $("#videoAcordion14").attr("href", "video14.html").text("14. Como evitar el Cambio Climatico MUY RAPIDO");
-  $("#videoAcordion15").attr("href", "video15.html").text("15. ¿Podemos parar el cambio climatico plantando arboles? - Curiosamente");
-  $("#videoAcordion16").attr("href", "video16.html").text("16. ¿Se puede detener el cambio climatico platando billones de arboles? (Inglés)");
+  $("#videoAcordion13").attr("href", "video13.html").text("13. 26 Formas de Luchar contra el Cambio Climático");
+  $("#videoAcordion14").attr("href", "video14.html").text("14. Como evitar el Cambio Climatico MUY RÁPIDO");
+  $("#videoAcordion15").attr("href", "video15.html").text("15. ¿Podemos parar el cambio climático plantando árboles? - Curiosamente");
+  $("#videoAcordion16").attr("href", "video16.html").text("16. ¿Se puede detener el cambio climático platando billones de árboles? (Inglés)");
 
   // DATOS DE CADA VIDEO
   $("#tituloVideo1").text("1. Clima no es tiempo: la verdad del CAMBIO CLIMÁTICO");
@@ -152,7 +152,7 @@ $(document).ready(function() {
   $("#video7LinkAnterior").attr("href", "video6.html"); // video anterior
   $("#video7LinkSiguiente").attr("href", "video8.html"); // video siguiente
 
-  $("#tituloVideo8").text("8. ¿Quien es responsable por el cambio climatico? ¿Y quien debe solucionarlo?");
+  $("#tituloVideo8").text("8. ¿Quien es responsable por el cambio climático? ¿Y quien debe solucionarlo?");
   $("#urlVideo8").attr("src", "https://www.youtube.com/embed/LKNVNXHYzS0?cc_lang_pref=es&cc_load_policy=1"); // url del video
   $("#video8LinkAnterior").attr("href", "video7.html"); // video anterior
   $("#video8LinkSiguiente").attr("href", "video9.html"); // video siguiente
@@ -167,32 +167,32 @@ $(document).ready(function() {
   $("#video10LinkAnterior").attr("href", "video9.html"); // video anterior
   $("#video10LinkSiguiente").attr("href", "video11.html"); // video siguiente
 
-  $("#tituloVideo11").text("11. ¿Por que estos 3 paises contaminan mas que el resto del mundo?");
+  $("#tituloVideo11").text("11. ¿Por que estos 3 países contaminan mas que el resto del mundo?");
   $("#urlVideo11").attr("src", "https://www.youtube.com/embed/BzOR-D1pCaE?cc_lang_pref=es&cc_load_policy=1"); // url del video
   $("#video11LinkAnterior").attr("href", "video10.html"); // video anterior
   $("#video11LinkSiguiente").attr("href", "video12.html"); // video siguiente
 
-  $("#tituloVideo12").text("12. Por que los humanos son muy malos al pensar en el cambio climatico (Inglés)");
+  $("#tituloVideo12").text("12. Por que los humanos son muy malos al pensar en el cambio climático (Inglés)");
   $("#urlVideo12").attr("src", "https://www.youtube.com/embed/DkZ7BJQupVA?cc_lang_pref=es&cc_load_policy=1"); // url del video
   $("#video12LinkAnterior").attr("href", "video11.html"); // video anterior
   $("#video12LinkSiguiente").attr("href", "video13.html"); // video siguiente
 
-  $("#tituloVideo13").text("13. 26 Formas de Luchar contra el Cambio Climatico");
+  $("#tituloVideo13").text("13. 26 Formas de Luchar contra el Cambio Climático");
   $("#urlVideo13").attr("src", "https://www.youtube.com/embed/wNQ5wvGmnEk?cc_lang_pref=es&cc_load_policy=1"); // url del video
   $("#video13LinkAnterior").attr("href", "video12.html"); // video anterior
   $("#video13LinkSiguiente").attr("href", "video14.html"); // video siguiente
 
-  $("#tituloVideo14").text("14. Como evitar el Cambio Climatico MUY RAPIDO");
+  $("#tituloVideo14").text("14. Como evitar el Cambio Climático MUY RÁPIDO");
   $("#urlVideo14").attr("src", "https://www.youtube.com/embed/3X-Z0kMfh4M?cc_lang_pref=es&cc_load_policy=1"); // url del video
   $("#video14LinkAnterior").attr("href", "video13.html"); // video anterior
   $("#video14LinkSiguiente").attr("href", "video15.html"); // video siguiente
 
-  $("#tituloVideo15").text("15. ¿Podemos parar el cambio climatico plantando arboles? - Curiosamente");
+  $("#tituloVideo15").text("15. ¿Podemos parar el cambio climático plantando árboles? - Curiosamente");
   $("#urlVideo15").attr("src", "https://www.youtube.com/embed/7M-hixaUt5A?cc_lang_pref=es&cc_load_policy=1"); // url del video
   $("#video15LinkAnterior").attr("href", "video14.html"); // video anterior
   $("#video15LinkSiguiente").attr("href", "video16.html"); // video siguiente
 
-  $("#tituloVideo16").text("16. ¿Se puede detener el cambio climatico platando billones de arboles? (Inglés)");
+  $("#tituloVideo16").text("16. ¿Se puede detener el cambio climático platando billones de árboles? (Inglés)");
   $("#urlVideo16").attr("src", "https://www.youtube.com/embed/yvDRQe2oCt4?cc_lang_pref=es&cc_load_policy=1"); // url del video
   $("#video16LinkAnterior").attr("href", "video15.html"); // video anterior
   $("#video16LinkSiguiente").attr("href", "video17.html"); // video siguiente
@@ -207,16 +207,20 @@ $(document).ready(function() {
   $("#descripcionCursoVideo").text("Descripción del video");
 
   $("#tipsCurso").text("Tips para el curso"); // Tips para el curso
-  $("#tipsCursoTexto").text("En partes del curso como en matemáticas, notarás que dos videos cubren el mismo tema o"
-                              + " concepto, esto es a propósito, para darte a ti la elección de tu preferencia, además que"
-                              + " así tienes más opciones de estudio por si un tema te parece algo complicado y necesitas"
-                              + " verlo un poco más.");
+  $("#tipsCursoTexto").text("Este curso fue diseñado para explicar mismos conceptos desde diferentes fuentes,"
+                            + " por lo que te puede quedar claro con uno o dos videos, sin necesidad de ver"
+                            + " todos los de una lección. Sin embargo, cada autor profundiza y explica"
+                            + " bastante bien, por lo que recomendamos verlos todos.");
 
   $("#descripcionCurso").text("Descripción del curso"); // Descripcion del curso
-  $("#descripcionCursoTexto").text("El curso de estudio para el examen PAA esta diseñado para enseñarte todos los conocimientos"
-                                      + " necesarios para lograr una super calificación en el examen. A lo largo de las lecciones y videos"
-                                      + " que lo componen, aprenderás y pondrás en practica habilidades de lectura, redacción y matemáticas,"
-                                      + " explicadas de la mano de expertos y de una forma clara y rápida.");
+  $("#descripcionCursoTexto").text("La situación de nuestra madre Tierra es muy delicada. Ya estamos viviendo los efectos"
+                                  + " de nuestras malas acciones en el medio ambiente, y si no hacemos algo pronto,"
+                                  + " va a ser demasiado tarde. Aún con la infinidad de evidencias científicas y fenómenos"
+                                  + " meteorológicos derivados del calentamiento global, existen aún personas escépticas"
+                                  + " de esta realidad. Este curso es para convencer a estas personas de una vez por todas,"
+                                  + " y para aquellas que ya saben de ello, que lo conozcan y entiendan más a fondo, con el"
+                                  + " fin de unirnos como sociedad para ponerle un alto a este daño que esta padeciendo"
+                                  + " nuestro amado y frágil planeta.");
   
   $("#duracionCurso").text("Duración y cantidad de videos del curso");
   $("#duracionCursoTexto").text("- 16 videos");
