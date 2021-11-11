@@ -11,6 +11,7 @@
 * {
     margin: 0;
     font-family: sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -122,13 +123,23 @@ main {
     grid-template-rows: auto 1fr;
     padding: 0 40px;
 }
-main img {
-    width: 100%;
-    max-width: 600px;
-}
 main iframe {
     width: 100%;
     height: 500px;
+}
+.encabezado img{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.articulo {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 30px;
+}
+.articulo img {
+    width: 100%;
+    max-width: 600px;
 }
 .video {
     width: 100%;
@@ -145,10 +156,6 @@ main iframe {
     height: 100%;
 }
 .contenido {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-row-gap: 30px;
     padding: 15px 25px;
 }
 .contenido h3 {
@@ -173,6 +180,10 @@ main iframe {
 .contenido li {
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
+}
+.contenido span {
+    font-weight: bold;
+    font-size: 25px;
 }
 
 
