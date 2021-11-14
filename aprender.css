@@ -318,25 +318,7 @@ footer p{
 
 @media screen and (max-width: 750px) {
     .contenedor-temas {
-        grid-template-columns: 1fr;
-    }
-    .contenedor-temas a{
-        display: grid;
-        grid-template-columns: 0.5fr 1fr;
-        grid-column-gap: 10px;
-        align-items: center;
-        text-decoration: none;
-        color: #f0ece2;
-    
-        padding: 10px;
-        border: 1.5px solid black;
-        border-radius: 7px;
-        font-size: 30px;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 300;
-        cursor: pointer;
-        text-align: center;
-        background-color: #090c0f;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -358,6 +340,19 @@ footer p{
 }
 
 @media screen and (max-width: 610px) {
+    .contenedor-temas {
+        grid-template-columns: 1fr;
+    }
+    .contenedor-temas a{
+        display: grid;
+        grid-template-columns: 0.5fr 1fr;
+        grid-column-gap: 10px;
+        align-items: center;
+        text-decoration: none;
+        color: #f0ece2;
+        font-size: 30px;
+        padding: 10px;
+    }
     .presentacion-texto {
         padding: 15px;
     }
@@ -372,9 +367,10 @@ footer p{
     }
     .contenedor-temas a{
         display: grid;
-        grid-template-columns: 0.7fr 1fr;
+        grid-template-columns: 0.6fr 1fr;
         grid-column-gap: 10px;
         align-items: center;
+        font-size: 27px;
     }
     .Presentacion {
         padding: 30px 50px;
