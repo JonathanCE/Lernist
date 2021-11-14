@@ -114,12 +114,28 @@ body {
 
 .contenedor-temas {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-gap: 20px;
 }
 
 .contenedor-temas a{
+    display: block;
+    text-decoration: none;
+    color: white;
+
+    padding: 13px;
+    border: 1.5px solid black;
+    border-radius: 7px;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+    text-align: center;
+    background-color: #090c0f;
+}
+
+/* .contenedor-temas a{
     display: grid;
     grid-template-columns: 0.5fr 1fr;
     grid-column-gap: 10px;
@@ -133,11 +149,10 @@ body {
     font-size: 30px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    /* font-family: 'Amatic SC', cursive; */
     cursor: pointer;
     text-align: center;
     background-color: #090c0f;
-}
+} */
 
 .contenedor-temas img{
     width: 100%;
@@ -230,10 +245,13 @@ footer p{
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
-@media screen and (max-width: 1070px) {
+@media screen and (max-width: 1210px) {
     .contenedor-temas {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+}
+
+@media screen and (max-width: 1070px) {
 
     .main-footer{
         grid-template-columns: 1fr;
@@ -285,12 +303,40 @@ footer p{
     }
 }
 
+@media screen and (max-width: 980px) {
+    .contenedor-temas {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
 @media screen and (max-width: 800px) {
+    
+    .informacion {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 750px) {
     .contenedor-temas {
         grid-template-columns: 1fr;
     }
-    .informacion {
+    .contenedor-temas a{
+        display: grid;
+        grid-template-columns: 0.5fr 1fr;
+        grid-column-gap: 10px;
+        align-items: center;
+        text-decoration: none;
+        color: #f0ece2;
+    
+        padding: 10px;
+        border: 1.5px solid black;
+        border-radius: 7px;
+        font-size: 30px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        cursor: pointer;
         text-align: center;
+        background-color: #090c0f;
     }
 }
 
