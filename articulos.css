@@ -312,6 +312,11 @@ footer p{
 .nav a:hover {
     color: #95a5a6;
 }
+.articulo a:hover {
+    transform: translateY(-2px);
+    transition: transform 100ms;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
 .articulos a:hover {
     background-color: black;
     border-radius: 3px;
