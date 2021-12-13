@@ -1,0 +1,82 @@
+[
+  {
+    "question": "¿Cuanto es 4/5 * 9/5?",
+    "choice1": "4/10",
+    "choice2": "36/25",
+    "choice3": "7/9",
+    "choice4": "1 entero",
+    "answer": 2
+  },
+  {
+    "question": "¿Cuanto es 4/3 * 1/3?",
+    "choice1": "4/9",
+    "choice2": "4/5",
+    "choice3": "3/7",
+    "choice4": "10/6",
+    "answer": 1
+  },
+  {
+    "question": "¿Cuanto es 2/7 ÷ 1/7?",
+    "choice1": "3/3",
+    "choice2": "14/7",
+    "choice3": "4/8",
+    "choice4": "4/5",
+    "answer": 2
+  },
+  {
+    "question": "¿Cuanto es 4/5 ÷ 1/5?",
+    "choice1": "2/5",
+    "choice2": "3/7",
+    "choice3": "20/5",
+    "choice4": "5/5",
+    "answer": 3
+  },
+  {
+    "question": "¿A cuanto equivale 1/2 * 3/5?",
+    "choice1": "1 entero 4/5",
+    "choice2": "3/10",
+    "choice3": "6/5",
+    "choice4": "4/20",
+    "answer": 2
+  },
+  {
+    "question": "¿Cuanto es 5/3 * 2/2?",
+    "choice1": "7/3",
+    "choice2": "8/2",
+    "choice3": "5/4",
+    "choice4": "10/6",
+    "answer": 4
+  },
+  {
+    "question": "¿A cuanto equivale 8/4 ÷ 3/2?",
+    "choice1": "4/5",
+    "choice2": "20/8",
+    "choice3": "12/4",
+    "choice4": "5/4",
+    "answer": 3
+  },
+  {
+    "question": "¿Cuanto es 1/5 ÷ 2/10?",
+    "choice1": "4/5",
+    "choice2": "1 entero",
+    "choice3": "7/5",
+    "choice4": "8/10",
+    "answer": 2
+  },
+  {
+    "question": "¿Cuanto es 4/4 * 5/6?",
+    "choice1": "10/4",
+    "choice2": "1/6",
+    "choice3": "1 entero 1/4",
+    "choice4": "20/24",
+    "answer": 4
+  },
+  {
+    "question": "¿A cuanto equivale 9/7 * 4/14?",
+    "choice1": "2/6",
+    "choice2": "15/14",
+    "choice3": "36/98",
+    "choice4": "10/9",
+    "answer": 3
+  }
+]
