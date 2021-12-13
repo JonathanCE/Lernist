@@ -21,8 +21,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width-device-width, initial-scale=1.0">
-  <title>Lernist | Quiz | Multiplicación y división de fracciones</title>
+  <title>¡Felicitaciones!</title>
 </head>
+
 
 <body>
 
@@ -43,16 +44,22 @@
           <div class="bar3"></div>
       </div>
   </nav>
-  
-  <div class="container">
-    <div id="home" class="flex-center flex-column">
-      <h1>Suma y resta de fracciones</h1>
-      <a class="btn" href="game.html">Jugar</a>
-      <!-- <a class="btn" href="highscores.html">Puntajes guardados</a> -->
+
+    <div class="container">
+      <div id="end" class="flex-center flex-column">
+        <h1 id="finalScore">0</h1>
+        <!-- <form>
+          <input type="text" name="username" id="username" placeholder="Ponle nombre a este intento...">
+
+          <button type="submit" class="btn" id="saveScoreBtn" onclick="saveHighScore(event)" disabled>Guardar</button>
+        </form> -->
+
+        <a class="btn" href="game.html">Jugar otra vez</a>
+        <a class="btn" href="algebra-paa-1.html">Ir al menu</a>
+      </div>
     </div>
-  </div>
-  
-  <footer>
+
+    <footer>
       <div class="main-footer">
           <p id="fraseFooter"></p>
           <div class="social">
@@ -69,6 +76,7 @@
       <p class="legal">&copy; Derechos Reservados Lernist 2021.</p>
   </footer>
 
+  <script src="end.js"></script>
   <script src="/Controladores-JS-y-CSS/navbar-and-footer.js"></script>
 </body>
 
