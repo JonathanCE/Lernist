@@ -38,7 +38,7 @@ $(document).ready(function() {
   $("#homepageLink").attr("href", "/");
   $("#logoNavbar").attr("src", "/i_temas/Logo Lernist.png")
   $(".Inicio").text("Inicio");
-  $("#aprenderLink").text("Aprender");
+  $("#aprenderLink").text("Cursos");
   $("#aprenderLink").attr("href", "/aprender.html")
   $("#articulosLink").text("Artículos");
   $("#articulosLink").attr("href", "/articulos.html")

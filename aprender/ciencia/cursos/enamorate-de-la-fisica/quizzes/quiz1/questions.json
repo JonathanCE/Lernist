@@ -1,6 +1,6 @@
 [
   {
-    "question": "¿Cuál es el resultado de factorizar x^2 + 3x -4?",
+    "question": "",
     "choice1": "(x+2) (x-3)",
     "choice2": "(x+4) (x-1)",
     "choice3": "(x+2) (x-2)",
@@ -8,7 +8,7 @@
     "answer": 2
   },
   {
-    "question": "Cuál es el resultado de la función f(x) = 4x-13, cuando x = 9?",
+    "question": "",
     "choice1": "23",
     "choice2": "53",
     "choice3": "31",
@@ -16,7 +16,7 @@
     "answer": 1
   },
   {
-    "question": "¿Para que valor de x se cumple la condición: 5x -20 > 4x -10?",
+    "question": "",
     "choice1": "10",
     "choice2": "20",
     "choice3": "8",
@@ -24,7 +24,7 @@
     "answer": 2
   },
   {
-    "question": "Despeja 'x' en 7x + 33 = 89",
+    "question": "",
     "choice1": "8",
     "choice2": "10",
     "choice3": "5",
@@ -32,7 +32,7 @@
     "answer": 1
   },
   {
-    "question": "¿Para que valor de x la siguiente condición es cierta: |x| < 1 ?",
+    "question": "",
     "choice1": "-5",
     "choice2": "-3/4",
     "choice3": "-3/2",
@@ -40,7 +40,7 @@
     "answer": 2
   },
   {
-    "question": "¿Cuál es el resultado de los siguientes monomios: 10a -7b +4a?",
+    "question": "",
     "choice1": "21ab",
     "choice2": "-7b +14a",
     "choice3": "-7b -6a",
@@ -48,7 +48,7 @@
     "answer": 4
   },
   {
-    "question": "Despeja 'y' en 5y -7 = 93",
+    "question": "",
     "choice1": "10",
     "choice2": "7",
     "choice3": "20",
@@ -56,7 +56,7 @@
     "answer": 3
   },
   {
-    "question": "¿Cuál es el resultado de los siguientes monomios: 20b -10a +10ab",
+    "question": "",
     "choice1": "20 -10a +10ab",
     "choice2": "-10a +10ab +20b",
     "choice3": "+10ab -10a +20b",
@@ -64,7 +64,7 @@
     "answer": 2
   },
   {
-    "question": "¿Cuál tiene que ser el valor de 'x' para que la función f(x) = 6x+20, de igual a 92?",
+    "question": "",
     "choice1": "10",
     "choice2": "4",
     "choice3": "8",
@@ -72,7 +72,7 @@
     "answer": 4
   },
   {
-    "question": "¿Que signo se usa para decir 'mayor que'?",
+    "question": "",
     "choice1": "<",
     "choice2": "+",
     "choice3": ">",
