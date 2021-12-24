@@ -21,7 +21,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width-device-width, initial-scale=1.0">
-  <title>Lernist | Quiz | Álgebra PAA 1</title>
+  <title>Lernist | Quiz | Enamórate de la Física 1</title>
 </head>
 
 <body>
@@ -44,9 +44,9 @@
       </div>
   </nav>
   
-  <div class="container">
+  <div id="contenedor" class="container">
     <div id="home" class="flex-center flex-column">
-      <h1>Álgebra PAA 1</h1>
+      <h1>Enamórate de la Física 1</h1>
       <a class="btn" href="game.html">Jugar</a>
       <!-- <a class="btn" href="highscores.html">Puntajes guardados</a> -->
     </div>
@@ -70,6 +70,20 @@
   </footer>
 
   <script src="/Controladores-JS-y-CSS/navbar-and-footer.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.net.min.js"></script>
+  <script>
+    VANTA.NET({
+      el: "#contenedor",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00
+    })
+  </script>
 </body>
 
 </html>

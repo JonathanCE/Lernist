@@ -43,22 +43,23 @@
         </div>
     </nav>
 
-    <section class="Presentacion">
+    <section id="presentacion">
         <div>
             <h1 class="presentacion-title">BIENVENID@ A LERNIST</h1>
 
             <p class="frase">Aprende cosas Increíbles, con contenido Increíble.</p>
         </div>
-        <div class="presentacion-description">
-            <p class="descripcion">Lernist es un sitio web diseñado para ser una plataforma donde puedes
-                adquirir conocimientos de alto valor. Sea para la escuela, para un trabajo, o por el simple deseo 
-                de comprender el mundo y más allá.
-            </p>
-            <p class="descripcion-2">
-                Fue creado con el propósito de ayudar a las personas a aprender, por su cuenta y a su 
-                ritmo, usando explicaciones sencillas, concisas, dinámicas y gratuitas.
-            </p>
-        </div>
+    </section>
+
+    <section class="presentacion-description">
+        <p class="descripcion">Lernist es un sitio web diseñado para ser una plataforma donde puedes
+            adquirir conocimientos de alto valor. Sea para la escuela, para un trabajo, o por el simple deseo 
+            de comprender el mundo y más allá.
+        </p>
+        <p class="descripcion-2">
+            Fue creado con el propósito de ayudar a las personas a aprender, por su cuenta y a su 
+            ritmo, usando explicaciones sencillas, concisas, dinámicas y gratuitas.
+        </p>
     </section>
 
     <section class="temas">
@@ -149,5 +150,23 @@
     </footer>
     
     <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+    <script>
+        VANTA.WAVES({
+          el: "#presentacion",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.00,
+          minWidth: 200.00,
+          scale: 1.00,
+          scaleMobile: 1.00,
+          color: 0x243b46,
+          waveHeight: 12.00,
+          zoom: 0.65
+        })
+        </script>
+
 </body>
 </html>

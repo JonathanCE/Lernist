@@ -85,20 +85,11 @@ body {
 }
 
 
-.Presentacion {
-    padding: 110px 30px;
-    display: grid;
-    grid-template-columns: 0.8fr 1fr;
-    grid-template-rows: auto;
-    grid-column-gap: 30px;
-    text-align: center;
+#presentacion {
+    display: flex;
     align-items: center;
-    background-image: url(i_temas/black3-background.jpg);
-
-    background-attachment: fixed; /* Codigo para el efecto parallax */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    padding: 100px 30px;
+    height: 400px;
 }
 
 .presentacion-title {
@@ -441,9 +432,6 @@ footer p{
     }
     .frase {
         margin-top: 10px;
-    }
-    .presentacion-description {
-        margin-top: 70px;
     }
 
     .instrucciones h1 {

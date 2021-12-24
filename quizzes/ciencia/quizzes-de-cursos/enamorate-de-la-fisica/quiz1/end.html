@@ -45,7 +45,7 @@
       </div>
   </nav>
 
-    <div class="container">
+    <div id="contenedor" class="container">
       <div id="end" class="flex-center flex-column">
         <h1 id="finalScore">0</h1>
         <!-- <form>
@@ -55,7 +55,7 @@
         </form> -->
 
         <a class="btn" href="game.html">Jugar otra vez</a>
-        <a class="btn" href="algebra-paa-1.html">Ir al menu</a>
+        <a class="btn" href="enamorate-de-la-fisica-1.html">Ir al menu</a>
       </div>
     </div>
 
@@ -78,6 +78,20 @@
 
   <script src="end.js"></script>
   <script src="/Controladores-JS-y-CSS/navbar-and-footer.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.net.min.js"></script>
+  <script>
+    VANTA.NET({
+      el: "#contenedor",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00
+    })
+  </script>
 </body>
 
 </html>
