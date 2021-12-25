@@ -99,12 +99,6 @@
     transition: transform 150ms;
 }
 
-@media screen and (max-width: 1210px) {
-    .contenedor-temas {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-}
-
 @media screen and (max-width: 980px) {
     .contenedor-temas {
         grid-template-columns: 1fr 1fr 1fr;
