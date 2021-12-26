@@ -1,12 +1,15 @@
 #presentacion {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     padding: 100px 30px;
     height: 400px;
+    text-align: center;
 }
 
 .presentacion-title {
-    font-size: 55px;
+    font-size: 70px;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -293,10 +296,7 @@ footer {
         padding: 30px 20px 20px 20px;
     }
     .presentacion-title {
-        font-size: 57px;
-    }
-    .frase {
-        margin-top: 10px;
+        font-size: 55px;
     }
 
     .instrucciones h1 {
@@ -332,9 +332,6 @@ footer {
 }
 
 @media screen and (max-width: 630px) {
-    .presentacion-title {
-        font-size: 50px;
-    }
     .todos a{
         width: 60%;
     }
