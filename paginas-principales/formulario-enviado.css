@@ -163,6 +163,7 @@ footer p{
 }
 .legal {
     text-align: right;
+    font-weight: bold;
 }
 
 .nav a:hover {
