@@ -1,11 +1,17 @@
 #presentacion {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center; */
     padding: 100px 30px;
     height: 400px;
     text-align: center;
+}
+.presentacion-contenido {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .presentacion-title {
@@ -20,12 +26,26 @@
 }
 
 .presentacion-description {
+    display: grid;
+    grid-column-gap: 40px;
+    grid-row-gap: 30px;
+    align-items: center;
+    padding: 40px 25px;
     text-align: center;
     background-color: #090c0f;
-    padding: 20px 10px;
-    border-radius: 5px;
 }
-
+#presentacion-description1,  #presentacion-description3 {
+    grid-template-columns: 0.4fr 1fr;
+    padding-right: 100px;
+}
+#presentacion-description2 {
+    grid-template-columns: 1fr 0.4fr;
+    padding-left: 100px;
+}
+.presentacion-description img {
+    width: 100%;
+    margin: 0 auto;
+}
 .presentacion-description p {
     font-size: 25px;
     line-height: 38px;
@@ -36,30 +56,36 @@
     margin-top: 15px;
 }
 
-.temas {
+.cursos, .articulos, .quizzes {
     padding: 20px 20px;
+    background-color: black;
 }
 
-.temas p {
+.cursos p, .articulos p, .quizzes p {
     font-size: 60px;
     text-align: center;
     font-family: 'Fira Sans', sans-serif;
 }
 
-.contenedor-temas {
+.contenedor-cursos, .contenedor-quizzes {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-gap: 20px;
 }
+.contenedor-articulos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+}
 
-.contenedor-temas a{
+.contenedor-cursos a{
     display: block;
     text-decoration: none;
     color: white;
 
     padding: 13px;
-    border: 1.5px solid black;
     border-radius: 7px;
     font-size: 30px;
     font-family: 'Montserrat', sans-serif;
@@ -68,12 +94,71 @@
     text-align: center;
     background-color: #090c0f;
 }
+.contenedor-articulos a{
+    text-decoration: none;
+    color: white;
 
-.contenedor-temas img{
+    padding: 12px;
+    border: 1.5px solid black;
+    border-radius: 7px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+    background-color: #090c0f;
+
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+    grid-column-gap: 20px;
+}
+.articulos-datos {
+    display: flex;
+    flex-direction: column;
+}
+.articulos-datos h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.articulos-datos p {
+    font-size: 20px;
+    text-align: justify;
+}
+.articulo-info {
+    font-weight: 400;
+}
+.articulos-muestra {
+    margin-top: 15px;
+    font-size: 19px;
+}
+.imagen-articulo {
+    display: flex;
+    align-items: center;
+}
+.contenedor-quizzes a{
+    text-decoration: none;
+    color: white;
+
+    padding: 8px;
+    border: 1.5px solid black;
+    border-radius: 7px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+    text-align: center;
+    background-color: #090c0f;
+
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+    grid-column-gap: 10px;
+    align-items: center;
+}
+
+.contenedor-cursos img, .contenedor-articulos img, .contenedor-quizzes img{
     width: 100%;
     border-radius: 3px;
 }
-
 .todos a{
     display: block;
     text-decoration: none;
@@ -81,17 +166,14 @@
 
     text-align: center;
     width: 40%;
-    margin: auto;
-    margin-bottom: 25px;
-    margin-top: 5px;
-    padding: 70px 0;
-    background: linear-gradient(35deg, #0c5c5c, #b84e4e);
+    margin: 30px auto 15px;
+    padding: 70px 10px;
+    background: #090c0f;
 
-    border: 1.5px solid black;
     border-radius: 9px;
     font-size: 60px;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     cursor: pointer;
 }
 
@@ -145,8 +227,50 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.donar {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    background-color: #090c0f;
+}
+.donacion {
+    padding: 20px 45px;
+    border-radius: 7px;
+    background-color: black;
+    width: 60%;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 0.4fr;
+    grid-column-gap: 25px;
+    align-items: center;
+}
+.donacion p {
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    line-height: 30px;
+}
+.donacion a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+    color: white;
+    height: 70px;
+    width: 100%;
+    font-size: 25px;
+    background-color: #15191f;
+    border: 4px solid rgb(86, 165, 235, 0.25);
+    border-radius: 10px;
+}
+
 .referidos {
     padding: 20px 20px;
+    background-color: black;
 }
 .referidos p {
     font-size: 40px;
@@ -193,7 +317,7 @@
     font-size: 25px;
     background-color: #15191f;
     border: 4px solid rgb(86, 165, 235, 0.25);
-    border-radius: 10px;
+    border-radius: 1px;
     margin-top: 10px;
 }
 .referido img{
@@ -206,33 +330,49 @@
     text-decoration: underline;
 }
 
-footer {
-    background-color: #090c0f;
-    padding: 50px 50px 30px 50px;
-    font-weight: bold;
-    color: white;
-}
-
-.contenedor-temas a:hover{
+.contenedor-cursos a:hover{
     cursor: pointer;
     box-shadow: 0 4px 14px 0 rgba(86, 185, 235, 0.5);
+    border: 3px solid rgb(86, 165, 235, 0.25);
     transform: translateY(-3px);
     transition: transform 150ms;
 }
 .todos a:hover{
     cursor: pointer;
     box-shadow: 0 4px 14px 0 rgba(86, 185, 235, 0.5);
+    border: 4px solid rgb(86, 165, 235, 0.25);
     transform: translateY(-3px);
     transition: transform 150ms;
-    background: linear-gradient(35deg, #b84e4e, #0c5c5c);
+}
+.contenedor-articulos a:hover{
+    cursor: pointer;
+    box-shadow: 0 4px 14px 0 rgba(86, 185, 235, 0.5);
+    border: 3px solid rgb(86, 165, 235, 0.25);
+    transform: translateY(-3px);
+    transition: transform 150ms;
+}
+.contenedor-quizzes a:hover{
+    cursor: pointer;
+    box-shadow: 0 4px 14px 0 rgba(86, 185, 235, 0.5);
+    border: 3px solid rgb(86, 165, 235, 0.25);
+    transform: translateY(-3px);
+    transition: transform 150ms;
 }
 .referido a:hover {
     box-shadow: 0 4px 14px 0 rgba(86, 185, 235, 0.5);
     transform: translateY(-1px);
     transition: transform 150ms;
 }
+.donacion a:hover {
+    box-shadow: 0 4px 14px 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-1px);
+    transition: transform 150ms;
+}
 
 @media screen and (max-width: 1270px) {
+    .articulos-datos p {
+        font-size: 17px;
+    }
     .instrucciones {
         padding: 20px;
     }
@@ -251,6 +391,10 @@ footer {
     .todos a{
         width: 40%;
     }
+    .donacion {
+        padding: 20px 30px;
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -263,8 +407,36 @@ footer {
     .presentacion-title {
         font-size: 65px;
     }
+    .presentacion-description {
+        grid-column-gap: 30px;
+        padding: 25px;
+    }
+    #presentacion-description1, #presentacion-description3 {
+        grid-template-columns: 0.6fr 1fr;
+        padding-right: 50px;
+    }
+    #presentacion-description2 {
+        grid-template-columns: 1fr 0.6fr;
+        padding-left: 50px;
+    }
     .presentacion-description p{
         text-align: center;
+    }
+    .contenedor-quizzes {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .contenedor-articulos {
+        grid-template-columns: 1fr;
+    }
+    .contenedor-articulos a {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .articulos-datos h3 {
+        font-size: 25px;
+    }
+    .articulos-datos p {
+        font-size: 19px;
     }
 
     .instrucciones h1 {
@@ -277,8 +449,13 @@ footer {
 }
 
 @media screen and (max-width: 950px) {
-    .contenedor-temas {
+    .contenedor-cursos {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    .todos a{
+        width: 60%;
+        font-size: 50px;
+        padding: 50px 10px;
     }
     .contenedor-referidos {
         grid-template-columns: 1fr;
@@ -298,6 +475,9 @@ footer {
     .presentacion-title {
         font-size: 55px;
     }
+    .donacion {
+        grid-template-columns: 1fr 0.5fr;
+    }
 
     .instrucciones h1 {
         margin: 0 70px;
@@ -309,17 +489,44 @@ footer {
 }
 
 @media screen and (max-width: 750px) {
-    .contenedor-temas {
+    .contenedor-cursos, .contenedor-quizzes {
         grid-template-columns: 1fr 1fr;
+    }
+    .contenedor-articulos a {
+        width: 90%;
     }
     .referido p {
         font-size: 19px;
     }
+    .donacion {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 650px) {
+    .presentacion-description {
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+    }
+    #presentacion-description1, #presentacion-description3 {
+        padding-right: 25px;
+    }
+    #presentacion-description2 {
+        flex-direction: column-reverse;
+        padding-left: 25px;
+    }
+    .presentacion-description img {
+        width: 80%;
+    }
+    .contenedor-articulos a {
+        width: fit-content;
+    }
     .descripcion-2 {
         margin-top: 15px;
+    }
+    .donacion {
+        grid-column-gap: 15px;
     }
 
     .instrucciones h1 {
@@ -331,17 +538,11 @@ footer {
     }
 }
 
-@media screen and (max-width: 630px) {
-    .todos a{
-        width: 60%;
-    }
-}
-
 @media screen and (max-width: 610px) {
-    .contenedor-temas {
+    .contenedor-cursos, .contenedor-quizzes {
         grid-template-columns: 1fr;
     }
-    .contenedor-temas a{
+    .contenedor-cursos a{
         display: grid;
         grid-template-columns: 0.5fr 1fr;
         grid-column-gap: 10px;
@@ -350,6 +551,30 @@ footer {
         color: #f0ece2;
         font-size: 30px;
         padding: 10px;
+    }
+    .contenedor-quizzes a{
+        font-size: 25px;
+    }
+    .articulos-datos h3 {
+        font-size: 21px;
+    }
+    .articulos-datos p {
+        font-size: 17px;
+    }
+    /* .donar {
+        padding: 0;
+        background-color: black;
+    } */
+    .donacion {
+        grid-template-columns: 1fr;
+        padding: 25px;
+    }
+    .donacion p {
+        text-align: center;
+    }
+    .donacion a {
+        margin: 30px auto 0;
+        width: 200px;
     }
 }
 
@@ -361,6 +586,36 @@ footer {
 
     .descripcion {
         border-radius: 10px;
+    }
+    .presentacion-description {
+        padding: 20px 10px;
+    }
+    #presentacion-description1, #presentacion-description3 {
+        padding-right: 10px;
+    }
+    #presentacion-description2 {
+        flex-direction: column-reverse;
+        padding-left: 10px;
+    }
+    .presentacion-description img {
+        width: 90%;
+    }
+    .contenedor-articulos a {
+        grid-template-columns: 1fr;
+        padding: 20px 15px;
+    }
+    .articulos-datos {
+        margin-top: 15px;
+    }
+    .articulos-datos h3 {
+        font-size: 23px;
+    }
+    .imagen-articulo img{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .todos a{
+        width: 90%;
     }
 
     .instrucciones h1 {
@@ -377,6 +632,12 @@ footer {
 }
 
 @media screen and (max-width: 470px) {
+    .todos a {
+        font-size: 45px;
+    }
+    .donar {
+        padding: 20px;
+    }
     .referido {
         grid-template-columns: 1fr 0.7fr;
     }
@@ -386,14 +647,27 @@ footer {
     .referido a {
         width: 100%;
     }
-    .contenedor-temas a{
+    .contenedor-cursos a{
         display: grid;
         grid-template-columns: 0.6fr 1fr;
         grid-column-gap: 10px;
         align-items: center;
         font-size: 27px;
     }
-    .todos a{
-        width: 90%;
+}
+
+@media screen and (max-width: 400px) {
+    .presentacion-title {
+        font-size: 45px;
+    }
+    .contenedor-cursos a {
+        font-size: 23px;
+    }
+    .referido {
+        grid-template-columns: 1fr;
+    }
+    .referido img {
+        width: 70%;
+        margin: 30px auto 15px;
     }
 }
