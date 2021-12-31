@@ -393,6 +393,9 @@ footer {
 }
 
 @media screen and (max-width: 410px) {
+    .title h1 {
+        font-size: 35px;
+    }
     .contenido span {
         font-weight: bold;
         font-size: 19px;
