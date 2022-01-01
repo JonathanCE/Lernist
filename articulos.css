@@ -1,92 +1,3 @@
-/* 
-    font-family: 'Fira Sans', sans-serif;
-
-    font-family: 'Montserrat', sans-serif;
-
-    font-family: 'Poppins', sans-serif;
-*/
-
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;400&family=Montserrat:wght@200;300;400;500&family=Poppins:wght@400;500;600&display=swap');
-
-* {
-    margin: 0;
-    font-family: sans-serif;
-}
-
-body {
-    background-color: #15191f;
-    color: #f0ece2;
-}
-
-.nav {
-    background-color: #090c0f;
-}
-
-.nav a {
-    display: inline-block;
-    text-align: center;
-    padding: 40px 20px;
-    font-size: 20px;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    text-decoration: none;
-    cursor: pointer;
-    font-size: 21px;
-}
-#homepageLink {
-    padding: 16px 20px;
-    position: relative;
-}
-#homepageLink img {
-    width: auto;
-    height: 70px;
-    margin-right: 20px;
-    border-radius: 4px;
-}
-.Inicio {
-    display: inline-block;
-    font-size: 1.3em;
-    font-weight: bold;
-    font-family: 'Poppins', sans-serif;
-
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-.menuPrincipal {
-    float: right;
-}
-
-/* .nav .icon {
-    display: none;
-} */
-#menuHamburguesa {
-    padding: 18px;
-    display: none;
-}
-.bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: white;
-    margin: 6px 0;
-    transition: 0.3s;
-    border-radius: 1px;
-}
-.change-bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-    transform: rotate(-45deg) translate(-9px, 6px) ;
-}
-.change-bar2 {
-    opacity: 0;
-}
-.change-bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-    transform: rotate(45deg) translate(-8px, -8px) ;
-}
-
-
 #anuncio-superior {
     padding: 15px;
 }
@@ -276,60 +187,6 @@ main iframe {
 }
 
 
-footer {
-    background-color: #090c0f;
-    padding: 50px 50px 30px 50px;
-    font-weight: bold;
-    color: white;
-    margin-top: 20px;
-}
-
-footer p{
-    font-size: 15px;
-}
-
-.main-footer {
-    margin-bottom: 60px;
-    display: grid;
-    grid-template-columns: 1fr 250px;
-    padding: 10px 0;
-    align-items: center;
-}
-
-.main-footer p{
-    font-family: 'Poppins', sans-serif;
-    font-size: 27px;
-}
-
-.social {
-    text-align: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-.social a{
-    cursor: pointer;
-}
-.informacion {
-    margin-bottom: 40px;
-    padding: 10px 0;
-    text-align: right;
-}
-.informacion a{
-    text-decoration: none;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    margin-left: 30px;
-    font-weight: bold;
-}
-.legal {
-    text-align: right;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.nav a:hover {
-    color: #95a5a6;
-}
 .articulo a:hover {
     cursor: pointer;
     box-shadow: 0 4px 14px 0 rgba(86, 185, 235, 0.5);
@@ -345,71 +202,10 @@ footer p{
 .recomendado-content a:hover {
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
-.social img:hover{
-    background-color: black;
-    border-radius: 10px;
-    border: 2px solid black;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-}
-.informacion a:hover {
-    background-color: black;
-    border-radius: 5px;
-    border: 4px solid black;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-}
 
 @media screen and (max-width: 1070px) {
     main {
         padding: 0 15px;
-    }
-    .main-footer{
-        grid-template-columns: 1fr;
-        grid-row-gap: 30px;
-        margin-bottom: 50px;
-    }
-    .main-footer p{
-        text-align: center;
-    }
-    .social {
-        display: inline;
-    }
-    .social a{
-        margin: 0 10px;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-
-    .nav a {
-        font-size: 24px;
-        display: block;
-        text-align: left;
-        padding: 20px;
-    }
-    #homepageLink {
-        padding: 15px 20px;
-    }
-    #homepageLink img {
-        width: auto;
-        height: 60px;
-        margin-right: 10px;
-        border-radius: 4px;
-    }
-    .Inicio {
-        display: inline-block;
-        font-size: 1.2em;
-    }
-    .menuPrincipal {
-        display: none;
-        padding-bottom: 10px;
-        float: none;
-    }
-    #menuHamburguesa {
-        display: initial;
-        position: absolute;
-        right: 0;
-        top: 10px;
-        cursor: pointer;
     }
 }
 
@@ -423,9 +219,6 @@ footer p{
 }
 
 @media screen and (max-width: 800px) {
-    .informacion {
-        text-align: center;
-    }
     #anuncio-superior {
         display: grid;
         grid-template-columns: 1fr;
@@ -449,19 +242,6 @@ footer p{
     .relacionado {
         padding: 10px;
     }
-    .main-footer{
-        grid-row-gap: 50px;
-        margin-bottom: 40px;
-    }
-    .social{
-        text-align: center;
-    }
-    .informacion a{
-        margin: 0 15px;
-    }
-    .legal{
-        text-align: center;
-    }
     #anuncio-superior {
         display: none;
     }
@@ -472,12 +252,6 @@ footer p{
     .anuncios-superiores-moviles {
         width: 100%;
         height: auto;
-    }
-}
-
-@media screen and (max-width: 610px) {
-    .informacion a{
-        line-height: 35px;
     }
 }
 
