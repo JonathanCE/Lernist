@@ -25,5 +25,5 @@ saveHighScore = (e) => {
     highScores.splice(5);
 
     localStorage.setItem('highScores', JSON.stringify(highScores));
-    window.location.assign('suma-y-resta-fracciones-2.html');
+    window.location.assign('algebra-paa-2.html');
 };

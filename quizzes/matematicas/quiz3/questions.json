@@ -1,0 +1,42 @@
+[
+  {
+    "question": "¿Cuanto es 4/5 * 9/5?",
+    "choice1": "4/10",
+    "choice2": "36/25",
+    "choice3": "7/9",
+    "choice4": "1 entero",
+    "answer": 2
+  },
+  {
+    "question": "¿Cuanto es 4/3 * 1/3?",
+    "choice1": "4/9",
+    "choice2": "4/5",
+    "choice3": "3/7",
+    "choice4": "10/6",
+    "answer": 1
+  },
+  {
+    "question": "¿Cuanto es 2/7 ÷ 1/7?",
+    "choice1": "3/3",
+    "choice2": "14/7",
+    "choice3": "4/8",
+    "choice4": "4/5",
+    "answer": 2
+  },
+  {
+    "question": "¿Cuanto es 4/5 ÷ 1/5?",
+    "choice1": "2/5",
+    "choice2": "3/7",
+    "choice3": "20/5",
+    "choice4": "5/5",
+    "answer": 3
+  },
+  {
+    "question": "¿A cuanto equivale 1/2 * 3/5?",
+    "choice1": "1 entero 4/5",
+    "choice2": "3/10",
+    "choice3": "6/5",
+    "choice4": "4/20",
+    "answer": 2
+  }
+]

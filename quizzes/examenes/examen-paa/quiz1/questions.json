@@ -1,0 +1,42 @@
+[
+  {
+    "question": "¿Cuál es el resultado de factorizar x^2 + 3x -4?",
+    "choice1": "(x+2) (x-3)",
+    "choice2": "(x+4) (x-1)",
+    "choice3": "(x+2) (x-2)",
+    "choice4": "(x+3) (x+1)",
+    "answer": 2
+  },
+  {
+    "question": "Cuál es el resultado de la función f(x) = 4x-13, cuando x = 9?",
+    "choice1": "23",
+    "choice2": "53",
+    "choice3": "31",
+    "choice4": "57",
+    "answer": 1
+  },
+  {
+    "question": "¿Para que valor de x se cumple la condición: 5x -20 > 4x -10?",
+    "choice1": "10",
+    "choice2": "20",
+    "choice3": "8",
+    "choice4": "5",
+    "answer": 2
+  },
+  {
+    "question": "Despeja 'x' en 7x + 33 = 89",
+    "choice1": "8",
+    "choice2": "10",
+    "choice3": "5",
+    "choice4": "4",
+    "answer": 1
+  },
+  {
+    "question": "¿Para que valor de x la siguiente condición es cierta: |x| < 1 ?",
+    "choice1": "-5",
+    "choice2": "-3/4",
+    "choice3": "-3/2",
+    "choice4": "2",
+    "answer": 2
+  }
+]
