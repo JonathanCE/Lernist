@@ -1,0 +1,42 @@
+[
+  {
+    "question": "¿En que continente se encuentra Alemania?",
+    "choice1": "Africa",
+    "choice2": "Europa",
+    "choice3": "Oceanía",
+    "choice4": "Estados Unidos",
+    "answer": 2
+  },
+  {
+    "question": "¿En que continente se encuentra España?",
+    "choice1": "Europa",
+    "choice2": "Asia",
+    "choice3": "Centroamérica",
+    "choice4": "Rusia",
+    "answer": 1
+  },
+  {
+    "question": "¿En que continente se encuentra Inglaterra?",
+    "choice1": "America",
+    "choice2": "Europa",
+    "choice3": "Africa",
+    "choice4": "Asia",
+    "answer": 2
+  },
+  {
+    "question": "¿En que continente se encuentra Francia?",
+    "choice1": "Oceanía",
+    "choice2": "Antartida",
+    "choice3": "Europa",
+    "choice4": "China",
+    "answer": 3
+  },
+  {
+    "question": "¿En que continente se encuentra Italia?",
+    "choice1": "Rusia",
+    "choice2": "Europa",
+    "choice3": "Asia",
+    "choice4": "Oceanía",
+    "answer": 2
+  }
+]

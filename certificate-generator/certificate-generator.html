@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-STPM17KL3C"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-STPM17KL3C');
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="certificate.css">
+  <link rel="stylesheet" href="/Controladores-JS-y-CSS/navbar-and-footer.css">
+  <link rel="icon" href="/lernist-mini.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width-device-width, initial-scale=1.0">
+  <title>Lernist | Certificate Generator</title>
+</head>
+
+<body>
+
+  <nav class="nav" id="myNav">
+      <a id="homepageLink" href="">
+          <img id="logoNavbar" src="" alt="">
+          <div class="Inicio"></div>
+      </a>
+      <div class="menuPrincipal">
+            <a id="aprenderLink" href=""></a>
+            <a id="articulosLink" href=""></a>
+            <a id="quizzesLink" href=""></a>
+            <a id="enseñarLink" href=""></a>
+      </div>
+      <div id="menuHamburguesa" class="icon">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+      </div>
+  </nav>
+  
+  <div id="contenedor" class="container">
+    <div id="home">
+      <h1>Certificate Generator</h1>
+      <input type="text" name="Nombre" id="NombrePersona" placeholder="Escribe tu nombre...">
+      <button onclick="nombreEnPdf()">Obtén tu certificado</button>
+    </div>
+  </div>
+  
+  <footer>
+      <div class="main-footer">
+          <p id="fraseFooter"></p>
+          <div class="social">
+              <a id="footerFacebook" href="" target="_blank"><img src="/social_icons/face.png" alt=""></a>
+              <a id="footerTwitter" href="" target="_blank"><img src="/social_icons/twitter.png" alt=""></a>
+              <a id="footerInstagram" href="" target="_blank"><img src="/social_icons/insta.png" alt=""></a>
+          </div>
+      </div>
+      <div class="informacion">
+          <a id="footerContacto" href="" target="_blank"></a>
+          <a id="footerNosotros" href="" target="_blank"></a>
+          <a id="footerAnunciantes" href="" target="_blank"></a>
+      </div>
+      <p class="legal">&copy; Derechos Reservados Lernist 2021.</p>
+  </footer>
+
+  <script src="/Controladores-JS-y-CSS/navbar-and-footer.js"></script>
+  <script src="https://unpkg.com/pdf-lib@1.4.0"></script>
+  <script src="https://unpkg.com/@pdf-lib/fontkit@0.0.4"></script>
+  <script src="https://unpkg.com/downloadjs@1.4.7"></script>
+  <script src="certificate.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+  <script>
+    VANTA.WAVES({
+        el: "#contenedor",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color: 0x151d2a
+    })
+    </script>
+
+</body>
+
+</html>
