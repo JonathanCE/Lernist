@@ -11,6 +11,7 @@ const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
 const MAX_HIGH_SCORES = 5;
 
 finalScore.innerText = mostRecentScore;
+// Codigo para verificacion de puntuacion minima
 botonCertificado.style.display = 'none';
 intentaDenuevo.style.display = 'none';
 
@@ -20,6 +21,7 @@ if (mostRecentScore >= 20) {
 else {
     intentaDenuevo.style.display = 'initial';
 }
+// Codigo para verificacion de puntuacion minima
 
 username.addEventListener('keyup', () => {
     saveScoreBtn.disabled = !username.value;

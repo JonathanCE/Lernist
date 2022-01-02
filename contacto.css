@@ -6,7 +6,7 @@
 .inicio h2 {
     margin-bottom: 30px;
     font-size: 50px;
-    font-family: 'Chelsea Market', cursive;
+    font-family: 'Poppins', sans-serif;
 }
 .inicio p {
     line-height: 25px;
@@ -17,11 +17,10 @@
     margin-bottom: 40px;
     font-size: 35px;
     padding: 30px 20px;
-    border: 6px solid white;
-    border-style: ridge;
-    border-radius: 10px;
+    border: 6px solid rgb(86, 165, 235, 0.25);
     background-color: black;
     cursor: pointer;
+    font-family: 'Poppins', sans-serif;
 }
 
 .redes-sociales {
@@ -32,7 +31,7 @@
 .redes-sociales h2 {
     margin-bottom: 40px;
     font-size: 35px;
-    font-family: 'Chelsea Market', cursive;
+    font-family: 'Poppins', sans-serif;
 }
 .links-sociales {
     display: grid;
@@ -63,6 +62,11 @@ input, select, textarea, label, button {
     border-radius: 2px;
     border: 1px solid transparent;
     padding: 6px;
+    font-family: 'Poppins', sans-serif;
+}
+input, select, textarea {
+    color: white;
+    background-color: #15191f;
 }
 label {
     font-size: 22px;
@@ -82,9 +86,10 @@ button {
 }
 
 .redes-sociales img:hover {
-    border-radius: 2px;
-    border: 2px solid transparent;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 4px 14px 0 rgba(86, 185, 235, 0.5);
+    border: 3px solid rgb(86, 165, 235, 0.25);
+    transform: translateY(-1px);
+    transition: transform 150ms;
 }
 
 @media screen and (max-width: 1070px) {

@@ -3,6 +3,7 @@
     text-align: center;
     font-size: 37px;
     background-color: #090c0f;
+    font-family: 'Poppins', sans-serif;
 }
 .objetivo {
     display: grid;
@@ -11,7 +12,7 @@
     align-items: center;
     padding: 60px 30px;
     text-align: center;
-    background-image: url(/i_temas/black-background.jpg);
+    background-image: url(/i_temas/black7-background.jpg);
 
     background-attachment: fixed; /* Codigo para el efecto parallax */
     background-position: center;
@@ -24,13 +25,14 @@
     background-color: rgb(9, 12, 15,.9);
     font-size: 40px;
     line-height: 50px;
-    font-family: 'Chelsea Market', cursive;
+    font-family: 'Fira Sans', sans-serif;
 }
 .objetivo-texto {
     padding: 20px;
-    background-color: rgb(9, 12, 15,.7);
+    background-color: rgb(9, 12, 15,.9);
     font-size: 21px;
     line-height: 30px;
+    font-family: 'Poppins', sans-serif;
 }
 .creacion {
     display: grid;
@@ -49,6 +51,7 @@
     background-color: rgb(9, 12, 15,.9);
     font-size: 21px;
     line-height: 30px;
+    font-family: 'Montserrat', sans-serif;
 }
 .formulario {
     padding: 30px 20px;
@@ -71,6 +74,11 @@ input, select, textarea, label, button {
     border-radius: 2px;
     border: 1px solid transparent;
     padding: 6px;
+    font-family: 'Poppins', sans-serif;
+}
+input, select, textarea {
+    color: white;
+    background-color: #15191f;
 }
 label {
     font-size: 22px;
