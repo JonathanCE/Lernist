@@ -38,45 +38,5 @@
     "choice3": "-3/2",
     "choice4": "2",
     "answer": 2
-  },
-  {
-    "question": "",
-    "choice1": "21ab",
-    "choice2": "-7b +14a",
-    "choice3": "-7b -6a",
-    "choice4": "14a -7b",
-    "answer": 4
-  },
-  {
-    "question": "",
-    "choice1": "10",
-    "choice2": "7",
-    "choice3": "20",
-    "choice4": "4",
-    "answer": 3
-  },
-  {
-    "question": "",
-    "choice1": "20 -10a +10ab",
-    "choice2": "-10a +10ab +20b",
-    "choice3": "+10ab -10a +20b",
-    "choice4": "+20ab +20b",
-    "answer": 2
-  },
-  {
-    "question": "",
-    "choice1": "10",
-    "choice2": "4",
-    "choice3": "8",
-    "choice4": "12",
-    "answer": 4
-  },
-  {
-    "question": "",
-    "choice1": "<",
-    "choice2": "+",
-    "choice3": ">",
-    "choice4": "=",
-    "answer": 3
   }
 ]
