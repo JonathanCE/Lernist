@@ -1,0 +1,42 @@
+[
+  {
+    "question": "¿Cuál es el área y perímetro de un cuadrado con lado=7?",
+    "choice1": "A=27, P=20",
+    "choice2": "A=49, P=28",
+    "choice3": "A=29, P=24",
+    "choice4": "A=31, P=21",
+    "answer": 2
+  },
+  {
+    "question": "¿Cuál es el área y perímetro de un rectángulo con base=10 y altura=4?",
+    "choice1": "A=40, P=28",
+    "choice2": "A=28, P=18",
+    "choice3": "A=30, P=22",
+    "choice4": "A=26, P=14",
+    "answer": 1
+  },
+  {
+    "question": "¿Cuál es el área y perímetro de un círculo con diámetro=18 (π=3.14)?",
+    "choice1": "A=184.34, P=48.52",
+    "choice2": "A=212.34, P=52.52",
+    "choice3": "A=162.34, P=42.52",
+    "choice4": "A=254.34, P=56.52",
+    "answer": 4
+  },
+  {
+    "question": "¿Cuál es el área y perímetro de un triángulo equilatero de base=20 y altura=14?",
+    "choice1": "A=112, P=70",
+    "choice2": "A=120, P=52",
+    "choice3": "A=140, P=60",
+    "choice4": "A=200, P=44",
+    "answer": 3
+  },
+  {
+    "question": "¿Cuál es el perímetro de un tríangulo isósceles con lados igual a 7, 8 y 13?",
+    "choice1": "P=35",
+    "choice2": "P=27",
+    "choice3": "P=21",
+    "choice4": "P=28",
+    "answer": 4
+  }
+]
