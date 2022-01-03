@@ -664,10 +664,11 @@
         font-size: 23px;
     }
     .referido {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column-reverse;
     }
     .referido img {
         width: 70%;
-        margin: 30px auto 15px;
+        margin: 15px auto 30px;
     }
 }
