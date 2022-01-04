@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-STPM17KL3C"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-STPM17KL3C');
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="/Controladores-JS-y-CSS/quiz.css">
+  <link rel="stylesheet" href="/Controladores-JS-y-CSS/navbar-and-footer.css">
+  <link rel="icon" href="/lernist-mini.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width-device-width, initial-scale=1.0">
+  <title>¡Felicitaciones!</title>
+</head>
+
+
+<body>
+
+  <nav class="nav" id="myNav">
+      <a id="homepageLink" href="">
+          <img id="logoNavbar" src="" alt="">
+          <div class="Inicio"></div>
+      </a>
+      <div class="menuPrincipal">
+            <a id="aprenderLink" href=""></a>
+            <a id="articulosLink" href=""></a>
+            <a id="quizzesLink" href=""></a>
+            <a id="enseñarLink" href=""></a>
+      </div>
+      <div id="menuHamburguesa" class="icon">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+      </div>
+  </nav>
+
+    <div id="contenedor" class="container">
+      <div id="end">
+        <h1 id="finalScore">0</h1>
+        <!-- <form>
+          <input type="text" name="username" id="username" placeholder="Ponle nombre a este intento...">
+
+          <button type="submit" class="btn" id="saveScoreBtn" onclick="saveHighScore(event)" disabled>Guardar</button>
+        </form> -->
+
+        <a class="btn" href="game.html">Jugar otra vez</a>
+        <a class="btn" href="leyes-signos-suma-y-resta-1.html">Ir al menú</a>
+      </div>
+    </div>
+
+    <footer>
+      <div class="main-footer">
+          <p id="fraseFooter"></p>
+          <div class="social">
+              <a id="footerFacebook" href="" target="_blank"><img src="/social_icons/face.png" alt=""></a>
+              <a id="footerTwitter" href="" target="_blank"><img src="/social_icons/twitter.png" alt=""></a>
+              <a id="footerInstagram" href="" target="_blank"><img src="/social_icons/insta.png" alt=""></a>
+          </div>
+      </div>
+      <div class="informacion">
+          <a id="footerContacto" href="" target="_blank"></a>
+          <a id="footerNosotros" href="" target="_blank"></a>
+          <a id="footerAnunciantes" href="" target="_blank"></a>
+      </div>
+      <p class="legal">&copy; Derechos Reservados Lernist 2021.</p>
+  </footer>
+
+  <script src="end.js"></script>
+  <script src="/Controladores-JS-y-CSS/navbar-and-footer.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.net.min.js"></script>
+  <script>
+    VANTA.NET({
+      el: "#contenedor",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00
+    })
+  </script>
+</body>
+
+</html>

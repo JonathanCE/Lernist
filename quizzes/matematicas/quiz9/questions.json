@@ -1,0 +1,42 @@
+[
+  {
+    "question": "¿Cuanto es 33-42?",
+    "choice1": "75",
+    "choice2": "-9",
+    "choice3": "-23",
+    "choice4": "17",
+    "answer": 2
+  },
+  {
+    "question": "¿Cuanto es 40-33?",
+    "choice1": "12",
+    "choice2": "11",
+    "choice3": "7",
+    "choice4": "3",
+    "answer": 3
+  },
+  {
+    "question": "¿Cuanto es 17-24?",
+    "choice1": "7",
+    "choice2": "41",
+    "choice3": "-41",
+    "choice4": "-7",
+    "answer": 4
+  },
+  {
+    "question": "¿Cuanto es -137+30?",
+    "choice1": "-107",
+    "choice2": "167",
+    "choice3": "-93",
+    "choice4": "-150",
+    "answer": 1
+  },
+  {
+    "question": "¿Cuanto es -40+63?",
+    "choice1": "103",
+    "choice2": "31",
+    "choice3": "-93",
+    "choice4": "23",
+    "answer": 4
+  }
+]

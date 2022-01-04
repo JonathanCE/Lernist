@@ -1,6 +1,5 @@
  $(document).ready(function() {
 
-  // PRIMORDIALES
   $("#homepageLink").attr("href", "/");
   $("#logoNavbar").attr("src", "/i_temas/Logo Lernist.png")
   $(".Inicio").text("Inicio");
@@ -32,5 +31,4 @@
     $(".bar2").toggleClass("change-bar2");
     $(".bar3").toggleClass("change-bar3");
   });
-  
 });
