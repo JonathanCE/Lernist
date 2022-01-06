@@ -1,4 +1,4 @@
-var anunciosSuperiores = 0;
+/* var anunciosSuperiores = 0;
 carousel();
 
 function carousel() {
@@ -26,155 +26,73 @@ function carouselMovil() {
   if (anunciosSuperioresMovil > x.length) {anunciosSuperioresMovil = 1}
   x[anunciosSuperioresMovil-1].style.display = "block";
   setTimeout(carouselMovil, 7000); // Change image every 7 seconds
-}
+} */
 
 // INDICE
 // ELEMENTOS MADRE: linea 16
 // 
 
+// uso de variables para insertar link de canales y nombre de un creador - ejemplos:
+var DateVlog = "Date un Vlog.";
+var DateLink = "https://www.youtube.com/channel/UCQX_MZRCaluNKxkywkLEgfA";
+
+function primerVideo() {
+  alert("¡No hay anteriores, este es el primer video!")
+}
+function ultimoVideo() {
+  alert("¡No hay siguientes, este es el último video!")
+}
+
 $(document).ready(function() {
 
-  // PRIMORDIALES
-  $("#homepageLink").attr("href", "/");
-  $("#logoNavbar").attr("src", "/i_temas/Logo Lernist.png")
-  $(".Inicio").text("Inicio");
-  $("#aprenderLink").text("Cursos");
-  $("#aprenderLink").attr("href", "/aprender.html")
-  $("#articulosLink").text("Artículos");
-  $("#articulosLink").attr("href", "/articulos.html")
-  $("#quizzesLink").text("Quizzes");
-  $("#quizzesLink").attr("href", "/quizzes.html")
-  $("#enseñarLink").hide();
-  $("#enseñarLink").text("Enseñar");
-  $("#enseñarLink").attr("href", "/enseñar.html")
-
-  $("#fraseFooter").text("Aprende cosas Increíbles, con contenido Increíble.");
-  $("#footerFacebook").attr("href", "https://www.facebook.com/LernistOficial");
-  $("#footerTwitter").attr("href", "https://twitter.com/Lernist_Oficial");
-  $("#footerInstagram").attr("href", "https://www.instagram.com/Lernist_Oficial/");
-  $("#footerContacto").attr("href", "/contacto.html");
-  $("#footerContacto").text("Contacto");
-  $("#footerNosotros").attr("href", "/nosotros.html");
-  $("#footerNosotros").text("Nosotros");
-  $("#footerAnunciantes").attr("href", "");
-  $("#footerAnunciantes").text("Anunciantes");
-  $("#footerAnunciantes").hide();
-
-  $("#menuHamburguesa").click(function() {
-    $(".menuPrincipal").slideToggle(400);
-    $(".bar1").toggleClass("change-bar1");
-    $(".bar2").toggleClass("change-bar2");
-    $(".bar3").toggleClass("change-bar3");
-  });
+  // EL CAMBIO CLIMATICO ES REAL.
+  // EL CAMBIO CLIMATICO ES REAL.
 
   // ELEMENTOS MADRE
   $(".videos").hide();
   $(".datos-video").hide();
   $("#titulo-lecciones").text("Navega por el curso:");
-  $(".leccionBotonMas").text("+"); // este codigo se podria repetir para todos los videos de Lernist
+  $(".leccionBotonMas").text("+");
   $(".leccionBotonMenos").text("-");
   $("#VideosBotonPrevious").attr("src", "/i_temas/previous.png");
   $("#VideosBotonPreviousText").text("Anterior");
   $("#VideosBotonNext").attr("src", "/i_temas/next.png");
   $("#VideosBotonNextText").text("Siguiente");
-  $("#VideosMensajeInicio").text("¡El curso comienza aquí!");
-  $("#VideosMensajeFinal").text("¡Haz terminado el curso!");
 
-  // ENAMORATE DE LA FISICA
-  // ENAMORATE DE LA FISICA
+  // DEFAULT DATA
+  $("#leccionTitle").text("Enamórate de la Física");
+  $("#tituloVideo").text("1. HOY SÍ que vas a entender la Relatividad General");
+  $("#urlVideo").attr("src", "https://www.youtube.com/embed/RTlixJv7gWo?cc_lang_pref=es&cc_load_policy=1"); // url del video
 
-  // LECCIONES
-  $("#enamorateFisica").text("Enamórate de la Física");
+  // link al canal y nombre del creador del video
+  $("#creadorVideoLink").attr("href", DateLink).text(DateVlog);
+  // descripcion de cada video
+  $("#descripcionCursoVideoTexto").text("-");
+  // DEFAULT DATA
 
   // TITULOS DE MENU ACORDION (lecciones y partes)
   $("#tituloAcordion1").text("Enamórate de la Física");
 
   // LINKS DE CADA VIDEO | MENU ACORDION
   // LeccionName
-  $("#videoAcordion1").attr("href", "video1.html").text("1. HOY SÍ que vas a entender la Relatividad General");
-  $("#videoAcordion2").attr("href", "video2.html").text("2. 5 PARADOJAS que harán que dudes de TODO");
-  $("#videoAcordion3").attr("href", "video3.html").text("3. #2 Biografías científicas - Albert Einstein, rebelde y bohemio");
-  $("#videoAcordion4").attr("href", "video4.html").text("4. Este vídeo SÍ te va a volar la cabeza: ¿Qué es el TIEMPO?");
-  $("#videoAcordion5").attr("href", "video5.html").text("5. HOY SÍ que vas a entender los AGUJEROS NEGROS");
-  $("#videoAcordion6").attr("href", "video6.html").text("6. HOY SÍ que vas a entender EL BOSÓN DE HIGGS");
-  $("#videoAcordion7").attr("href", "video7.html").text("7. ¿Por que no se puede viajar más rápido que la luz?");
-  $("#videoAcordion8").attr("href", "video8.html").text("8. Así se hace el material MÁS CARO DEL MUNDO 💰64.000.000.000$/g💰 | #CERN");
-  $("#videoAcordion9").attr("href", "video9.html").text("9. El CAOS gobierna el COSMOS");
-  $("#videoAcordion10").attr("href", "video10.html").text("10. HOY SÍ que vas a entender la ENTROPÍA");
-  $("#videoAcordion11").attr("href", "video11.html").text("11. HOY SÍ que vas a entender la mecánica cuántica");
-  $("#videoAcordion12").attr("href", "video12.html").text("12. HOY SÍ que vas a entender el TIEMPO");
-  $("#videoAcordion13").attr("href", "video13.html").text("13. Por qué se está enseñando MAL la física");
-
-  // DATOS DE CADA VIDEO
-  $("#tituloVideo1").text("1. HOY SÍ que vas a entender la Relatividad General");
-  $("#urlVideo1").attr("src", "https://www.youtube.com/embed/RTlixJv7gWo?cc_lang_pref=es&cc_load_policy=1"); // url del video
-  $("#video1LinkAnterior").attr("href", ""); // video anterior
-  $("#video1LinkSiguiente").attr("href", "video2.html"); // video siguiente
-
-  $("#tituloVideo2").text("2. 5 PARADOJAS que harán que dudes de TODO");
-  $("#urlVideo2").attr("src", "https://www.youtube.com/embed/G3HrMsdtm3s?cc_lang_pref=es&cc_load_policy=1"); // url del video
-  $("#video2LinkAnterior").attr("href", "video1.html"); // video anterior
-  $("#video2LinkSiguiente").attr("href", "video3.html"); // video siguiente
-
-  $("#tituloVideo3").text("3. #2 Biografías científicas - Albert Einstein, rebelde y bohemio");
-  $("#urlVideo3").attr("src", "https://www.youtube.com/embed/hDpcDoxJuQo?cc_lang_pref=es&cc_load_policy=1"); // url del video
-  $("#video3LinkAnterior").attr("href", "video2.html"); // video anterior
-  $("#video3LinkSiguiente").attr("href", "video4.html"); // video siguiente
-
-  $("#tituloVideo4").text("4. Este vídeo SÍ te va a volar la cabeza: ¿Qué es el TIEMPO?");
-  $("#urlVideo4").attr("src", "https://www.youtube.com/embed/mTh7PbyyA0I?cc_lang_pref=es&cc_load_policy=1"); // url del video
-  $("#video4LinkAnterior").attr("href", "video3.html"); // video anterior
-  $("#video4LinkSiguiente").attr("href", "video5.html"); // video siguiente
-
-  $("#tituloVideo5").text("5. HOY SÍ que vas a entender los AGUJEROS NEGROS");
-  $("#urlVideo5").attr("src", "https://www.youtube.com/embed/cs2kyXC-zDw?cc_lang_pref=es&cc_load_policy=1"); // url del video
-  $("#video5LinkAnterior").attr("href", "video4.html"); // video anterior
-  $("#video5LinkSiguiente").attr("href", "video6.html"); // video siguiente
-
-  $("#tituloVideo6").text("6. HOY SÍ que vas a entender EL BOSÓN DE HIGGS");
-  $("#urlVideo6").attr("src", "https://www.youtube.com/embed/m4kEFqun1Fo?cc_lang_pref=es&cc_load_policy=1"); // url del video
-  $("#video6LinkAnterior").attr("href", "video5.html"); // video anterior
-  $("#video6LinkSiguiente").attr("href", "video7.html"); // video siguiente
-
-  $("#tituloVideo7").text("7. ¿Por que no se puede viajar más rápido que la luz?");
-  $("#urlVideo7").attr("src", "https://www.youtube.com/embed/biaVwtKOlWI?cc_lang_pref=es&cc_load_policy=1"); // url del video
-  $("#video7LinkAnterior").attr("href", "video6.html"); // video anterior
-  $("#video7LinkSiguiente").attr("href", "video8.html"); // video siguiente
-
-  $("#tituloVideo8").text("8. Así se hace el material MÁS CARO DEL MUNDO 💰64.000.000.000$/g💰 | #CERN");
-  $("#urlVideo8").attr("src", "https://www.youtube.com/embed/P9mMYYq493c?cc_lang_pref=es&cc_load_policy=1"); // url del video
-  $("#video8LinkAnterior").attr("href", "video7.html"); // video anterior
-  $("#video8LinkSiguiente").attr("href", "video9.html"); // video siguiente
-
-  $("#tituloVideo9").text("9. El CAOS gobierna el COSMOS");
-  $("#urlVideo9").attr("src", "https://www.youtube.com/embed/8QpblRyur-o?cc_lang_pref=es&cc_load_policy=1"); // url del video
-  $("#video9LinkAnterior").attr("href", "video8.html"); // video anterior
-  $("#video9LinkSiguiente").attr("href", "video10.html"); // video siguiente
-
-  $("#tituloVideo10").text("10. HOY SÍ que vas a entender la ENTROPÍA");
-  $("#urlVideo10").attr("src", "https://www.youtube.com/embed/ttjM-dMPddY?cc_lang_pref=es&cc_load_policy=1"); // url del video
-  $("#video10LinkAnterior").attr("href", "video9.html"); // video anterior
-  $("#video10LinkSiguiente").attr("href", "video11.html"); // video siguiente
-
-  $("#tituloVideo11").text("11. HOY SÍ que vas a entender la mecánica cuántica");
-  $("#urlVideo11").attr("src", "https://www.youtube.com/embed/7-TuaLHCZfM?cc_lang_pref=es&cc_load_policy=1"); // url del video
-  $("#video11LinkAnterior").attr("href", "video10.html"); // video anterior
-  $("#video11LinkSiguiente").attr("href", "video12.html"); // video siguiente
-
-  $("#tituloVideo12").text("12. HOY SÍ que vas a entender el TIEMPO");
-  $("#urlVideo12").attr("src", "https://www.youtube.com/embed/fkEY_mUTBDI?cc_lang_pref=es&cc_load_policy=1"); // url del video
-  $("#video12LinkAnterior").attr("href", "video11.html"); // video anterior
-  $("#video12LinkSiguiente").attr("href", "video13.html"); // video siguiente
-
-  $("#tituloVideo13").text("13. Por qué se está enseñando MAL la física");
-  $("#urlVideo13").attr("src", "https://www.youtube.com/embed/pZHrxKhB7VY?cc_lang_pref=es&cc_load_policy=1"); // url del video
-  $("#video13LinkAnterior").attr("href", "video12.html"); // video anterior
-  $("#video13LinkSiguiente").attr("href", "video14.html"); // video siguiente
+  $("#videoAcordion1").text("1. HOY SÍ que vas a entender la Relatividad General");
+  $("#videoAcordion2").text("2. 5 PARADOJAS que harán que dudes de TODO");
+  $("#videoAcordion3").text("3. #2 Biografías científicas - Albert Einstein, rebelde y bohemio");
+  $("#videoAcordion4").text("4. Este vídeo SÍ te va a volar la cabeza: ¿Qué es el TIEMPO?");
+  $("#videoAcordion5").text("5. HOY SÍ que vas a entender los AGUJEROS NEGROS");
+  $("#videoAcordion6").text("6. HOY SÍ que vas a entender EL BOSÓN DE HIGGS");
+  $("#videoAcordion7").text("7. ¿Por que no se puede viajar más rápido que la luz?");
+  $("#videoAcordion8").text("8. Así se hace el material MÁS CARO DEL MUNDO 💰64.000.000.000$/g💰 | #CERN");
+  $("#videoAcordion9").text("9. El CAOS gobierna el COSMOS");
+  $("#videoAcordion10").text("10. HOY SÍ que vas a entender la ENTROPÍA");
+  $("#videoAcordion11").text("11. HOY SÍ que vas a entender la mecánica cuántica");
+  $("#videoAcordion12").text("12. HOY SÍ que vas a entender el TIEMPO");
+  $("#videoAcordion13").text("13. Por qué se está enseñando MAL la física");
 
   // ACERCA DE
   $("#creadorVideo").text("Creador del video");
-  $("#creadorVideoTexto1").prepend('El video fue creado por el canal de youtube ');
-  $("#creadorVideoTexto2").text("Lernist.com no es el propietario de este video. Distribuimos este video mediante"
+  $("#creadorVideoTexto").prepend('El video fue creado por el canal de youtube ');
+  $("#creadorVideoTexto").append("Lernist.com no es el propietario de este video. Distribuímos este video mediante"
                                 + " la herramienta pública de Youtube que permite insertar videos de la plataforma en sitios web"
                                 + "  externos.");
 
@@ -182,81 +100,21 @@ $(document).ready(function() {
 
   $("#tipsCurso").text("Tips para el curso"); // Tips para el curso
   $("#tipsCursoTexto").text("Llevar este curso es todo un deleite, si gustas puedes tener una libreta para"
-                            + " tomar uno que otro apunte, pero no es necesario. Es extremadamente entretenido"
-                            + " y fácil de seguir. Recomendación: ponte comod@, preparate algún snack o comidita"
-                            + " y disfruta, que papi Santaolalla, te va a enamorar de esta ciencia.");
+  + " tomar uno que otro apunte, pero no es necesario. Es extremadamente entretenido"
+  + " y fácil de seguir. Recomendación: ponte comod@, preparate algún snack o comidita"
+  + " y disfruta, que papi Santaolalla, te va a enamorar de esta ciencia.");
 
-  $("#descripcionCurso").text("Descripción del curso"); // Descripcion del curso
+  $("#descripcionCurso").prepend("Descripción del curso"); // Descripcion del curso
   $("#descripcionCursoTexto").text("Esta aventura te va a llevar a conocer y descubrir muchos fenómenos populares"
-                                  + " de la Física. Javier Santaolalla los explica de una manera muy divertida y"
-                                  + " entretenida, usando un lenguaje sencillo que hace que cualquiera pueda"
-                                  + " entender. Con su carisma, animaciones y gráficos interactivos, el explica"
-                                  + " con facilidad algunos conceptos e ideas fascinantes de nuestro mundo,"
-                                  + " universo y existencia misma.");
+  + " de la Física. Javier Santaolalla los explica de una manera muy divertida y"
+  + " entretenida, usando un lenguaje sencillo que hace que cualquiera pueda"
+  + " entender. Con su carisma, animaciones y gráficos interactivos, el explica"
+  + " con facilidad algunos conceptos e ideas fascinantes de nuestro mundo,"
+  + " universo y existencia misma.");
   
   $("#duracionCurso").text("Duración y cantidad de videos del curso");
   $("#duracionCursoTexto").text("- 13 videos");
 
-  // uso de variables para insertar link de canales y nombre de un creador - ejemplos:
-  var Date = "Date un Vlog.";
-  var DateLink = "https://www.youtube.com/c/DateunVlog/featured";
-  
-  // link al canal y nombre del creador del video
-  $("#creadorVideoLink1").attr("href", DateLink).text(Date);
-  // descripcion de cada video
-  $("#descripcionCursoVideo1Texto").text("-");
-
-  // IMPORTANTE NOTA:
-  // Si el espacio donde va la variable con el link al canal de youtube esta vacío,
-  // causa un bug que interfiere con el slideToggle, pero se soluciona cuando se añade a todos
-  $("#creadorVideoLink2").attr("href", DateLink).text(Date);
-  // descripcion de cada video
-  $("#descripcionCursoVideo2Texto").text("-");
-
-  $("#creadorVideoLink3").attr("href", DateLink).text(Date);
-  // descripcion de cada video
-  $("#descripcionCursoVideo3Texto").text("-");
-
-  $("#creadorVideoLink4").attr("href", DateLink).text(Date);
-  // descripcion de cada video
-  $("#descripcionCursoVideo4Texto").text("-");
-
-  $("#creadorVideoLink5").attr("href", DateLink).text(Date);
-  // descripcion de cada video
-  $("#descripcionCursoVideo5Texto").text("-");
-
-  $("#creadorVideoLink6").attr("href", DateLink).text(Date);
-  // descripcion de cada video
-  $("#descripcionCursoVideo6Texto").text("-");
-
-  $("#creadorVideoLink7").attr("href", DateLink).text(Date);
-  // descripcion de cada video
-  $("#descripcionCursoVideo7Texto").text("-");
-
-  $("#creadorVideoLink8").attr("href", DateLink).text(Date);
-  // descripcion de cada video
-  $("#descripcionCursoVideo8Texto").text("-");
-
-  $("#creadorVideoLink9").attr("href", DateLink).text(Date);
-  // descripcion de cada video
-  $("#descripcionCursoVideo9Texto").text("-");
-
-  $("#creadorVideoLink10").attr("href", DateLink).text(Date);
-  // descripcion de cada video
-  $("#descripcionCursoVideo10Texto").text("-");
-
-  $("#creadorVideoLink11").attr("href", DateLink).text(Date);
-  // descripcion de cada video
-  $("#descripcionCursoVideo11Texto").text("-");
-
-  $("#creadorVideoLink12").attr("href", DateLink).text(Date);
-  // descripcion de cada video
-  $("#descripcionCursoVideo12Texto").text("-");
-
-  $("#creadorVideoLink13").attr("href", DateLink).text(Date);
-  // descripcion de cada video
-  $("#descripcionCursoVideo13Texto").text("-");
-  
   // CURSOS RELACIONADOS
   
   $("#recomendado-titulo").text("Otros cursos relacionados:");
@@ -265,8 +123,8 @@ $(document).ready(function() {
   $("#recomendadoDos").attr("href", "/aprender/matematicas/aritmetica.html").text("Aritmética");
   $("#recomendadoTres").attr("href", "/aprender/matematicas/cursos/abc-de-matematicas.html").text("ABC de Matemáticas");
 
-  // ENAMORATE DE LA FISICA
-  // ENAMORATE DE LA FISICA
+  // EL CAMBIO CLIMATICO ES REAL.
+  // EL CAMBIO CLIMATICO ES REAL.
 
   // ANIMACION PARA MENU VIDEO-INFO
   $(".video-info-title").click(function() {
@@ -455,3 +313,189 @@ $(document).ready(function() {
     $(".btnMenosle30").toggle();
   });
 });
+
+function datosVideo1() {
+  $("#leccionTitle").text("Enamórate de la Física");
+  $("#tituloVideo").text("1. HOY SÍ que vas a entender la Relatividad General");
+  $("#urlVideo").attr("src", "https://www.youtube.com/embed/RTlixJv7gWo?cc_lang_pref=es&cc_load_policy=1"); // url del video
+  // botones
+  $("#videoLinkAnterior").attr("onclick", "primerVideo()"); // video anterior
+  $("#videoLinkSiguiente").attr("onclick", "datosVideo2()"); // video siguiente
+
+  // IMPORTANTE NOTA:
+  // Si el espacio donde va la variable con el link al canal de youtube esta vacío,
+  // causa un bug que interfiere con el slideToggle, pero se soluciona cuando se añade a todos
+
+  // link al canal y nombre del creador del video
+  $("#creadorVideoLink").attr("href", DateLink).text(DateVlog);
+  // descripcion de cada video
+  $("#descripcionCursoVideoTexto").text("-");
+}
+
+function datosVideo2() {
+  $("#leccionTitle").text("Enamórate de la Física");
+  $("#tituloVideo").text("2. 5 PARADOJAS que harán que dudes de TODO");
+  $("#urlVideo").attr("src", "https://www.youtube.com/embed/G3HrMsdtm3s?cc_lang_pref=es&cc_load_policy=1"); // url del video
+  // botones
+  $("#videoLinkAnterior").attr("onclick", "datosVideo1()"); // video anterior
+  $("#videoLinkSiguiente").attr("onclick", "datosVideo3()"); // video siguiente
+
+  // link al canal y nombre del creador del video
+  $("#creadorVideoLink").attr("href", DateLink).text(DateVlog);
+  // descripcion de cada video
+  $("#descripcionCursoVideoTexto").text("-");
+}
+
+function datosVideo3() {
+  $("#leccionTitle").text("Enamórate de la Física");
+  $("#tituloVideo").text("3. #2 Biografías científicas - Albert Einstein, rebelde y bohemio");
+  $("#urlVideo").attr("src", "https://www.youtube.com/embed/hDpcDoxJuQo?cc_lang_pref=es&cc_load_policy=1"); // url del video
+  // botones
+  $("#videoLinkAnterior").attr("onclick", "datosVideo2()"); // video anterior
+  $("#videoLinkSiguiente").attr("onclick", "datosVideo4()"); // video siguiente
+
+  // link al canal y nombre del creador del video
+  $("#creadorVideoLink").attr("href", DateLink).text(DateVlog);
+  // descripcion de cada video
+  $("#descripcionCursoVideoTexto").text("-");
+}
+// editar informacion
+function datosVideo4() {
+  $("#leccionTitle").text("Enamórate de la Física");
+  $("#tituloVideo").text("4. Este vídeo SÍ te va a volar la cabeza: ¿Qué es el TIEMPO?");
+  $("#urlVideo").attr("src", "https://www.youtube.com/embed/mTh7PbyyA0I?cc_lang_pref=es&cc_load_policy=1"); // url del video
+  // botones
+  $("#videoLinkAnterior").attr("onclick", "datosVideo3()"); // video anterior
+  $("#videoLinkSiguiente").attr("onclick", "datosVideo5()"); // video siguiente
+
+  // link al canal y nombre del creador del video
+  $("#creadorVideoLink").attr("href", DateLink).text(DateVlog);
+  // descripcion de cada video
+  $("#descripcionCursoVideoTexto").text("-");
+}
+
+function datosVideo5() {
+  $("#leccionTitle").text("Enamórate de la Física");
+  $("#tituloVideo").text("5. HOY SÍ que vas a entender los AGUJEROS NEGROS");
+  $("#urlVideo").attr("src", "https://www.youtube.com/embed/cs2kyXC-zDw?cc_lang_pref=es&cc_load_policy=1"); // url del video
+  // botones
+  $("#videoLinkAnterior").attr("onclick", "datosVideo4()"); // video anterior
+  $("#videoLinkSiguiente").attr("onclick", "datosVideo6()"); // video siguiente
+
+  // link al canal y nombre del creador del video
+  $("#creadorVideoLink").attr("href", DateLink).text(DateVlog);
+  // descripcion de cada video
+  $("#descripcionCursoVideoTexto").text("-");
+}
+
+function datosVideo6() {
+  $("#leccionTitle").text("Enamórate de la Física");
+  $("#tituloVideo").text("6. HOY SÍ que vas a entender EL BOSÓN DE HIGGS");
+  $("#urlVideo").attr("src", "https://www.youtube.com/embed/m4kEFqun1Fo?cc_lang_pref=es&cc_load_policy=1"); // url del video
+  // botones
+  $("#videoLinkAnterior").attr("onclick", "datosVideo5()"); // video anterior
+  $("#videoLinkSiguiente").attr("onclick", "datosVideo7()"); // video siguiente
+
+  // link al canal y nombre del creador del video
+  $("#creadorVideoLink").attr("href", DateLink).text(DateVlog);
+  // descripcion de cada video
+  $("#descripcionCursoVideoTexto").text("-");
+}
+
+function datosVideo7() {
+  $("#leccionTitle").text("Enamórate de la Física");
+  $("#tituloVideo").text("7. ¿Por que no se puede viajar más rápido que la luz?");
+  $("#urlVideo").attr("src", "https://www.youtube.com/embed/biaVwtKOlWI?cc_lang_pref=es&cc_load_policy=1"); // url del video
+  // botones
+  $("#videoLinkAnterior").attr("onclick", "datosVideo6()"); // video anterior
+  $("#videoLinkSiguiente").attr("onclick", "datosVideo8()"); // video siguiente
+
+  // link al canal y nombre del creador del video
+  $("#creadorVideoLink").attr("href", DateLink).text(DateVlog);
+  // descripcion de cada video
+  $("#descripcionCursoVideoTexto").text("-");
+}
+
+function datosVideo8() {
+  $("#leccionTitle").text("Enamórate de la Física");
+  $("#tituloVideo").text("8. Así se hace el material MÁS CARO DEL MUNDO 💰64.000.000.000$/g💰 | #CERN");
+  $("#urlVideo").attr("src", "https://www.youtube.com/embed/P9mMYYq493c?cc_lang_pref=es&cc_load_policy=1"); // url del video
+  // botones
+  $("#videoLinkAnterior").attr("onclick", "datosVideo7()"); // video anterior
+  $("#videoLinkSiguiente").attr("onclick", "datosVideo9()"); // video siguiente
+
+  // link al canal y nombre del creador del video
+  $("#creadorVideoLink").attr("href", DateLink).text(DateVlog);
+  // descripcion de cada video
+  $("#descripcionCursoVideoTexto").text("-");
+}
+
+function datosVideo9() {
+  $("#leccionTitle").text("Enamórate de la Física");
+  $("#tituloVideo").text("9. El CAOS gobierna el COSMOS");
+  $("#urlVideo").attr("src", "https://www.youtube.com/embed/8QpblRyur-o?cc_lang_pref=es&cc_load_policy=1"); // url del video
+  // botones
+  $("#videoLinkAnterior").attr("onclick", "datosVideo8()"); // video anterior
+  $("#videoLinkSiguiente").attr("onclick", "datosVideo10()"); // video siguiente
+
+  // link al canal y nombre del creador del video
+  $("#creadorVideoLink").attr("href", DateLink).text(DateVlog);
+  // descripcion de cada video
+  $("#descripcionCursoVideoTexto").text("-");
+}
+
+function datosVideo10() {
+  $("#leccionTitle").text("Enamórate de la Física");
+  $("#tituloVideo").text("10. HOY SÍ que vas a entender la ENTROPÍA");
+  $("#urlVideo").attr("src", "https://www.youtube.com/embed/ttjM-dMPddY?cc_lang_pref=es&cc_load_policy=1"); // url del video
+  // botones
+  $("#videoLinkAnterior").attr("onclick", "datosVideo9()"); // video anterior
+  $("#videoLinkSiguiente").attr("onclick", "datosVideo11()"); // video siguiente
+
+  // link al canal y nombre del creador del video
+  $("#creadorVideoLink").attr("href", DateLink).text(DateVlog);
+  // descripcion de cada video
+  $("#descripcionCursoVideoTexto").text("-");
+}
+
+function datosVideo11() {
+  $("#leccionTitle").text("Enamórate de la Física");
+  $("#tituloVideo").text("11. HOY SÍ que vas a entender la mecánica cuántica");
+  $("#urlVideo").attr("src", "https://www.youtube.com/embed/7-TuaLHCZfM?cc_lang_pref=es&cc_load_policy=1"); // url del video
+  // botones
+  $("#videoLinkAnterior").attr("onclick", "datosVideo10()"); // video anterior
+  $("#videoLinkSiguiente").attr("onclick", "datosVideo12()"); // video siguiente
+
+  // link al canal y nombre del creador del video
+  $("#creadorVideoLink").attr("href", DateLink).text(DateVlog);
+  // descripcion de cada video
+  $("#descripcionCursoVideoTexto").text("-");
+}
+
+function datosVideo12() {
+  $("#leccionTitle").text("Enamórate de la Física");
+  $("#tituloVideo").text("12. HOY SÍ que vas a entender el TIEMPO");
+  $("#urlVideo").attr("src", "https://www.youtube.com/embed/fkEY_mUTBDI?cc_lang_pref=es&cc_load_policy=1"); // url del video
+  // botones
+  $("#videoLinkAnterior").attr("onclick", "datosVideo11()"); // video anterior
+  $("#videoLinkSiguiente").attr("onclick", "datosVideo13()"); // video siguiente
+
+  // link al canal y nombre del creador del video
+  $("#creadorVideoLink").attr("href", DateLink).text(DateVlog);
+  // descripcion de cada video
+  $("#descripcionCursoVideoTexto").text("-");
+}
+
+function datosVideo13() {
+  $("#leccionTitle").text("Enamórate de la Física");
+  $("#tituloVideo").text("13. Por qué se está enseñando MAL la física");
+  $("#urlVideo").attr("src", "https://www.youtube.com/embed/pZHrxKhB7VY?cc_lang_pref=es&cc_load_policy=1"); // url del video
+  // botones
+  $("#videoLinkAnterior").attr("onclick", "datosVideo12()"); // video anterior
+  $("#videoLinkSiguiente").attr("onclick", "ultimoVideo()"); // video siguiente
+
+  // link al canal y nombre del creador del video
+  $("#creadorVideoLink").attr("href", DateLink).text(DateVlog);
+  // descripcion de cada video
+  $("#descripcionCursoVideoTexto").text("-");
+}

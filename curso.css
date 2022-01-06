@@ -16,10 +16,11 @@
     font-weight: bold;
     font-size: 35px;
 }
-.title p{
+.title h3 {
     margin-top: 15px;
     font-size: 18px;
     font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
 }
 
 #anuncio-superior {
