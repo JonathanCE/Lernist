@@ -1,4 +1,4 @@
-var anunciosSuperiores = 0;
+/* var anunciosSuperiores = 0;
 carousel();
 
 function carousel() {
@@ -26,42 +26,45 @@ function carouselMovil() {
   if (anunciosSuperioresMovil > x.length) {anunciosSuperioresMovil = 1}
   x[anunciosSuperioresMovil-1].style.display = "block";
   setTimeout(carouselMovil, 7000); // Change image every 7 seconds
-}
+} */
 
 // INDICE
 // ELEMENTOS MADRE: linea 16
 // 
 
+// uso de variables para insertar link de canales y nombre de un creador - ejemplos:
+var DateVlog = "Date un Vlog.";
+var DateLink = "https://www.youtube.com/channel/UCQX_MZRCaluNKxkywkLEgfA";
+var Curiosa = "Curiosamente.";
+var CuriosaLink = "https://www.youtube.com/channel/UCX16cLWl6dCjlZMgUBxgGkA";
+var Mind = "MindMachineTV.";
+var MindLink = "https://www.youtube.com/channel/UCxOQ-HjJws0Nrh7v-05cxCw";
+var DateVoltio = "Date un Voltio.";
+var DateVLink = "https://www.youtube.com/channel/UCns-8DssCBba7M4nu7wk7Aw";
+var Acciona = "ACCIONA.";
+var AccionaLink = "https://www.youtube.com/channel/UCVLajedX43G0E1BRVx7Q7dQ";
+var kurz = "En Pocas Palabras - Kurzgesagt.";
+var kurzLink = "https://www.youtube.com/channel/UCZcvCpFcLxOKGbMocVgLjEA";
+var quantum = "QuantumFracture.";
+var quantumLink = "https://www.youtube.com/channel/UCbdSYaPD-lr1kW27UJuk8Pw";
+var hipotesis = "HipotesisDePoder.";
+var hipotesisLink = "https://www.youtube.com/channel/UCp-ZlVc-lJ7MrdlzMOJU36g";
+var Vox = "Vox.";
+var VoxLink = "https://www.youtube.com/channel/UCLXo7UDZvByw2ixzpQCufnA";
+var CNBC = "CNBC.";
+var CNBCLink = "https://www.youtube.com/channel/UCvJJ_dzjViJCoLf5uKUTwoA";
+
+function primerVideo() {
+  alert("¡No hay anteriores, este es el primer video!")
+}
+function ultimoVideo() {
+  alert("¡No hay siguientes, este es el último video!")
+}
+
 $(document).ready(function() {
 
-  // PRIMORDIALES
-  $("#homepageLink").attr("href", "/");
-  $("#logoNavbar").attr("src", "/i_temas/Logo Lernist.png")
-  $(".Inicio").text("Inicio");
-  $("#aprenderLink").text("Cursos");
-  $("#aprenderLink").attr("href", "/aprender.html")
-  $("#enseñarLink").hide();
-  $("#enseñarLink").text("Enseñar");
-  $("#enseñarLink").attr("href", "/enseñar.html")
-
-  $("#fraseFooter").text("Aprende cosas Increíbles, con contenido Increíble.");
-  $("#footerFacebook").attr("href", "https://www.facebook.com/LernistOficial");
-  $("#footerTwitter").attr("href", "https://twitter.com/Lernist_Oficial");
-  $("#footerInstagram").attr("href", "https://www.instagram.com/Lernist_Oficial/");
-  $("#footerContacto").attr("href", "/contacto.html");
-  $("#footerContacto").text("Contacto");
-  $("#footerNosotros").attr("href", "/nosotros.html");
-  $("#footerNosotros").text("Nosotros");
-  $("#footerAnunciantes").attr("href", "");
-  $("#footerAnunciantes").text("Anunciantes");
-  $("#footerAnunciantes").hide();
-
-  $("#menuHamburguesa").click(function() {
-    $(".menuPrincipal").slideToggle(400);
-    $(".bar1").toggleClass("change-bar1");
-    $(".bar2").toggleClass("change-bar2");
-    $(".bar3").toggleClass("change-bar3");
-  });
+  // EL CAMBIO CLIMATICO ES REAL.
+  // EL CAMBIO CLIMATICO ES REAL.
 
   // ELEMENTOS MADRE
   $(".videos").hide();
@@ -73,134 +76,52 @@ $(document).ready(function() {
   $("#VideosBotonPreviousText").text("Anterior");
   $("#VideosBotonNext").attr("src", "/i_temas/next.png");
   $("#VideosBotonNextText").text("Siguiente");
-  $("#VideosMensajeInicio").text("¡El curso comienza aquí!");
-  $("#VideosMensajeFinal").text("¡Haz terminado el curso!");
 
-  // EL CAMBIO CLIMATICO ES REAL.
-  // EL CAMBIO CLIMATICO ES REAL.
+  // DEFAULT DATA
+  $("#leccionTitle").text("¿Qué es el cambio climático?");
+  $("#tituloVideo").text("1. Clima no es tiempo: la verdad del CAMBIO CLIMÁTICO");
+  $("#urlVideo").attr("src", "https://www.youtube.com/embed/bQTTphy2c-M?cc_lang_pref=es&cc_load_policy=1"); // url del video
 
-  // LECCIONES
-  $("#que-es-cambio-climatico").text("¿Qué es el cambio climático?");
-  $("#que-es-calentamiento-global").text("¿Qué es el calentamiento global?");
-  $("#que-es-efecto-invernadero").text("¿Qué es el efecto invernadero?");
-  $("#cuales-son-las-causas").text("¿Cuáles son las causas?");
-  $("#como-detener-cambio-climatico").text("¿Cómo detener el cambio climático?");
+  // link al canal y nombre del creador del video
+  $("#creadorVideoLink").attr("href", DateLink).text(DateVlog);
+  // descripcion de cada video
+  $("#descripcionCursoVideoTexto").text("-");
+  // DEFAULT DATA
 
   // TITULOS DE MENU ACORDION (lecciones y partes)
   $("#tituloAcordion1").text("¿Qué es el cambio climático?");
-  $("#tituloAcordion2").text("¿Qué es el calentamiento global?");
+  $("#tituloAcordion2").text("¿Qué es el calentamiento global?");//g
   $("#tituloAcordion3").text("¿Qué es el efecto invernadero?");
   $("#tituloAcordion4").text("¿Cuáles son las causas?");
   $("#tituloAcordion5").text("¿Cómo detener el cambio climático?");
 
   // LINKS DE CADA VIDEO | MENU ACORDION
   // ¿Qué es el cambio climático?
-  $("#videoAcordion1").attr("href", "video1.html").text("1. Clima no es tiempo: la verdad del CAMBIO CLIMÁTICO");
-  $("#videoAcordion2").attr("href", "video2.html").text("2. ¿Es real el cambio climático? - CuriosaMente 26");
-  $("#videoAcordion3").attr("href", "video3.html").text("3. ¿Qué es el cambio climático?");
+  $("#videoAcordion1").text("1. Clima no es tiempo: la verdad del CAMBIO CLIMÁTICO");
+  $("#videoAcordion2").text("2. ¿Es real el cambio climático? - CuriosaMente 26");
+  $("#videoAcordion3").text("3. ¿Qué es el cambio climático?");
   // ¿Qué es el calentamiento global?
-  $("#videoAcordion4").attr("href", "video4.html").text("4. El calentamiento global | Acción por el clima");
-  $("#videoAcordion5").attr("href", "video5.html").text("5. ¿Que es el Calentamiento global?");
+  $("#videoAcordion4").text("4. El calentamiento global | Acción por el clima");
+  $("#videoAcordion5").text("5. ¿Que es el Calentamiento global?");
   // ¿Qué es el efecto invernadero?
-  $("#videoAcordion6").attr("href", "video6.html").text("6. ¿Que es el efecto invernadero?");
-  $("#videoAcordion7").attr("href", "video7.html").text("7. ¿Qué es el efecto invernadero? | Sostenibilidad - ACCIONA");
+  $("#videoAcordion6").text("6. ¿Que es el efecto invernadero?");
+  $("#videoAcordion7").text("7. ¿Qué es el efecto invernadero? | Sostenibilidad - ACCIONA");
   // ¿Cuáles son las causas?
-  $("#videoAcordion8").attr("href", "video8.html").text("8. ¿Quien es responsable por el cambio climático? ¿Y quien debe solucionarlo?");
-  $("#videoAcordion9").attr("href", "video9.html").text("9. El Cambio Climático es Culpa Nuestra y Puedo Convencerte");
-  $("#videoAcordion10").attr("href", "video10.html").text("10. ¿Por qué la carne es la mejor PEOR cosa del mundo?");
-  $("#videoAcordion11").attr("href", "video11.html").text("11. ¿Por que estos 3 países contaminan mas que el resto del mundo?");
-  $("#videoAcordion12").attr("href", "video12.html").text("12. Por que los humanos son muy malos al pensar en el cambio climático (Inglés)");
+  $("#videoAcordion8").text("8. ¿Quien es responsable por el cambio climático? ¿Y quien debe solucionarlo?");
+  $("#videoAcordion9").text("9. El Cambio Climático es Culpa Nuestra y Puedo Convencerte");
+  $("#videoAcordion10").text("10. ¿Por qué la carne es la mejor PEOR cosa del mundo?");
+  $("#videoAcordion11").text("11. ¿Por que estos 3 países contaminan mas que el resto del mundo?");
+  $("#videoAcordion12").text("12. Por que los humanos son muy malos al pensar en el cambio climático (Inglés)");
   // ¿Cómo detener el cambio climático?
-  $("#videoAcordion13").attr("href", "video13.html").text("13. 26 Formas de Luchar contra el Cambio Climático");
-  $("#videoAcordion14").attr("href", "video14.html").text("14. Como evitar el Cambio Climatico MUY RÁPIDO");
-  $("#videoAcordion15").attr("href", "video15.html").text("15. ¿Podemos parar el cambio climático plantando árboles? - Curiosamente");
-  $("#videoAcordion16").attr("href", "video16.html").text("16. ¿Se puede detener el cambio climático platando billones de árboles? (Inglés)");
-
-  // DATOS DE CADA VIDEO
-  $("#tituloVideo1").text("1. Clima no es tiempo: la verdad del CAMBIO CLIMÁTICO");
-  $("#urlVideo1").attr("src", "https://www.youtube.com/embed/bQTTphy2c-M?cc_lang_pref=es&cc_load_policy=1"); // url del video
-  $("#video1LinkAnterior").attr("href", ""); // video anterior
-  $("#video1LinkSiguiente").attr("href", "video2.html"); // video siguiente
-
-  $("#tituloVideo2").text("2. ¿Es real el cambio climático? - CuriosaMente 26");
-  $("#urlVideo2").attr("src", "https://www.youtube.com/embed/weIBPwFuYwA?cc_lang_pref=es&cc_load_policy=1"); // url del video
-  $("#video2LinkAnterior").attr("href", "video1.html"); // video anterior
-  $("#video2LinkSiguiente").attr("href", "video3.html"); // video siguiente
-
-  $("#tituloVideo3").text("3. ¿Qué es el cambio climático?");
-  $("#urlVideo3").attr("src", "https://www.youtube.com/embed/wbN_OPthenQ?cc_lang_pref=es&cc_load_policy=1"); // url del video
-  $("#video3LinkAnterior").attr("href", "video2.html"); // video anterior
-  $("#video3LinkSiguiente").attr("href", "video4.html"); // video siguiente
-
-  $("#tituloVideo4").text("4. El calentamiento global | Acción por el clima");
-  $("#urlVideo4").attr("src", "https://www.youtube.com/embed/XpPGZ-nFnXw?cc_lang_pref=es&cc_load_policy=1"); // url del video
-  $("#video4LinkAnterior").attr("href", "video3.html"); // video anterior
-  $("#video4LinkSiguiente").attr("href", "video5.html"); // video siguiente
-
-  $("#tituloVideo5").text("5. ¿Que es el Calentamiento global?");
-  $("#urlVideo5").attr("src", "https://www.youtube.com/embed/C7kD8Hvhi_Y?cc_lang_pref=es&cc_load_policy=1"); // url del video
-  $("#video5LinkAnterior").attr("href", "video4.html"); // video anterior
-  $("#video5LinkSiguiente").attr("href", "video6.html"); // video siguiente
-
-  $("#tituloVideo6").text("6. ¿Que es el efecto invernadero?");
-  $("#urlVideo6").attr("src", "https://www.youtube.com/embed/nFIftpzZedw?cc_lang_pref=es&cc_load_policy=1"); // url del video
-  $("#video6LinkAnterior").attr("href", "video5.html"); // video anterior
-  $("#video6LinkSiguiente").attr("href", "video7.html"); // video siguiente
-
-  $("#tituloVideo7").text("7. ¿Qué es el efecto invernadero? | Sostenibilidad - ACCIONA");
-  $("#urlVideo7").attr("src", "https://www.youtube.com/embed/YLFLxQ0t07A?cc_lang_pref=es&cc_load_policy=1"); // url del video
-  $("#video7LinkAnterior").attr("href", "video6.html"); // video anterior
-  $("#video7LinkSiguiente").attr("href", "video8.html"); // video siguiente
-
-  $("#tituloVideo8").text("8. ¿Quien es responsable por el cambio climático? ¿Y quien debe solucionarlo?");
-  $("#urlVideo8").attr("src", "https://www.youtube.com/embed/LKNVNXHYzS0?cc_lang_pref=es&cc_load_policy=1"); // url del video
-  $("#video8LinkAnterior").attr("href", "video7.html"); // video anterior
-  $("#video8LinkSiguiente").attr("href", "video9.html"); // video siguiente
-
-  $("#tituloVideo9").text("9. El Cambio Climático es Culpa Nuestra y Puedo Convencerte");
-  $("#urlVideo9").attr("src", "https://www.youtube.com/embed/JQHtjT-_c7U?cc_lang_pref=es&cc_load_policy=1"); // url del video
-  $("#video9LinkAnterior").attr("href", "video8.html"); // video anterior
-  $("#video9LinkSiguiente").attr("href", "video10.html"); // video siguiente
-
-  $("#tituloVideo10").text("10. ¿Por qué la carne es la mejor PEOR cosa del mundo?");
-  $("#urlVideo10").attr("src", "https://www.youtube.com/embed/VY2yv3zMOsI?cc_lang_pref=es&cc_load_policy=1"); // url del video
-  $("#video10LinkAnterior").attr("href", "video9.html"); // video anterior
-  $("#video10LinkSiguiente").attr("href", "video11.html"); // video siguiente
-
-  $("#tituloVideo11").text("11. ¿Por que estos 3 países contaminan mas que el resto del mundo?");
-  $("#urlVideo11").attr("src", "https://www.youtube.com/embed/BzOR-D1pCaE?cc_lang_pref=es&cc_load_policy=1"); // url del video
-  $("#video11LinkAnterior").attr("href", "video10.html"); // video anterior
-  $("#video11LinkSiguiente").attr("href", "video12.html"); // video siguiente
-
-  $("#tituloVideo12").text("12. Por que los humanos son muy malos al pensar en el cambio climático (Inglés)");
-  $("#urlVideo12").attr("src", "https://www.youtube.com/embed/DkZ7BJQupVA?cc_lang_pref=es&cc_load_policy=1"); // url del video
-  $("#video12LinkAnterior").attr("href", "video11.html"); // video anterior
-  $("#video12LinkSiguiente").attr("href", "video13.html"); // video siguiente
-
-  $("#tituloVideo13").text("13. 26 Formas de Luchar contra el Cambio Climático");
-  $("#urlVideo13").attr("src", "https://www.youtube.com/embed/wNQ5wvGmnEk?cc_lang_pref=es&cc_load_policy=1"); // url del video
-  $("#video13LinkAnterior").attr("href", "video12.html"); // video anterior
-  $("#video13LinkSiguiente").attr("href", "video14.html"); // video siguiente
-
-  $("#tituloVideo14").text("14. Como evitar el Cambio Climático MUY RÁPIDO");
-  $("#urlVideo14").attr("src", "https://www.youtube.com/embed/3X-Z0kMfh4M?cc_lang_pref=es&cc_load_policy=1"); // url del video
-  $("#video14LinkAnterior").attr("href", "video13.html"); // video anterior
-  $("#video14LinkSiguiente").attr("href", "video15.html"); // video siguiente
-
-  $("#tituloVideo15").text("15. ¿Podemos parar el cambio climático plantando árboles? - Curiosamente");
-  $("#urlVideo15").attr("src", "https://www.youtube.com/embed/7M-hixaUt5A?cc_lang_pref=es&cc_load_policy=1"); // url del video
-  $("#video15LinkAnterior").attr("href", "video14.html"); // video anterior
-  $("#video15LinkSiguiente").attr("href", "video16.html"); // video siguiente
-
-  $("#tituloVideo16").text("16. ¿Se puede detener el cambio climático platando billones de árboles? (Inglés)");
-  $("#urlVideo16").attr("src", "https://www.youtube.com/embed/yvDRQe2oCt4?cc_lang_pref=es&cc_load_policy=1"); // url del video
-  $("#video16LinkAnterior").attr("href", "video15.html"); // video anterior
-  $("#video16LinkSiguiente").attr("href", "video17.html"); // video siguiente
+  $("#videoAcordion13").text("13. 26 Formas de Luchar contra el Cambio Climático");
+  $("#videoAcordion14").text("14. Como evitar el Cambio Climatico MUY RÁPIDO");
+  $("#videoAcordion15").text("15. ¿Podemos parar el cambio climático plantando árboles? - Curiosamente");
+  $("#videoAcordion16").text("16. ¿Se puede detener el cambio climático platando billones de árboles? (Inglés)");
 
   // ACERCA DE
   $("#creadorVideo").text("Creador del video");
-  $("#creadorVideoTexto1").prepend('El video fue creado por el canal de youtube ');
-  $("#creadorVideoTexto2").text("Lernist.com no es el propietario de este video. Distribuimos este video mediante"
+  $("#creadorVideoTexto").prepend('El video fue creado por el canal de youtube ');
+  $("#creadorVideoTexto").append("Lernist.com no es el propietario de este video. Distribuímos este video mediante"
                                 + " la herramienta pública de Youtube que permite insertar videos de la plataforma en sitios web"
                                 + "  externos.");
 
@@ -212,7 +133,7 @@ $(document).ready(function() {
                             + " todos los de una lección. Sin embargo, cada autor profundiza y explica"
                             + " bastante bien, por lo que recomendamos verlos todos.");
 
-  $("#descripcionCurso").text("Descripción del curso"); // Descripcion del curso
+  $("#descripcionCurso").prepend("Descripción del curso"); // Descripcion del curso
   $("#descripcionCursoTexto").text("La situación de nuestra madre Tierra es muy delicada. Ya estamos viviendo los efectos"
                                   + " de nuestras malas acciones en el medio ambiente, y si no hacemos algo pronto,"
                                   + " va a ser demasiado tarde. Aún con la infinidad de evidencias científicas y fenómenos"
@@ -225,96 +146,6 @@ $(document).ready(function() {
   $("#duracionCurso").text("Duración y cantidad de videos del curso");
   $("#duracionCursoTexto").text("- 16 videos");
 
-  // uso de variables para insertar link de canales y nombre de un creador - ejemplos:
-  var Date = "Date un Vlog.";
-  var DateLink = "https://www.youtube.com/channel/UCQX_MZRCaluNKxkywkLEgfA";
-  var Curiosa = "Curiosamente.";
-  var CuriosaLink = "https://www.youtube.com/channel/UCX16cLWl6dCjlZMgUBxgGkA";
-  var Mind = "MindMachineTV.";
-  var MindLink = "https://www.youtube.com/channel/UCxOQ-HjJws0Nrh7v-05cxCw";
-  var DateV = "Date un Voltio.";
-  var DateVLink = "https://www.youtube.com/channel/UCns-8DssCBba7M4nu7wk7Aw";
-  var Acciona = "ACCIONA.";
-  var AccionaLink = "https://www.youtube.com/channel/UCVLajedX43G0E1BRVx7Q7dQ";
-  var kurz = "En Pocas Palabras - Kurzgesagt.";
-  var kurzLink = "https://www.youtube.com/channel/UCZcvCpFcLxOKGbMocVgLjEA";
-  var quantum = "QuantumFracture.";
-  var quantumLink = "https://www.youtube.com/channel/UCbdSYaPD-lr1kW27UJuk8Pw";
-  var hipotesis = "HipotesisDePoder.";
-  var hipotesisLink = "https://www.youtube.com/channel/UCp-ZlVc-lJ7MrdlzMOJU36g";
-  var Vox = "Vox.";
-  var VoxLink = "https://www.youtube.com/channel/UCLXo7UDZvByw2ixzpQCufnA";
-  var CNBC = "CNBC.";
-  var CNBCLink = "https://www.youtube.com/channel/UCvJJ_dzjViJCoLf5uKUTwoA";
-  
-  // link al canal y nombre del creador del video
-  $("#creadorVideoLink1").attr("href", DateLink).text(Date);
-  // descripcion de cada video
-  $("#descripcionCursoVideo1Texto").text("-");
-
-  // IMPORTANTE NOTA:
-  // Si el espacio donde va la variable con el link al canal de youtube esta vacío,
-  // causa un bug que interfiere con el slideToggle, pero se soluciona cuando se añade a todos
-  $("#creadorVideoLink2").attr("href", CuriosaLink).text(Curiosa);
-  // descripcion de cada video
-  $("#descripcionCursoVideo2Texto").text("-");
-
-  $("#creadorVideoLink3").attr("href", MindLink).text(Mind);
-  // descripcion de cada video
-  $("#descripcionCursoVideo3Texto").text("-");
-
-  $("#creadorVideoLink4").attr("href", DateVLink).text(DateV);
-  // descripcion de cada video
-  $("#descripcionCursoVideo4Texto").text("-");
-
-  $("#creadorVideoLink5").attr("href", MindLink).text(Mind);
-  // descripcion de cada video
-  $("#descripcionCursoVideo5Texto").text("-");
-
-  $("#creadorVideoLink6").attr("href", MindLink).text(Mind);
-  // descripcion de cada video
-  $("#descripcionCursoVideo6Texto").text("-");
-
-  $("#creadorVideoLink7").attr("href", AccionaLink).text(Acciona);
-  // descripcion de cada video
-  $("#descripcionCursoVideo7Texto").text("-");
-
-  $("#creadorVideoLink8").attr("href", kurzLink).text(kurz);
-  // descripcion de cada video
-  $("#descripcionCursoVideo8Texto").text("-");
-
-  $("#creadorVideoLink9").attr("href", quantumLink).text(quantum);
-  // descripcion de cada video
-  $("#descripcionCursoVideo9Texto").text("-");
-
-  $("#creadorVideoLink10").attr("href", kurzLink).text(kurz);
-  // descripcion de cada video
-  $("#descripcionCursoVideo10Texto").text("-");
-
-  $("#creadorVideoLink11").attr("href", hipotesisLink).text(hipotesis);
-  // descripcion de cada video
-  $("#descripcionCursoVideo11Texto").text("-");
-
-  $("#creadorVideoLink12").attr("href", VoxLink).text(Vox);
-  // descripcion de cada video
-  $("#descripcionCursoVideo12Texto").text("-");
-
-  $("#creadorVideoLink13").attr("href", quantumLink).text(quantum);
-  // descripcion de cada video
-  $("#descripcionCursoVideo13Texto").text("-");
-
-  $("#creadorVideoLink14").attr("href", AccionaLink).text(Acciona);
-  // descripcion de cada video
-  $("#descripcionCursoVideo14Texto").text("-");
-
-  $("#creadorVideoLink15").attr("href", CuriosaLink).text(Curiosa);
-  // descripcion de cada video
-  $("#descripcionCursoVideo15Texto").text("-");
-
-  $("#creadorVideoLink16").attr("href", CNBCLink).text(CNBC);
-  // descripcion de cada video
-  $("#descripcionCursoVideo16Texto").text("-");
-  
   // CURSOS RELACIONADOS
   
   $("#recomendado-titulo").text("Otros cursos relacionados:");
@@ -513,3 +344,231 @@ $(document).ready(function() {
     $(".btnMenosle30").toggle();
   });
 });
+
+function datosVideo1() {
+  $("#leccionTitle").text("¿Qué es el cambio climático?");
+  $("#tituloVideo").text("1. Clima no es tiempo: la verdad del CAMBIO CLIMÁTICO");
+  $("#urlVideo").attr("src", "https://www.youtube.com/embed/bQTTphy2c-M?cc_lang_pref=es&cc_load_policy=1"); // url del video
+  // botones
+  $("#videoLinkAnterior").attr("onclick", "primerVideo()"); // video anterior
+  $("#videoLinkSiguiente").attr("onclick", "datosVideo2()"); // video siguiente
+
+  // IMPORTANTE NOTA:
+  // Si el espacio donde va la variable con el link al canal de youtube esta vacío,
+  // causa un bug que interfiere con el slideToggle, pero se soluciona cuando se añade a todos
+
+  // link al canal y nombre del creador del video
+  $("#creadorVideoLink").attr("href", DateLink).text(DateVlog);
+  // descripcion de cada video
+  $("#descripcionCursoVideoTexto").text("-");
+}
+
+function datosVideo2() {
+  $("#leccionTitle").text("¿Qué es el cambio climático?");
+  $("#tituloVideo").text("2. ¿Es real el cambio climático? - CuriosaMente 26");
+  $("#urlVideo").attr("src", "https://www.youtube.com/embed/weIBPwFuYwA?cc_lang_pref=es&cc_load_policy=1"); // url del video
+  // botones
+  $("#videoLinkAnterior").attr("onclick", "datosVideo1()"); // video anterior
+  $("#videoLinkSiguiente").attr("onclick", "datosVideo3()"); // video siguiente
+
+  // link al canal y nombre del creador del video
+  $("#creadorVideoLink").attr("href", CuriosaLink).text(Curiosa);
+  // descripcion de cada video
+  $("#descripcionCursoVideoTexto").text("-");
+}
+
+function datosVideo3() {
+  $("#leccionTitle").text("¿Qué es el cambio climático?");
+  $("#tituloVideo").text("3. ¿Qué es el cambio climático?");
+  $("#urlVideo").attr("src", "https://www.youtube.com/embed/wbN_OPthenQ?cc_lang_pref=es&cc_load_policy=1"); // url del video
+  // botones
+  $("#videoLinkAnterior").attr("onclick", "datosVideo2()"); // video anterior
+  $("#videoLinkSiguiente").attr("onclick", "datosVideo4()"); // video siguiente
+
+  // link al canal y nombre del creador del video
+  $("#creadorVideoLink").attr("href", MindLink).text(Mind);
+  // descripcion de cada video
+  $("#descripcionCursoVideoTexto").text("-");
+}
+// editar informacion
+function datosVideo4() {
+  $("#leccionTitle").text("¿Qué es el calentamiento global?");
+  $("#tituloVideo").text("4. El calentamiento global | Acción por el clima");
+  $("#urlVideo").attr("src", "https://www.youtube.com/embed/XpPGZ-nFnXw?cc_lang_pref=es&cc_load_policy=1"); // url del video
+  // botones
+  $("#videoLinkAnterior").attr("onclick", "datosVideo3()"); // video anterior
+  $("#videoLinkSiguiente").attr("onclick", "datosVideo5()"); // video siguiente
+
+  // link al canal y nombre del creador del video
+  $("#creadorVideoLink").attr("href", DateVLink).text(DateVoltio);
+  // descripcion de cada video
+  $("#descripcionCursoVideoTexto").text("-");
+}
+
+function datosVideo5() {
+  $("#leccionTitle").text("¿Qué es el calentamiento global?");
+  $("#tituloVideo").text("5. ¿Que es el Calentamiento global?");
+  $("#urlVideo").attr("src", "https://www.youtube.com/embed/C7kD8Hvhi_Y?cc_lang_pref=es&cc_load_policy=1"); // url del video
+  // botones
+  $("#videoLinkAnterior").attr("onclick", "datosVideo4()"); // video anterior
+  $("#videoLinkSiguiente").attr("onclick", "datosVideo6()"); // video siguiente
+
+  // link al canal y nombre del creador del video
+  $("#creadorVideoLink").attr("href", MindLink).text(Mind);
+  // descripcion de cada video
+  $("#descripcionCursoVideoTexto").text("-");
+}
+
+function datosVideo6() {
+  $("#leccionTitle").text("¿Qué es el efecto invernadero?");
+  $("#tituloVideo").text("6. ¿Que es el efecto invernadero?");
+  $("#urlVideo").attr("src", "https://www.youtube.com/embed/nFIftpzZedw?cc_lang_pref=es&cc_load_policy=1"); // url del video
+  // botones
+  $("#videoLinkAnterior").attr("onclick", "datosVideo5()"); // video anterior
+  $("#videoLinkSiguiente").attr("onclick", "datosVideo7()"); // video siguiente
+
+  // link al canal y nombre del creador del video
+  $("#creadorVideoLink").attr("href", MindLink).text(Mind);
+  // descripcion de cada video
+  $("#descripcionCursoVideoTexto").text("-");
+}
+
+function datosVideo7() {
+  $("#leccionTitle").text("¿Qué es el efecto invernadero?");
+  $("#tituloVideo").text("7. ¿Qué es el efecto invernadero? | Sostenibilidad - ACCIONA");
+  $("#urlVideo").attr("src", "https://www.youtube.com/embed/YLFLxQ0t07A?cc_lang_pref=es&cc_load_policy=1"); // url del video
+  // botones
+  $("#videoLinkAnterior").attr("onclick", "datosVideo6()"); // video anterior
+  $("#videoLinkSiguiente").attr("onclick", "datosVideo8()"); // video siguiente
+
+  // link al canal y nombre del creador del video
+  $("#creadorVideoLink").attr("href", AccionaLink).text(Acciona);
+  // descripcion de cada video
+  $("#descripcionCursoVideoTexto").text("-");
+}
+
+function datosVideo8() {
+  $("#leccionTitle").text("¿Cuáles son las causas?");
+  $("#tituloVideo").text("8. ¿Quien es responsable por el cambio climático? ¿Y quien debe solucionarlo?");
+  $("#urlVideo").attr("src", "https://www.youtube.com/embed/LKNVNXHYzS0?cc_lang_pref=es&cc_load_policy=1"); // url del video
+  // botones
+  $("#videoLinkAnterior").attr("onclick", "datosVideo7()"); // video anterior
+  $("#videoLinkSiguiente").attr("onclick", "datosVideo9()"); // video siguiente
+
+  // link al canal y nombre del creador del video
+  $("#creadorVideoLink").attr("href", kurzLink).text(kurz);
+  // descripcion de cada video
+  $("#descripcionCursoVideoTexto").text("-");
+}
+
+function datosVideo9() {
+  $("#leccionTitle").text("¿Cuáles son las causas?");
+  $("#tituloVideo").text("9. El Cambio Climático es Culpa Nuestra y Puedo Convencerte");
+  $("#urlVideo").attr("src", "https://www.youtube.com/embed/JQHtjT-_c7U?cc_lang_pref=es&cc_load_policy=1"); // url del video
+  // botones
+  $("#videoLinkAnterior").attr("onclick", "datosVideo8()"); // video anterior
+  $("#videoLinkSiguiente").attr("onclick", "datosVideo10()"); // video siguiente
+
+  // link al canal y nombre del creador del video
+  $("#creadorVideoLink").attr("href", quantumLink).text(quantum);
+  // descripcion de cada video
+  $("#descripcionCursoVideoTexto").text("-");
+}
+
+function datosVideo10() {
+  $("#leccionTitle").text("¿Cuáles son las causas?");
+  $("#tituloVideo").text("10. ¿Por qué la carne es la mejor PEOR cosa del mundo?");
+  $("#urlVideo").attr("src", "https://www.youtube.com/embed/VY2yv3zMOsI?cc_lang_pref=es&cc_load_policy=1"); // url del video
+  // botones
+  $("#videoLinkAnterior").attr("onclick", "datosVideo9()"); // video anterior
+  $("#videoLinkSiguiente").attr("onclick", "datosVideo11()"); // video siguiente
+
+  // link al canal y nombre del creador del video
+  $("#creadorVideoLink").attr("href", kurzLink).text(kurz);
+  // descripcion de cada video
+  $("#descripcionCursoVideoTexto").text("-");
+}
+
+function datosVideo11() {
+  $("#leccionTitle").text("¿Cuáles son las causas?");
+  $("#tituloVideo").text("11. ¿Por que estos 3 países contaminan mas que el resto del mundo?");
+  $("#urlVideo").attr("src", "https://www.youtube.com/embed/BzOR-D1pCaE?cc_lang_pref=es&cc_load_policy=1"); // url del video
+  // botones
+  $("#videoLinkAnterior").attr("onclick", "datosVideo10()"); // video anterior
+  $("#videoLinkSiguiente").attr("onclick", "datosVideo12()"); // video siguiente
+
+  // link al canal y nombre del creador del video
+  $("#creadorVideoLink").attr("href", hipotesisLink).text(hipotesis);
+  // descripcion de cada video
+  $("#descripcionCursoVideoTexto").text("-");
+}
+
+function datosVideo12() {
+  $("#leccionTitle").text("¿Cuáles son las causas?");
+  $("#tituloVideo").text("12. Por que los humanos son muy malos al pensar en el cambio climático (Inglés)");
+  $("#urlVideo").attr("src", "https://www.youtube.com/embed/DkZ7BJQupVA?cc_lang_pref=es&cc_load_policy=1"); // url del video
+  // botones
+  $("#videoLinkAnterior").attr("onclick", "datosVideo11()"); // video anterior
+  $("#videoLinkSiguiente").attr("onclick", "datosVideo13()"); // video siguiente
+
+  // link al canal y nombre del creador del video
+  $("#creadorVideoLink").attr("href", VoxLink).text(Vox);
+  // descripcion de cada video
+  $("#descripcionCursoVideoTexto").text("-");
+}
+
+function datosVideo13() {
+  $("#leccionTitle").text("¿Cómo detener el cambio climático?");
+  $("#tituloVideo").text("13. 26 Formas de Luchar contra el Cambio Climático");
+  $("#urlVideo").attr("src", "https://www.youtube.com/embed/wNQ5wvGmnEk?cc_lang_pref=es&cc_load_policy=1"); // url del video
+  // botones
+  $("#videoLinkAnterior").attr("onclick", "datosVideo12()"); // video anterior
+  $("#videoLinkSiguiente").attr("onclick", "datosVideo14()"); // video siguiente
+
+  // link al canal y nombre del creador del video
+  $("#creadorVideoLink").attr("href", quantumLink).text(quantum);
+  // descripcion de cada video
+  $("#descripcionCursoVideoTexto").text("-");
+}
+
+function datosVideo14() {
+  $("#leccionTitle").text("¿Cómo detener el cambio climático?");
+  $("#tituloVideo").text("14. Como evitar el Cambio Climático MUY RÁPIDO");
+  $("#urlVideo").attr("src", "https://www.youtube.com/embed/3X-Z0kMfh4M?cc_lang_pref=es&cc_load_policy=1"); // url del video
+  // botones
+  $("#videoLinkAnterior").attr("onclick", "datosVideo13()"); // video anterior
+  $("#videoLinkSiguiente").attr("onclick", "datosVideo15()"); // video siguiente
+
+  // link al canal y nombre del creador del video
+  $("#creadorVideoLink").attr("href", AccionaLink).text(Acciona);
+  // descripcion de cada video
+  $("#descripcionCursoVideoTexto").text("-");
+}
+
+function datosVideo15() {
+  $("#leccionTitle").text("¿Cómo detener el cambio climático?");
+  $("#tituloVideo").text("15. ¿Podemos parar el cambio climático plantando árboles? - Curiosamente");
+  $("#urlVideo").attr("src", "https://www.youtube.com/embed/7M-hixaUt5A?cc_lang_pref=es&cc_load_policy=1"); // url del video
+  // botones
+  $("#videoLinkAnterior").attr("onclick", "datosVideo14()"); // video anterior
+  $("#videoLinkSiguiente").attr("onclick", "datosVideo16()"); // video siguiente
+
+  // link al canal y nombre del creador del video
+  $("#creadorVideoLink").attr("href", CuriosaLink).text(Curiosa);
+  // descripcion de cada video
+  $("#descripcionCursoVideoTexto").text("-");
+}
+
+function datosVideo16() {
+  $("#leccionTitle").text("¿Cómo detener el cambio climático?");
+  $("#tituloVideo").text("16. ¿Se puede detener el cambio climático platando billones de árboles? (Inglés)");
+  $("#urlVideo").attr("src", "https://www.youtube.com/embed/yvDRQe2oCt4?cc_lang_pref=es&cc_load_policy=1"); // url del video
+  // botones
+  $("#videoLinkAnterior").attr("onclick", "datosVideo15()"); // video anterior
+  $("#videoLinkSiguiente").attr("onclick", "ultimoVideo()"); // video siguiente
+
+  // link al canal y nombre del creador del video
+  $("#creadorVideoLink").attr("href", CNBCLink).text(CNBC);
+  // descripcion de cada video
+  $("#descripcionCursoVideoTexto").text("-");
+}

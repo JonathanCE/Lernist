@@ -16,7 +16,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Dela+Gothic+One&family=Fira+Sans:wght@200;400&family=Montserrat&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/videos-new.css">
+    <link rel="stylesheet" href="/curso.css">
+    <link rel="stylesheet" href="/Controladores-JS-y-CSS/navbar-and-footer.css">
     <link rel="icon" href="/lernist-mini.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <meta charset="UTF-8">
@@ -47,12 +48,15 @@
     </nav>
 
     <div class="title">
-        <h1 id="tituloVideo1"></h1> <!-- CAMBIAR -->
-        <p id="leccion-esenciaDelAlgebra"></p> <!-- CAMBIAR -->
+        <img src="/i_temas/logos-cursos/El Cambio Climático es Real..png" alt="">
+        <div>
+            <h1 id="tituloVideo"></h1>
+            <p id="leccionTitle"></p>
+        </div>
     </div>
 
 
-    <section id="anuncio-superior">
+    <!-- <section id="anuncio-superior">
         <a href="">
             <img class="anuncios-superiores" src="" alt="">
         </a>
@@ -62,13 +66,13 @@
         <a href="">
             <img class="anuncios-superiores-movil" src="" alt="">
         </a>
-    </section>
+    </section> -->
 
     
 
     <main>
         <div class="video"> <!-- CAMBIAR -->
-            <iframe id="urlVideo1" width="853" height="480" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe id="urlVideo" width="853" height="480" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
         <section class="video-info">
@@ -77,39 +81,39 @@
                 <span class="infoBtnMas">+</span>
                 <span class="infoBtnMenos">-</span>
             </div>
-            <div class="informacion-video">
-                <section class="datos-video">
-                    <div id="creadorVideo" class="datos-video-texto-principal"></div>
-                    <div>
-                        <p id="creadorVideoTexto1">
-                            <a id="creadorVideoLink1" href=""></a> <!-- CAMBIAR -->
-                        </p>
-                        <p id="creadorVideoTexto2"></p>
-                    </div>
+            <section class="datos-video">
+                <h3 id="creadorVideo"></h3>
+                <p id="creadorVideoTexto">
+                    <a id="creadorVideoLink" target="/blank" href=""></a>
+                </p>
 
-                    <div id="descripcionCursoVideo" class="datos-video-texto-principal"></div>
-                    <p id="descripcionCursoVideo1Texto"></p> <!-- CAMBIAR -->
+                <h3 id="descripcionCurso">
+                    <img src="/i_temas/logos-cursos/El Cambio Climático es Real..png" alt="">
+                </h3>
+                <p id="descripcionCursoTexto"></p>
 
-                    <div id="tipsCurso" class="datos-video-texto-principal"></div>
-                    <p id="tipsCursoTexto"></p>
+                <h3 id="tipsCurso"></h3>
+                <p id="tipsCursoTexto"></p>
 
-                    <div id="descripcionCurso" class="datos-video-texto-principal"></div>
-                    <p id="descripcionCursoTexto"></p>
+                <h3 id="descripcionCursoVideo"></h3>
+                <p id="descripcionCursoVideoTexto"></p>
 
-                    <div id="duracionCurso" class="datos-video-texto-principal"></div>
-                    <p id="duracionCursoTexto"></p>
-                </section>
-            </div>
+                <h3 id="duracionCurso"></h3>
+                <p id="duracionCursoTexto"></p>
+            </section>
         </section>
 
         <section class="temario">
 
             <div class="botones-control">
-                <div id="VideosMensajeInicio"></div>
-                <a id="video1LinkSiguiente" href="" class="next"> <!-- CAMBIAR -->
+                <button onclick="primerVideo()" id="videoLinkAnterior" class="previous">
+                    <img id="VideosBotonPrevious" src="" alt="">
+                    <p id="VideosBotonPreviousText"></p>
+                </button>
+                <button onclick="datosVideo2()" id="videoLinkSiguiente" class="next">
                     <p id="VideosBotonNextText"></p>
                     <img id="VideosBotonNext" src="" alt="">
-                </a>
+                </button>
             </div>
 
             <div id="titulo-lecciones"></div>
@@ -125,21 +129,74 @@
                     
                     <div class="contenedor-videos">
                         <div class="videos vi1">
-                            <a id="videoAcordion1" href=""></a>
-                            <a id="videoAcordion2" href=""></a>
-                            <a id="videoAcordion3" href=""></a>
-                            <a id="videoAcordion4" href=""></a>
-                            <a id="videoAcordion5" href=""></a>
-                            <a id="videoAcordion6" href=""></a>
-                            <a id="videoAcordion7" href=""></a>
-                            <a id="videoAcordion8" href=""></a>
-                            <a id="videoAcordion9" href=""></a>
-                            <a id="videoAcordion10" href=""></a>
-                            <a id="videoAcordion11" href=""></a>
-                            <a id="videoAcordion12" href=""></a>
-                            <a id="videoAcordion13" href=""></a>
-                            <a id="videoAcordion14" href=""></a>
-                            <a id="videoAcordion15" href=""></a>
+                            <button id="videoAcordion1" onclick="datosVideo1()"></button>
+                            <button id="videoAcordion2" onclick="datosVideo2()"></button>
+                            <button id="videoAcordion3" onclick="datosVideo3()"></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="leccion">
+                    <div class="leccion-title le2">
+                        <h3 id="tituloAcordion2"></h3>
+                        <span class="leccionBotonMas btnMasle2"></span>
+                        <span class="leccionBotonMenos btnMenosle2"></span>
+                    </div>
+                    
+                    <div class="contenedor-videos">
+                        <div class="videos vi2">
+                            <button id="videoAcordion4" onclick="datosVideo4()"></button>
+                            <button id="videoAcordion5" onclick="datosVideo5()"></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="leccion">
+                    <div class="leccion-title le3">
+                        <h3 id="tituloAcordion3"></h3>
+                        <span class="leccionBotonMas btnMasle3"></span>
+                        <span class="leccionBotonMenos btnMenosle3"></span>
+                    </div>
+                    
+                    <div class="contenedor-videos">
+                        <div class="videos vi3">
+                            <button id="videoAcordion6" onclick="datosVideo6()"></button>
+                            <button id="videoAcordion7" onclick="datosVideo7()"></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="leccion">
+                    <div class="leccion-title le4">
+                        <h3 id="tituloAcordion4"></h3>
+                        <span class="leccionBotonMas btnMasle4"></span>
+                        <span class="leccionBotonMenos btnMenosle4"></span>
+                    </div>
+                    
+                    <div class="contenedor-videos">
+                        <div class="videos vi4">
+                            <button id="videoAcordion8" onclick="datosVideo8()"></button>
+                            <button id="videoAcordion9" onclick="datosVideo9()"></button>
+                            <button id="videoAcordion10" onclick="datosVideo10()"></button>
+                            <button id="videoAcordion11" onclick="datosVideo11()"></button>
+                            <button id="videoAcordion12" onclick="datosVideo12()"></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="leccion">
+                    <div class="leccion-title le5">
+                        <h3 id="tituloAcordion5"></h3>
+                        <span class="leccionBotonMas btnMasle5"></span>
+                        <span class="leccionBotonMenos btnMenosle5"></span>
+                    </div>
+                    
+                    <div class="contenedor-videos">
+                        <div class="videos vi5">
+                            <button id="videoAcordion13" onclick="datosVideo13()"></button>
+                            <button id="videoAcordion14" onclick="datosVideo14()"></button>
+                            <button id="videoAcordion15" onclick="datosVideo15()"></button>
+                            <button id="videoAcordion16" onclick="datosVideo16()"></button>
                         </div>
                     </div>
                 </div>
@@ -178,6 +235,7 @@
         <p class="legal">&copy; Derechos Reservados Lernist 2021.</p>
     </footer>
 
-    <script src="/JS-de-videos-de-cursos/esencia-del-algebra-lineal.js"></script>
+    <script src="/Controladores-JS-y-CSS/navbar-and-footer.js"></script>
+    <script src="/JS-de-videos-de-cursos/el-cambio-climatico-es-real.js"></script>
 </body>
 </html>
