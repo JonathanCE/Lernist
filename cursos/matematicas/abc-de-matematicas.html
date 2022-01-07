@@ -16,13 +16,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Dela+Gothic+One&family=Fira+Sans:wght@200;400&family=Montserrat&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/videos-new.css">
+    <link rel="stylesheet" href="/curso.css">
+    <link rel="stylesheet" href="/Controladores-JS-y-CSS/navbar-and-footer.css">
     <link rel="icon" href="/lernist-mini.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script data-ad-client="ca-pub-8087632256608585" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <title>Lernist | Explicación de los números decimales</title> <!-- CAMBIAR -->
+    <title>Lernist | Curso | ABC de Matemáticas</title> <!-- CAMBIAR -->
 </head>
 <body>
 
@@ -47,12 +48,15 @@
     </nav>
 
     <div class="title">
-        <h1 id="tituloVideo20"></h1> <!-- CAMBIAR -->
-        <p id="leccion-decimales"></p> <!-- CAMBIAR -->
+        <img src="/i_temas/logos-cursos/ABC de Matemáticas.png" alt="">
+        <div>
+            <h1 id="tituloVideo"></h1>
+            <h3 id="leccionTitle"></h3>
+        </div>
     </div>
 
 
-    <section id="anuncio-superior">
+    <!-- <section id="anuncio-superior">
         <a href="">
             <img class="anuncios-superiores" src="" alt="">
         </a>
@@ -62,13 +66,13 @@
         <a href="">
             <img class="anuncios-superiores-movil" src="" alt="">
         </a>
-    </section>
+    </section> -->
 
     
 
     <main>
         <div class="video"> <!-- CAMBIAR -->
-            <iframe id="urlVideo20" width="853" height="480" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe id="urlVideo" width="853" height="480" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
         <section class="video-info">
@@ -77,42 +81,39 @@
                 <span class="infoBtnMas">+</span>
                 <span class="infoBtnMenos">-</span>
             </div>
-            <div class="informacion-video">
-                <section class="datos-video">
-                    <div id="creadorVideo" class="datos-video-texto-principal"></div>
-                    <div>
-                        <p id="creadorVideoTexto1">
-                            <a id="creadorVideoLink20" href=""></a> <!-- CAMBIAR -->
-                        </p>
-                        <p id="creadorVideoTexto2"></p>
-                    </div>
+            <section class="datos-video">
+                <h3 id="creadorVideo"></h3>
+                <p id="creadorVideoTexto">
+                    <a id="creadorVideoLink" target="/blank" href=""></a>
+                </p>
 
-                    <div id="descripcionCursoVideo" class="datos-video-texto-principal"></div>
-                    <p id="descripcionCursoVideo20Texto"></p> <!-- CAMBIAR -->
+                <h3 id="descripcionCurso">
+                    <img src="/i_temas/logos-cursos/ABC de Matemáticas.png" alt="">
+                </h3>
+                <p id="descripcionCursoTexto"></p>
 
-                    <div id="tipsCurso" class="datos-video-texto-principal"></div>
-                    <p id="tipsCursoTexto"></p>
+                <h3 id="tipsCurso"></h3>
+                <p id="tipsCursoTexto"></p>
 
-                    <div id="descripcionCurso" class="datos-video-texto-principal"></div>
-                    <p id="descripcionCursoTexto"></p>
+                <h3 id="descripcionCursoVideo"></h3>
+                <p id="descripcionCursoVideoTexto"></p>
 
-                    <div id="duracionCurso" class="datos-video-texto-principal"></div>
-                    <p id="duracionCursoTexto"></p>
-                </section>
-            </div>
+                <h3 id="duracionCurso"></h3>
+                <p id="duracionCursoTexto"></p>
+            </section>
         </section>
 
         <section class="temario">
 
             <div class="botones-control">
-                <a id="video20LinkAnterior" href="" class="previous"> <!-- CAMBIAR -->
+                <button onclick="primerVideo()" id="videoLinkAnterior" class="previous">
                     <img id="VideosBotonPrevious" src="" alt="">
                     <p id="VideosBotonPreviousText"></p>
-                </a>
-                <a id="video20LinkSiguiente" href="" class="next"> <!-- CAMBIAR -->
+                </button>
+                <button onclick="datosVideo2()" id="videoLinkSiguiente" class="next">
                     <p id="VideosBotonNextText"></p>
                     <img id="VideosBotonNext" src="" alt="">
-                </a>
+                </button>
             </div>
 
             <div id="titulo-lecciones"></div>
@@ -128,11 +129,11 @@
                     
                     <div class="contenedor-videos">
                         <div class="videos vi1">
-                            <a id="videoAcordion1" href=""></a>
-                            <a id="videoAcordion2" href=""></a>
-                            <a id="videoAcordion3" href=""></a>
-                            <a id="videoAcordion4" href=""></a>
-                            <a id="videoAcordion5" href=""></a>
+                            <button id="videoAcordion1" onclick="datosVideo1()"></button>
+                            <button id="videoAcordion2" onclick="datosVideo2()"></button>
+                            <button id="videoAcordion3" onclick="datosVideo3()"></button>
+                            <button id="videoAcordion4" onclick="datosVideo4()"></button>
+                            <button id="videoAcordion5" onclick="datosVideo5()"></button>
                         </div>
                     </div>
                 </div>
@@ -143,55 +144,55 @@
                         <span class="leccionBotonMas btnMasle2"></span>
                         <span class="leccionBotonMenos btnMenosle2"></span>
                     </div>
-            
+                    
                     <div class="contenedor-videos">
                         <div class="videos vi2">
-                            <a id="videoAcordion6" href=""></a>
-                            <a id="videoAcordion7" href=""></a>
+                            <button id="videoAcordion6" onclick="datosVideo6()"></button>
+                            <button id="videoAcordion7" onclick="datosVideo7()"></button>
                         </div>
                     </div>
                 </div>
-            
+
                 <div class="leccion">
                     <div class="leccion-title le3">
                         <h3 id="tituloAcordion3"></h3>
                         <span class="leccionBotonMas btnMasle3"></span>
                         <span class="leccionBotonMenos btnMenosle3"></span>
                     </div>
-            
+                    
                     <div class="contenedor-videos">
                         <div class="videos vi3">
-                            <a id="videoAcordion8" href=""></a>
-                            <a id="videoAcordion9" href=""></a>
-                            <a id="videoAcordion10" href=""></a>
-                            <a id="videoAcordion11" href=""></a>
-                            <a id="videoAcordion12" href=""></a>
-                            <a id="videoAcordion13" href=""></a>
-                            <a id="videoAcordion14" href=""></a>
-                            <a id="videoAcordion15" href=""></a>
-                            <a id="videoAcordion16" href=""></a>
-                            <a id="videoAcordion17" href=""></a>
+                            <button id="videoAcordion8" onclick="datosVideo8()"></button>
+                            <button id="videoAcordion9" onclick="datosVideo9()"></button>
+                            <button id="videoAcordion10" onclick="datosVideo10()"></button>
+                            <button id="videoAcordion11" onclick="datosVideo11()"></button>
+                            <button id="videoAcordion12" onclick="datosVideo12()"></button>
+                            <button id="videoAcordion13" onclick="datosVideo13()"></button>
+                            <button id="videoAcordion14" onclick="datosVideo14()"></button>
+                            <button id="videoAcordion15" onclick="datosVideo15()"></button>
+                            <button id="videoAcordion16" onclick="datosVideo16()"></button>
+                            <button id="videoAcordion17" onclick="datosVideo17()"></button>
                         </div>
                     </div>
                 </div>
-            
+
                 <div class="leccion">
                     <div class="leccion-title le4">
                         <h3 id="tituloAcordion4"></h3>
                         <span class="leccionBotonMas btnMasle4"></span>
                         <span class="leccionBotonMenos btnMenosle4"></span>
                     </div>
-            
+                    
                     <div class="contenedor-videos">
                         <div class="videos vi4">
-                            <a id="videoAcordion18" href=""></a>
-                            <a id="videoAcordion19" href=""></a>
-                            <a id="videoAcordion20" href=""></a>
-                            <a id="videoAcordion21" href=""></a>
-                            <a id="videoAcordion22" href=""></a>
-                            <a id="videoAcordion23" href=""></a>
-                            <a id="videoAcordion24" href=""></a>
-                            <a id="videoAcordion25" href=""></a>
+                            <button id="videoAcordion18" onclick="datosVideo18()"></button>
+                            <button id="videoAcordion19" onclick="datosVideo19()"></button>
+                            <button id="videoAcordion20" onclick="datosVideo20()"></button>
+                            <button id="videoAcordion21" onclick="datosVideo21()"></button>
+                            <button id="videoAcordion22" onclick="datosVideo22()"></button>
+                            <button id="videoAcordion23" onclick="datosVideo23()"></button>
+                            <button id="videoAcordion24" onclick="datosVideo24()"></button>
+                            <button id="videoAcordion25" onclick="datosVideo25()"></button>
                         </div>
                     </div>
                 </div>
@@ -205,10 +206,10 @@
                     
                     <div class="contenedor-videos">
                         <div class="videos vi5">
-                            <a id="videoAcordion26" href=""></a>
-                            <a id="videoAcordion27" href=""></a>
-                            <a id="videoAcordion28" href=""></a>
-                            <a id="videoAcordion29" href=""></a>
+                            <button id="videoAcordion26" onclick="datosVideo26()"></button>
+                            <button id="videoAcordion27" onclick="datosVideo27()"></button>
+                            <button id="videoAcordion28" onclick="datosVideo28()"></button>
+                            <button id="videoAcordion29" onclick="datosVideo29()"></button>
                         </div>
                     </div>
                 </div>
@@ -222,9 +223,9 @@
                     
                     <div class="contenedor-videos">
                         <div class="videos vi6">
-                            <a id="videoAcordion30" href=""></a>
-                            <a id="videoAcordion31" href=""></a>
-                            <a id="videoAcordion32" href=""></a>
+                            <button id="videoAcordion30" onclick="datosVideo30()"></button>
+                            <button id="videoAcordion31" onclick="datosVideo31()"></button>
+                            <button id="videoAcordion32" onclick="datosVideo32()"></button>
                         </div>
                     </div>
                 </div>
@@ -238,9 +239,9 @@
                     
                     <div class="contenedor-videos">
                         <div class="videos vi7">
-                            <a id="videoAcordion33" href=""></a>
-                            <a id="videoAcordion34" href=""></a>
-                            <a id="videoAcordion35" href=""></a>
+                            <button id="videoAcordion33" onclick="datosVideo33()"></button>
+                            <button id="videoAcordion34" onclick="datosVideo34()"></button>
+                            <button id="videoAcordion35" onclick="datosVideo35()"></button>
                         </div>
                     </div>
                 </div>
@@ -254,11 +255,11 @@
                     
                     <div class="contenedor-videos">
                         <div class="videos vi8">
-                            <a id="videoAcordion36" href=""></a>
-                            <a id="videoAcordion37" href=""></a>
-                            <a id="videoAcordion38" href=""></a>
-                            <a id="videoAcordion39" href=""></a>
-                            <a id="videoAcordion40" href=""></a>
+                            <button id="videoAcordion36" onclick="datosVideo36()"></button>
+                            <button id="videoAcordion37" onclick="datosVideo37()"></button>
+                            <button id="videoAcordion38" onclick="datosVideo38()"></button>
+                            <button id="videoAcordion39" onclick="datosVideo39()"></button>
+                            <button id="videoAcordion40" onclick="datosVideo40()"></button>
                         </div>
                     </div>
                 </div>
@@ -272,9 +273,9 @@
                     
                     <div class="contenedor-videos">
                         <div class="videos vi9">
-                            <a id="videoAcordion41" href=""></a>
-                            <a id="videoAcordion42" href=""></a>
-                            <a id="videoAcordion43" href=""></a>
+                            <button id="videoAcordion41" onclick="datosVideo41()"></button>
+                            <button id="videoAcordion42" onclick="datosVideo42()"></button>
+                            <button id="videoAcordion43" onclick="datosVideo43()"></button>
                         </div>
                     </div>
                 </div>
@@ -288,8 +289,8 @@
                     
                     <div class="contenedor-videos">
                         <div class="videos vi10">
-                            <a id="videoAcordion44" href=""></a>
-                            <a id="videoAcordion45" href=""></a>
+                            <button id="videoAcordion44" onclick="datosVideo44()"></button>
+                            <button id="videoAcordion45" onclick="datosVideo45()"></button>
                         </div>
                     </div>
                 </div>
@@ -303,16 +304,16 @@
                     
                     <div class="contenedor-videos">
                         <div class="videos vi11">
-                            <a id="videoAcordion46" href=""></a>
-                            <a id="videoAcordion47" href=""></a>
-                            <a id="videoAcordion48" href=""></a>
-                            <a id="videoAcordion49" href=""></a>
-                            <a id="videoAcordion50" href=""></a>
-                            <a id="videoAcordion51" href=""></a>
-                            <a id="videoAcordion52" href=""></a>
-                            <a id="videoAcordion53" href=""></a>
-                            <a id="videoAcordion54" href=""></a>
-                            <a id="videoAcordion55" href=""></a>
+                            <button id="videoAcordion46" onclick="datosVideo46()"></button>
+                            <button id="videoAcordion47" onclick="datosVideo47()"></button>
+                            <button id="videoAcordion48" onclick="datosVideo48()"></button>
+                            <button id="videoAcordion49" onclick="datosVideo49()"></button>
+                            <button id="videoAcordion50" onclick="datosVideo50()"></button>
+                            <button id="videoAcordion51" onclick="datosVideo51()"></button>
+                            <button id="videoAcordion52" onclick="datosVideo52()"></button>
+                            <button id="videoAcordion53" onclick="datosVideo53()"></button>
+                            <button id="videoAcordion54" onclick="datosVideo54()"></button>
+                            <button id="videoAcordion55" onclick="datosVideo55()"></button>
                         </div>
                     </div>
                 </div>
@@ -326,10 +327,10 @@
                     
                     <div class="contenedor-videos">
                         <div class="videos vi12">
-                            <a id="videoAcordion56" href=""></a>
-                            <a id="videoAcordion57" href=""></a>
-                            <a id="videoAcordion58" href=""></a>
-                            <a id="videoAcordion59" href=""></a>
+                            <button id="videoAcordion56" onclick="datosVideo56()"></button>
+                            <button id="videoAcordion57" onclick="datosVideo57()"></button>
+                            <button id="videoAcordion58" onclick="datosVideo58()"></button>
+                            <button id="videoAcordion59" onclick="datosVideo59()"></button>
                         </div>
                     </div>
                 </div>
@@ -343,9 +344,9 @@
                     
                     <div class="contenedor-videos">
                         <div class="videos vi13">
-                            <a id="videoAcordion60" href=""></a>
-                            <a id="videoAcordion61" href=""></a>
-                            <a id="videoAcordion62" href=""></a>
+                            <button id="videoAcordion60" onclick="datosVideo60()"></button>
+                            <button id="videoAcordion61" onclick="datosVideo61()"></button>
+                            <button id="videoAcordion62" onclick="datosVideo62()"></button>
                         </div>
                     </div>
                 </div>
@@ -359,9 +360,9 @@
                     
                     <div class="contenedor-videos">
                         <div class="videos vi14">
-                            <a id="videoAcordion63" href=""></a>
-                            <a id="videoAcordion64" href=""></a>
-                            <a id="videoAcordion65" href=""></a>
+                            <button id="videoAcordion63" onclick="datosVideo63()"></button>
+                            <button id="videoAcordion64" onclick="datosVideo64()"></button>
+                            <button id="videoAcordion65" onclick="datosVideo65()"></button>
                         </div>
                     </div>
                 </div>
@@ -375,8 +376,8 @@
                     
                     <div class="contenedor-videos">
                         <div class="videos vi15">
-                            <a id="videoAcordion66" href=""></a>
-                            <a id="videoAcordion67" href=""></a>
+                            <button id="videoAcordion66" onclick="datosVideo66()"></button>
+                            <button id="videoAcordion67" onclick="datosVideo67()"></button>
                         </div>
                     </div>
                 </div>
@@ -390,9 +391,9 @@
                     
                     <div class="contenedor-videos">
                         <div class="videos vi16">
-                            <a id="videoAcordion68" href=""></a>
-                            <a id="videoAcordion69" href=""></a>
-                            <a id="videoAcordion70" href=""></a>
+                            <button id="videoAcordion68" onclick="datosVideo68()"></button>
+                            <button id="videoAcordion69" onclick="datosVideo69()"></button>
+                            <button id="videoAcordion70" onclick="datosVideo70()"></button>
                         </div>
                     </div>
                 </div>
@@ -406,10 +407,10 @@
                     
                     <div class="contenedor-videos">
                         <div class="videos vi17">
-                            <a id="videoAcordion71" href=""></a>
-                            <a id="videoAcordion72" href=""></a>
-                            <a id="videoAcordion73" href=""></a>
-                            <a id="videoAcordion74" href=""></a>
+                            <button id="videoAcordion71" onclick="datosVideo71()"></button>
+                            <button id="videoAcordion72" onclick="datosVideo72()"></button>
+                            <button id="videoAcordion73" onclick="datosVideo73()"></button>
+                            <button id="videoAcordion74" onclick="datosVideo74()"></button>
                         </div>
                     </div>
                 </div>
@@ -423,13 +424,13 @@
                     
                     <div class="contenedor-videos">
                         <div class="videos vi18">
-                            <a id="videoAcordion75" href=""></a>
-                            <a id="videoAcordion76" href=""></a>
-                            <a id="videoAcordion77" href=""></a>
-                            <a id="videoAcordion78" href=""></a>
-                            <a id="videoAcordion79" href=""></a>
-                            <a id="videoAcordion80" href=""></a>
-                            <a id="videoAcordion81" href=""></a>
+                            <button id="videoAcordion75" onclick="datosVideo75()"></button>
+                            <button id="videoAcordion76" onclick="datosVideo76()"></button>
+                            <button id="videoAcordion77" onclick="datosVideo77()"></button>
+                            <button id="videoAcordion78" onclick="datosVideo78()"></button>
+                            <button id="videoAcordion79" onclick="datosVideo79()"></button>
+                            <button id="videoAcordion80" onclick="datosVideo80()"></button>
+                            <button id="videoAcordion81" onclick="datosVideo81()"></button>
                         </div>
                     </div>
                 </div>
@@ -468,6 +469,7 @@
         <p class="legal">&copy; Derechos Reservados Lernist 2021.</p>
     </footer>
 
+    <script src="/Controladores-JS-y-CSS/navbar-and-footer.js"></script>
     <script src="/JS-de-videos-de-cursos/abc-de-matematicas.js"></script>
 </body>
 </html>
