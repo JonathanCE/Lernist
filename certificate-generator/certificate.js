@@ -42,4 +42,10 @@ async function nombreEnPdf() {
 
     // Trigger the browser to download the PDF document
     download(pdfBytes, "mi_certificado.pdf", "application/pdf");
+
+    // Reabre la ventana en la pagina principal, para evitar que se hagan más certificados
+    /* window.open("https://lernist.com"); 
+    setTimeout(function() {
+        window.close()
+    }, 3000) */
 }

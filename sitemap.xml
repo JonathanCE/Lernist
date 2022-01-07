@@ -9,1282 +9,707 @@
 
 <url>
   <loc>https://lernist.com/</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/estudio-para-el-examen-paa.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <loc>https://lernist.com/cursos/matematicas/abc-de-matematicas.html</loc>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://lernist.com/aprender/ciencia/cursos/enamorate-de-la-fisica.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <loc>https://lernist.com/cursos/matematicas/esencia-del-algebra-lineal.html</loc>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lernist.com/cursos/ciencia/enamorate-de-la-fisica.html</loc>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://lernist.com/articulos/matematicas/2021/jerarquia-de-las-operaciones.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://lernist.com/articulos/matematicas/2021/lenguaje-algebraico-simple.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://lernist.com/articulos.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://lernist.com/quizzes/matematicas/quiz1/suma-y-resta-fracciones-1.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://lernist.com/quizzes/matematicas/quiz2/suma-y-resta-fracciones-2.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://lernist.com/quizzes/matematicas/quiz3/multiplicacion-y-division-fracciones-1.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://lernist.com/quizzes/examenes/examen-paa/quiz1/algebra-paa-1.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://lernist.com/quizzes.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/lectura.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video1.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/lectura/videos/tipos-de-discurso/video14.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/lectura/videos/figuras-retoricas/video15.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/aritmetica/video1.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/algebra/video24.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/geometria/video37.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/probabilidad/video56.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/consejos-generales.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/consejos-generales/videos/trucos-para-aprobar-los-examenes.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/temario-de-estudio-completo-paa.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/temario-de-estudio-espa%C3%B1ol-paa.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/temario-de-estudio-matematicas-paa.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video1.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <loc>https://lernist.com/cursos/geografia/descubre-europa-con-luisillo.html</loc>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video2.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video3.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video4.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video5.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video6.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video7.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video8.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video9.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video10.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video11.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video12.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video13.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video14.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video15.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video16.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video17.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video18.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video19.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video20.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video21.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video22.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video23.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video24.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video25.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video26.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video27.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video28.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video29.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video30.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video31.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video32.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video33.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video34.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video35.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video36.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video37.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video38.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video39.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video40.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video41.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video42.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video43.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video44.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video45.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video46.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video47.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video48.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video49.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video50.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video51.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video52.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video53.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video54.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video55.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video56.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video57.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video58.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video59.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video60.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video61.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video62.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video63.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video64.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video65.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video66.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video67.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video68.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video69.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video70.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video71.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video72.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video73.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video74.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video75.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video76.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video77.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video78.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video79.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video80.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/abc-de-matematicas/videos/video81.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/ciencia/cursos/enamorate-de-la-fisica/videos/video1.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/ciencia/cursos/enamorate-de-la-fisica/videos/video2.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/ciencia/cursos/enamorate-de-la-fisica/videos/video3.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/ciencia/cursos/enamorate-de-la-fisica/videos/video4.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/ciencia/cursos/enamorate-de-la-fisica/videos/video5.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/ciencia/cursos/enamorate-de-la-fisica/videos/video6.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/ciencia/cursos/enamorate-de-la-fisica/videos/video7.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/ciencia/cursos/enamorate-de-la-fisica/videos/video8.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/ciencia/cursos/enamorate-de-la-fisica/videos/video9.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/ciencia/cursos/enamorate-de-la-fisica/videos/video10.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/ciencia/cursos/enamorate-de-la-fisica/videos/video11.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/ciencia/cursos/enamorate-de-la-fisica/videos/video12.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/ciencia/cursos/enamorate-de-la-fisica/videos/video13.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/esencia-del-algebra-lineal.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/geografia/cursos/descubre-europa-con-luisillo.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <loc>https://lernist.com/cursos/medio-ambiente/el-cambio-climatico-es-real.html</loc>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://lernist.com/articulos/matematicas/2021/lenguaje-algebraico-compuesto.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://lernist.com/articulos/matematicas/2021/suma-y-resta-de-fracciones.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://lernist.com/articulos/matematicas/2021/multiplicacion-y-division-de-fracciones.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://lernist.com/articulos/matematicas/2021/tipos-de-numeros-que-existen.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://lernist.com/articulos/criptomonedas/2022/que-son-las-criptomonedas.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://lernist.com/articulos/educacion/2021/las-mejores-universidades-del-mundo-2021.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://lernist.com/articulos/finanzas/2021/los-neobancos-mexicanos.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://lernist.com/articulos/programacion/2021/aprende-python-gratis-con-estos-recursos.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://lernist.com/articulos/matematicas/2021/magnitud-direccion-y-sentido-de-vectores.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://lernist.com/quizzes/matematicas/quiz1/game.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://lernist.com/quizzes/matematicas/quiz2/game.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://lernist.com/quizzes/matematicas/quiz3/game.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://lernist.com/quizzes/examenes/examen-paa/quiz1/game.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://lernist.com/quizzes/matematicas/quiz4/multiplicacion-y-division-fracciones-2.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://lernist.com/quizzes/matematicas/quiz5/jerarquia-de-operaciones-1.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://lernist.com/quizzes/matematicas/quiz6/jerarquia-de-operaciones-2.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://lernist.com/quizzes/matematicas/quiz7/perimetros-y-areas-1.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://lernist.com/quizzes/matematicas/quiz8/perimetros-y-areas-2.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://lernist.com/quizzes/matematicas/quiz9/leyes-signos-suma-y-resta-1.html</loc>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://lernist.com/quizzes/matematicas/quiz10/leyes-signos-suma-y-resta-2.html</loc>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://lernist.com/quizzes/examenes/examen-paa/quiz2/algebra-paa-2.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://lernist.com/quizzes/geografia/quizzes-de-cursos/descubre-europa-con-luisillo/quiz1/descubre-europa-con-luisillo-1.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video2.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video3.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video4.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video5.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video6.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video7.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video8.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video9.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video10.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video11.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video12.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/lectura/videos/generos-y-subgeneros-literarios/video13.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/aritmetica/video2.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/aritmetica/video3.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/aritmetica/video4.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/aritmetica/video5.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/aritmetica/video6.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/aritmetica/video7.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/aritmetica/video8.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/aritmetica/video9.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/aritmetica/video10.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/aritmetica/video11.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/aritmetica/video12.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/aritmetica/video13.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/aritmetica/video14.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/aritmetica/video15.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/aritmetica/video16.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/aritmetica/video17.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/aritmetica/video18.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/aritmetica/video19.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/aritmetica/video20.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/aritmetica/video21.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/aritmetica/video22.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/aritmetica/video23.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/algebra/video25.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/algebra/video26.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/algebra/video27.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/algebra/video28.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/algebra/video29.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/algebra/video30.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/algebra/video31.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/algebra/video32.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/algebra/video33.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/algebra/video34.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/algebra/video35.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/algebra/video36.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/geometria/video38.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/geometria/video39.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/geometria/video40.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/geometria/video41.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/geometria/video42.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/geometria/video43.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/geometria/video44.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/geometria/video45.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/geometria/video46.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/geometria/video47.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/geometria/video48.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/geometria/video49.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/geometria/video50.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/geometria/video51.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/geometria/video52.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/geometria/video53.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/geometria/video54.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/geometria/video55.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/probabilidad/video57.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/probabilidad/video58.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/probabilidad/video59.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/probabilidad/video60.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/probabilidad/video61.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/probabilidad/video62.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/probabilidad/video63.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/probabilidad/video64.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/probabilidad/video65.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/probabilidad/video66.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/probabilidad/video67.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/probabilidad/video68.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/probabilidad/video69.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/probabilidad/video70.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/probabilidad/video71.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/aprender/examenes/cursos/examen-paa/matematicas/videos/probabilidad/video72.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/esencial-del-algebra-lineal/videos/video1.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/esencial-del-algebra-lineal/videos/video2.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/esencial-del-algebra-lineal/videos/video3.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/esencial-del-algebra-lineal/videos/video4.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/esencial-del-algebra-lineal/videos/video5.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/esencial-del-algebra-lineal/videos/video6.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/esencial-del-algebra-lineal/videos/video7.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/esencial-del-algebra-lineal/videos/video8.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/esencial-del-algebra-lineal/videos/video9.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/esencial-del-algebra-lineal/videos/video10.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/esencial-del-algebra-lineal/videos/video11.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/esencial-del-algebra-lineal/videos/video12.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/esencial-del-algebra-lineal/videos/video13.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/esencial-del-algebra-lineal/videos/video14.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/matematicas/cursos/esencial-del-algebra-lineal/videos/video15.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/geografia/cursos/descubre-europa-con-luisillo/videos/video1.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/geografia/cursos/descubre-europa-con-luisillo/videos/video2.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/geografia/cursos/descubre-europa-con-luisillo/videos/video3.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/geografia/cursos/descubre-europa-con-luisillo/videos/video4.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/geografia/cursos/descubre-europa-con-luisillo/videos/video5.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/geografia/cursos/descubre-europa-con-luisillo/videos/video6.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/geografia/cursos/descubre-europa-con-luisillo/videos/video7.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/geografia/cursos/descubre-europa-con-luisillo/videos/video8.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/geografia/cursos/descubre-europa-con-luisillo/videos/video9.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/geografia/cursos/descubre-europa-con-luisillo/videos/video10.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://lernist.com/aprender/geografia/cursos/descubre-europa-con-luisillo/videos/video11.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/quizzes/matematicas/quiz4/game.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/quizzes/matematicas/quiz5/game.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/quizzes/matematicas/quiz6/game.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/quizzes/matematicas/quiz7/game.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/quizzes/matematicas/quiz8/game.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://lernist.com/quizzes/matematicas/quiz9/game.html</loc>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://lernist.com/quizzes/matematicas/quiz10/game.html</loc>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/quizzes/examenes/examen-paa/quiz2/game.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lernist.com/quizzes/geografia/quizzes-de-cursos/descubre-europa-con-luisillo/quiz1/game.html</loc>
-  <lastmod>2022-01-03T09:07:49+00:00</lastmod>
+  <lastmod>2022-01-07T00:37:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 
