@@ -1,16 +1,26 @@
 .title {
     padding: 20px 40px;
     background-color: #090c0f;
+    display: flex;
+    align-items: center;
+}
+.title img {
+    width: 150px;
+    height: 150px;
+    border-radius: 40px;
+    display: block;
+    margin-right: 30px;
 }
 .title h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 35px;
 }
-.title p{
+.title h3 {
     margin-top: 15px;
     font-size: 18px;
     font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
 }
 
 #anuncio-superior {
@@ -30,12 +40,164 @@
 main {
     display: grid;
     grid-template-columns: 1fr 0.4fr;
+    grid-column-gap: 10px;
     grid-template-rows: auto 1fr;
-    grid-template-areas: "video temario" "descripcion temario";
+    padding: 20px;
+}
+main iframe {
+    width: 100%;
+    height: 500px;
+}
+.contenido {
+    padding: 15px 25px;
+}
+.contenido h3 {
+    font-size: 27px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+.contenido p {
+    font-size: 19px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    line-height: 30px;
+    text-align: justify;
+}
+.contenido a {
+    font-size: 20px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+    line-height: 35px;
+    color: white;
+    text-decoration: none;
+    width: max-content;
+    display: block;
+}
+.contenido li {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+.contenido span {
+    font-weight: bold;
+    font-size: 25px;
+}
+.encabezado img{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.articulo {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 30px;
+    margin-bottom: 20px;
+}
+.articulo img {
+    width: 100%;
+    max-width: 600px;
 }
 .video {
     width: 100%;
     padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    position: relative;
+    height: 0;
+}
+.video iframe{
+    box-sizing: border-box;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.ejemplo li {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
+.donacion {
+    padding: 15px 40px;
+    border: 1.5px solid black;
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: #090c0f;
+    margin-top: 30px;
+
+    display: grid;
+    grid-template-columns: 1fr 0.4fr;
+    grid-column-gap: 15px;
+    align-items: center;
+}
+.donacion p {
+    text-align: left;
+}
+.donacion a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    height: 70px;
+    width: 100%;
+    font-size: 25px;
+    background-color: #15191f;
+    border: 4px solid rgb(86, 165, 235, 0.25);
+    border-radius: 10px;
+}
+.referido {
+    padding: 15px;
+    border: 1.5px solid black;
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: #090c0f;
+
+    display: grid;
+    grid-template-columns: 1fr 0.4fr;
+    grid-column-gap: 20px;
+}
+.referido p {
+    font-size: 19px;
+    text-align: left;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    line-height: normal;
+}
+.referido-descripcion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contenedor-boton {
+    display: flex;
+}
+.referido a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    height: 60px;
+    width: 150px;
+    font-size: 25px;
+    background-color: #15191f;
+    border: 4px solid rgb(86, 165, 235, 0.25);
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.referido img{
+    width: 100%;
+    border-radius: 3px;
+}
+.referido span {
+    font-size: 19px;
+    font-weight: 700;
+    font-style: italic;
+    text-decoration: underline;
+}
+/* .video {
+    width: 100%;
+    padding-bottom: 56.25%;
     position: relative;
     height: 0;
     grid-area: video;
@@ -48,10 +210,9 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
-}
+} */
 .video-info {
-    padding: 0 20px 0 25px;
-    grid-area: descripcion;
+    padding-bottom: 20px;
 }
 .video-info-title {
     display: grid;
@@ -64,11 +225,10 @@ main {
 }
 .video-info-title h3 {
     font-size: 30px;
-    padding: 15px 0;
     font-family: 'Montserrat', sans-serif;
 }
 .video-info-title span {
-    font-size: 50px;
+    font-size: 60px;
     text-align: right;
 }
 .infoBtnMenos {
@@ -82,7 +242,7 @@ main {
     grid-row-gap: 30px;
     padding: 15px 0;
 }
-.datos-video-texto-principal {
+.datos-video h3 {
     font-size: 27px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -100,6 +260,10 @@ main {
     line-height: 30px;
     color: white;
 }
+.datos-video img {
+    width: 100%;
+    margin-top: 15px;
+}
 
 
 .temario {
@@ -107,7 +271,6 @@ main {
     padding: 5px 5px 0 0;
     box-sizing: border-box;
     line-height: 27px;
-    grid-area: temario;
 }
 .temario a{
     text-decoration: none;
@@ -119,6 +282,14 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 10px;
+}
+.botones-control button {
+    font-size: 50px;
+    background-color: #090c0f;
+    border-radius: 2px;
+    border: 5px solid black;
+    padding: 8px;
+    color: white;
 }
 .botones-control a {
     font-size: 50px;
@@ -153,28 +324,6 @@ main {
     width: 45px;
     height: auto;
 }
-#VideosMensajeInicio {
-    display: grid;
-    align-items: center;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #090c0f;
-    border-radius: 2px;
-    border: 5px solid black;
-    padding: 8px;
-    font-size: 18px;
-}
-#VideosMensajeFinal {
-    display: grid;
-    align-items: center;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #090c0f;
-    border-radius: 2px;
-    border: 5px solid black;
-    padding: 8px;
-    font-size: 18px;
-}
 .lecciones {
     height: 420px;
     border: 6px solid black;
@@ -206,14 +355,14 @@ main {
     margin-bottom: 5px;
 }
 .leccion-title {
-    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 0.1fr;
+    align-items: center;
     padding: 10px;
     background-color: #090c0f;
     cursor: pointer;
 }
 .leccion-title span {
-    position: absolute;
-    right: 15px;
     font-size: 2em;
 }
 .leccionBotonMenos {
@@ -250,6 +399,18 @@ main {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 200;
 }
+/* .videos button {
+    display: block;
+    background-color: #090c0f;
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 17px;
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 200;
+    color: white;
+    border-style: none;
+} */
 
 .recomendado {
     padding: 20px;
@@ -282,6 +443,16 @@ main {
     cursor: pointer;
 }
 
+.contenido a:hover {
+    color: #95a5a6;
+}
+.botones-control button:hover {
+    background-color: black;
+    border-radius: 3px;
+    border: 2px solid black;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    cursor: pointer;
+}
 .botones-control a:hover {
     background-color: black;
     border-radius: 3px;
@@ -294,6 +465,23 @@ main {
     border: 2px solid black;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
+.donacion a:hover {
+    box-shadow: 0 4px 14px 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-1px);
+    transition: transform 150ms;
+}
+.referido a:hover {
+    box-shadow: 0 4px 14px 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-1px);
+    transition: transform 150ms;
+}
+/* .videos button:hover {
+    cursor: pointer;
+    background-color: black;
+    border-radius: 3px;
+    border: 2px solid black;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+} */
 .recomendado-content a:hover {
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
@@ -301,6 +489,15 @@ main {
 @media screen and (max-width: 1135px) {
     .video iframe {
         padding: 15px;
+    }
+}
+
+@media screen and (max-width: 1070px) {
+    main {
+        padding: 20px 20px 20px 0;
+    }
+    .donacion {
+        padding: 15px 25px;
     }
 }
 
@@ -312,28 +509,28 @@ main {
 
 @media screen and (max-width: 900px) {
     main {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto;
-        grid-template-areas: "video" "descripcion" "temario";
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .temario {
+        padding: 10px;
+        margin: 0 auto;
+        max-width: 600px;
     }
     .botones-control {
-        margin: 10px;
+        margin-top: 10px;
     }
     .datos-video {
         grid-template-columns: 0.6fr 1fr;
-    }
-    .video-info {
-        padding: 0 10px;
-    }
-    .informacion-video {
-        padding: 0 5px;
-    }
-    .temario {
-        padding: 10px 0 0 0;
+        padding: 10px;
     }
 }
 
 @media screen and (max-width: 800px) {
+    .title {
+        padding: 20px;
+    }
     #anuncio-superior {
         display: grid;
         grid-template-columns: 1fr;
@@ -345,9 +542,18 @@ main {
     .recomendado-content {
         grid-template-columns: 1fr 1fr;
     }
+    .donacion {
+        grid-template-columns: 1fr 0.5fr;
+    }
+    .donacion a {
+        height: 70%;
+    }
 }
 
 @media screen and (max-width: 650px) {
+    .contenido {
+        padding: 15px;
+    }
     #anuncio-superior {
         display: none;
     }
@@ -363,10 +569,74 @@ main {
         grid-template-columns: 1fr;
         grid-row-gap: 20px;
     }
+    .donacion {
+        grid-template-columns: 1fr;
+    }
+    .donacion a {
+        height: 60px;
+        width: 70%;
+        margin: 20px auto 10px;
+    }
+    .referido {
+        grid-template-columns: 1fr 0.5fr;
+    }
 }
 
 @media screen and (max-width: 610px) {
+    main {
+        padding: 0 10px;
+    }
+    .title img {
+        display: none;
+    }
     .recomendado-content {
         grid-template-columns: 1fr;
+    }
+    .articulo span {
+        font-weight: bold;
+        font-size: 22px;
+    }
+    .articulo a {
+        display: inline;
+    }
+    .donacion p {
+        text-align: center;
+    }
+    .donacion a {
+        display: flex;
+    }
+    .referido a {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .video iframe {
+        padding: 10px 0;
+    }
+    .referido {
+        grid-template-columns: 1fr 0.7fr;
+    }
+    .contenedor-boton {
+        justify-content: center;
+    }
+    .referido a {
+        width: 100%;
+    }
+    .referido p {
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    main {
+        padding: 0;
+    }
+    .title h1 {
+        font-size: 35px;
+    }
+    .articulo span {
+        font-weight: bold;
+        font-size: 19px;
     }
 }
