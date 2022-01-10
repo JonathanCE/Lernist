@@ -1,0 +1,44 @@
+.title {
+    padding: 20px 40px;
+    background-color: #090c0f;
+    display: flex;
+    align-items: center;
+}
+.title img {
+    width: 150px;
+    height: 150px;
+    border-radius: 40px;
+    display: block;
+    margin-right: 30px;
+}
+.title h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+}
+.title h3 {
+    margin-top: 15px;
+    font-size: 18px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+}
+
+#anuncio-superior {
+    padding: 15px;
+}
+#anuncio-superior img {
+    margin: auto;
+}
+#anuncio-superior-movil {
+    padding: 15px;
+    display: none;
+}
+#anuncio-superior-movil img {
+    margin: auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

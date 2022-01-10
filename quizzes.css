@@ -102,6 +102,7 @@
 .contenedor-temas a:hover{
     cursor: pointer;
     box-shadow: 0 4px 14px 0 rgba(86, 185, 235, 0.5);
+    border: 3px solid rgb(86, 165, 235, 0.25);
     transform: translateY(-3px);
     transition: transform 150ms;
 }
