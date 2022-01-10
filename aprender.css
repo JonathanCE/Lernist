@@ -100,6 +100,7 @@
 .contenedor-temas a:hover{
     cursor: pointer;
     box-shadow: 0 4px 14px 0 rgba(86, 185, 235, 0.5);
+    border: 3px solid rgb(86, 165, 235, 0.25);
     transform: translateY(-3px);
     transition: transform 150ms;
 }
@@ -150,7 +151,7 @@
         grid-template-columns: 0.6fr 1fr;
         grid-column-gap: 10px;
         align-items: center;
-        font-size: 27px;
+        font-size: 25px;
     }
     .Presentacion {
         padding: 30px 50px;
