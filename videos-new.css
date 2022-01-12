@@ -32,6 +32,7 @@ main {
     grid-template-columns: 1fr 0.4fr;
     grid-template-rows: auto 1fr;
     grid-template-areas: "video temario" "descripcion temario";
+    margin-bottom: 30px;
 }
 .video {
     width: 100%;

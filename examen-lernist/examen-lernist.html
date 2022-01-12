@@ -63,7 +63,6 @@
     
 
     <main>
-        <div id="resultado"></div>
         <form id="examen" name="quizForm" onsubmit="return verificarRespuesta()">
 
             <div class="title">
@@ -72,8 +71,6 @@
                     <h1>Examen Lernist</h1>
                 </div>
             </div>
-
-            <div id="resultado"></div>
 
             <h2>Instrucciones</h2>
             <p>
@@ -227,9 +224,14 @@
 
             </section>
 
-            <input type="submit" value="Enviar">
+            <div class="contenedor-final">
+                <input type="submit" value="Enviar">
+            
+                <div id="resultado"></div>
+            </div>
 
         </form>
+
     </main>
 
     
