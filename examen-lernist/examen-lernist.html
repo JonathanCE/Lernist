@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Dela+Gothic+One&family=Fira+Sans:wght@200;400&family=Montserrat&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="curso-pronet.css">
+    <link rel="stylesheet" href="examen-lernist.css">
     <link rel="stylesheet" href="/Controladores-JS-y-CSS/navbar-and-footer.css">
     <link rel="icon" href="/lernist-mini.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -47,14 +47,6 @@
         </div>
     </nav>
 
-    <div class="title">
-        <img src="/i_temas/logos-cursos/Esencia del Álgebra Lineal.png" alt="">
-        <div>
-            <h1 id="tituloVideo"></h1>
-            <h3 id="leccionTitle"></h3>
-        </div>
-    </div>
-
 
     <!-- <section id="anuncio-superior">
         <a href="">
@@ -71,6 +63,173 @@
     
 
     <main>
+        <div id="resultado"></div>
+        <form id="examen" name="quizForm" onsubmit="return verificarRespuesta()">
+
+            <div class="title">
+                <img src="/i_temas/logos-cursos/Esencia del Álgebra Lineal.png" alt="">
+                <div>
+                    <h1>Examen Lernist</h1>
+                </div>
+            </div>
+
+            <div id="resultado"></div>
+
+            <h2>Instrucciones</h2>
+            <p>
+                Debes tomar este examen de 20 preguntas, seleccionando el inciso, que 
+                consideres correcto. Debes de seleccionar una respuesta para todas las
+                preguntas antes de presionar el botón de finalizar.
+            </p>
+
+            <section id="preguntas">
+
+                <div class="contenedor">
+                    <h3>1. Esta es una pregunta</h3>
+                    <input type="radio" name="p1" value="a"><span>A) </span>Respuesta <br>
+                    <input type="radio" name="p1" value="b"><span>B) </span>Respuesta <br>
+                    <input type="radio" name="p1" value="c"><span>C) </span>Respuesta <br>
+                    <input type="radio" name="p1" value="d"><span>D) </span>Respuesta
+                </div>
+                <div class="contenedor">
+                    <h3>2. Esta es una pregunta</h3>
+                    <input type="radio" name="p2" value="a"><span>A) </span>Respuesta <br>
+                    <input type="radio" name="p2" value="b"><span>B) </span>Respuesta <br>
+                    <input type="radio" name="p2" value="c"><span>C) </span>Respuesta <br>
+                    <input type="radio" name="p2" value="d"><span>D) </span>Respuesta
+                </div>
+                <div class="contenedor">
+                    <h3>3. Esta es una pregunta</h3>
+                    <input type="radio" name="p3" value="a"><span>A) </span>Respuesta <br>
+                    <input type="radio" name="p3" value="b"><span>B) </span>Respuesta <br>
+                    <input type="radio" name="p3" value="c"><span>C) </span>Respuesta <br>
+                    <input type="radio" name="p3" value="d"><span>D) </span>Respuesta
+                </div>
+                <div class="contenedor">
+                    <h3>4. Esta es una pregunta</h3>
+                    <input type="radio" name="p4" value="a"><span>A) </span>Respuesta <br>
+                    <input type="radio" name="p4" value="b"><span>B) </span>Respuesta <br>
+                    <input type="radio" name="p4" value="c"><span>C) </span>Respuesta <br>
+                    <input type="radio" name="p4" value="d"><span>D) </span>Respuesta
+                </div>
+                <div class="contenedor">
+                    <h3>5. Esta es una pregunta</h3>
+                    <input type="radio" name="p5" value="a"><span>A) </span>Respuesta <br>
+                    <input type="radio" name="p5" value="b"><span>B) </span>Respuesta <br>
+                    <input type="radio" name="p5" value="c"><span>C) </span>Respuesta <br>
+                    <input type="radio" name="p5" value="d"><span>D) </span>Respuesta
+                </div>
+                <div class="contenedor">
+                    <h3>6. Esta es una pregunta</h3>
+                    <input type="radio" name="p6" value="a"><span>A) </span>Respuesta <br>
+                    <input type="radio" name="p6" value="b"><span>B) </span>Respuesta <br>
+                    <input type="radio" name="p6" value="c"><span>C) </span>Respuesta <br>
+                    <input type="radio" name="p6" value="d"><span>D) </span>Respuesta
+                </div>
+                <div class="contenedor">
+                    <h3>7. Esta es una pregunta</h3>
+                    <input type="radio" name="p7" value="a"><span>A) </span>Respuesta <br>
+                    <input type="radio" name="p7" value="b"><span>B) </span>Respuesta <br>
+                    <input type="radio" name="p7" value="c"><span>C) </span>Respuesta <br>
+                    <input type="radio" name="p7" value="d"><span>D) </span>Respuesta
+                </div>
+                <div class="contenedor">
+                    <h3>8. Esta es una pregunta</h3>
+                    <input type="radio" name="p8" value="a"><span>A) </span>Respuesta <br>
+                    <input type="radio" name="p8" value="b"><span>B) </span>Respuesta <br>
+                    <input type="radio" name="p8" value="c"><span>C) </span>Respuesta <br>
+                    <input type="radio" name="p8" value="d"><span>D) </span>Respuesta
+                </div>
+                <div class="contenedor">
+                    <h3>9. Esta es una pregunta</h3>
+                    <input type="radio" name="p9" value="a"><span>A) </span>Respuesta <br>
+                    <input type="radio" name="p9" value="b"><span>B) </span>Respuesta <br>
+                    <input type="radio" name="p9" value="c"><span>C) </span>Respuesta <br>
+                    <input type="radio" name="p9" value="d"><span>D) </span>Respuesta
+                </div>
+                <div class="contenedor">
+                    <h3>10. Esta es una pregunta</h3>
+                    <input type="radio" name="p10" value="a"><span>A) </span>Respuesta <br>
+                    <input type="radio" name="p10" value="b"><span>B) </span>Respuesta <br>
+                    <input type="radio" name="p10" value="c"><span>C) </span>Respuesta <br>
+                    <input type="radio" name="p10" value="d"><span>D) </span>Respuesta
+                </div>
+                <div class="contenedor">
+                    <h3>11. Esta es una pregunta</h3>
+                    <input type="radio" name="p11" value="a"><span>A) </span>Respuesta <br>
+                    <input type="radio" name="p11" value="b"><span>B) </span>Respuesta <br>
+                    <input type="radio" name="p11" value="c"><span>C) </span>Respuesta <br>
+                    <input type="radio" name="p11" value="d"><span>D) </span>Respuesta
+                </div>
+                <div class="contenedor">
+                    <h3>12. Esta es una pregunta</h3>
+                    <input type="radio" name="p12" value="a"><span>A) </span>Respuesta <br>
+                    <input type="radio" name="p12" value="b"><span>B) </span>Respuesta <br>
+                    <input type="radio" name="p12" value="c"><span>C) </span>Respuesta <br>
+                    <input type="radio" name="p12" value="d"><span>D) </span>Respuesta
+                </div>
+                <div class="contenedor">
+                    <h3>13. Esta es una pregunta</h3>
+                    <input type="radio" name="p13" value="a"><span>A) </span>Respuesta <br>
+                    <input type="radio" name="p13" value="b"><span>B) </span>Respuesta <br>
+                    <input type="radio" name="p13" value="c"><span>C) </span>Respuesta <br>
+                    <input type="radio" name="p13" value="d"><span>D) </span>Respuesta
+                </div>
+                <div class="contenedor">
+                    <h3>14. Esta es una pregunta</h3>
+                    <input type="radio" name="p14" value="a"><span>A) </span>Respuesta <br>
+                    <input type="radio" name="p14" value="b"><span>B) </span>Respuesta <br>
+                    <input type="radio" name="p14" value="c"><span>C) </span>Respuesta <br>
+                    <input type="radio" name="p14" value="d"><span>D) </span>Respuesta
+                </div>
+                <div class="contenedor">
+                    <h3>15. Esta es una pregunta</h3>
+                    <input type="radio" name="p15" value="a"><span>A) </span>Respuesta <br>
+                    <input type="radio" name="p15" value="b"><span>B) </span>Respuesta <br>
+                    <input type="radio" name="p15" value="c"><span>C) </span>Respuesta <br>
+                    <input type="radio" name="p15" value="d"><span>D) </span>Respuesta
+                </div>
+                <div class="contenedor">
+                    <h3>16. Esta es una pregunta</h3>
+                    <input type="radio" name="p16" value="a"><span>A) </span>Respuesta <br>
+                    <input type="radio" name="p16" value="b"><span>B) </span>Respuesta <br>
+                    <input type="radio" name="p16" value="c"><span>C) </span>Respuesta <br>
+                    <input type="radio" name="p16" value="d"><span>D) </span>Respuesta
+                </div>
+                <div class="contenedor">
+                    <h3>17. Esta es una pregunta</h3>
+                    <input type="radio" name="p17" value="a"><span>A) </span>Respuesta <br>
+                    <input type="radio" name="p17" value="b"><span>B) </span>Respuesta <br>
+                    <input type="radio" name="p17" value="c"><span>C) </span>Respuesta <br>
+                    <input type="radio" name="p17" value="d"><span>D) </span>Respuesta
+                </div>
+                <div class="contenedor">
+                    <h3>18. Esta es una pregunta</h3>
+                    <input type="radio" name="p18" value="a"><span>A) </span>Respuesta <br>
+                    <input type="radio" name="p18" value="b"><span>B) </span>Respuesta <br>
+                    <input type="radio" name="p18" value="c"><span>C) </span>Respuesta <br>
+                    <input type="radio" name="p18" value="d"><span>D) </span>Respuesta
+                </div>
+                <div class="contenedor">
+                    <h3>19. Esta es una pregunta</h3>
+                    <input type="radio" name="p19" value="a"><span>A) </span>Respuesta <br>
+                    <input type="radio" name="p19" value="b"><span>B) </span>Respuesta <br>
+                    <input type="radio" name="p19" value="c"><span>C) </span>Respuesta <br>
+                    <input type="radio" name="p19" value="d"><span>D) </span>Respuesta
+                </div>
+                <div class="contenedor">
+                    <h3>20. Esta es una pregunta</h3>
+                    <input type="radio" name="p20" value="a"><span>A) </span>Respuesta <br>
+                    <input type="radio" name="p20" value="b"><span>B) </span>Respuesta <br>
+                    <input type="radio" name="p20" value="c"><span>C) </span>Respuesta <br>
+                    <input type="radio" name="p20" value="d"><span>D) </span>Respuesta
+                </div>
+
+            </section>
+
+            <input type="submit" value="Enviar">
+
+        </form>
     </main>
 
     
@@ -93,6 +252,6 @@
     </footer>
 
     <script src="/Controladores-JS-y-CSS/navbar-and-footer.js"></script>
-    <script src="/JS-de-videos-de-cursos/esencia-del-algebra-lineal.js"></script>
+    <script src="examen-lernist.js"></script>
 </body>
 </html>
