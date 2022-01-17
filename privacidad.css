@@ -1,0 +1,29 @@
+#privacy {
+    padding: 70px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.elementos-privacy {
+    max-width: 870px;
+}
+#privacy h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    margin-bottom: 60px;
+}
+#privacy h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-size: 23px;
+    text-align: justify;
+}
+#privacy li {
+    font-family: 'Poppins', sans-serif;
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+#privacy span {
+    font-weight: 800;
+}

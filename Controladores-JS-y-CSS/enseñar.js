@@ -21,6 +21,8 @@ $(document).ready(function() {
   $("#footerContacto").text("Contacto");
   $("#footerNosotros").attr("href", "nosotros.html");
   $("#footerNosotros").text("Nosotros");
+  $("#footerPrivacidad").attr("href", "/privacidad.html");
+  $("#footerPrivacidad").text("Privacidad");
   $("#footerAnunciantes").attr("href", "");
   $("#footerAnunciantes").text("Anunciantes");
   $("#footerAnunciantes").hide();

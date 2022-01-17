@@ -25,12 +25,12 @@ async function nombreEnPdf() {
     // Create a string of text and measure its width and height in our custom font
     const text = nombrePersona.value
     const textSize = 35
-    const textWidth = customFont.widthOfTextAtSize(text, textSize)
-    const textHeight = customFont.heightAtSize(textSize)
+    /* const textWidth = customFont.widthOfTextAtSize(text, textSize)
+    const textHeight = customFont.heightAtSize(textSize) */
 
     // Draw the string of text on the page
     firstPage.drawText(text, {
-        x: ( width - textWidth ) / 2,
+        x: 40,
         y: 290,
         size: textSize,
         font: customFont,
@@ -43,7 +43,7 @@ async function nombreEnPdf() {
     // Trigger the browser to download the PDF document
     download(pdfBytes, "mi_certificado.pdf", "application/pdf");
 
-    // Reabre la ventana en la pagina principal, para evitar que se hagan más certificados
+    // Abre la pagina principal y cierra la actual, para evitar que se hagan más certificados
     /* window.open("https://lernist.com"); 
     setTimeout(function() {
         window.close()

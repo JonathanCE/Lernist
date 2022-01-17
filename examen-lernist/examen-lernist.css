@@ -95,6 +95,8 @@ input[type=radio] {
     background-color: darkslategrey;
     color: black;
     font-size: 23px;
+    text-align: center;
+    border-radius: 4px;
 }
 input[type=submit] {
     cursor: pointer;

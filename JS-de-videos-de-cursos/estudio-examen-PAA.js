@@ -42,6 +42,7 @@ $(document).ready(function() {
   $("#aprenderLink").attr("href", "/aprender.html")
   $("#articulosLink").text("Artículos");
   $("#articulosLink").attr("href", "/articulos.html")
+  $("#quizzesLink").hide();
   $("#quizzesLink").text("Quizzes");
   $("#quizzesLink").attr("href", "/quizzes.html")
   $("#enseñarLink").hide();
@@ -56,6 +57,8 @@ $(document).ready(function() {
   $("#footerContacto").text("Contacto");
   $("#footerNosotros").attr("href", "/nosotros.html");
   $("#footerNosotros").text("Nosotros");
+  $("#footerPrivacidad").attr("href", "/privacidad.html");
+  $("#footerPrivacidad").text("Privacidad");
   $("#footerAnunciantes").attr("href", "");
   $("#footerAnunciantes").text("Anunciantes");
   $("#footerAnunciantes").hide();
