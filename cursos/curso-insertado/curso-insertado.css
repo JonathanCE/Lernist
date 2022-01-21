@@ -59,10 +59,11 @@ main {
     width: 100%;
     height: 100%;
 }
-.video-info {
+.video-info, #curso-instrucciones {
     width: 100%;
+    margin: 10px;
 }
-.video-info-title {
+.video-info-title, #curso-instrucciones-title {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -73,15 +74,18 @@ main {
     border-radius: 3px;
     cursor: pointer;
 }
-.video-info-title h3 {
+.video-info-title h3, #curso-instrucciones-title h3 {
     font-size: 30px;
     padding: 15px 0;
     font-family: 'Montserrat', sans-serif;
 }
-.video-info-title span {
+.video-info-title span, #curso-instrucciones-title span {
     font-size: 60px;
 }
 .infoBtnMenos {
+    display: none;
+}
+#instruccionesBtnMenos {
     display: none;
 }
 .datos-video {
@@ -114,24 +118,38 @@ main {
     width: 100%;
     margin-top: 15px;
 }
+#instrucciones img {
+    width: 100%;
+    margin: 0 auto;
+    border: 4px solid black;
+}
 
 
 #contenido {
     margin-top: 20px;
 }
-.articulo {
+#instrucciones {
+    margin-top: 20px;
+}
+.articulo, #instrucciones {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-row-gap: 30px;
     margin-bottom: 20px;
 }
-.articulo h3 {
+.articulo h3, #instrucciones h3 {
     font-size: 27px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
-.articulo a {
+#instrucciones h3 {
+    font-weight: 400;
+}
+#controlesMobile, #menuMobile, #menuAbiertoMobile {
+    display: none;
+}
+.articulo a, #instrucciones a {
     font-size: 20px;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 600;
@@ -141,22 +159,22 @@ main {
     width: max-content;
     display: block;
 }
-.articulo p {
+.articulo p, #instrucciones p {
     font-size: 19px;
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
     line-height: 30px;
     text-align: justify;
 }
-.articulo li {
+.articulo li, #instrucciones li {
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
 }
-.articulo span {
+.articulo span, #instrucciones span {
     font-weight: bold;
     font-size: 25px;
 }
-.articulo img {
+.articulo img, #instrucciones img {
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
@@ -215,7 +233,7 @@ main {
     height: 60px;
     width: 150px;
     font-size: 25px;
-    background-color: #15191f;
+    background-color: #0f1318;
     border: 4px solid rgb(86, 165, 235, 0.25);
     border-radius: 10px;
     margin-top: 10px;
@@ -261,7 +279,7 @@ main {
     height: 70px;
     width: 100%;
     font-size: 25px;
-    background-color: #15191f;
+    background-color: #0f1318;
     border: 4px solid rgb(86, 165, 235, 0.25);
     border-radius: 10px;
     font-family: 'Fira Sans', sans-serif;
@@ -379,6 +397,12 @@ main {
 }
 
 @media screen and (max-width: 610px) {
+    #controlesMobile, #menuMobile, #menuAbiertoMobile {
+        display: inline;
+    }
+    #controlesDesktop, #menuDesktop, #menuAbiertoDesktop {
+        display: none;
+    }
     .title img {
         display: none;
     }
@@ -404,6 +428,12 @@ main {
 }
 
 @media screen and (max-width: 470px) {
+    main {
+        padding: 15px;
+    }
+    .video iframe {
+        padding: 0;
+    }
     .referido {
         grid-template-columns: 1fr 0.7fr;
     }

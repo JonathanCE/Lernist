@@ -27,7 +27,7 @@
     text-decoration: none;
     font-size: 25px;
     color: white;
-    background-color: #15191f;
+    background-color: #0f1318;
     border: 4px solid rgb(86, 165, 235, 0.25);
     font-weight: 500;
     border-radius: 4px;
@@ -47,7 +47,7 @@ input {
     color: white;
     box-sizing: border-box;
     border-radius: 2px;
-    background-color: #15191f;
+    background-color: #0f1318;
     padding: 6px;
     margin-bottom: 30px;
     font-family: 'Poppins', sans-serif;

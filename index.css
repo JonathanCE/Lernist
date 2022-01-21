@@ -59,9 +59,80 @@
     margin-top: 15px;
 }
 
+#aprendedores {
+    padding: 40px 100px;
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+    grid-gap: 100px;
+}
+#educadores {
+    padding: 40px 100px;
+    display: grid;
+    grid-template-columns: 1fr 0.7fr;
+    grid-gap: 100px;
+    background-color: #090c0f;
+}
+#aprendedores img, #educadores img {
+    width: 100%;
+}
+#aprendedores h2, #educadores h2 {
+    font-size: 50px;
+    font-family: 'Fira Sans', sans-serif;
+    margin-bottom: 30px;
+}
+#aprendedores p, #educadores p {
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    color: #b3b3b3;
+}
+
+#materiales-lernist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 100px;
+}
+.materiales-contenedor {
+    max-width: 650px;
+}
+#materiales-lernist h3 {
+    font-size: 26px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 40px;
+    text-align: center;
+}
+#materiales-lernist p {
+    font-size: 23px;
+    font-family: 'Fira Sans', sans-serif;
+    text-align: center;
+    line-height: 35px;
+    color: #b3b3b3;
+}
+#materiales-resumen {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    margin-top: 80px;
+}
+#materiales-resumen img {
+    width: 100%;
+}
+
+.banner-info {
+    background-color: rgb(86, 165, 235, 0.25);
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.banner-info p {
+    font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
 .cursos, .articulos, .quizzes {
     padding: 20px 20px;
-    background-color: black;
 }
 .cursos {
     padding-top: 50px;
@@ -73,7 +144,13 @@
     font-family: 'Fira Sans', sans-serif;
 }
 
-.contenedor-cursos, .contenedor-quizzes {
+.contenedor-cursos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 15px;
+}
+.contenedor-quizzes {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
@@ -92,8 +169,8 @@
     color: white;
 
     padding: 13px;
-    border-radius: 7px;
-    font-size: 30px;
+    border-radius: 2px;
+    font-size: 25px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     cursor: pointer;
@@ -105,7 +182,6 @@
     color: white;
 
     padding: 12px;
-    border: 1.5px solid black;
     border-radius: 7px;
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
@@ -146,7 +222,6 @@
     color: white;
 
     padding: 8px;
-    border: 1.5px solid black;
     border-radius: 7px;
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
@@ -183,11 +258,11 @@
     cursor: pointer;
 }
 
-.instrucciones {
+/* .instrucciones {
     background-image: url(i_temas/black7-background.jpg);
     padding: 50px 20px;
 
-    background-attachment: fixed; /* Codigo para el efecto parallax */
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -231,13 +306,12 @@
     margin: 15px 0;
     font-size: 19px;
     font-family: 'Poppins', sans-serif;
-}
+} */
 
 .donar {
     display: flex;
     align-items: center;
     padding: 50px;
-    background-color: black;
 }
 .donacion {
     padding: 20px 45px;
@@ -269,14 +343,13 @@
     height: 70px;
     width: 100%;
     font-size: 25px;
-    background-color: #15191f;
+    background-color: #0f1318;
     border: 4px solid rgb(86, 165, 235, 0.25);
     border-radius: 10px;
 }
 
 .referidos {
     padding: 20px 20px;
-    background-color: black;
 }
 .referidos p {
     font-size: 40px;
@@ -291,7 +364,6 @@
 }
 .referido {
     padding: 15px;
-    border: 1.5px solid black;
     border-radius: 7px;
     cursor: pointer;
     background-color: #090c0f;
@@ -321,7 +393,7 @@
     height: 60px;
     width: 150px;
     font-size: 25px;
-    background-color: #15191f;
+    background-color: #0f1318;
     border: 4px solid rgb(86, 165, 235, 0.25);
     border-radius: 1px;
     margin-top: 10px;
@@ -376,6 +448,9 @@
 }
 
 @media screen and (max-width: 1270px) {
+    .contenedor-cursos {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
     .articulos-datos p {
         font-size: 17px;
     }

@@ -4,7 +4,7 @@ $(document).ready(function() {
   $("#logoNavbar").attr("src", "/i_temas/Logo Lernist.png")
   $(".Inicio").text("Inicio");
   $("#aprenderLink").text("Cursos");
-  $("#aprenderLink").attr("href", "/aprender.html")
+  $("#aprenderLink").attr("href", "/cursos.html")
   $("#articulosLink").text("Artículos");
   $("#articulosLink").attr("href", "/articulos.html")
   $("#quizzesLink").hide();
