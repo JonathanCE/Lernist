@@ -85,6 +85,11 @@
     font-family: 'Montserrat', sans-serif;
     color: #b3b3b3;
 }
+#aprendedores h3, #educadores h3 {
+    font-size: 25px;
+    font-family: 'Fira Sans', sans-serif;
+    margin: 20px 0;
+}
 
 #materiales-lernist {
     display: flex;

@@ -40,7 +40,7 @@ $(document).ready(function() {
 
   // ACERCA DE
   $("#creadorVideo").text("Creador del video");
-  $("#creadorVideoTexto").prepend('El video fue creado por el canal de youtube ');
+  $("#creadorVideoTexto").prepend('Los videos fueron creados por el canal de youtube ');
   $("#creadorVideoTexto").append("Lernist.com no es el propietario de estos videos."
   + " Distribuímos estos videos mediante la herramienta pública de Youtube que permite insertar"
   + " videos de la plataforma en sitios web externos.");
@@ -48,6 +48,13 @@ $(document).ready(function() {
   $("#descripcionCurso").prepend("Descripción del curso"); // Descripcion del curso
 
   $("#tipsCurso").text("Tips para el curso"); // Tips para el curso
+  $("#tipsCursoTexto").text("El curso lo puedes tomar directamente desde aquí, y funciona bien tanto"
+  + " en celular, tablet o computadora. En caso de que tengas tu cuenta"
+  + " de youtube iniciada en el navegador, también permitirá que tu progreso"
+  + " quede guardado y se muestre. Recomendamos que tomes notas en base a lo que"
+  + " comprendas, ya que te ayudará a entender los conceptos mejor y podrás revisarlas"
+  + " cada vez que necesites. De igual manera, estar en un lugar cómodo y sin"
+  + " distracciones es lo ideal.")
 
   // ANIMACION PARA MENU VIDEO-INFO
   $(".video-info-title").click(function() {
