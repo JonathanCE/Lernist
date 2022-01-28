@@ -59,11 +59,12 @@
     margin-top: 15px;
 }
 
-#aprendedores {
+#aprendedores, #empresas {
     padding: 40px 100px;
     display: grid;
     grid-template-columns: 0.7fr 1fr;
     grid-gap: 100px;
+    align-items: center;
 }
 #educadores {
     padding: 40px 100px;
@@ -71,21 +72,23 @@
     grid-template-columns: 1fr 0.7fr;
     grid-gap: 100px;
     background-color: #090c0f;
+    align-items: center;
 }
-#aprendedores img, #educadores img {
+#aprendedores img, #educadores img, #empresas img {
     width: 100%;
 }
-#aprendedores h2, #educadores h2 {
+#aprendedores h2, #educadores h2, #empresas h2 {
     font-size: 50px;
     font-family: 'Fira Sans', sans-serif;
     margin-bottom: 30px;
 }
-#aprendedores p, #educadores p {
+#aprendedores p, #educadores p, #empresas p {
     font-size: 22px;
     font-family: 'Montserrat', sans-serif;
     color: #b3b3b3;
+    line-height: 35px;
 }
-#aprendedores h3, #educadores h3 {
+#aprendedores h3, #educadores h3, #empresas h3 {
     font-size: 25px;
     font-family: 'Fira Sans', sans-serif;
     margin: 20px 0;
@@ -96,6 +99,7 @@
     flex-direction: column;
     align-items: center;
     padding: 50px 100px;
+    background-color: #090c0f;
 }
 .materiales-contenedor {
     max-width: 650px;
@@ -136,14 +140,14 @@
     text-align: center;
 }
 
-.cursos, .articulos, .quizzes {
+.cursos, .certificaciones, .articulos, .quizzes {
     padding: 20px 20px;
 }
 .cursos {
     padding-top: 50px;
 }
 
-.cursos p, .articulos p, .quizzes p {
+.cursos p, .certificaciones p, .articulos p, .quizzes p {
     font-size: 60px;
     text-align: center;
     font-family: 'Fira Sans', sans-serif;
@@ -251,9 +255,9 @@
     color: white;
 
     text-align: center;
-    width: 40%;
+    width: fit-content;
     margin: 30px auto 15px;
-    padding: 70px 10px;
+    padding: 70px 20px;
     background: #090c0f;
 
     border-radius: 9px;
@@ -474,8 +478,8 @@
     .Presentacion {
         padding: 10px;
     }
-    .todos a{
-        width: 40%;
+    #materiales-lernist {
+        padding: 50px;
     }
     .donacion {
         padding: 20px 30px;
@@ -486,6 +490,9 @@
 @media screen and (max-width: 1000px) {
     .Presentacion {
         background-attachment: scroll;
+    }
+    .banner-info {
+        padding: 50px;
     }
     .instrucciones {
         background-attachment: scroll;
@@ -539,9 +546,9 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
     .todos a{
-        width: 60%;
+        max-width: 600px;
         font-size: 50px;
-        padding: 50px 10px;
+        padding: 50px 20px;
     }
     .contenedor-referidos {
         grid-template-columns: 1fr;
@@ -560,6 +567,19 @@
     }
     .presentacion-title {
         font-size: 55px;
+    }
+    #materiales-resumen {
+        grid-template-columns: 1fr;
+    }
+    .material-info {
+        max-width: 500px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    #materiales-resumen img {
+        max-width: 400px;
+        text-align: center;
     }
     .donacion {
         grid-template-columns: 1fr 0.5fr;
@@ -665,6 +685,12 @@
 }
 
 @media screen and (max-width: 550px) {
+    #materiales-lernist {
+        padding: 50px 30px;
+    }
+    #materiales-lernist h3 {
+        margin: 10px 0 30px;
+    }
     .referido a {
         height: 50px;
         width: 130px;
@@ -701,7 +727,7 @@
         margin: 0 auto;
     }
     .todos a{
-        width: 90%;
+        font-size: 40px;
     }
 
     .instrucciones h1 {
@@ -718,8 +744,15 @@
 }
 
 @media screen and (max-width: 470px) {
+    .banner-info {
+        padding: 30px;
+    }
+    .banner-info p {
+        font-size: 30px;
+    }
     .todos a {
-        font-size: 45px;
+        font-size: 33px;
+        padding: 40px 10px;
     }
     .donar {
         padding: 20px;

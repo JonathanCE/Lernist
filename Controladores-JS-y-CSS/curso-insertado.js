@@ -39,9 +39,9 @@ $(document).ready(function() {
   $("#instrucciones").hide();
 
   // ACERCA DE
-  $("#creadorVideo").text("Creador del video");
-  $("#creadorVideoTexto").prepend('Los videos fueron creados por el canal de youtube ');
-  $("#creadorVideoTexto").append("Lernist.com no es el propietario de estos videos."
+  $("#creadorCurso").text("Creador del curso");
+  $("#creadorCursoTexto").prepend('Los videos fueron creados por el canal de youtube ');
+  $("#creadorCursoTexto").append("Lernist.com no es el propietario de estos videos."
   + " Distribuímos estos videos mediante la herramienta pública de Youtube que permite insertar"
   + " videos de la plataforma en sitios web externos.");
 
@@ -54,7 +54,9 @@ $(document).ready(function() {
   + " quede guardado y se muestre. Recomendamos que tomes notas en base a lo que"
   + " comprendas, ya que te ayudará a entender los conceptos mejor y podrás revisarlas"
   + " cada vez que necesites. De igual manera, estar en un lugar cómodo y sin"
-  + " distracciones es lo ideal.")
+  + " distracciones es lo ideal. Puedes ver las lecciones las veces que necesites para que"
+  + " comprendas bien el tema en cuestión, aquí no tienes presión de tiempo o preocuparte"
+  + " porque la/el maestr@ borre el pizarrón, simplemente le regresas o comienzas denuevo.")
 
   // ANIMACION PARA MENU VIDEO-INFO
   $(".video-info-title").click(function() {
