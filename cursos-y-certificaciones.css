@@ -143,6 +143,9 @@
 }
 
 @media screen and (max-width: 450px) {
+    .materia p {
+        font-size: 45px;
+    }
     .contenedor-temas {
         grid-gap: 20px;
     }
