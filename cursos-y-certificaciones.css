@@ -47,7 +47,7 @@
     padding: 13px;
     border: 1.5px solid black;
     border-radius: 7px;
-    font-size: 25px;
+    font-size: 23px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     cursor: pointer;
@@ -134,7 +134,7 @@
         align-items: center;
         text-decoration: none;
         color: #f0ece2;
-        font-size: 30px;
+        font-size: 25px;
         padding: 10px;
     }
     .presentacion-texto {
@@ -154,7 +154,7 @@
         grid-template-columns: 0.6fr 1fr;
         grid-column-gap: 10px;
         align-items: center;
-        font-size: 23px;
+        font-size: 22px;
     }
     .Presentacion {
         padding: 30px 50px;

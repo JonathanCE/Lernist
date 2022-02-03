@@ -105,7 +105,7 @@
     max-width: 650px;
 }
 #materiales-lernist h3 {
-    font-size: 26px;
+    font-size: 30px;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 40px;
     text-align: center;
@@ -124,7 +124,11 @@
     margin-top: 80px;
 }
 #materiales-resumen img {
-    width: 100%;
+    width: 70%;
+    margin-bottom: 20px;
+}
+.material-info {
+    text-align: center;
 }
 
 .banner-info {
@@ -457,6 +461,10 @@
 }
 
 @media screen and (max-width: 1270px) {
+    #aprendedores, #educadores, #empresas {
+        padding: 40px;
+        grid-gap: 50px;
+    }
     .contenedor-cursos {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
@@ -477,6 +485,20 @@
 @media screen and (max-width: 1070px) {
     .Presentacion {
         padding: 10px;
+    }
+    #aprendedores, #educadores, #empresas {
+        display: flex;
+        flex-direction: column;
+    }
+    #aprendedores img, #educadores img, #empresas img {
+        width: 500px;
+    }
+    .sector-texto {
+        max-width: 700px;
+        text-align: center;
+    }
+    #educadores {
+        flex-direction: column-reverse;
     }
     #materiales-lernist {
         padding: 50px;
@@ -568,6 +590,9 @@
     .presentacion-title {
         font-size: 55px;
     }
+    #aprendedores img, #educadores img, #empresas img {
+        width: 400px;
+    }
     #materiales-resumen {
         grid-template-columns: 1fr;
     }
@@ -624,6 +649,9 @@
     }
     .presentacion-description img {
         width: 80%;
+    }
+    #aprendedores img, #educadores img, #empresas img {
+        width: 350px;
     }
     .contenedor-articulos a {
         width: fit-content;
@@ -685,6 +713,9 @@
 }
 
 @media screen and (max-width: 550px) {
+    #aprendedores, #educadores, #empresas {
+        padding: 40px 20px;
+    }
     #materiales-lernist {
         padding: 50px 30px;
     }
@@ -744,6 +775,19 @@
 }
 
 @media screen and (max-width: 470px) {
+    #aprendedores h2, #educadores h2, #empresas h2 {
+        font-size: 40px;
+    }
+    #aprendedores img, #educadores img, #empresas img {
+        width: 300px;
+    }
+    .cursos p, .certificaciones p, .articulos p {
+        font-size: 45px;
+    }
+    .articulos-datos p {
+        font-size: 20px;
+        text-align: justify;
+    }
     .banner-info {
         padding: 30px;
     }
@@ -780,7 +824,7 @@
         font-size: 45px;
     }
     .contenedor-cursos a {
-        font-size: 23px;
+        font-size: 22px;
     }
     .referido {
         display: flex;
