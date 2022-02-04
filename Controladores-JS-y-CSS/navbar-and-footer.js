@@ -3,8 +3,10 @@
   $("#homepageLink").attr("href", "/");
   $("#logoNavbar").attr("src", "/i_temas/Logo Lernist.png")
   $(".Inicio").text("Inicio");
-  $("#aprenderLink").text("Cursos");
-  $("#aprenderLink").attr("href", "/cursos.html")
+  $("#cursosLink").text("Cursos");
+  $("#cursosLink").attr("href", "/cursos.html")
+  $("#certificacionesLink").text("Certificaciones");
+  $("#certificacionesLink").attr("href", "/certificaciones.html")
   $("#articulosLink").text("Artículos");
   $("#articulosLink").attr("href", "/articulos.html")
   $("#quizzesLink").hide();
