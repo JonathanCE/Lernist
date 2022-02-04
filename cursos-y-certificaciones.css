@@ -159,6 +159,9 @@
     .Presentacion {
         padding: 30px 50px;
     }
+    .presentacion-texto {
+        padding: 10px;
+    }
     #search {
         padding: 10px;
     }

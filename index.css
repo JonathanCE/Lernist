@@ -823,6 +823,12 @@
     .presentacion-title {
         font-size: 45px;
     }
+    .certificaciones-a a {
+        grid-template-columns: 1fr;
+    }
+    .certificaciones-a img {
+        margin-bottom: 20px;
+    }
     .contenedor-cursos a {
         font-size: 22px;
     }
