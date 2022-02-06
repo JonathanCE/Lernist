@@ -52,9 +52,11 @@ $(document).ready(function() {
   $("#enseñarLink").attr("href", "/enseñar.html")
 
   $("#fraseFooter").text("Aprende cosas Increíbles, con contenido Increíble.");
+  $("#footerTikTok").attr("href", "https://vm.tiktok.com/ZMLYUTDbg/");
+  $("#footerYoutube").attr("href", "https://www.youtube.com/channel/UCXXbchWLUS34DLQDh6obXKA");
+  $("#footerInstagram").attr("href", "https://www.instagram.com/Lernist_Oficial/");
   $("#footerFacebook").attr("href", "https://www.facebook.com/LernistOficial");
   $("#footerTwitter").attr("href", "https://twitter.com/Lernist_Oficial");
-  $("#footerInstagram").attr("href", "https://www.instagram.com/Lernist_Oficial/");
   $("#footerContacto").attr("href", "/contacto.html");
   $("#footerContacto").text("Contacto");
   $("#footerNosotros").attr("href", "/nosotros.html");
