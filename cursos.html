@@ -77,220 +77,212 @@
         </div>
     </div>
 
-    <div class="materia">
-        <p>Matemáticas</p>
-        <br>
-        <div class="contenedor-temas">
-            <!-- <a href="cursos/matematicas/abc-de-matematicas.html"><img src="i_temas/logos-cursos/ABC de Matemáticas.png" alt="">ABC de Matemáticas</a>
-            <a href="cursos/matematicas/esencia-del-algebra-lineal.html"><img src="i_temas/logos-cursos/Esencia del Álgebra Lineal.png" alt="">Esencia del Álgebra Lineal</a> -->
-            <a href="cursos/matematicas/algebra-lineal-cal-math.html">
-                <img src="https://i.ytimg.com/vi/Picw--A1S-4/hqdefault.jpg" alt="">
-                Álgebra Lineal - Cal Math
-            </a>
-            <a href="cursos/matematicas/como-demostrar-matematicas.html">
-                <img src="https://i.ytimg.com/vi/xCHluJHwP_w/hqdefault.jpg" alt="">
-                Cómo demostrar matemáticas
-            </a>
-            <a href="cursos/matematicas/curso-algebra-moderna.html">
-                <img src="https://i.ytimg.com/vi/4XgriWTAE-0/hqdefault.jpg" alt="">
-                Curso de álgebra moderna - Or x1 Math
-            </a>
-            <a href="cursos/matematicas/curso-completo-variable-compleja.html">
-                <img src="https://i.ytimg.com/vi/eq3Kcxz4ofE/hqdefault.jpg" alt="">
-                Curso Completo de Variable Compleja
-            </a>
-            <a href="cursos/matematicas/mit-single-variable-calculus.html">
-                <img src="https://ocw.mit.edu/courses/mathematics/18-01sc-single-variable-calculus-fall-2010/CHP_secant.jpg" alt="">
-                MIT - Single Variable Calculus
-            </a>
-            <a href="cursos/matematicas/algebra-superior-calmath.html">
-                <img src="https://i.ytimg.com/vi/ItHwlDFAKFI/hqdefault.jpg" alt="">
-                Álgebra Superior - Cal Math
-            </a>
-            <a href="cursos/matematicas/curso-de-algebra-y-algebra-lineal-desde-cero.html">
-                <img src="https://i.ytimg.com/vi/uIx-7W-AfM0/hqdefault.jpg" alt="">
-                Curso de álgebra y álgebra lineal desde cero
-            </a>
-            <a href="cursos/matematicas/curso-de-calculo-diferencial-desde-cero.html">
-                <img src="https://i.ytimg.com/vi/xL925TT_vBU/hqdefault.jpg" alt="">
-                Curso de cálculo diferencial desde cero
-            </a>
-            <a href="cursos/matematicas/curso-de-calculo-integral-desde-cero.html">
-                <img src="https://i.ytimg.com/vi/BHZs6S234Ng/hqdefault.jpg" alt="">
-                Curso de cálculo integral desde cero
-            </a>
-            <a href="cursos/matematicas/curso-de-algebra-lineal-desde-cero.html">
-                <img src="https://i.ytimg.com/vi/FDdz4wCTCdM/hqdefault.jpg" alt="">
-                Curso de álgebra lineal desde cero
-            </a>
-            <a href="cursos/matematicas/curso-de-trigonometria-por-sergio-llanos.html">
-                <img src="https://i.ytimg.com/vi/hnHCkSSI2Zc/hqdefault.jpg" alt="">
-                Curso de Trigonometría por Sergio Llanos
-            </a>
-            <a href="cursos/matematicas/curso-completo-de-derivadas.html">
-                <img src="https://i.ytimg.com/vi/ia8L26ub_pc/hqdefault.jpg" alt="">
-                Curso Completo de Derivadas
-            </a>
-            <a href="cursos/matematicas/curso-completo-de-integrales.html">
-                <img src="https://i.ytimg.com/vi/msDiFIjvHks/hqdefault.jpg" alt="">
-                Curso Completo de Integrales
-            </a>
-            <a href="cursos/matematicas/funciones-matefacil.html">
-                <img src="https://i.ytimg.com/vi/B18YqdjSkO0/hqdefault.jpg" alt="">
-                Funciones por Matefácil
-            </a>
-            <a href="cursos/matematicas/curso-completo-de-geometria-analitica.html">
-                <img src="https://i.ytimg.com/vi/i93hwN67YoQ/hqdefault.jpg" alt="">
-                Curso completo de Geometría Analítica
-            </a>
-            <a href="cursos/matematicas/curso-completo-de-ecuaciones-diferenciales.html">
-                <img src="https://i.ytimg.com/vi/q3PKNySW6LQ/hqdefault.jpg" alt="">
-                Curso Completo de Ecuaciones Diferenciales
-            </a>
-            <a href="cursos/matematicas/curso-completo-de-calculo-de-varias-variables.html">
-                <img src="https://i.ytimg.com/vi/aYlICOhaO1g/hqdefault.jpg" alt="">
-                Curso Completo de Cálculo de varias variables
-            </a>
-        </div>
+    <section id="categories">
+        <button onclick="todos()">TODOS</button>
+        <button onclick="matematicas()">Matemáticas</button>
+        <button onclick="fisica()">Física</button>
+        <button onclick="programacion()">Programación</button>
+        <button onclick="inversiones()">Inversiones</button>
+        <button onclick="quimica()">Química</button>
+        <button onclick="electronica()">Electrónica</button>
+    </section>
+
+    <div class="contenedor-temas" id="todo-material">
+        <a class="matematicas" href="cursos/matematicas/curso-de-algebra-y-algebra-lineal-desde-cero.html">
+            <img src="https://i.ytimg.com/vi/uIx-7W-AfM0/hqdefault.jpg" alt="">
+            Curso de álgebra y álgebra lineal desde cero
+        </a>
+        <a class="matematicas" href="cursos/matematicas/algebra-lineal-cal-math.html">
+            <img src="https://i.ytimg.com/vi/Picw--A1S-4/hqdefault.jpg" alt="">
+            Álgebra Lineal - Cal Math
+        </a>
+        <a class="matematicas" href="cursos/matematicas/curso-de-trigonometria-por-sergio-llanos.html">
+            <img src="https://i.ytimg.com/vi/hnHCkSSI2Zc/hqdefault.jpg" alt="">
+            Curso de Trigonometría por Sergio Llanos
+        </a>
+        <a class="matematicas" href="cursos/matematicas/curso-completo-de-geometria-analitica.html">
+            <img src="https://i.ytimg.com/vi/i93hwN67YoQ/hqdefault.jpg" alt="">
+            Curso completo de Geometría Analítica
+        </a>
+        <a class="matematicas" href="cursos/matematicas/como-demostrar-matematicas.html">
+            <img src="https://i.ytimg.com/vi/xCHluJHwP_w/hqdefault.jpg" alt="">
+            Cómo demostrar matemáticas
+        </a>
+        <a class="matematicas" href="cursos/matematicas/funciones-matefacil.html">
+            <img src="https://i.ytimg.com/vi/B18YqdjSkO0/hqdefault.jpg" alt="">
+            Funciones por Matefácil
+        </a>
+        <a class="matematicas" href="cursos/matematicas/curso-de-algebra-lineal-desde-cero.html">
+            <img src="https://i.ytimg.com/vi/FDdz4wCTCdM/hqdefault.jpg" alt="">
+            Curso de álgebra lineal desde cero
+        </a>
+        <a class="matematicas" href="cursos/matematicas/mit-single-variable-calculus.html">
+            <img src="https://ocw.mit.edu/courses/mathematics/18-01sc-single-variable-calculus-fall-2010/CHP_secant.jpg" alt="">
+            MIT - Single Variable Calculus
+        </a>
+        <a class="matematicas" href="cursos/matematicas/curso-completo-de-derivadas.html">
+            <img src="https://i.ytimg.com/vi/ia8L26ub_pc/hqdefault.jpg" alt="">
+            Curso Completo de Derivadas
+        </a>
+        <a class="matematicas" href="cursos/matematicas/curso-de-calculo-integral-desde-cero.html">
+            <img src="https://i.ytimg.com/vi/BHZs6S234Ng/hqdefault.jpg" alt="">
+            Curso de cálculo integral desde cero
+        </a>
+        <a class="matematicas" href="cursos/matematicas/curso-completo-de-integrales.html">
+            <img src="https://i.ytimg.com/vi/msDiFIjvHks/hqdefault.jpg" alt="">
+            Curso Completo de Integrales
+        </a>
+        <a class="matematicas" href="cursos/matematicas/curso-de-calculo-diferencial-desde-cero.html">
+            <img src="https://i.ytimg.com/vi/xL925TT_vBU/hqdefault.jpg" alt="">
+            Curso de cálculo diferencial desde cero
+        </a>
+        <a class="matematicas" href="cursos/matematicas/algebra-superior-calmath.html">
+            <img src="https://i.ytimg.com/vi/ItHwlDFAKFI/hqdefault.jpg" alt="">
+            Álgebra Superior - Cal Math
+        </a>
+        <a class="matematicas" href="cursos/matematicas/curso-completo-variable-compleja.html">
+            <img src="https://i.ytimg.com/vi/eq3Kcxz4ofE/hqdefault.jpg" alt="">
+            Curso Completo de Variable Compleja
+        </a>
+        <a class="matematicas" href="cursos/matematicas/curso-completo-de-ecuaciones-diferenciales.html">
+            <img src="https://i.ytimg.com/vi/q3PKNySW6LQ/hqdefault.jpg" alt="">
+            Curso Completo de Ecuaciones Diferenciales
+        </a>
+        <a class="matematicas" href="cursos/matematicas/curso-completo-de-calculo-de-varias-variables.html">
+            <img src="https://i.ytimg.com/vi/aYlICOhaO1g/hqdefault.jpg" alt="">
+            Curso Completo de Cálculo de varias variables
+        </a>
+        <a class="matematicas" href="cursos/matematicas/curso-algebra-moderna.html">
+            <img src="https://i.ytimg.com/vi/4XgriWTAE-0/hqdefault.jpg" alt="">
+            Curso de álgebra moderna - Or x1 Math
+        </a>
+        <a class="fisica" href="cursos/fisica/curso-de-mecanica-desde-cero.html">
+            <img src="https://i.ytimg.com/vi/xJH6naahruk/hqdefault.jpg" alt="">
+            Curso de mecánica desde cero
+        </a>
+        <a class="fisica" href="cursos/fisica/curso-de-estatica-desde-cero.html">
+            <img src="https://i.ytimg.com/vi/B9o8y8E-XCA/hqdefault.jpg" alt="">
+            Curso de estática desde cero
+        </a>
+        <a class="fisica" href="cursos/fisica/curso-de-termodinamica-desde-cero.html">
+            <img src="https://i.ytimg.com/vi/Znj_EhhqDLM/hqdefault.jpg" alt="">
+            Curso de termodinámica desde cero
+        </a>
+        <a class="fisica" href="cursos/fisica/curso-de-fisica-por-sergio-llanos.html">
+            <img src="https://i.ytimg.com/vi/Z6Uzol2OqKg/hqdefault.jpg" alt="">
+            Curso de Física por Sergio Llanos
+        </a>
+        <a class="fisica" href="cursos/fisica/curso-de-electricidad-por-sergio-llanos.html">
+            <img src="https://i.ytimg.com/vi/ej6lS9zYy6U/hqdefault.jpg" alt="">
+            Curso de Electricidad por Sergio Llanos
+        </a>
+        <a class="fisica" href="cursos/fisica/curso-de-dinamica-por-sergio-llanos.html">
+            <img src="https://i.ytimg.com/vi/0WNWab2b5jU/hqdefault.jpg" alt="">
+            Curso de Dinámica por Sergio Llanos
+        </a>
+        <a class="fisica" href="cursos/fisica/leyes-de-newton-por-sergio-llanos.html">
+            <img src="https://i.ytimg.com/vi/y96djaAyJC4/hqdefault.jpg" alt="">
+            Leyes de Newton por Sergio Llanos
+        </a>
+        <a class="fisica" href="cursos/fisica/mecanica-de-fluidos-por-sergio-llanos.html">
+            <img src="https://i.ytimg.com/vi/OKzimK0HaAk/hqdefault.jpg" alt="">
+            Mecánica de Fluidos por Sergio Llanos
+        </a>
+        <a class="fisica" href="cursos/fisica/vectores-por-sergio-llanos.html">
+            <img src="https://i.ytimg.com/vi/OXDrRFg9Z4I/hqdefault.jpg" alt="">
+            Vectores por Sergio Llanos
+        </a>
+        <a class="fisica" href="cursos/fisica/electricidad-y-magnetismo-por-sergio-llanos.html">
+            <img src="https://i.ytimg.com/vi/X-RLwMhgJV4/hqdefault.jpg" alt="">
+            Electricidad y Magnetismo por Sergio Llanos
+        </a>
+        <a class="programacion" href="cursos/programacion-e-informatica/curso-de-computacion-desde-cero.html">
+            <img src="https://i.ytimg.com/vi/C19lKwVZE60/hqdefault.jpg" alt="">
+            Curso de computación desde cero
+        </a>
+        <a class="programacion" href="cursos/programacion-e-informatica/curso-de-fundamentos-de-programacion.html">
+            <img src="https://i.ytimg.com/vi/85OQbOU-4-Y/hqdefault.jpg" alt="">
+            Curso de fundamentos de programación desde cero
+        </a>
+        <a class="programacion" href="cursos/programacion-e-informatica/curso-de-lenguaje-c-desde-cero.html">
+            <img src="https://i.ytimg.com/vi/fkiOskQbewM/hqdefault.jpg" alt="">
+            Curso de lenguaje C desde cero
+        </a>
+        <a class="programacion" href="cursos/programacion-e-informatica/cs50-2020-lectures.html">
+            <img src="https://i.ytimg.com/vi/YoXxevp1WRQ/hqdefault.jpg" alt="">
+            Harvard - CS50 2020 Lectures
+        </a>
+        <a class="programacion" href="cursos/programacion-e-informatica/cs50-web-programming-with-python-and-js-2020.html">
+            <img src="https://i.ytimg.com/vi/Nn7EX3zkGUo/hqdefault.jpg" alt="">
+            Harvard - CS50 Web Programming with Python and JavaScript 2020
+        </a>
+        <a class="programacion" href="cursos/programacion-e-informatica/cs50-introduction-to-ai-with-python-2020.html">
+            <img src="https://i.ytimg.com/vi/gR8QvFmNuLE/hqdefault.jpg" alt="">
+            Harvard - CS50 Introduction to Artificial Intelligence with Python 2020
+        </a>
+        <a class="inversiones" href="cursos/inversiones/como-empezar-a-invertir.html">
+            <img src="https://i0.wp.com/academy.gbm.com/wp-content/uploads/2020/12/como-empezar-a-invertir.jpg" alt="">
+            GBM - ¿Cómo empezar a invertir?
+        </a>
+        <a class="inversiones" href="cursos/inversiones/el-dinero-y-yo-como-alcanzar-tus-metas.html">
+            <img src="https://i0.wp.com/academy.gbm.com/wp-content/uploads/2021/10/istock-.jpg" alt="">
+            GBM - El dinero y yo: ¿Cómo alcanzar tus metas?
+        </a>
+        <a class="inversiones" href="cursos/inversiones/fundamentos-de-etfs.html">
+            <img src="https://i0.wp.com/academy.gbm.com/wp-content/uploads/2020/07/que-es-el-quick-ratio-y-para-que-se-utiliza.jpg" alt="">
+            GBM - Fundamentos de ETFs
+        </a>
+        <a class="inversiones" href="cursos/inversiones/básicos-del-analisis-tecnico.html">
+            <img src="https://i0.wp.com/academy.gbm.com/wp-content/uploads/2020/11/basicos-analisis-tecnico.jpg" alt="">
+            GBM - Básicos del análisis técnico
+        </a>
+        <a class="inversiones" href="cursos/inversiones/analisis-fundamental.html">
+            <img src="https://i0.wp.com/academy.gbm.com/wp-content/uploads/2021/04/analisis-fundamental.jpg" alt="">
+            GBM - Análisis Fundamental
+        </a>
+        <a class="inversiones" href="cursos/inversiones/analisis-fundamental-2.html">
+            <img src="https://i0.wp.com/academy.gbm.com/wp-content/uploads/2021/07/analisis-fundamental-ii.jpg" alt="">
+            GBM - Análisis Fundamental 2
+        </a>
+        <a class="inversiones" href="cursos/inversiones/analisis-tecnico.html">
+            <img src="https://i0.wp.com/academy.gbm.com/wp-content/uploads/2021/01/curso-analisis-tecnico.jpg" alt="">
+            GBM - Análisis Técnico
+        </a>
+        <a class="quimica" href="cursos/quimica/quimica-teoria-bachiller.html">
+            <img src="https://i.ytimg.com/vi/4MMvumKmqs4/hqdefault.jpg" alt="">
+            Química: teoría bachiller
+        </a>
+        <a class="quimica" href="cursos/quimica/quimica-formulacion-inorganica.html">
+            <img src="https://i.ytimg.com/vi/-2ymBr8LYSs/hqdefault.jpg" alt="">
+            Química: formulación inorgánica
+        </a>
+        <a class="quimica" href="cursos/quimica/quimica-formulacion-organica.html">
+            <img src="https://i.ytimg.com/vi/RmLf2gU5tIQ/hqdefault.jpg" alt="">
+            Química: formulación orgánica
+        </a>
+        <a class="quimica" href="cursos/quimica/quimica-estequiometria-y-mol.html">
+            <img src="https://i.ytimg.com/vi/FrfRSiDGVjA/hqdefault.jpg" alt="">
+            Química: estequiometría y mol
+        </a>
+        <a class="electronica" href="cursos/electronica/curso-de-circuitos-electricos.html">
+            <img src="https://i.ytimg.com/vi/NlLaQ6DcgwI/hqdefault.jpg" alt="">
+            Curso de circuito eléctricos
+        </a>
+        <a class="electronica" href="cursos/electronica/curso-de-estructuras.html">
+            <img src="https://i.ytimg.com/vi/7PxChrRHUuQ/hqdefault.jpg" alt="">
+            Curso de estructuras: secuenciales, selectivas y repetitivas
+        </a>
+        <a class="electronica" href="cursos/electronica/curso-de-sistemas-digitales-desde-cero.html">
+            <img src="https://i.ytimg.com/vi/v3w6ZMyT_Pg/hqdefault.jpg" alt="">
+            Curso de sistemas digitales desde cero
+        </a>
+        <a class="electronica" href="cursos/electronica/curso-de-diagramas-de-flujo-desde-cero.html">
+            <img src="https://i.ytimg.com/vi/NXDLOuIYdGo/hqdefault.jpg" alt="">
+            Curso de diagramas de flujo desde cero
+        </a>
     </div>
 
-    <div class="materia">
-        <p>Física</p>
-        <br>
-        <div class="contenedor-temas">
-            <a href="cursos/fisica/curso-de-mecanica-desde-cero.html">
-                <img src="https://i.ytimg.com/vi/xJH6naahruk/hqdefault.jpg" alt="">
-                Curso de mecánica desde cero
-            </a>
-            <a href="cursos/fisica/curso-de-estatica-desde-cero.html">
-                <img src="https://i.ytimg.com/vi/B9o8y8E-XCA/hqdefault.jpg" alt="">
-                Curso de estática desde cero
-            </a>
-            <a href="cursos/fisica/curso-de-termodinamica-desde-cero.html">
-                <img src="https://i.ytimg.com/vi/Znj_EhhqDLM/hqdefault.jpg" alt="">
-                Curso de termodinámica desde cero
-            </a>
-            <a href="cursos/fisica/curso-de-fisica-por-sergio-llanos.html">
-                <img src="https://i.ytimg.com/vi/Z6Uzol2OqKg/hqdefault.jpg" alt="">
-                Curso de Física por Sergio Llanos
-            </a>
-            <a href="cursos/fisica/curso-de-electricidad-por-sergio-llanos.html">
-                <img src="https://i.ytimg.com/vi/ej6lS9zYy6U/hqdefault.jpg" alt="">
-                Curso de Electricidad por Sergio Llanos
-            </a>
-            <a href="cursos/fisica/curso-de-dinamica-por-sergio-llanos.html">
-                <img src="https://i.ytimg.com/vi/0WNWab2b5jU/hqdefault.jpg" alt="">
-                Curso de Dinámica por Sergio Llanos
-            </a>
-            <a href="cursos/fisica/leyes-de-newton-por-sergio-llanos.html">
-                <img src="https://i.ytimg.com/vi/y96djaAyJC4/hqdefault.jpg" alt="">
-                Leyes de Newton por Sergio Llanos
-            </a>
-            <a href="cursos/fisica/mecanica-de-fluidos-por-sergio-llanos.html">
-                <img src="https://i.ytimg.com/vi/OKzimK0HaAk/hqdefault.jpg" alt="">
-                Mecánica de Fluidos por Sergio Llanos
-            </a>
-            <a href="cursos/fisica/vectores-por-sergio-llanos.html">
-                <img src="https://i.ytimg.com/vi/OXDrRFg9Z4I/hqdefault.jpg" alt="">
-                Vectores por Sergio Llanos
-            </a>
-            <a href="cursos/fisica/electricidad-y-magnetismo-por-sergio-llanos.html">
-                <img src="https://i.ytimg.com/vi/X-RLwMhgJV4/hqdefault.jpg" alt="">
-                Electricidad y Magnetismo por Sergio Llanos
-            </a>
-        </div>
-    </div>
-
-    <div class="materia">
-        <p>Programación e Informática</p>
-        <br>
-        <div class="contenedor-temas">
-            <a href="cursos/programacion-e-informatica/curso-de-computacion-desde-cero.html">
-                <img src="https://i.ytimg.com/vi/C19lKwVZE60/hqdefault.jpg" alt="">
-                Curso de computación desde cero
-            </a>
-            <a href="cursos/programacion-e-informatica/curso-de-fundamentos-de-programacion.html">
-                <img src="https://i.ytimg.com/vi/85OQbOU-4-Y/hqdefault.jpg" alt="">
-                Curso de fundamentos de programación desde cero
-            </a>
-            <a href="cursos/programacion-e-informatica/curso-de-lenguaje-c-desde-cero.html">
-                <img src="https://i.ytimg.com/vi/fkiOskQbewM/hqdefault.jpg" alt="">
-                Curso de lenguaje C desde cero
-            </a>
-            <a href="cursos/programacion-e-informatica/cs50-2020-lectures.html">
-                <img src="https://i.ytimg.com/vi/YoXxevp1WRQ/hqdefault.jpg" alt="">
-                Harvard - CS50 2020 Lectures
-            </a>
-            <a href="cursos/programacion-e-informatica/cs50-web-programming-with-python-and-js-2020.html">
-                <img src="https://i.ytimg.com/vi/Nn7EX3zkGUo/hqdefault.jpg" alt="">
-                Harvard - CS50 Web Programming with Python and JavaScript 2020
-            </a>
-            <a href="cursos/programacion-e-informatica/cs50-introduction-to-ai-with-python-2020.html">
-                <img src="https://i.ytimg.com/vi/gR8QvFmNuLE/hqdefault.jpg" alt="">
-                Harvard - CS50 Introduction to Artificial Intelligence with Python 2020
-            </a>
-        </div>
-    </div>
-
-    <div class="materia">
-        <p>Inversiones</p>
-        <br>
-        <div class="contenedor-temas">
-            <a href="cursos/inversiones/como-empezar-a-invertir.html">
-                <img src="https://i0.wp.com/academy.gbm.com/wp-content/uploads/2020/12/como-empezar-a-invertir.jpg" alt="">
-                GBM - ¿Cómo empezar a invertir?
-            </a>
-            <a href="cursos/inversiones/el-dinero-y-yo-como-alcanzar-tus-metas.html">
-                <img src="https://i0.wp.com/academy.gbm.com/wp-content/uploads/2021/10/istock-.jpg" alt="">
-                GBM - El dinero y yo: ¿Cómo alcanzar tus metas?
-            </a>
-            <a href="cursos/inversiones/fundamentos-de-etfs.html">
-                <img src="https://i0.wp.com/academy.gbm.com/wp-content/uploads/2020/07/que-es-el-quick-ratio-y-para-que-se-utiliza.jpg" alt="">
-                GBM - Fundamentos de ETFs
-            </a>
-            <a href="cursos/inversiones/básicos-del-analisis-tecnico.html">
-                <img src="https://i0.wp.com/academy.gbm.com/wp-content/uploads/2020/11/basicos-analisis-tecnico.jpg" alt="">
-                GBM - Básicos del análisis técnico
-            </a>
-            <a href="cursos/inversiones/analisis-fundamental.html">
-                <img src="https://i0.wp.com/academy.gbm.com/wp-content/uploads/2021/04/analisis-fundamental.jpg" alt="">
-                GBM - Análisis Fundamental
-            </a>
-            <a href="cursos/inversiones/analisis-fundamental-2.html">
-                <img src="https://i0.wp.com/academy.gbm.com/wp-content/uploads/2021/07/analisis-fundamental-ii.jpg" alt="">
-                GBM - Análisis Fundamental 2
-            </a>
-            <a href="cursos/inversiones/analisis-tecnico.html">
-                <img src="https://i0.wp.com/academy.gbm.com/wp-content/uploads/2021/01/curso-analisis-tecnico.jpg" alt="">
-                GBM - Análisis Técnico
-            </a>
-        </div>
-    </div>
-
-    <div class="materia">
-        <p>Química</p>
-        <br>
-        <div class="contenedor-temas">
-            <a href="cursos/quimica/quimica-teoria-bachiller.html">
-                <img src="https://i.ytimg.com/vi/4MMvumKmqs4/hqdefault.jpg" alt="">
-                Química: teoría bachiller
-            </a>
-            <a href="cursos/quimica/quimica-formulacion-inorganica.html">
-                <img src="https://i.ytimg.com/vi/-2ymBr8LYSs/hqdefault.jpg" alt="">
-                Química: formulación inorgánica
-            </a>
-            <a href="cursos/quimica/quimica-formulacion-organica.html">
-                <img src="https://i.ytimg.com/vi/RmLf2gU5tIQ/hqdefault.jpg" alt="">
-                Química: formulación orgánica
-            </a>
-            <a href="cursos/quimica/quimica-estequiometria-y-mol.html">
-                <img src="https://i.ytimg.com/vi/FrfRSiDGVjA/hqdefault.jpg" alt="">
-                Química: estequiometría y mol
-            </a>
-        </div>
-    </div>
-
-    <div class="materia">
+    <!-- <div class="materia">
         <p>Electrónica</p>
         <br>
         <div class="contenedor-temas">
@@ -298,20 +290,8 @@
                 <img src="https://i.ytimg.com/vi/NlLaQ6DcgwI/hqdefault.jpg" alt="">
                 Curso de circuito eléctricos
             </a>
-            <a href="cursos/electronica/curso-de-estructuras.html">
-                <img src="https://i.ytimg.com/vi/7PxChrRHUuQ/hqdefault.jpg" alt="">
-                Curso de estructuras: secuenciales, selectivas y repetitivas
-            </a>
-            <a href="cursos/electronica/curso-de-sistemas-digitales-desde-cero.html">
-                <img src="https://i.ytimg.com/vi/v3w6ZMyT_Pg/hqdefault.jpg" alt="">
-                Curso de sistemas digitales desde cero
-            </a>
-            <a href="cursos/electronica/curso-de-diagramas-de-flujo-desde-cero.html">
-                <img src="https://i.ytimg.com/vi/NXDLOuIYdGo/hqdefault.jpg" alt="">
-                Curso de diagramas de flujo desde cero
-            </a>
         </div>
-    </div>
+    </div> -->
 
     <!-- <div class="materia">
         <p>Ciencia</p>
@@ -403,5 +383,6 @@
     </footer>
 
     <script src="Controladores-JS-y-CSS/navbar-and-footer.js"></script>
+    <script src="cursos.js"></script>
 </body>
 </html>

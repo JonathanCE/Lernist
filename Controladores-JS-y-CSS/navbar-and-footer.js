@@ -1,4 +1,4 @@
- $(document).ready(function() {
+$(document).ready(function() {
 
   $("#homepageLink").attr("href", "/");
   $("#logoNavbar").attr("src", "/i_temas/Logo Lernist.png")
