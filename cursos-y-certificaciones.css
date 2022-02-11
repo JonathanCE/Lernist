@@ -114,6 +114,9 @@
 .tema:hover{
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
+#categories button:hover {
+    cursor: pointer;
+}
 .contenedor-temas a:hover{
     cursor: pointer;
     box-shadow: 0 4px 14px 0 rgba(86, 185, 235, 0.5);
