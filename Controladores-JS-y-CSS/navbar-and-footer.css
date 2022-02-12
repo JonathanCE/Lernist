@@ -26,12 +26,11 @@ body {
     display: inline-block;
     text-align: center;
     padding: 40px 20px;
-    font-size: 20px;
+    font-size: 19px;
     color: white;
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     cursor: pointer;
-    font-size: 21px;
 }
 #homepageLink {
     padding: 16px 20px;
