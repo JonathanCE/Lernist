@@ -213,6 +213,11 @@ footer p{
     margin-left: 30px;
     font-weight: bold;
 }
+.footer-note {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+}
 .legal {
     text-align: right;
     font-weight: bold;

@@ -98,11 +98,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 100px;
+    padding: 50px 70px;
     background-color: #090c0f;
 }
 .materiales-contenedor {
-    max-width: 650px;
+    max-width: 700px;
+}
+.materiales-contenedor p {
+    font-size: 23px;
 }
 #materiales-lernist h3 {
     font-size: 30px;
@@ -111,7 +114,6 @@
     text-align: center;
 }
 #materiales-lernist p {
-    font-size: 23px;
     font-family: 'Fira Sans', sans-serif;
     text-align: center;
     line-height: 35px;
@@ -120,7 +122,7 @@
 #materiales-resumen {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 30px;
+    grid-gap: 40px;
     margin-top: 80px;
 }
 #materiales-resumen img {
@@ -129,6 +131,9 @@
 }
 .material-info {
     text-align: center;
+}
+.material-info p {
+    font-size: 21px;
 }
 
 .banner-info {
@@ -144,11 +149,39 @@
     text-align: center;
 }
 
-.cursos, .certificaciones, .articulos, .quizzes {
+.contenido, .certificaciones, .articulos, .quizzes {
     padding: 20px 20px;
 }
-.cursos {
-    padding-top: 50px;
+.contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #090c0f;
+}
+.contenido-descripcion {
+    max-width: 700px;
+}
+.contenido-descripcion h3 {
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.contenido-descripcion p {
+    font-size: 23px;
+    font-family: 'Fira Sans', sans-serif;
+    text-align: center;
+    line-height: 35px;
+    color: #b3b3b3;
+    margin-bottom: 20px;
+}
+
+.articulos h2 {
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 40px 0;
+    text-align: center;
 }
 
 .cursos p, .certificaciones p, .articulos p, .quizzes p {
@@ -271,56 +304,6 @@
     cursor: pointer;
 }
 
-/* .instrucciones {
-    background-image: url(i_temas/black7-background.jpg);
-    padding: 50px 20px;
-
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.instrucciones h1 {
-    margin: 0 240px;
-    padding: 15px;
-    text-align: center;
-    font-size: 50px;
-    font-weight: 500;
-    border: 5px solid white;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-}
-.pasos-instrucciones {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-gap: 30px;
-    margin: 40px 150px 0 150px;
-    align-items: center;
-    text-align: center;
-}
-.pasos-instrucciones h2 {
-    padding: 20px;
-    background-color: #090c0f;
-    border: 5px solid #090c0f;
-    color: white;
-    margin-bottom: 30px;
-    font-family: 'Fira Sans', sans-serif;
-}
-.pasos-instrucciones ul {
-    border: 4px solid white;
-    padding: 13px;
-    background-color: #090c0f;
-    text-align: left;
-    list-style-position: inside;
-}
-.pasos-instrucciones li {
-    line-height: 25px;
-    margin: 15px 0;
-    font-size: 19px;
-    font-family: 'Poppins', sans-serif;
-} */
-
 .donar {
     display: flex;
     align-items: center;
@@ -361,66 +344,6 @@
     border-radius: 10px;
 }
 
-.referidos {
-    padding: 20px 20px;
-}
-.referidos p {
-    font-size: 40px;
-    text-align: center;
-    font-family: 'Fira Sans', sans-serif;
-}
-.contenedor-referidos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-gap: 20px;
-}
-.referido {
-    padding: 15px;
-    border-radius: 7px;
-    cursor: pointer;
-    background-color: #090c0f;
-
-    display: grid;
-    grid-template-columns: 1fr 0.4fr;
-    grid-column-gap: 20px;
-}
-.referido p {
-    font-size: 19px;
-    text-align: left;
-}
-.referido-descripcion {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.contenedor-boton {
-    display: flex;
-}
-.referido a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: white;
-    height: 60px;
-    width: 150px;
-    font-size: 25px;
-    background-color: #0f1318;
-    border: 4px solid rgb(86, 165, 235, 0.25);
-    border-radius: 1px;
-    margin-top: 10px;
-}
-.referido img{
-    width: 100%;
-    border-radius: 3px;
-}
-.referido span {
-    font-weight: 700;
-    font-style: italic;
-    text-decoration: underline;
-}
-
 .contenedor-cursos a:hover{
     cursor: pointer;
     box-shadow: 0 4px 14px 0 rgba(86, 185, 235, 0.5);
@@ -447,11 +370,6 @@
     box-shadow: 0 4px 14px 0 rgba(86, 185, 235, 0.5);
     border: 3px solid rgb(86, 165, 235, 0.25);
     transform: translateY(-3px);
-    transition: transform 150ms;
-}
-.referido a:hover {
-    box-shadow: 0 4px 14px 0 rgba(86, 185, 235, 0.5);
-    transform: translateY(-1px);
     transition: transform 150ms;
 }
 .donacion a:hover {
@@ -572,13 +490,6 @@
         font-size: 50px;
         padding: 50px 20px;
     }
-    .contenedor-referidos {
-        grid-template-columns: 1fr;
-        margin-top: 20px;
-    }
-    .referido p {
-        font-size: 22px;
-    }
 }
 
 @media screen and (max-width: 850px) {
@@ -625,9 +536,6 @@
     }
     .contenedor-articulos a {
         width: 90%;
-    }
-    .referido p {
-        font-size: 19px;
     }
     .donacion {
         width: 100%;
@@ -722,10 +630,6 @@
     #materiales-lernist h3 {
         margin: 10px 0 30px;
     }
-    .referido a {
-        height: 50px;
-        width: 130px;
-    }
 
     .descripcion {
         border-radius: 10px;
@@ -801,15 +705,6 @@
     .donar {
         padding: 20px;
     }
-    .referido {
-        grid-template-columns: 1fr 0.7fr;
-    }
-    .contenedor-boton {
-        justify-content: center;
-    }
-    .referido a {
-        width: 100%;
-    }
     .contenedor-cursos a{
         display: grid;
         grid-template-columns: 0.6fr 1fr;
@@ -831,13 +726,5 @@
     }
     .contenedor-cursos a {
         font-size: 22px;
-    }
-    .referido {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .referido img {
-        width: 70%;
-        margin: 15px auto 30px;
     }
 }

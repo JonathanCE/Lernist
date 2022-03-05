@@ -43,7 +43,7 @@ $(document).ready(function() {
   $("#certificacionesLink").text("Certificaciones");
   $("#certificacionesLink").attr("href", "/certificaciones.html")
   $("#promocionesLink").text("Promociones");
-  $("#promocionesLink").attr("href", "/index.html#promociones")
+  $("#promocionesLink").attr("href", "/utilidades.html")
   $("#articulosLink").text("Artículos");
   $("#articulosLink").attr("href", "/articulos.html")
   $("#quizzesLink").hide();

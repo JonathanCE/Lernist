@@ -1,0 +1,237 @@
+#presentacion-utilidades {
+    padding: 40px 100px;
+    display: grid;
+    grid-template-columns: 1fr 0.7fr;
+    grid-gap: 100px;
+    background-color: #090c0f;
+    align-items: center;
+}
+#presentacion-utilidades img {
+    width: 100%;
+}
+#presentacion-utilidades h2 {
+    font-size: 50px;
+    font-family: 'Fira Sans', sans-serif;
+    margin-bottom: 30px;
+}
+#presentacion-utilidades p {
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    color: #b3b3b3;
+    line-height: 35px;
+}
+#presentacion-utilidades h3 {
+    font-size: 25px;
+    font-family: 'Fira Sans', sans-serif;
+    margin: 20px 0;
+}
+
+.banner-info {
+    background-color: rgb(86, 165, 235, 0.25);
+    padding: 70px 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.banner-info p {
+    font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+#categories {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+#categories button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    padding: 10px 0;
+    font-weight: 500;
+}
+.referidos {
+    padding: 20px 0;
+}
+.referidos p {
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
+}
+.contenedor-referidos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+.referido {
+    padding: 25px;
+    cursor: pointer;
+    background-color: #090c0f;
+    border: 5px solid black;
+
+    display: grid;
+    grid-template-columns: 1fr 0.4fr;
+    grid-column-gap: 20px;
+}
+.referido p {
+    font-size: 19px;
+    text-align: left;
+}
+.referido-descripcion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contenedor-boton {
+    display: flex;
+}
+.referido a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    height: 60px;
+    width: 150px;
+    font-size: 25px;
+    background-color: #0f1318;
+    border: 4px solid rgb(86, 165, 235, 0.25);
+    border-radius: 1px;
+    margin-top: 10px;
+}
+.referido img{
+    width: 100%;
+    border-radius: 3px;
+}
+.referido span {
+    font-weight: 700;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.referido a:hover {
+    box-shadow: 0 4px 14px 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-1px);
+    transition: transform 150ms;
+}
+#categories button:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1270px) {
+    #presentacion-utilidades {
+        padding: 40px;
+        grid-gap: 50px;
+    }
+    #categories {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 1070px) {
+    #presentacion-utilidades {
+        display: flex;
+        flex-direction: column;
+    }
+    #presentacion-utilidades img {
+        width: 500px;
+    }
+    .sector-texto {
+        max-width: 700px;
+        text-align: center;
+    }
+    #presentacion-utilidades {
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    #categories {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .contenedor-referidos {
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+    }
+    .referido p {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    #presentacion-utilidades img {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #categories {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .referido p {
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    #presentacion-utilidades img {
+        width: 350px;
+    }
+    #categories {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #presentacion-utilidades {
+        padding: 40px 20px;
+    }
+    .referido a {
+        height: 50px;
+        width: 130px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    #presentacion-utilidades h2 {
+        font-size: 40px;
+    }
+    #presentacion-utilidades img {
+        width: 300px;
+    }
+    /* #categories {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #categories button {
+        width: 250px;
+    } */
+    #categories {
+        grid-gap: 20px;
+    }
+    #categories button {
+        font-size: 18px;
+    }
+    .referido {
+        grid-template-columns: 1fr 0.7fr;
+    }
+    .contenedor-boton {
+        justify-content: center;
+    }
+    .referido a {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .referido {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .referido img {
+        width: 70%;
+        margin: 15px auto 30px;
+    }
+}
