@@ -7,8 +7,8 @@ $(document).ready(function() {
     $("#aprenderLink").attr("href", "cursos.html")
     $("#articulosLink").text("Artículos");
     $("#articulosLink").attr("href", "articulos.html")
-    $("#quizzesLink").text("Quizzes");
-    $("#quizzesLink").attr("href", "quizzes.html")
+    $("#testsLink").text("Quizzes");
+    $("#testsLink").attr("href", "quizzes.html")
     $("#enseñarLink").hide();
     $("#enseñarLink").text("Enseñar");
     $("#enseñarLink").attr("href", "enseñar.html")

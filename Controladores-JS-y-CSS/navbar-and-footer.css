@@ -205,11 +205,18 @@ footer p{
         top: 10px;
         cursor: pointer;
     }
+    .footer-note {
+        margin-bottom: 30px;
+    }
 }
 
 @media screen and (max-width: 800px) {
     .informacion {
         text-align: center;
+    }
+    .footer-note {
+        text-align: center;
+        margin-bottom: 50px;
     }
 }
 

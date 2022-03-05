@@ -3,20 +3,17 @@ $(document).ready(function() {
   $("#homepageLink").attr("href", "/");
   $("#logoNavbar").attr("src", "/i_temas/Logo Lernist.png")
   $(".Inicio").text("Inicio");
-  $("#cursosLink").text("Cursos");
-  $("#cursosLink").attr("href", "/cursos.html")
-  $("#certificacionesLink").text("Certificaciones");
-  $("#certificacionesLink").attr("href", "/certificaciones.html")
-  $("#promocionesLink").text("Utilidades");
-  $("#promocionesLink").attr("href", "/utilidades.html")
-  $("#articulosLink").text("Artículos");
+  $("#tematicasLink").text("Temas");
+  $("#tematicasLink").attr("href", "/index.html#tematicas")
+  //$("#certificacionesLink").text("Certificaciones");
+  //$("#certificacionesLink").attr("href", "/certificaciones.html")
+  $("#utilidadesLink").text("Utilidades");
+  $("#utilidadesLink").attr("href", "/utilidades.html")
+  $("#articulosLink").text("Artículos y Colecciones");
   $("#articulosLink").attr("href", "/articulos.html")
-  $("#quizzesLink").hide();
-  $("#quizzesLink").text("Quizzes");
-  $("#quizzesLink").attr("href", "/quizzes.html")
-  $("#enseñarLink").hide();
-  $("#enseñarLink").text("Enseñar");
-  $("#enseñarLink").attr("href", "/enseñar.html")
+  $("#testsLink").hide();
+  $("#testsLink").text("Tests");
+  $("#testsLink").attr("href", "/tests.html")
 
   $("#fraseFooter").text("Aprende cosas Increíbles, con contenido Increíble.");
   $("#footerTikTok").attr("href", "https://vm.tiktok.com/ZMLYUTDbg/");
