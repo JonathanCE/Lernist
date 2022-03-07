@@ -19,31 +19,6 @@
     <link rel="stylesheet" href="Controladores-JS-y-CSS/navbar-and-footer.css">
     <link rel="icon" href="lernist-mini.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- Codigo para busqueda -->
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
-    <script type="text/javascript">
-        algoliasearchNetlify({
-            appId: 'HZTEEHSOEV',
-            apiKey: 'ed770afc3ed0d5e2d280db81deb63ee8',
-            siteId: 'ce1564a0-793f-4cda-b98a-ec3086587215',
-            branch: 'master',
-            selector: 'div#search',
-            placeholder: 'Busca artículos en lernist...',
-            analytics: 'true',
-            theme: {
-                mark: '#fff',
-                background: '#23263b',
-                selected: '#111432',
-                text: '#d6d6e7',
-                colorSourceIcon: '#d6d6e7'
-            },
-            hitsPerPage: '8',
-        });
-    </script>
-    <!-- Linea de separamiento -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lernist | Artículos</title>
@@ -80,46 +55,106 @@
         </a>
     </section>
 
-    
+    <div id="filter-articles">
+        <select name="filter" id="">
+            <option value="">Filtra por temas</option>
+            <option onclick="todos()" value="">TODOS</option>
+            <option onclick="matematicas()" value="">Matemáticas</option>
+            <option value="">Física</option>
+        </select>
+    </div>
 
     <main>
 
         <section class="contenido">
 
-            <div class="articulo">
+            <div class="articulo matematicas">
                 <h3>Leyes de signos</h3>
-                <p>Matemáticas - 05/01/22</p>
-                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.actiludis.com%2Fwp-content%2Fuploads%2F2016%2F12%2FRegla-signos.png&f=1&nofb=1" alt="Imagen">
-                <p>
-                    Pocas cosas podemos decir que aparecen en todas las matemáticas. Ciertos comportamientos u operaciones, que no
-                    importa el nivel de dificultad o complejidad del problema...
-                </p>
+                <div class="articulo-descripcion">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.actiludis.com%2Fwp-content%2Fuploads%2F2016%2F12%2FRegla-signos.png&f=1&nofb=1" alt="Imagen">
+                    <p>
+                        Pocas cosas podemos decir que aparecen en todas las matemáticas. Ciertos comportamientos u operaciones, que no
+                        importa el nivel de dificultad o complejidad del problema...
+                    </p>
+                </div>
                 <a href="/articulos/matematicas/2022/leyes-de-signos.html">Leer más...</a>
             </div>
 
-            <div class="articulo">
+            <div class="articulo inversiones">
                 <h3>Criptomonedas más populares</h3>
-                <p>Criptomonedas - 03/01/22</p>
-                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.diariobitcoin.com%2Fwp-content%2Fuploads%2F2021%2F06%2Fcriptomonedas-unsplash.jpg&f=1&nofb=1" alt="Imagen">
-                <p>
-                    Aquí en Lernist ya hemos abordado que son las criptomonedas, y dejamos en claro que no son una estafa ni una moda
-                    pasajera, si no una tecnología que ha llegado para revolucionar...
-                </p>
+                <div class="articulo-descripcion">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.diariobitcoin.com%2Fwp-content%2Fuploads%2F2021%2F06%2Fcriptomonedas-unsplash.jpg&f=1&nofb=1" alt="Imagen">
+                    <p>
+                        Aquí en Lernist ya hemos abordado que son las criptomonedas, y dejamos en claro que no son una estafa ni una moda
+                        pasajera, si no una tecnología que ha llegado para revolucionar...
+                    </p>
+                </div>
                 <a href="/articulos/criptomonedas/2022/criptomonedas-mas-populares.html">Leer más...</a>
             </div>
 
-            <div class="articulo">
+            <div class="articulo inversiones">
                 <h3>¿Qué son las criptomonedas?</h3>
-                <p>Criptomonedas - 30/12/21</p>
-                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fchispacoin.com%2Fwp-content%2Fuploads%2F2020%2F10%2Fcriptomonedas_1573059570_1574005981_1600792286.jpg&f=1&nofb=1" alt="Imagen">
+                <div class="articulo-descripcion">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fchispacoin.com%2Fwp-content%2Fuploads%2F2020%2F10%2Fcriptomonedas_1573059570_1574005981_1600792286.jpg&f=1&nofb=1" alt="Imagen">
                 <p>
                     Probablemente has escuchado de ellas. Cada año se escucha más y más de ellas, con incógnitas de si en el futuro
                     de verdad van a reemplazar al dinero común...
                 </p>
+                </div>
                 <a href="/articulos/criptomonedas/2022/que-son-las-criptomonedas.html">Leer más...</a>
             </div>
 
+            <div class="articulo matematicas">
+                <h3>Jeraquía de las Operaciones</h3>
+                <div class="articulo-descripcion">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2F736x%2F3c%2Fc2%2F5e%2F3cc25ecbf776ac9df35c35e2bd75122a.jpg&f=1&nofb=1" alt="Imagen">
+                <p>
+                    Los números son algo con lo que tratamos todos los días, no podemos escapar de ellos. La vida cotidiana esta
+                    llena de ellos, desde contar objetos hasta hacer cuentas de gastos...
+                </p>
+                </div>
+                <a href="/articulos/matematicas/2021/jerarquia-de-las-operaciones.html">Leer más...</a>
+            </div>
+
             <div class="articulo">
+                <h3>Las mejores universidades del mundo 2022</h3>
+                <div class="articulo-descripcion">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstudyin.lt%2Fwp-content%2Fuploads%2F2020%2F06%2Fqs-rankins-2021-1024x576.jpg&f=1&nofb=1" alt="Imagen">
+                <p>
+                    ¿Te has preguntado alguna vez, cuáles son aquellas prestigiosas instituciones, que forman los verdaderos
+                    líderes del mañana? A lo largo y ancho del mundo existen universidades que cada año...
+                </p>
+                </div>
+                <a href="/articulos/educacion/2021/las-mejores-universidades-del-mundo-2021.html">Leer más...</a>
+            </div>
+
+            <div class="articulo">
+                <h3>Los neobancos en México</h3>
+                <div class="articulo-descripcion">
+                    <img src="https://images.unsplash.com/photo-1509017174183-0b7e0278f1ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="Imagen">
+                <p>
+                    A veces cuesta creer que estamos en el 2021, en un mundo lleno de tecnología, 
+                    prácticamente el mundo funciona con ella. Accedemos a un nivel de 
+                    comunicación nunca antes visto...
+                </p>
+                </div>
+                <a href="/articulos/finanzas/2021/los-neobancos-mexicanos.html">Leer más...</a>
+            </div>
+
+            <div class="articulo">
+                <h3>Aprende python GRATIS con estos cursos, sitios web y más</h3>
+                <div class="articulo-descripcion">
+                    <img src="/i_temas/imagenes-articulos/2021/python-code.jpg" alt="Imagen">
+                <p>
+                    A día de hoy saber programar te permite acceder a un mundo inmenso de oportunidades, 
+                    que van desde tener un muy buen trabajo, pasando por desarrollar pensamiento 
+                    lógico y creativo...
+                </p>
+                </div>
+                <a href="/articulos/programacion/2021/aprende-python-gratis-con-estos-recursos.html">Leer más...</a>
+            </div>
+
+            <!-- <div class="articulo">
                 <h3>Multiplicación y división de fracciones</h3>
                 <p>Matemáticas - 29/12/21</p>
                 <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.wikihow.com%2Fimages_en%2Fthumb%2F6%2F65%2FDivide-Fractions-by-Fractions-Step-4-Version-5.jpg%2Fv4-728px-Divide-Fractions-by-Fractions-Step-4-Version-5.jpg&f=1&nofb=1" alt="Imagen">
@@ -164,17 +199,6 @@
             </div>
 
             <div class="articulo">
-                <h3>Jeraquía de las Operaciones</h3>
-                <p>Matemáticas - 20/12/21</p>
-                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2F736x%2F3c%2Fc2%2F5e%2F3cc25ecbf776ac9df35c35e2bd75122a.jpg&f=1&nofb=1" alt="Imagen">
-                <p>
-                    Los números son algo con lo que tratamos todos los días, no podemos escapar de ellos. La vida cotidiana esta
-                    llena de ellos, desde contar objetos hasta hacer cuentas de gastos...
-                </p>
-                <a href="/articulos/matematicas/2021/jerarquia-de-las-operaciones.html">Leer más...</a>
-            </div>
-
-            <div class="articulo">
                 <h3>Tipos de números que existen</h3>
                 <p>Matemáticas - 19/12/21</p>
                 <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F4.bp.blogspot.com%2F-6xJwy1Af1kk%2FVgcSN_xecLI%2FAAAAAAAAAqA%2FmT_IdbSvHGo%2Fs1600%2FSin%252Bt%2525C3%2525ADtulo.png&f=1&nofb=1" alt="Imagen">
@@ -183,41 +207,6 @@
                     llena de ellos, desde contar objetos hasta hacer cuentas de gastos...
                 </p>
                 <a href="/articulos/matematicas/2021/tipos-de-numeros-que-existen.html">Leer más...</a>
-            </div>
-
-            <div class="articulo">
-                <h3>Las mejores universidades del mundo 2022</h3>
-                <p>Universidades - 16/12/21</p>
-                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstudyin.lt%2Fwp-content%2Fuploads%2F2020%2F06%2Fqs-rankins-2021-1024x576.jpg&f=1&nofb=1" alt="Imagen">
-                <p>
-                    ¿Te has preguntado alguna vez, cuáles son aquellas prestigiosas instituciones, que forman los verdaderos
-                    líderes del mañana? A lo largo y ancho del mundo existen universidades que cada año...
-                </p>
-                <a href="/articulos/educacion/2021/las-mejores-universidades-del-mundo-2021.html">Leer más...</a>
-            </div>
-
-            <div class="articulo">
-                <h3>Los neobancos en México</h3>
-                <p>Finanzas digitales - 15/12/21</p>
-                <img src="https://images.unsplash.com/photo-1509017174183-0b7e0278f1ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="Imagen">
-                <p>
-                    A veces cuesta creer que estamos en el 2021, en un mundo lleno de tecnología, 
-                    prácticamente el mundo funciona con ella. Accedemos a un nivel de 
-                    comunicación nunca antes visto...
-                </p>
-                <a href="/articulos/finanzas/2021/los-neobancos-mexicanos.html">Leer más...</a>
-            </div>
-
-            <div class="articulo">
-                <h3>Aprende python GRATIS con estos cursos, sitios web y más</h3>
-                <p>Programación: Python - 10/11/21</p>
-                <img src="/i_temas/imagenes-articulos/2021/python-code.jpg" alt="Imagen">
-                <p>
-                    A día de hoy saber programar te permite acceder a un mundo inmenso de oportunidades, 
-                    que van desde tener un muy buen trabajo, pasando por desarrollar pensamiento 
-                    lógico y creativo...
-                </p>
-                <a href="/articulos/programacion/2021/aprende-python-gratis-con-estos-recursos.html">Leer más...</a>
             </div>
 
             <div class="articulo">
@@ -230,22 +219,14 @@
                     Normalmente en álgebra lineal...
                 </p>
                 <a href="/articulos/matematicas/2021/magnitud-direccion-y-sentido-de-vectores.html">Leer más...</a>
-            </div>
+            </div> -->
    
         </section>
 
         <section class="relacionado">
 
-            <div class="Buscar">
-                <div class="busqueda">
-                    <h1>Busca artículos en Lernist</h1>
-                    <div id="search"></div>
-                    <p>Tip: Los artículos aparecen en la búsqueda con el señalamiento "| Artículo |"</p>
-                </div>
-            </div>
-
-            <div class="leccion">
-                <div class="leccion-title">
+            <div class="trending">
+                <div class="trending-title">
                     <h3>Artículos trending</h3>
                 </div>
                 
@@ -295,5 +276,6 @@
     </footer>
 
     <script src="Controladores-JS-y-CSS/navbar-and-footer.js"></script>
+    <script src="articulos.js"></script>
 </body>
 </html>

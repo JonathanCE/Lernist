@@ -40,7 +40,7 @@
 }
 
 #categories {
-    padding: 20px;
+    padding: 30px 20px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 30px;
@@ -51,34 +51,36 @@
     padding: 10px 0;
     font-weight: 500;
 }
-.referidos {
+.utilidades {
     padding: 20px 0;
 }
-.referidos p {
+.utilidades p {
     font-size: 40px;
     text-align: center;
     font-family: 'Fira Sans', sans-serif;
 }
-.contenedor-referidos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+.contenedor-utilidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.referido {
+.utilidad {
+    max-width: 800px;
     padding: 25px;
-    cursor: pointer;
+    margin-bottom: 20px;
     background-color: #090c0f;
-    border: 5px solid black;
+    border-radius: 4px;
 
     display: grid;
-    grid-template-columns: 1fr 0.4fr;
+    grid-template-columns: 1fr 0.3fr;
     grid-column-gap: 20px;
 }
-.referido p {
+.utilidad p {
     font-size: 19px;
     text-align: left;
+    line-height: 29px;
 }
-.referido-descripcion {
+.utilidad-descripcion {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -86,31 +88,32 @@
 .contenedor-boton {
     display: flex;
 }
-.referido a {
+.utilidad a {
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
     color: white;
-    height: 60px;
+    height: 50px;
     width: 150px;
     font-size: 25px;
     background-color: #0f1318;
     border: 4px solid rgb(86, 165, 235, 0.25);
-    border-radius: 1px;
+    border-radius: 3px;
     margin-top: 10px;
 }
-.referido img{
+.utilidad img{
     width: 100%;
     border-radius: 3px;
 }
-.referido span {
+.utilidad span {
     font-weight: 700;
     font-style: italic;
     text-decoration: underline;
 }
 
-.referido a:hover {
+.utilidad a:hover {
     box-shadow: 0 4px 14px 0 rgba(86, 185, 235, 0.5);
     transform: translateY(-1px);
     transition: transform 150ms;
@@ -150,12 +153,15 @@
     #categories {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
-    .contenedor-referidos {
-        grid-template-columns: 1fr;
+    .contenedor-utilidades {
         margin-top: 20px;
+        padding: 0 10px;
     }
-    .referido p {
+    .utilidad p {
         font-size: 22px;
+    }
+    .banner-info {
+        padding: 50px;
     }
 }
 
@@ -169,7 +175,7 @@
     #categories {
         grid-template-columns: 1fr 1fr 1fr;
     }
-    .referido p {
+    .utilidad p {
         font-size: 19px;
     }
 }
@@ -181,15 +187,26 @@
     #categories {
         grid-template-columns: 1fr 1fr;
     }
+    .utilidad {
+        grid-template-columns: 1fr 0.7fr;
+    }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 570px) {
     #presentacion-utilidades {
         padding: 40px 20px;
     }
-    .referido a {
-        height: 50px;
-        width: 130px;
+    .utilidad {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .utilidad a {
+        width: 100%;
+    }
+    .utilidad img {
+        max-width: 220px;
+        width: 60%;
+        margin: 10px auto 30px;
     }
 }
 
@@ -214,24 +231,16 @@
     #categories button {
         font-size: 18px;
     }
-    .referido {
-        grid-template-columns: 1fr 0.7fr;
+    .banner-info {
+        padding: 30px;
     }
-    .contenedor-boton {
-        justify-content: center;
-    }
-    .referido a {
-        width: 100%;
+    .banner-info p {
+        font-size: 30px;
     }
 }
 
-@media screen and (max-width: 400px) {
-    .referido {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .referido img {
-        width: 70%;
-        margin: 15px auto 30px;
+@media screen and (max-width: 455px) {
+    .contenedor-boton {
+        margin-top: 20px;
     }
 }
