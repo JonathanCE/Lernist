@@ -1,15 +1,13 @@
+function hide() {
+    $(".articulo").fadeOut();
+}
+
 function todos() {
-    $(".finanzas").fadeIn();
-    $(".programacion").fadeIn();
-    $(".negocios").fadeIn();
-    $(".inversiones").fadeIn();
-    $(".diseño").fadeIn();
+    hide();
+    $(".articulo").fadeIn();
 };
 
 function matematicas() {
+    hide();
     $(".matematicas").fadeIn();
-    $(".programacion").fadeOut();
-    $(".negocios").fadeOut();
-    $(".inversiones").fadeOut();
-    $(".diseño").fadeOut();
 };

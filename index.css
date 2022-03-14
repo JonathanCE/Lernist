@@ -94,7 +94,7 @@
     margin: 20px 0;
 }
 
-#materiales-lernist {
+#materiales-lernist, #utilidades-lernist {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -107,25 +107,25 @@
 .materiales-contenedor p {
     font-size: 23px;
 }
-#materiales-lernist h3 {
+#materiales-lernist h3, #utilidades-lernist h3 {
     font-size: 30px;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 40px;
     text-align: center;
 }
-#materiales-lernist p {
+#materiales-lernist p, #utilidades-lernist p {
     font-family: 'Fira Sans', sans-serif;
     text-align: center;
     line-height: 35px;
     color: #b3b3b3;
 }
-#materiales-resumen {
+#materiales-resumen, #utilidades-resumen {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 40px;
     margin-top: 80px;
 }
-#materiales-resumen img {
+#materiales-resumen img, #utilidades-resumen img {
     width: 70%;
     margin-bottom: 20px;
 }
@@ -252,9 +252,9 @@
     font-size: 20px;
     text-align: justify;
 }
-.articulo-info {
+/* .articulo-info {
     font-weight: 400;
-}
+} */
 .articulos-muestra {
     margin-top: 15px;
     font-size: 19px;
@@ -418,7 +418,7 @@
     #educadores {
         flex-direction: column-reverse;
     }
-    #materiales-lernist {
+    #materiales-lernist, #utilidades-lernist {
         padding: 50px;
     }
     .donacion {
@@ -504,7 +504,7 @@
     #aprendedores img, #educadores img, #empresas img {
         width: 400px;
     }
-    #materiales-resumen {
+    #materiales-resumen, #utilidades-resumen {
         grid-template-columns: 1fr;
     }
     .material-info {
@@ -513,7 +513,7 @@
         align-items: center;
         flex-direction: column;
     }
-    #materiales-resumen img {
+    #materiales-resumen img, #utilidades-resumen img {
         max-width: 400px;
         text-align: center;
     }
@@ -624,10 +624,10 @@
     #aprendedores, #educadores, #empresas {
         padding: 40px 20px;
     }
-    #materiales-lernist {
+    #materiales-lernist, #utilidades-lernist {
         padding: 50px 30px;
     }
-    #materiales-lernist h3 {
+    #materiales-lernist h3, #utilidades-lernist h3 {
         margin: 10px 0 30px;
     }
 

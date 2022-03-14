@@ -117,17 +117,13 @@ main img {
     color: white;
 }
 
-.trending {
-    margin-bottom: 5px;
-}
 .trending-title {
     position: relative;
     padding: 10px;
     border-left: 6px solid black;
     margin-bottom: 10px;
 }
-
-.trending h3{
+.trending-title h3{
     font-size: 1.5em;
     font-family: 'Poppins', sans-serif;
     color: #f0ece2;
@@ -152,36 +148,6 @@ main img {
     text-align: left;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 200;
-}
-
-.recomendado h3 {
-    padding: 10px;
-    margin-bottom: 25px;
-    text-align: left;
-    line-height: 40px;
-    font-size: 1.5em;
-    font-family: 'Poppins', sans-serif;
-    border-left: 6px solid black;
-}
-.recomendado-content {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-row-gap: 20px;
-}
-.recomendado-content a{
-    display: block;
-    text-decoration: none;
-    color: white;
-    font-family: 'Fira Sans', sans-serif;
-
-    text-align: center;
-    padding: 15px;
-    background-color: #090c0f;
-
-    border: 4px solid black;
-    border-radius: 9px;
-    font-size: 25px;
-    cursor: pointer;
 }
 
 
