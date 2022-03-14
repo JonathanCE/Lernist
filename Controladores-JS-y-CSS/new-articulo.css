@@ -7,18 +7,19 @@
     align-items: center;
     margin: 0 auto;
     max-width: 800px;
+    justify-content: center;
 }
-.title img {
+/* .title img {
     width: 150px;
     height: auto;
     border-radius: 20px;
     display: block;
     margin-right: 30px;
-}
+} */
 .title h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    font-size: 35px;
+    font-size: 40px;
 }
 
 main {
@@ -53,7 +54,7 @@ main iframe {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
-.articulo a {
+.indice a {
     font-size: 20px;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 600;
@@ -102,6 +103,30 @@ main iframe {
     font-size: 25px;
 }
 
+.recomendacion a {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    grid-column-gap: 20px;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 35px;
+    color: white;
+    text-decoration: none;
+
+    padding: 15px;
+    border-radius: 7px;
+    background-color: #090c0f;
+    margin: 0 auto;
+    max-width: 450px;
+}
+.recomendacion img {
+    width: 100%;
+    border-radius: 3px;
+}
+
 .referido {
     padding: 15px;
     border: 1.5px solid black;
@@ -142,11 +167,11 @@ main iframe {
     border-radius: 10px;
     margin-top: 10px;
 }
-.referido img{
+.referido img {
     width: 100%;
     border-radius: 3px;
 }
-.referido span {
+.referido span, .recomendacion span {
     font-size: 19px;
     font-weight: 700;
     font-style: italic;
@@ -254,9 +279,6 @@ main iframe {
 }
 
 @media screen and (max-width: 800px) {
-    .title {
-        padding: 20px;
-    }
     .donacion {
         grid-template-columns: 1fr 0.5fr;
     }
@@ -283,31 +305,15 @@ main iframe {
 }
 
 @media screen and (max-width: 610px) {
-    .title {
-        padding: 10px;
-    }
-    .title h1 {
-        font-size: 30px;
-        text-align: center;
-    }
-    .title img {
-        display: none;
-    }
     .articulo span {
         font-weight: bold;
         font-size: 22px;
     }
-    .articulo a {
+    .indice a {
         display: inline;
     }
     .donacion p {
         text-align: center;
-    }
-    .donacion a {
-        display: flex;
-    }
-    .referido a {
-        display: flex;
     }
     .articulos {
         grid-template-columns: 1fr;
@@ -321,6 +327,9 @@ main iframe {
     main {
         padding: 15px;
     }
+    .title h1 {
+        font-size: 34px;
+    }
     .referido {
         grid-template-columns: 1fr 0.7fr;
     }
@@ -333,11 +342,11 @@ main iframe {
     .referido p {
         font-size: 19px;
     }
-}
-
-@media screen and (max-width: 410px) {
     .articulo span {
         font-weight: bold;
         font-size: 19px;
+    }
+    .recomendacion a {
+        font-size: 26px;
     }
 }
