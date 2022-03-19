@@ -239,6 +239,17 @@
     grid-template-columns: 0.4fr 1fr;
     grid-column-gap: 20px;
 }
+.theme-icon {
+    color: white;
+
+    padding: 13px;
+    border-radius: 2px;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    background-color: #090c0f;
+}
 .articulos-datos {
     display: flex;
     flex-direction: column;
@@ -584,7 +595,7 @@
     .contenedor-cursos, .contenedor-quizzes {
         grid-template-columns: 1fr;
     }
-    .contenedor-cursos a{
+    .contenedor-cursos a, .theme-icon{
         display: grid;
         grid-template-columns: 0.5fr 1fr;
         grid-column-gap: 10px;
@@ -705,7 +716,7 @@
     .donar {
         padding: 20px;
     }
-    .contenedor-cursos a{
+    .contenedor-cursos a, .theme-icon{
         display: grid;
         grid-template-columns: 0.6fr 1fr;
         grid-column-gap: 10px;
@@ -724,7 +735,7 @@
     .certificaciones-a img {
         margin-bottom: 20px;
     }
-    .contenedor-cursos a {
+    .contenedor-cursos a, .theme-icon{
         font-size: 22px;
     }
 }
