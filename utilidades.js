@@ -41,3 +41,8 @@ function productividad() {
     hide();
     $(".productividad").fadeIn();
 };
+
+function privacidad() {
+    hide();
+    $(".privacidad").fadeIn();
+};

@@ -226,6 +226,7 @@
 .contenedor-articulos a{
     text-decoration: none;
     color: white;
+    text-align: center;
 
     padding: 12px;
     border-radius: 7px;

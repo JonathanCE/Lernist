@@ -109,7 +109,7 @@ main iframe {
     grid-column-gap: 20px;
     align-items: center;
     font-family: 'Poppins', sans-serif;
-    font-size: 30px;
+    font-size: 27px;
     text-align: center;
     font-weight: 600;
     line-height: 35px;
@@ -342,11 +342,20 @@ main iframe {
     .referido p {
         font-size: 19px;
     }
+    .articulo h3 {
+        text-align: center;
+    }
     .articulo span {
         font-weight: bold;
         font-size: 19px;
     }
     .recomendacion a {
-        font-size: 26px;
+        display: flex;
+        flex-direction: column;
+        font-size: 24px;
+    }
+    .recomendacion img {
+        max-width: 230px;
+        margin: 0 auto 20px;
     }
 }

@@ -79,6 +79,7 @@
     font-size: 19px;
     text-align: left;
     line-height: 29px;
+    text-align: justify;
 }
 .utilidad-descripcion {
     display: flex;
