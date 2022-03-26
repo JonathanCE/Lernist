@@ -46,3 +46,8 @@ function privacidad() {
     hide();
     $(".privacidad").fadeIn();
 };
+
+function educacion() {
+    hide();
+    $(".educacion").fadeIn();
+};

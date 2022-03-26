@@ -95,6 +95,7 @@
         <button onclick="idiomas()">Idiomas</button>
         <button onclick="productividad()">Productividad</button>
         <!-- <button onclick="privacidad()">Privacidad</button> -->
+        <button onclick="educacion()">Educación</button>
     </section>
 
     <section class="utilidades">
@@ -253,6 +254,18 @@
                 </div>
                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAA9lBMVEUEY2nz//sCZWkEbG/7///w///y/f0AYmsAVVkHZGu+3N3w/vjt//hkm5vx/fv5+/4DaGcAWGYAZmcAXFsAW2Pc9PKKsbQDYG81entZkJH+///z//fk///s//8AYGcAUVpQiIYAY18AUlI6dXoAaHIAX28RbGf//v8AW18AYFwAV2f6//kVamgkYmcebGQLX2mo1tJ+wL2q4uKqzMxknJnI6+qPvL+BtbG13drV6+4zd28ucXl6q6+bysYAUWVyraJVhItLioVnoZxam5A0aHMAOkZyn5hChY30+OnG3eDH8u50qK2vytJhj5KHubbA1teauMBUgo+7tBgmAAAKtklEQVR4nO2dC1fbNhuAbaGLjR3bURwSfEscAnFwWrMvDYVRNsourGVl2///M98rhbKCTTugXJSj55z2FDs2fqzb+0oqGGsIWFtRhJsh/15ljMs/qwvYGSvLZ8MVVxTt8Lmf45HRhuqjDdVHG6qPNlQfbag+2lB9tKH6aEP10Ybqow3VRxuqjzZUH22oPtpQfbSh+mhD9dGG6qMN1Ucbqo82VB9tqD7aUH20ofpoQ/XRhuqjDdVHG6qPNlQfbag+2lB9tKH6aEP10Ybqow3VRxuqjzZUH22oPtpQfbSh+mjDa7CAje2KsYpxxurXIQPxHgMyHvDs8hjKjIpz9p0e9x7czXCHVTMOj//qNUjWTgfICEIumOUzWx5C9is0257tZN/ree/OnQzHedGiApKeNZRhHowHexhOpwSnPxSGEExokhDyP+v7PfFduZOhjYwWdgCK+0ZDLeWD/VSc9jCej+QRRCIn9qIDZQwr1hJlRFPcb7isKt7Is9Qni5GsxGiWmBQnsTqGQbuFTcAjfXa98xCtL9tKTT9yCTW7l42UBcShnu+uK2do1gxlT9qNHWq6ZpQMs2VHs0qGMIaEi7J0KXFjcm6NV9FwsEd9z8XUIfsjjmx5ekUMxUCfMestKT2fOD4+GNgcGbIQV8YQjIo3KfVMn8beYQdVn0+tiGFgbI/Rj0kUwyhhlslRFeSfT62IIbd7ducjnZQmNb10aIx58PnUihgiY62zjimhXlySd7sB/zfceaihDdzvyn/5HmUYWHN5NKXl8U/XuthbDHNuMCOAVyHiBNFRBSjIEeJXiCPG5Q8gDeBLVsl/whnbCOoh/2Mb9qY/T1xx0J18mPauvfNbDLl8aBuhqt1uZ2JogcuyjNlsfGmI5F8oAHZ7NljmAe/1qrBqV7VQ4/ENqxMz9sXBsjveDq5dcFsthQSMcyvcenP69rR1YhQdeI5lkYn00pCKAUeVAF6Ebaxl4WD2/hQ+/kt/9uSGa+nEnSwP8t5/MmSIW+j0ICFYQJPFft+SPw13NtsB1jLwZyjodHJgmgesGmztLzCOogk1J/PwKQ3hZRcLj5om9dy0ZfEbbaTBUDYo69VxgnEZQx5iOrGJJ2SxabHxKElFapIUDOokKi5SAd3sWJuLFJcuQFOHbhRPaRhw64CKAz4mF4PaBXVD+aN9RxspceRtqBk7nuyk6PqvxSiVN+92tgPEeLghvxf5xZoT+S0EENm3nrQMkbVPSnkEr1v1OzUZsvbRglAsvEzHjONSvKHULCde67ckXhr2vjBMf19E8h+Jm6ZxHLv9u02JPNDQatHlgXgxaLhTk2H7JPEcRxahGZUUL6uACVUwfdct64YTD8pZvsOyLEU+fSe/hxpm/aSksgqlM6NhXqNmaKPiLPkDWl8JpQV2h+vr612KJ9gj2PPxsk++bkgd3/fgs/jwr/nx/vzDxztGD/c3tA2ecw8qm0/IhJwVy0H6K4Z2FQQ5P0o9HMl5gu78ZDCwLGu0s3EYQe4sC7NuaHqExvjDeTWwQsCqt/bHMgzYdr6gwhCLnBfd7Edrhgaybd5ZmA6RrW/+ehqIHAuilGnnPKGleYshdLbJ6bRT1W//yIbGWvtP2TFASzzeFYP0twx5b1wcQ68Phm7yabSDduWHYESvsmqdxs2G0Lt0t8IA9Z7UUMxEVZ23l8Gae9CBYQPxb7XDoOI/Ekqd0ivhmZFRbS8FDZvZyJrfUkudMu2HMtR5SsPS6xvhJ1zKTiZOe6iDxOj/DUO+3dmLCOSQcXLSHovIRt4UGnQAngOovy6uG8bRhfhwQz/2mIYm7YtuVA5lMKjtdarmX7Nwowy3jxLZ2ujbQcOU+Szx3Ia+NPbze5ef4H6GhGyF3TJePhC0w4vd5ttcN9ypNsTo6XmLaWDXH7p4h6OGET/+q/OgdZ17tkO6dWBeGdKYQCT17Z4msBYR9L0e/sTXWD2zRXkyceqGeCPP7pgSXuOe7bCcm2JaRn7hp2SSHIVNvynjxojPaSQiT69tVw211OgcR6TB8JxnQf3D/5l7tkNTRCWen0LL8WWE2f0P7ZANI5f6brzXHJUg1CJe3TDazB40k3FfQ3i3jltGhxvElUNGvCi+aZj9HrnwRfm2Of3hxlb60gxj0h/tY9k9lnRv9C3D8EIYQsLXnBxwNEgaxkNh+JCV+PsbQj0lnzp88EEOGaT03lq1d33TEDvmhNxuuJs05BbPV4apH20MMpShLvT/YFimrfDmoN9QhtTEmyFrCoBEGTaM+PjZytChf47Ey836aSSHDZr2g6/O04TvShenZXQe2rwhTufoKKVNhuGzGGIcL9rjXKQG1Sfncq7t49fn2rLNSIRl5byQ06Q3Qdkn+pIMne7MZnKBopr+PJETLK7/1flS20DUwZ4Xp1bAG2IaNJiXTePhMxmayTDLC1nVgtyaL1ummPP+iiEvuiam1I02C9RgaEAgmL4UQ/IHbXU+H+WIjRaUEJ8u1y0KdNXGbkRtu3+bQoEeWOxGO4TyzfNz3BR5P4+hb+4Prq7jdmUXXW8C0aqZkiEa81tW15DdX8Z55HS6duPOkCHm3dJ9Me3QT6+tPY3HDHIpiOLk+mHv1vXDndH6cvos+RHdqKWMDQ5w6byYWgr54RdrTxwqavhGxJRQUZ3Dgl+1xeuG9ms0XM7t4i66Pq2L7MExpcsSfhGGrrf178Ie3EE0xQta0st1fIYuE40bhlPDOiApdgn2umfh8pf3Gctls84excQ1G+LS5zGs7xgymHVAMXWp2IthQV/D64YSSJyhsXmmd/G6+KliDBogyqx/upgSJ45fjGF9twk8qdxPQ+R+mtBmDWUoqE5keACjYun/3R91ptOO1Wkd4Kj0UjPCTRnwCzFEtl2tQW9DPNeM0mFW3bLbpFecyizYhFZnlt0P8/l8AeOo6zql5xHvxRg27GuD24QnpJT72srubDl/WzeE8LolppHFHIjnCyGPUox9qKMlvWjKLZ7UEFXV5YhP+6ieAvXap8slJc9cXGZSKMXUT8z1q6l4FPDiLIWcEhpdeTnN7bhu6vmYnv9GPLDF3Sm0Y4R2L1fXNiv0dPM0nP8e+ZT6Yrm34To++NuUG2w9Opd5PJolYsGo/GL3JcTcBd9LoxI+JocOKpYFy5IebhWWWD2L4y6EPIgFxYb8XtFm43T64xiynXy5vxQSpYa4MudjGLaFIfT8P4gBD71KMKYR/mKPsBga2OD9QSoK0ANMx3Edc3FqFWPID9M0JR8HjBtVPr0Q98L4l9x4SAp8133eR++HwMl71mtIYW07sOXpk+FQJvKcnw2H7/8Z9q/GdyR3kiDD6l8sEnh8SqOIduebFgyqrN3/dQvoM5SLvOVI3Gt4tpY93XypwSuGMgHI1K+DfIEzOGlUPYPJhRTOIQxHX+7Vl2N8gOyKhYNXw3cb+xvvNvtFIQZGhNhy+QXZiMPtGcuWNE49PpLhdybLwiIMH3kfv/4fJeqjDdVHG6qPNlQfbag+2lB9tKH6aEP10Ybqow3VRxuqjzZUH22oPtpQfbSh+mhD9dGG6qMN1Ucbqo82VB9tqD7aUH20ofpoQ/XRhuqjDdVHG6qPNlQfbag+2lB9tKH6aEP10Ybqow3VRxuqjzZUH22oPtpQfbSh+qy+YdNP4V4tHvxLvzQazUP5P0idEzgdwJIRAAAAAElFTkSuQmCC" alt="">
             </div>
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8087632256608585"
+     crossorigin="anonymous"></script>
+<!-- Alrededor de contenido -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8087632256608585"
+     data-ad-slot="8350205064"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
             <div class="utilidad productividad">
                 <div class="utilidad-descripcion">
                     <p>
@@ -396,6 +409,18 @@
                 </div>
                 <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fassets.pipedream.net%2Fs.v0%2Fapp_13Gh9n%2Flogo%2Forig%3F__acb%3D613828c5cf4a4891a7a22c52c599cd93%26__fcb%3D2934899254401291&f=1&nofb=1" alt="">
             </div>
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8087632256608585"
+     crossorigin="anonymous"></script>
+<!-- Alrededor de contenido -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8087632256608585"
+     data-ad-slot="8350205064"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
             <div class="utilidad inversiones">
                 <div class="utilidad-descripcion">
                     <p>
@@ -503,6 +528,313 @@
                     </div>
                 </div>
                 <img src="https://is2-ssl.mzstatic.com/image/thumb/Purple126/v4/c5/0c/fe/c50cfe60-cdbd-4601-21e5-c3a6df9210bb/source/256x256bb.jpg" alt="">
+            </div>
+            <div class="utilidad educacion negocios programacion inversiones diseño finanzas">
+                <div class="utilidad-descripcion">
+                    <p>
+                        Udemy es una de las plataformas líderes de educación en
+                        línea. En su sitio puedes encontrar miles de cursos de
+                        infinidad de temas, impartidos por profesionales y con
+                        certificación si lo terminas, además de la gran ventaja
+                        de su modelo de negocio, donde pagas una vez por el curso
+                        y lo tienes para siempre.
+                    </p>
+                    <div class="contenedor-boton">
+                        <a target="_blank" href="https://www.udemy.com/">Revisar</a>
+                    </div>
+                </div>
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.qCr8bf0tNArKEbLYsvm0VwHaHa%26pid%3DApi&f=1" alt="">
+            </div>
+            <div class="utilidad negocios educacion programacion inversiones finanzas">
+                <div class="utilidad-descripcion">
+                    <p>
+                        Aprende.org es uno de lo sitios que toda persona debe
+                        conocer. Aquí puedes encontrar cursos de materias
+                        escolares como matemáticas o español, pero también
+                        cursos de educación universitaria. A su vez, cuenta
+                        con capacitaciones para decenas de empleo, con certificado
+                        completamente gratis, para que puedes prepararte y aplicar
+                        a ese empleo que tanto deseas. En definitiva, si no lo
+                        conoces, visítalo ahora.
+                    </p>
+                    <div class="contenedor-boton">
+                        <a target="_blank" href="https://aprende.org/">Revisar</a>
+                    </div>
+                </div>
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flh3.googleusercontent.com%2FZEx1_HrfOschfMx8viF1oKBXV4OsoXZF9n3wE_woT5kbTXpXw0L8ek5k_yt4MVxLDwU%3Ds180&f=1&nofb=1" alt="">
+            </div>
+            <div class="utilidad negocios educacion inversiones">
+                <div class="utilidad-descripcion">
+                    <p>
+                        GBM Academy es una plataforma de GBM+ donde puedes
+                        encontrar cursos, documentos y seminarios para que
+                        aprendas todo lo necesario para invertir, ya sea
+                        solo lo básico para iniciar o para ser un experto
+                        en este campo. Todos los materiales son completamente
+                        gratuitos y los puedes revisar las veces que quieras,
+                        y es uno de los mejores recursos en internet para
+                        aprender a invertir.
+                    </p>
+                    <div class="contenedor-boton">
+                        <a target="_blank" href="https://academy.gbm.com/">Revisar</a>
+                    </div>
+                </div>
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fis1-ssl.mzstatic.com%2Fimage%2Fthumb%2FPurple114%2Fv4%2F46%2F7e%2F30%2F467e306d-a229-075b-e8d2-4e262888496b%2Fsource%2F512x512bb.jpg&f=1&nofb=1" alt="">
+            </div>
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8087632256608585"
+     crossorigin="anonymous"></script>
+<!-- Alrededor de contenido -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8087632256608585"
+     data-ad-slot="8350205064"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+            <div class="utilidad matematicas fisica educacion programacion">
+                <div class="utilidad-descripcion">
+                    <p>
+                        Brilliant es una plataforma de educación en línea
+                        innovadora en su manera de aprender. Mientras otros
+                        sitios utilizan texto o video como principal forma
+                        de transmitir conocimiento, Brilliant emplea lecciones
+                        interactivas, con animaciones con las que puedes
+                        interactuar y desafíos en forma de acertijos o puzzles.
+                        Es especialmente genial para temas de ciencia,
+                        programación y matemáticas.
+                    </p>
+                    <div class="contenedor-boton">
+                        <a target="_blank" href="https://brilliant.org/">Revisar</a>
+                    </div>
+                </div>
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.i3BJxwVcK-6hx9t0WsAKcwHaHa%26pid%3DApi&f=1" alt="">
+            </div>
+            <div class="utilidad educacion matematicas programacion fisica">
+                <div class="utilidad-descripcion">
+                    <p>
+                        MIT Opencourseware: uno de los mejores sitios del
+                        internet. No solo es el hecho de que aquí encuentras
+                        clases de cientos de temas de nivel universidad
+                        completamente gratis, si no que son de una de las
+                        mejores universidades del mundo: el MIT. Un recurso
+                        que todo estudiante debe conocer y utilizar.
+                    </p>
+                    <div class="contenedor-boton">
+                        <a target="_blank" href="https://ocw.mit.edu/index.htm">Revisar</a>
+                    </div>
+                </div>
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fyt3.ggpht.com%2Fa-%2FAN66SAxD-XhXUmW_Cq4adx692CwD5wCqgnrKh2eTgw%3Ds900-mo-c-c0xffffffff-rj-k-no&f=1&nofb=1" alt="">
+            </div>
+            <div class="utilidad negocios educacion matematicas fisica inversiones">
+                <div class="utilidad-descripcion">
+                    <p>
+                        edX es una plataforma de cursos impartidos por
+                        instituciones de renombre como universidades o
+                        compañías. Están diseñados para capacitarte como
+                        estás instituciones lo hacen con sus profesionales
+                        o alumnado, con la ventaja de poder hacerlo de forma
+                        remota y con opción de tomarlo gratis o hacer un
+                        pequeño pago y recibir un certificado oficial por la
+                        institución del curso.
+                    </p>
+                    <div class="contenedor-boton">
+                        <a target="_blank" href="https://www.edx.org/">Revisar</a>
+                    </div>
+                </div>
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fyt3.ggpht.com%2Fa%2FAGF-l7-hiu25o4i4z_EUVAzC0B9v6FNA52yBTqgmJg%3Ds900-c-k-c0xffffffff-no-rj-mo&f=1&nofb=1" alt="">
+            </div>
+            <div class="utilidad negocios educacion inversiones matematicas diseño finanzas">
+                <div class="utilidad-descripcion">
+                    <p>
+                        Coursera es otro referente en la oferta de cursos
+                        impartidos por instituciones líderes de manera
+                        virtual. Ofrecen una amplia variedad de programas
+                        de estudio, todos con opción de tomarlos gratis
+                        o hacer un pequeño pago y recibir un certificado
+                        oficial.
+                    </p>
+                    <div class="contenedor-boton">
+                        <a target="_blank" href="https://www.coursera.org/">Revisar</a>
+                    </div>
+                </div>
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fyt3.ggpht.com%2F-7bRHSaUEwto%2FAAAAAAAAAAI%2FAAAAAAAAAAA%2FCW7_lHIYm9M%2Fs900-c-k-no%2Fphoto.jpg&f=1&nofb=1" alt="">
+            </div>
+            <div class="utilidad programacion educacion">
+                <div class="utilidad-descripcion">
+                    <p>
+                        freeCodeCamp es un proyecto increíble que busca
+                        que todas las personas puedan aprender programación
+                        de una manera totalmente gratis y que adquieran los
+                        conocimientos necesarios para destacar en este ámbito.
+                        Muchas personas que han tomado sus cursos han obtenido
+                        trabajos en compañías tan destacadas como Amazon,
+                        Microsoft o Google.
+                    </p>
+                    <div class="contenedor-boton">
+                        <a target="_blank" href="https://www.freecodecamp.org/espanol/">Revisar</a>
+                    </div>
+                </div>
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.explicit.bing.net%2Fth%3Fid%3DOIP.AzcQtB-gTJAOnkzs12frIAHaHa%26pid%3DApi&f=1" alt="">
+            </div>
+            <div class="utilidad programacion educacion">
+                <div class="utilidad-descripcion">
+                    <p>
+                        Sololearn es una plataforma que busca enseñar
+                        programación de una manera interactiva, con
+                        lecciones que te enseñan poniendo a prácticar
+                        sobre la marcha, así cada nuevo nivel pones
+                        en uso los conocimientos que vas adquiriendo.
+                        Ofrece una gran variedad de cursos de distintos
+                        lenguajes de programación, y también tienen una
+                        gran comunidad que comparte proyectos hechos
+                        por ellos y a los que puedes pedirles ayuda.
+                    </p>
+                    <div class="contenedor-boton">
+                        <a target="_blank" href="https://www.sololearn.com/">Revisar</a>
+                    </div>
+                </div>
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fyt3.ggpht.com%2Fa-%2FAAuE7mB2k0wtjRtVLy13o72mHZKkrYwlz9qDEuW-4w%3Ds900-mo-c-c0xffffffff-rj-k-no&f=1&nofb=1" alt="">
+            </div>
+            <div class="utilidad finanzas negocios">
+                <div class="utilidad-descripcion">
+                    <p>
+                        Fondeadora es un neobanco mexicano que busca
+                        ofrecer la mejor cuenta bancaria, con un
+                        servicio que se puede abrir y manejar
+                        completamente desde el celular, con acceso
+                        a una tarjeta para hacer compras en físico
+                        y digitales, transferencias bancarias,
+                        obtener rendimientos de tu dinero en cuenta,
+                        y muchas cosas más.
+                    </p>
+                    <div class="contenedor-boton">
+                        <a target="_blank" href="https://fondeadora.com/">Revisar</a>
+                    </div>
+                </div>
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.branch.io%2Fbranch-assets%2F1565893327181-og_image.png&f=1&nofb=1" alt="">
+            </div>
+            <div class="utilidad inversiones finanzas">
+                <div class="utilidad-descripcion">
+                    <p>
+                        Bitso es el servicio líder en mexico para
+                        todos aquellos que quieran ingresar al mundo
+                        de las criptomonedas. A diferencia de otros
+                        servicios, Bitso es altamente seguro por sus
+                        regulaciones de instituciones gubernamentales,
+                        lo que garantiza la veracidad y seguridad de
+                        sus servicios. Con sus servicios, podrás
+                        invertir en las criptomonedas más populares
+                        de la actualidad y tiene opciones tanto
+                        para principiantes como profesionales.
+                    </p>
+                    <div class="contenedor-boton">
+                        <a target="_blank" href="https://bitso.com/es">Revisar</a>
+                    </div>
+                </div>
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs3.us-east-2.amazonaws.com%2Fnomics-api%2Fstatic%2Fimages%2Fexchanges%2Fbitso.jpg&f=1&nofb=1" alt="">
+            </div>
+            <div class="utilidad negocios finanzas">
+                <div class="utilidad-descripcion">
+                    <p>
+                        Kubofinanciero es una compañía mexicana con una oferta
+                        de servicios para los que busquen préstamos, invertir e
+                        incluso una tarjeta de débito pero no quieren recurrir
+                        a los bancos, sin ello sacrificar la seguridad de los
+                        mismos. Es una gran opción si te gustaría utilizar
+                        alguno de estos productos y manejarlos 100% de manera
+                        digital.
+                    </p>
+                    <div class="contenedor-boton">
+                        <a target="_blank" href="https://www.kubofinanciero.com/">Revisar</a>
+                    </div>
+                </div>
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fyt3.ggpht.com%2F-W66UoyrFAtU%2FAAAAAAAAAAI%2FAAAAAAAAAAA%2F6fBWk_Msx-4%2Fs900-c-k-no-mo-rj-c0xffffff%2Fphoto.jpg&f=1&nofb=1" alt="">
+            </div>
+            <div class="utilidad programacion productividad">
+                <div class="utilidad-descripcion">
+                    <p>
+                        Visual Studio Code es una de las mejores herramientas
+                        si eres programador. El editor de código de Microsoft
+                        ha crecido astronómicamente en popularidad desde
+                        su lanzamiento, pues ofrece un gran balance entre
+                        funcionalidades y rendimiento que muchos programadores
+                        de diversas ramas saben apreciar. A su vez es gratis,
+                        open-source y disponible en Windows, macOS y Linux,
+                        lo que añade más versatilidad si eres programador.
+                    </p>
+                    <div class="contenedor-boton">
+                        <a target="_blank" href="https://code.visualstudio.com/">Revisar</a>
+                    </div>
+                </div>
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcode.visualstudio.com%2Fassets%2Fimages%2Fcode-stable.png&f=1&nofb=1" alt="">
+            </div>
+            <div class="utilidad programacion productividad">
+                <div class="utilidad-descripcion">
+                    <p>
+                        Python Tutor es un herramienta poco conocida pero
+                        muy buena si estás aprendiendo Python, pues
+                        permite que tu coloques código y el servicio
+                        lo ejecuta paso por paso, para que visualmente
+                        puedas observar que es lo que hace tu programa.
+                        Muy útil tanto para entender como funciona el
+                        lenguaje como para encontrar errores.
+                    </p>
+                    <div class="contenedor-boton">
+                        <a target="_blank" href="https://pythontutor.com/">Revisar</a>
+                    </div>
+                </div>
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.6bXema73nYhf2zCuJS5xSQHaHa%26pid%3DApi&f=1" alt="">
+            </div>
+            <div class="utilidad diseño">
+                <div class="utilidad-descripcion">
+                    <p>
+                        Google Fonts es un referente tanto para diseñadores
+                        como para programadores que necesitan utilizar fuentes
+                        en sus proyectos, pues da acceso a una inmensa variedad
+                        de tipografías de forma gratuita, permitiendo además
+                        tanto descargarlas como poder enlazarlas a un proyecto.
+                    </p>
+                    <div class="contenedor-boton">
+                        <a target="_blank" href="https://fonts.google.com/">Revisar</a>
+                    </div>
+                </div>
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP._KU5m0RiqMHEunaaGXw73QHaHa%26pid%3DApi&f=1" alt="">
+            </div>
+            <div class="utilidad diseño">
+                <div class="utilidad-descripcion">
+                    <p>
+                        Dafont es otro sitio web donde se pueden encontrar
+                        infinidad de tipografías, con la peculiaridad de
+                        que es especialmente bueno por sus diversas
+                        temáticas, que van desde tipografía de títulos
+                        de videojuegos o películas hasta formas de escritura
+                        clásica.
+                    </p>
+                    <div class="contenedor-boton">
+                        <a target="_blank" href="https://www.dafont.com/es/">Revisar</a>
+                    </div>
+                </div>
+                <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F2.bp.blogspot.com%2F_AFBGuuvNGJs%2FTGF88WRZrmI%2FAAAAAAAAACM%2FaOKuli6AicI%2Fs1600%2Fxq80etcz.png&f=1&nofb=1" alt="">
+            </div>
+            <div class="utilidad diseño programacion productividad">
+                <div class="utilidad-descripcion">
+                    <p>
+                        Figma es un aplicación web que le permite
+                        a los programadores poder diseñar interfaces
+                        de una manera fácil y colaborativa, y contribuye
+                        favorablemente en el desarrollo de un proyecto,
+                        pues se puede diseñar exactamente como se quiere
+                        que sea el resultado final, y así solamente
+                        se debe de enfocar en realizar eso y no perder
+                        tiempo a medio desarrollo cambiando el diseño.
+                    </p>
+                    <div class="contenedor-boton">
+                        <a target="_blank" href="https://www.figma.com/">Revisar</a>
+                    </div>
+                </div>
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.GPFyeHOSS6WP3h9znRG3ewHaHa%26pid%3DApi&f=1" alt="">
             </div>
         </div>
     </section>
