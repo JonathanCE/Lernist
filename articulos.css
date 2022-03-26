@@ -176,7 +176,7 @@ main img {
         align-items: center;
     }
     #filter-articles {
-        margin: 0 auto 20px;
+        margin: 20px auto;
     }
     .relacionado {
         display: flex;
