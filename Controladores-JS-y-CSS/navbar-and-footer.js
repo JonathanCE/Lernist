@@ -11,9 +11,9 @@ $(document).ready(function() {
   $("#utilidadesLink").attr("href", "/utilidades.html")
   $("#articulosLink").text("Artículos y Colecciones");
   $("#articulosLink").attr("href", "/articulos.html")
-  $("#testsLink").hide();
-  $("#testsLink").text("Tests");
-  $("#testsLink").attr("href", "/tests.html")
+  $("#quizzesLink").hide();
+  $("#quizzesLink").text("Quizzes");
+  $("#quizzesLink").attr("href", "/quizzes.html")
 
   $("#fraseFooter").text("Aprende cosas Increíbles, con contenido Increíble.");
   $("#footerTikTok").attr("href", "https://vm.tiktok.com/ZMLYUTDbg/");
