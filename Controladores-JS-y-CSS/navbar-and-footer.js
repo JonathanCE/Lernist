@@ -9,7 +9,7 @@ $(document).ready(function() {
   //$("#certificacionesLink").attr("href", "/certificaciones.html")
   $("#utilidadesLink").text("Utilidades");
   $("#utilidadesLink").attr("href", "/utilidades.html")
-  $("#articulosLink").text("Artículos y Colecciones");
+  $("#articulosLink").text("Colecciones");
   $("#articulosLink").attr("href", "/articulos.html")
   $("#quizzesLink").hide();
   $("#quizzesLink").text("Quizzes");

@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
     <link rel="stylesheet" href="articulos.css">
     <link rel="stylesheet" href="Controladores-JS-y-CSS/navbar-and-footer.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="icon" href="lernist-mini.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <meta charset="UTF-8">
@@ -49,6 +50,45 @@
             <div class="bar3"></div>
         </div>
     </nav>
+    <section class="seccion-contenido">
+        <h3>Artículos trending</h3>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <a href="" class="swiper-slide">
+                    <img src="/images/Math.png" alt="">
+                    Matemáticas
+                </a>
+                <a href="" class="swiper-slide">
+                    <img src="/images/Investing.png" alt="">
+                    Inversiones
+                </a>
+                <a href="" class="swiper-slide">
+                    <img src="/images/Physics.png" alt="">
+                    Física
+                </a>
+                <a href="" class="swiper-slide">
+                    <img src="/images/Programming.png" alt="">
+                    Programación
+                </a>
+                <a href="" class="swiper-slide">
+                    <img src="/images/Business.png" alt="">
+                    Negocios
+                </a>
+            </div>
+            <!-- If we need pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+    
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+    
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+    </section>
 
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8087632256608585"
      crossorigin="anonymous"></script>
@@ -79,6 +119,42 @@
     <main>
 
         <section class="contenido">
+
+            <div class="articulo inversiones">
+                <h3>Pasa de cero a inversor avanzado con estos cursos gratuitos</h3>
+                <div class="articulo-descripcion">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Finverfuturo.com%2Fwp-content%2Fuploads%2F2021%2F03%2FFONDO-1024x663.jpg&f=1&nofb=1" alt="Imagen">
+                    <p>
+                        Desde Lernist promovemos la cultura de invertir, y también creemos firmemente que esta acción no es para un grupo
+                        selecto de personas, con grandes conocimientos de finanzas. Invertir es para todos...
+                    </p>
+                </div>
+                <a href="contenido/inversiones/de-cero-a-inversor-avanzado-con-estos-cursos-gratuitos.html">Leer más...</a>
+            </div>
+
+            <div class="articulo matematicas">
+                <h3>Domina el cálculo diferencial con estos cursos</h3>
+                <div class="articulo-descripcion">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fnormatrevino.com%2Fwp-content%2Fuploads%2F2020%2F04%2FCalculo_diferencial.png&f=1&nofb=1" alt="Imagen">
+                    <p>
+                        Una de las ramas más importantes de las matemáticas, y particularmente cuando se ingresa a la universidad, es el
+                        cálculo. Esta materia, de manera resumida, estudia relaciones...
+                    </p>
+                </div>
+                <a href="contenido/matematicas/domina-el-calculo-diferencial-con-estos-cursos.html">Leer más...</a>
+            </div>
+
+            <div class="articulo programacion">
+                <h3>Aprende a programar con cursos gratis de Harvard</h3>
+                <div class="articulo-descripcion">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.azulweb.net%2Fwp-content%2Fuploads%2F2019%2F06%2FCursos-Gratuitos-De-Programaci%25C3%25B3n.png&f=1&nofb=1" alt="Imagen">
+                    <p>
+                        La programación es sin duda una de las habilidades más cotizadas de la actualidad, pues se involucra en
+                        diversidad de campos que van desde el desarrollo de sitios web, inteligencia artificial...
+                    </p>
+                </div>
+                <a href="contenido/programacion/aprende-a-programar-con-cursos-gratis-harvard.html">Leer más...</a>
+            </div>
 
             <div class="articulo inversiones">
                 <h3>Top 10 de los mejores cursos de inversiones en Udemy</h3>
@@ -308,31 +384,6 @@
                 </div>
                 <a href="contenido/matematicas/lenguaje-algebraico-simple.html">Leer más...</a>
             </div>
-
-            <!-- <div class="articulo programacion">
-                <h3>Aprende python GRATIS con estos cursos, sitios web y más</h3>
-                <div class="articulo-descripcion">
-                    <img src="/i_temas/imagenes-articulos/2021/python-code.jpg" alt="Imagen">
-                <p>
-                    A día de hoy saber programar te permite acceder a un mundo inmenso de oportunidades, 
-                    que van desde tener un muy buen trabajo, pasando por desarrollar pensamiento 
-                    lógico y creativo...
-                </p>
-                </div>
-                <a href="/articulos/programacion/2021/aprende-python-gratis-con-estos-recursos.html">Leer más...</a>
-            </div>
-
-            <div class="articulo">
-                <h3>Magnitud, dirección y sentido de un vector</h3>
-                <p>Álgebra Lineal - 30/10/21</p>
-                <img src="/i_temas/imagenes-articulos/2021/Coord_planes_color_vector.png" alt="Imagen">
-                <p>
-                    Cuando se comienza a estudiar Álgebra Lineal, se comienza a manejar constantemente
-                    el concepto de vector. Un vector lo podemos definir como una recta con dirección.
-                    Normalmente en álgebra lineal...
-                </p>
-                <a href="/articulos/matematicas/2021/magnitud-direccion-y-sentido-de-vectores.html">Leer más...</a>
-            </div> -->
    
         </section>
 
@@ -380,5 +431,7 @@
 
     <script src="Controladores-JS-y-CSS/navbar-and-footer.js"></script>
     <script src="articulos.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="/Controladores-JS-y-CSS/tema.js"></script>
 </body>
 </html>
