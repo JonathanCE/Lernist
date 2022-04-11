@@ -27,8 +27,8 @@
     padding: 15px;
     border-radius: 2px;
     font-size: 17px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
     line-height: 27px;
     cursor: pointer;
     text-align: center;
@@ -49,50 +49,6 @@
 } */
 main img {
     width: 100%;
-}
-
-/* .relacionado {
-    width: 100%; 
-    padding: 15px 5px;
-    box-sizing: border-box;
-    line-height: 27px;
-}
-.relacionado a{
-    text-decoration: none;
-    color: white;
-}
-
-.trending-title {
-    position: relative;
-    padding: 10px;
-    border-left: 6px solid black;
-    margin-bottom: 10px;
-}
-.trending-title h3{
-    font-size: 1.5em;
-    font-family: 'Poppins', sans-serif;
-    color: #f0ece2;
-    display: inline-block;
-}
-
-.articulos {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-row-gap: 15px;
-
-    padding: 15px 0;
-    background-color: #0f1318;
-} */
-
-.articulos a{
-    display: block;
-    background-color: #090c0f;
-    border-radius: 3px;
-    padding: 10px;
-    font-size: 17px;
-    text-align: center;
-    font-family: 'Fira Sans', sans-serif;
-    font-weight: 200;
 }
 
 .contenido {
@@ -210,29 +166,8 @@ main img {
     #filter-articles {
         margin: 20px auto;
     }
-    .relacionado {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .articulos {
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 20px;
-    }
     .articulo {
         max-width: 800px;
-    }
-}
-
-@media screen and (max-width: 980px) {
-    .swiper a {
-        grid-template-columns: 0.4fr 1fr;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .relacionado {
-        padding: 10px 25px;
     }
 }
 
@@ -257,43 +192,14 @@ main img {
     .contenido {
         padding: 15px 10px;
     }
-    .articulos {
-        grid-template-columns: 1fr;
-    }
-    .relacionado {
-        padding: 10px;
-    }
-    #anuncio-superior {
-        display: none;
-    }
-    #anuncio-superior-movil {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-    .anuncios-superiores-moviles {
-        width: 100%;
-        height: auto;
-    }
-}
-
-@media screen and (max-width: 610px) {
-    .swiper a {
-        grid-template-columns: 0.5fr 1fr;
-    }
-}
-
-@media screen and (max-width: 570px) {
-    .swiper a {
-        padding: 5px;
-    }
 }
 
 @media screen and (max-width: 470px) {
+    .seccion-contenido {
+        padding: 15px;
+    }
     .swiper a {
         font-size: 20px;
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
     }
 }
 

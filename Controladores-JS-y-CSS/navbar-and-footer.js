@@ -10,7 +10,7 @@ $(document).ready(function() {
   $("#utilidadesLink").text("Utilidades");
   $("#utilidadesLink").attr("href", "/utilidades.html")
   $("#articulosLink").text("Colecciones");
-  $("#articulosLink").attr("href", "/articulos.html")
+  $("#articulosLink").attr("href", "/colecciones.html")
   $("#quizzesLink").hide();
   $("#quizzesLink").text("Quizzes");
   $("#quizzesLink").attr("href", "/quizzes.html")
