@@ -3,12 +3,12 @@ $(document).ready(function() {
   $("#homepageLink").attr("href", "/");
   $("#logoNavbar").attr("src", "/i_temas/Logo Lernist.png")
   $(".Inicio").text("Inicio");
-  $("#tematicasLink").text("Temas");
-  $("#tematicasLink").attr("href", "/index.html#tematicas")
+  $("#programasLink").text("Programas de Estudio");
+  $("#programasLink").attr("href", "/programas-de-estudio.html")
   //$("#certificacionesLink").text("Certificaciones");
   //$("#certificacionesLink").attr("href", "/certificaciones.html")
-  $("#utilidadesLink").text("Utilidades");
-  $("#utilidadesLink").attr("href", "/utilidades.html")
+  $("#bibliotecaLink").text("Biblioteca");
+  $("#bibliotecaLink").attr("href", "/biblioteca.html")
   $("#articulosLink").text("Colecciones");
   $("#articulosLink").attr("href", "/colecciones.html")
   $("#quizzesLink").hide();

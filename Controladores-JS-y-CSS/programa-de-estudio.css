@@ -1,11 +1,36 @@
+#header {
+    position: relative;
+}
 video {
     width: 100%;
 }
-#header {
-    padding: 20px;
-    background-color: #090c0f;
+.presentation {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
-.title {
+.presentation h1 {
+    font-size: 60px;
+    padding: 40px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #090c0f;
+    max-width: 900px;
+    margin: 0 20px 40px;
+    text-align: center;
+}
+.presentation p {
+    padding: 30px;
+    max-width: 680px;
+    background-color: #090c0f;
+    font-family: 'Poppins', sans-serif;
+    font-size: 23px;
+    text-align: justify;
+    margin: 0 20px;
+}
+/* .title {
     display: flex;
     align-items: center;
     margin: 0 auto;
@@ -22,7 +47,7 @@ video {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 35px;
-}
+} */
 
 main {
     display: flex;
@@ -370,12 +395,20 @@ main {
         grid-template-columns: 0.6fr 1fr;
         padding: 10px;
     }
+    .presentation h1 {
+        padding: 30px;
+        font-size: 45px;
+    }
+    .presentation p {
+        padding: 20px;
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 800px) {
-    .title {
+    /* .title {
         padding: 20px;
-    }
+    } */
     .recomendado-content {
         grid-template-columns: 1fr 1fr;
     }
@@ -387,10 +420,19 @@ main {
     }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 660px) {
     .acordionTabla {
         grid-template-columns: 1fr;
         grid-row-gap: 20px;
+    }
+    .presentation h1 {
+        font-size: 40px;
+        margin: 0 20px 30px;
+        padding: 20px;
+    }
+    .presentation p {
+        padding: 15px;
+        margin: 0 10px;
     }
     .donacion {
         grid-template-columns: 1fr;
@@ -406,7 +448,7 @@ main {
 }
 
 @media screen and (max-width: 610px) {
-    .title {
+    /* .title {
         padding: 10px;
     }
     .title h1 {
@@ -415,7 +457,7 @@ main {
     }
     .title img {
         display: none;
-    }
+    } */
     .recomendado-content {
         grid-template-columns: 1fr;
     }
@@ -434,6 +476,17 @@ main {
     }
     .referido a {
         display: flex;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .presentation h1 {
+        font-size: 35px;
+        margin: 0 20px 25px;
+        padding: 15px;
+    }
+    .presentation p {
+        font-size: 18px;
     }
 }
 
@@ -458,9 +511,24 @@ main {
     }
 }
 
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 455px) {
+    .presentation {
+        top: 40px;
+    }
+    .presentation p {
+        display: none;
+        /* padding: 10px; */
+    }
     .articulo span {
         font-weight: bold;
         font-size: 19px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .presentation h1 {
+        font-size: 35px;
+        padding: 0;
+        margin: 0 20px 15px;
     }
 }
