@@ -19,6 +19,7 @@
     font-family: 'Montserrat', sans-serif;
     color: #b3b3b3;
     line-height: 35px;
+    text-align: justify;
 }
 #presentacion-utilidades h3 {
     font-size: 25px;
@@ -72,6 +73,23 @@
     font-weight: 500;
     line-height: 27px;
     cursor: pointer;
+    text-align: center;
+    background-color: #090c0f;
+    border-radius: 5px;
+}
+.preview-carrera {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #f0ece2;
+
+    /* border-radius: 100px; */
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    line-height: 27px;
     text-align: center;
     background-color: #090c0f;
     border-radius: 5px;
@@ -188,7 +206,7 @@
         grid-template-columns: 1fr;
         grid-row-gap: 20px;
     }
-    .contenedor-programas a {
+    .contenedor-programas a, .preview-carrera {
         display: grid;
         grid-template-columns: 0.5fr 1fr;
         grid-column-gap: 10px;
