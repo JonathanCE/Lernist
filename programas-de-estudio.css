@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap');
+
 #presentacion-utilidades {
     padding: 40px 100px;
     display: grid;
@@ -38,6 +40,53 @@
     font-size: 35px;
     font-family: 'Poppins', sans-serif;
     text-align: center;
+}
+
+#premier {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #090c0f;
+}
+#premier h3 {
+    font-family: 'Noto Serif', serif;
+    font-size: 50px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+#premier p {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 150px;
+    text-align: center;
+    font-size: 22px;
+    line-height: 30px;
+}
+#premier a {
+    color: white;
+    font-family: 'Noto Serif', serif;
+    margin-top: 40px;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 20px;
+    background-color: rgb(86, 165, 235, 0.25);
+    border-radius: 7px;
+}
+#premier-descripcion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 70px 150px 0;
+    grid-column-gap: 60px;
+    grid-row-gap: 30px;
+}
+#premier-descripcion p {
+    font-family: 'Poppins', sans-serif;
+    color: #b3b3b3;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0;
+    text-align: left;
 }
 
 
@@ -160,6 +209,15 @@
     #presentacion-utilidades {
         flex-direction: column-reverse;
     }
+    #premier p {
+        margin: 0 70px;
+    }
+    #premier-descripcion {
+        margin: 70px 70px 0;
+    }
+    #premier-descripcion p {
+        margin: 0;
+    }
 }
 
 @media screen and (max-width: 980px) {
@@ -177,6 +235,19 @@
     }
     .contenedor-programas {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #premier p {
+        margin: 0 30px;
+    }
+    #premier-descripcion {
+        margin: 70px 30px 0;
+        grid-column-gap: 40px;
+    }
+    #premier-descripcion p {
+        margin: 0;
     }
 }
 
@@ -201,6 +272,9 @@
     }
     #presentacion-utilidades img {
         width: 300px;
+    }
+    #premier-descripcion {
+        grid-template-columns: 1fr;
     }
     .contenedor-programas {
         grid-template-columns: 1fr;

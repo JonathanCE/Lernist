@@ -59,6 +59,48 @@
     margin-top: 15px;
 }
 
+.seccion-contenido {
+    padding: 30px 0;
+}
+.seccion-contenido h3 {
+    font-size: 28px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.swiper {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+.swiper-slide {
+    background-color: #090c0f;
+    box-sizing: border-box;
+}
+.swiper a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #f0ece2;
+
+    padding: 15px;
+    border-radius: 2px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    line-height: 27px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #090c0f;
+}
+.swiper img {
+    width: 90%;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+
 #aprendedores, #empresas {
     padding: 40px 100px;
     display: grid;
@@ -135,6 +177,18 @@
 .material-info p {
     font-size: 21px;
 }
+.material-info a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    width: 60%;
+    border-radius: 7px;
+    margin: 20px auto 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    background-color: #0f1318;
+}
 
 .banner-info {
     background-color: rgb(86, 165, 235, 0.25);
@@ -149,7 +203,7 @@
     text-align: center;
 }
 
-.contenido, .certificaciones, .articulos, .quizzes {
+.contenido, .certificaciones, .quizzes {
     padding: 20px 20px;
 }
 .contenido {
@@ -177,14 +231,7 @@
     margin-bottom: 20px;
 }
 
-.articulos h2 {
-    font-size: 30px;
-    font-family: 'Montserrat', sans-serif;
-    margin: 40px 0;
-    text-align: center;
-}
-
-.cursos p, .certificaciones p, .articulos p, .quizzes p {
+.cursos p, .certificaciones p, .quizzes p {
     font-size: 60px;
     text-align: center;
     font-family: 'Fira Sans', sans-serif;
@@ -192,9 +239,9 @@
 
 .contenedor-cursos {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
-    grid-gap: 15px;
+    grid-gap: 5px;
 }
 .contenedor-quizzes {
     display: grid;
@@ -251,26 +298,9 @@
     text-align: center;
     background-color: #090c0f;
 }
-.articulos-datos {
-    display: flex;
-    flex-direction: column;
-}
-.articulos-datos h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    margin-bottom: 5px;
-}
-.articulos-datos p {
-    font-size: 20px;
-    text-align: justify;
-}
 /* .articulo-info {
     font-weight: 400;
 } */
-.articulos-muestra {
-    margin-top: 15px;
-    font-size: 19px;
-}
 .imagen-articulo {
     display: flex;
     align-items: center;
@@ -356,6 +386,11 @@
     border-radius: 10px;
 }
 
+.swiper a:hover, .material-info a:hover {
+    background-color: black;
+    transform: translateY(-4px);
+    transition: transform 150ms;
+}
 .contenedor-cursos a:hover{
     cursor: pointer;
     box-shadow: 0 4px 14px 0 rgba(86, 185, 235, 0.5);
@@ -394,12 +429,6 @@
     #aprendedores, #educadores, #empresas {
         padding: 40px;
         grid-gap: 50px;
-    }
-    .contenedor-cursos {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-    .articulos-datos p {
-        font-size: 17px;
     }
     .instrucciones {
         padding: 20px;
@@ -477,11 +506,14 @@
         width: 80%;
         margin: 0 auto;
     }
-    .articulos-datos h3 {
-        font-size: 25px;
+    #materiales-resumen, #utilidades-resumen {
+        grid-template-columns: 1fr;
     }
-    .articulos-datos p {
-        font-size: 19px;
+    .material-info {
+        max-width: 500px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
 
     .instrucciones h1 {
@@ -494,9 +526,6 @@
 }
 
 @media screen and (max-width: 950px) {
-    .contenedor-cursos {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
     .todos a{
         max-width: 600px;
         font-size: 50px;
@@ -516,21 +545,15 @@
     #aprendedores img, #educadores img, #empresas img {
         width: 400px;
     }
-    #materiales-resumen, #utilidades-resumen {
-        grid-template-columns: 1fr;
-    }
-    .material-info {
-        max-width: 500px;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
     #materiales-resumen img, #utilidades-resumen img {
         max-width: 400px;
         text-align: center;
     }
     .donacion {
         grid-template-columns: 1fr 0.5fr;
+    }
+    .contenido {
+        padding: 30px 20px 10px;
     }
 
     .instrucciones h1 {
@@ -543,8 +566,11 @@
 }
 
 @media screen and (max-width: 750px) {
-    .contenedor-cursos, .contenedor-quizzes {
+    .contenedor-quizzes {
         grid-template-columns: 1fr 1fr;
+    }
+    .contenedor-cursos {
+        grid-template-columns: 1fr 1fr 1fr;
     }
     .contenedor-articulos a {
         width: 90%;
@@ -593,10 +619,10 @@
 }
 
 @media screen and (max-width: 610px) {
-    .contenedor-cursos, .contenedor-quizzes {
+    /*.contenedor-cursos,*/ .contenedor-quizzes {
         grid-template-columns: 1fr;
     }
-    .contenedor-cursos a, .theme-icon{
+    .contenedor-cursos a/*, .theme-icon*/{
         display: grid;
         grid-template-columns: 0.5fr 1fr;
         grid-column-gap: 10px;
@@ -608,12 +634,6 @@
     }
     .contenedor-quizzes a{
         font-size: 25px;
-    }
-    .articulos-datos h3 {
-        font-size: 21px;
-    }
-    .articulos-datos p {
-        font-size: 17px;
     }
     /* .donar {
         padding: 0;
@@ -663,12 +683,6 @@
         grid-template-columns: 1fr;
         padding: 20px 15px;
     }
-    .articulos-datos {
-        margin-top: 15px;
-    }
-    .articulos-datos h3 {
-        font-size: 23px;
-    }
     .imagen-articulo img{
         width: 80%;
         margin: 0 auto;
@@ -697,12 +711,8 @@
     #aprendedores img, #educadores img, #empresas img {
         width: 300px;
     }
-    .cursos p, .certificaciones p, .articulos p {
+    .cursos p, .certificaciones p {
         font-size: 45px;
-    }
-    .articulos-datos p {
-        font-size: 20px;
-        text-align: justify;
     }
     .banner-info {
         padding: 30px;
@@ -717,12 +727,18 @@
     .donar {
         padding: 20px;
     }
-    .contenedor-cursos a, .theme-icon{
+    .contenedor-cursos a/*, .theme-icon*/{
         display: grid;
         grid-template-columns: 0.6fr 1fr;
         grid-column-gap: 10px;
         align-items: center;
         font-size: 25px;
+    }
+    .seccion-contenido {
+        padding: 15px;
+    }
+    .swiper a {
+        font-size: 20px;
     }
 }
 
