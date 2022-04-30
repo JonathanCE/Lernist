@@ -386,7 +386,7 @@
     border-radius: 10px;
 }
 
-.swiper a:hover, .material-info a:hover {
+.swiper a:hover, .material-info a:hover, .todos a:hover {
     background-color: black;
     transform: translateY(-4px);
     transition: transform 150ms;
@@ -395,13 +395,6 @@
     cursor: pointer;
     box-shadow: 0 4px 14px 0 rgba(86, 185, 235, 0.5);
     border: 3px solid rgb(86, 165, 235, 0.25);
-    transform: translateY(-3px);
-    transition: transform 150ms;
-}
-.todos a:hover{
-    cursor: pointer;
-    box-shadow: 0 4px 14px 0 rgba(86, 185, 235, 0.5);
-    border: 4px solid rgb(86, 165, 235, 0.25);
     transform: translateY(-3px);
     transition: transform 150ms;
 }

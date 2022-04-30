@@ -140,6 +140,11 @@ main img {
 }
 
 
+.swiper a:hover {
+    background-color: black;
+    transform: translateY(-4px);
+    transition: transform 150ms;
+}
 .articulo a:hover {
     cursor: pointer;
     box-shadow: 0 4px 14px 0 rgba(86, 185, 235, 0.5);
