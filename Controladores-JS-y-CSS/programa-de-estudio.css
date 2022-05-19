@@ -195,7 +195,8 @@ main {
     color: white;
     text-decoration: none;
     width: max-content;
-    display: block;
+    display: inline-block;
+    cursor: pointer;
 }
 .articulo p, .acordionNormal p {
     font-size: 19px;
@@ -211,7 +212,9 @@ main {
 }
 .articulo span, .acordionNormal span {
     font-weight: bold;
-    font-size: 25px;
+    font-size: 20px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
 }
 .articulo img, .acordionNormal img {
     width: 100%;
