@@ -158,7 +158,7 @@
 
 #aprendizaje-online {
     padding: 70px 20px 50px;
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #090c0f;

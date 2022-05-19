@@ -11,12 +11,11 @@ $(document).ready(function() {
   $("#bibliotecaLink").attr("href", "/biblioteca.html")
   $("#articulosLink").text("Colecciones");
   $("#articulosLink").attr("href", "/colecciones.html")
-  $("#quizzesLink").hide();
   $("#quizzesLink").text("Quizzes");
   $("#quizzesLink").attr("href", "/quizzes.html")
 
   $("#fraseFooter").text("Aprende cosas Increíbles, con contenido Increíble.");
-  $("#footerTikTok").attr("href", "https://vm.tiktok.com/ZMLYUTDbg/");
+  $("#footerTikTok").attr("href", "https://www.tiktok.com/@lernist.com");
   $("#footerYoutube").attr("href", "https://www.youtube.com/channel/UCXXbchWLUS34DLQDh6obXKA");
   $("#footerInstagram").attr("href", "https://www.instagram.com/Lernist_Oficial/");
   $("#footerFacebook").attr("href", "https://www.facebook.com/LernistOficial");

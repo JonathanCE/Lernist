@@ -58,6 +58,13 @@ body {
     float: right;
 }
 
+.centered-ads {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
 /* .nav .icon {
     display: none;
 } */

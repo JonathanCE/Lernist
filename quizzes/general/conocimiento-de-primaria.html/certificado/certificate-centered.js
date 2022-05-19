@@ -3,9 +3,9 @@ const nombrePersona = document.getElementById("NombrePersona")
 
 async function nombreEnPdf() {
     // Fetch an existing PDF document
-    const existingPdfBytes = await fetch("CertificateLernist.pdf").then(res => res.arrayBuffer())
+    const existingPdfBytes = await fetch("Certificate.pdf").then(res => res.arrayBuffer())
     // Fetch custom font
-    const fontBytes = await fetch("Roboto-Bold.ttf").then(res => res.arrayBuffer())
+    const fontBytes = await fetch("Oswald-Bold.ttf").then(res => res.arrayBuffer())
 
     // Load a PDFDocument from the existing PDF bytes
     const pdfDoc = await PDFDocument.load(existingPdfBytes)
@@ -24,14 +24,14 @@ async function nombreEnPdf() {
 
     // Create a string of text and measure its width and height in our custom font
     const text = nombrePersona.value
-    const textSize = 35
-    /* const textWidth = customFont.widthOfTextAtSize(text, textSize)
-    const textHeight = customFont.heightAtSize(textSize) */
+    const textSize = 58
+    const textWidth = customFont.widthOfTextAtSize(text, textSize)
+    const textHeight = customFont.heightAtSize(textSize)
 
     // Draw the string of text on the page
     firstPage.drawText(text, {
-        x: 75,
-        y: 300,
+        x: ( width - textWidth ) / 2,
+        y: 290,
         size: textSize,
         font: customFont,
         color: rgb(0, 0.53, 0.71),
