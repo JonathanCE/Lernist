@@ -45,7 +45,7 @@ async function nombreEnPdf() {
 
     // Abre la pagina principal y cierra la actual, para evitar que se hagan más certificados
     setTimeout(function() {
-        window.open("https://lernist.com"),
+        // window.open("https://lernist.com"),
         window.close()
     }, 7000)
 }
