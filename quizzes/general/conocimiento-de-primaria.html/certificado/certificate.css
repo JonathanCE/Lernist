@@ -21,7 +21,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.container button {
+.container button, .container a {
     padding: 20px;
     text-align: center;
     text-decoration: none;
@@ -32,6 +32,17 @@
     font-weight: 500;
     border-radius: 4px;
     font-family: 'Poppins', sans-serif;
+}
+.container a {
+    margin-top: 20px;
+    display: none;
+}
+
+.container p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 25px;
 }
   
 .container button:hover {

@@ -45,7 +45,9 @@ async function nombreEnPdf() {
 
     // Abre la pagina principal y cierra la actual, para evitar que se hagan más certificados
     setTimeout(function() {
-        window.open("https://lernist.com"),
-        window.close()
-    }, 7000)
+        document.getElementById("boton-inicio").style.display = "initial";
+        document.getElementById("NombrePersona").style.display = "none";
+        document.getElementById("boton-reconocimiento").style.display = "none";
+        document.getElementById("mensaje-usuario").style.display = "none";
+    }, 5000)
 }
