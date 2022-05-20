@@ -15,7 +15,7 @@ finalScore.innerText = mostRecentScore;
 botonCertificado.style.display = 'none';
 intentaDenuevo.style.display = 'none';
 
-if (mostRecentScore >= 20) {
+if (mostRecentScore >= 140) {
     botonCertificado.style.display = 'initial';
 }
 else {

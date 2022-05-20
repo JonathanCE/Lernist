@@ -8,35 +8,155 @@
     "answer": 2
   },
   {
-    "question": "¿En que continente se encuentra España?",
-    "choice1": "Europa",
-    "choice2": "Asia",
-    "choice3": "Centroamérica",
-    "choice4": "Rusia",
+    "question": "¿En que año inició la Guerra de Independencia de México?",
+    "choice1": "1810",
+    "choice2": "1910",
+    "choice3": "1821",
+    "choice4": "1914",
     "answer": 1
   },
   {
-    "question": "¿En que continente se encuentra Inglaterra?",
-    "choice1": "America",
-    "choice2": "Europa",
-    "choice3": "Africa",
-    "choice4": "Asia",
+    "question": "¿Que número es el siguiente en la sucesión: 3, 6, 12, x?",
+    "choice1": "18",
+    "choice2": "24",
+    "choice3": "15",
+    "choice4": "21",
     "answer": 2
   },
   {
-    "question": "¿En que continente se encuentra Francia?",
-    "choice1": "Oceanía",
-    "choice2": "Antartida",
-    "choice3": "Europa",
-    "choice4": "China",
+    "question": "¿Contando la Antártida, cuantos continentes hay?",
+    "choice1": "7",
+    "choice2": "5",
+    "choice3": "6",
+    "choice4": "4",
     "answer": 3
   },
   {
-    "question": "¿En que continente se encuentra Italia?",
-    "choice1": "Rusia",
-    "choice2": "Europa",
-    "choice3": "Asia",
-    "choice4": "Oceanía",
+    "question": "¿Cuanto es 4/5 + 3/2?",
+    "choice1": "7/2",
+    "choice2": "23/10",
+    "choice3": "7/10",
+    "choice4": "8/15",
     "answer": 2
+  },
+  {
+    "question": "¿Cuál es la fórmula para el area de un triángulo?",
+    "choice1": "base x altura / 2",
+    "choice2": "base x altura",
+    "choice3": "lado x lado",
+    "choice4": "base x altura / 3",
+    "answer": 1
+  },
+  {
+    "question": "¿Qué organización se encarga de los derechos humanos en México?",
+    "choice1": "Unicef",
+    "choice2": "CNDH",
+    "choice3": "Unesco",
+    "choice4": "ONU",
+    "answer": 2
+  },
+  {
+    "question": "¿Qué es la huella de carbono de una persona?",
+    "choice1": "La cantidad de basura que genera",
+    "choice2": "El número de incendios que ha hecho",
+    "choice3": "Su contribución a la generación de gases de efecto invernadero",
+    "choice4": "El impacto que dejan con sus traslados",
+    "answer": 3
+  },
+  {
+    "question": "¿De los siguientes , cuál país tiene la mayor econonomía?",
+    "choice1": "México",
+    "choice2": "Korea del Sur",
+    "choice3": "Finlandia",
+    "choice4": "Argentina",
+    "answer": 2
+  },
+  {
+    "question": "¿Cuáles son las famosas 3 'r' de la ecología?",
+    "choice1": "Reinstaurar, replicar y reducir",
+    "choice2": "Restaurar, reintenta y reemplazar",
+    "choice3": "Reintentar, reutilizar y reconstruir",
+    "choice4": "Reducir, reutilizar y reciclar",
+    "answer": 4
+  },
+  {
+    "question": "¿Quienes eran los dos bandos en la guerra de reforma?",
+    "choice1": "Campesinos y obreros",
+    "choice2": "Mexicanos y franceses",
+    "choice3": "Liberales y conservadores",
+    "choice4": "Federalistas y centralistas",
+    "answer": 3
+  },
+  {
+    "question": "¿En la pirámide del buen comer, que alimentos están hasta abajo?",
+    "choice1": "Verduras y frutas",
+    "choice2": "Leguminosas y alimentos de origen animal",
+    "choice3": "Dulces",
+    "choice4": "Cereales",
+    "answer": 4
+  },
+  {
+    "question": "¿En el sistema solar, que posición tiene la tierra?",
+    "choice1": "Tercera",
+    "choice2": "Cuarta",
+    "choice3": "Primera",
+    "choice4": "Quinta",
+    "answer": 1
+  },
+  {
+    "question": "¿Cuánto tiempo duró la Revolución Mexicana?",
+    "choice1": "5 años",
+    "choice2": "7 años",
+    "choice3": "10 años",
+    "choice4": "11 años",
+    "answer": 3
+  },
+  {
+    "question": "¿Cuál de los siguientes es un derecho todos los mexicanos?",
+    "choice1": "Libertad de expresión",
+    "choice2": "Una vida digna y segura",
+    "choice3": "Trato digno",
+    "choice4": "Todas las anteriores",
+    "answer": 4
+  },
+  {
+    "question": "¿Cuál es un elemento de un poema?",
+    "choice1": "La despedida",
+    "choice2": "El remitente",
+    "choice3": "Un verso",
+    "choice4": "El narrador",
+    "answer": 3
+  },
+  {
+    "question": "¿En que consiste un ensayo?",
+    "choice1": "Una historia ficticia con un mensaje",
+    "choice2": "Un texto informativo con tus propias palabras",
+    "choice3": "Un texto con los elementos más importantes de una lectura",
+    "choice4": "Una descripción de algo",
+    "answer": 2
+  },
+  {
+    "question": "¿Qué es un antónimo?",
+    "choice1": "Es una palabra con un significado opuesto a otra",
+    "choice2": "Una palabra con que significa algo parecido a otra",
+    "choice3": "Es una frase con un mensaje oculto",
+    "choice4": "Es una parte de un poema",
+    "answer": 1
+  },
+  {
+    "question": "¿Qué es lo que deben hacer los partidos políticos?",
+    "choice1": "Ganarle a sus rivales cueste lo que cueste",
+    "choice2": "Ofrecen dinero a las personas a cambio de votos",
+    "choice3": "Coordinan candidatos para las elecciones de un país",
+    "choice4": "Buscan el poder para su beneficios",
+    "answer": 3
+  },
+  {
+    "question": "¿Qué obtiene conocimientos en base a experimentación y comprobación?",
+    "choice1": "Religión",
+    "choice2": "Las personas",
+    "choice3": "Ciencia",
+    "choice4": "Democracia",
+    "answer": 3
   }
 ]
