@@ -68,7 +68,7 @@
 
     padding: 15px;
     border-radius: 2px;
-    font-size: 20px;
+    font-size: 17px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     line-height: 27px;
@@ -81,13 +81,26 @@
     margin: 10px 0 20px;
     border-radius: 3px;
 }
-.swiper p {
+/* .swiper p {
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
     text-align: justify;
     line-height: 23px;
     font-weight: 400;
 }
+.swiper button {
+    width: 90%;
+    font-size: 18px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    border: 1px solid transparent;
+    padding: 3px;
+    font-family: 'Poppins', sans-serif;
+
+    background-color: #f0ece2;
+    color: black;
+    cursor: pointer;
+} */
 
 .boton-todo {
     display: block;
