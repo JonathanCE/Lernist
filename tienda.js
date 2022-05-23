@@ -37,7 +37,7 @@ const swiper = new Swiper('.swiper', {
     },
 
     autoplay: {
-        delay: 6000,
+        delay: 5000,
         disableOnInteraction: true,
     },
   
@@ -52,3 +52,42 @@ const swiper = new Swiper('.swiper', {
       el: '.swiper-scrollbar',
     },
 });
+
+function hide() {
+  $(".lista").fadeOut();
+}
+
+function todos() {
+  hide();
+  $(".lista").fadeIn();
+};
+
+function matematicas() {
+  hide();
+  $(".matematicas").fadeIn();
+};
+
+function programacion() {
+  hide();
+  $(".programacion").fadeIn();
+};
+
+function fisica() {
+  hide();
+  $(".fisica").fadeIn();
+};
+
+function negocios() {
+  hide();
+  $(".negocios").fadeIn();
+};
+
+function inversiones() {
+  hide();
+  $(".inversiones").fadeIn();
+};
+
+function educacion() {
+  hide();
+  $(".educacion").fadeIn();
+};

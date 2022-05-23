@@ -50,6 +50,29 @@
     text-align: center;
 }
 
+#filter-articles {
+    margin: 30px auto 10px;
+    width: fit-content;
+}
+#filter-articles h3{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #f0ece2;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+#filter-articles select {
+    background-color: #090c0f;
+    color: white;
+    width: 300px;
+    font-size: 18px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    border: 1px solid transparent;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
 .swiper {
     width: 100%;
     height: auto;
@@ -68,7 +91,7 @@
 
     padding: 15px;
     border-radius: 2px;
-    font-size: 17px;
+    font-size: 16px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     line-height: 27px;
@@ -261,6 +284,9 @@
     }
     .utilidad {
         grid-template-columns: 1fr 0.7fr;
+    }
+    #filter-articles {
+        margin: 20px auto;
     }
 }
 

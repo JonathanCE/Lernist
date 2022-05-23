@@ -69,6 +69,27 @@
     text-align: center;
 }
 
+.busqueda {
+    background: linear-gradient(35deg, #0c5c5c, #b84e4e);
+    padding: 40px 100px;
+}
+.busqueda-texto {
+    background-color: #090c0f;
+    border-radius: 7px;
+    padding: 40px;
+}
+.busqueda h1{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.busqueda p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 20px;
+}
+
 .swiper {
     width: 100%;
     height: auto;
@@ -556,6 +577,9 @@
         margin: 40px 20px 0 20px;
         grid-template-columns: 1fr 1fr;
     }
+    .busqueda {
+        padding: 30px 50px;
+    }
 }
 
 @media screen and (max-width: 750px) {
@@ -643,6 +667,9 @@
         margin: 30px auto 0;
         width: 200px;
     }
+    .busqueda-texto {
+        padding: 20px;
+    }
 }
 
 @media screen and (max-width: 550px) {
@@ -694,6 +721,9 @@
     }
     .pasos-instrucciones h2 {
         margin-bottom: 10px;
+    }
+    .busqueda {
+        padding: 20px;
     }
 }
 
