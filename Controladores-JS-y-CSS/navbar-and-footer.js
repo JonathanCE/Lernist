@@ -9,8 +9,10 @@ $(document).ready(function() {
   //$("#certificacionesLink").attr("href", "/certificaciones.html")
   $("#bibliotecaLink").text("Biblioteca");
   $("#bibliotecaLink").attr("href", "/biblioteca.html")
-  $("#articulosLink").text("Colecciones");
-  $("#articulosLink").attr("href", "/colecciones.html")
+  /* $("#articulosLink").text("Colecciones");
+  $("#articulosLink").attr("href", "/colecciones.html") */
+  $("#tiendaLink").text("Tienda");
+  $("#tiendaLink").attr("href", "/tienda.html")
   $("#quizzesLink").text("Quizzes");
   $("#quizzesLink").attr("href", "/quizzes.html")
 

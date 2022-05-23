@@ -87,7 +87,7 @@ function inversiones() {
   $(".inversiones").fadeIn();
 };
 
-function educacion() {
+function utiles() {
   hide();
-  $(".educacion").fadeIn();
+  $(".utiles").fadeIn();
 };

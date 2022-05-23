@@ -14,11 +14,12 @@
     font-family: 'Fira Sans', sans-serif;
     margin-bottom: 30px;
 }
-#presentacion-utilidades p {
+#presentacion-utilidades p, #presentacion-utilidades span {
     font-size: 22px;
     font-family: 'Montserrat', sans-serif;
     color: #b3b3b3;
     line-height: 35px;
+    text-align: justify;
 }
 #presentacion-utilidades h3 {
     font-size: 25px;
