@@ -1,0 +1,82 @@
+[
+  {
+    "question": "¿Cuál es el resultado de 3(7+4^2)-47?",
+    "choice1": "34",
+    "choice2": "22",
+    "choice3": "17",
+    "choice4": "75",
+    "answer": 2
+  },
+  {
+    "question": "¿Cuál es el resultado de 3*4/2+10?",
+    "choice1": "16",
+    "choice2": "24",
+    "choice3": "12",
+    "choice4": "31",
+    "answer": 1
+  },
+  {
+    "question": "¿Cuál es el resultado de 15-(2^2)+4*5?",
+    "choice1": "0",
+    "choice2": "31",
+    "choice3": "47",
+    "choice4": "22",
+    "answer": 2
+  },
+  {
+    "question": "¿Cuál es el resultado de 44-3*6+1*1^2?",
+    "choice1": "78",
+    "choice2": "31",
+    "choice3": "27",
+    "choice4": "40",
+    "answer": 3
+  },
+  {
+    "question": "¿Cuál es el resultado de 133-63+2*2^2?",
+    "choice1": "137",
+    "choice2": "43",
+    "choice3": "89",
+    "choice4": "78",
+    "answer": 4
+  },
+  {
+    "question": "¿Cuál es el resultado de 20*4-15*6?",
+    "choice1": "38",
+    "choice2": "-10",
+    "choice3": "2",
+    "choice4": "14",
+    "answer": 2
+  },
+  {
+    "question": "¿Cuál es el resultado de 10-1*1-(1^2)?",
+    "choice1": "8",
+    "choice2": "13",
+    "choice3": "4",
+    "choice4": "-2",
+    "answer": 1
+  },
+  {
+    "question": "¿Cuál es el resultado de 4*3^1-40+13?",
+    "choice1": "90",
+    "choice2": "24",
+    "choice3": "8",
+    "choice4": "-15",
+    "answer": 4
+  },
+  {
+    "question": "¿Cuál es el resultado de 7*6+30/3?",
+    "choice1": "89",
+    "choice2": "12",
+    "choice3": "52",
+    "choice4": "42",
+    "answer": 3
+  },
+  {
+    "question": "¿Cuál es el resultado de 2^3+20-50?",
+    "choice1": "-35",
+    "choice2": "13",
+    "choice3": "21",
+    "choice4": "-22",
+    "answer": 4
+  }
+]
