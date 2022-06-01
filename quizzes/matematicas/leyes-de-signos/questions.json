@@ -1,6 +1,6 @@
 [
   {
-    "question": "¿Cuanto es 33-42?",
+    "question": "¿Cuánto es 33-42?",
     "choice1": "75",
     "choice2": "-9",
     "choice3": "-23",
@@ -8,7 +8,7 @@
     "answer": 2
   },
   {
-    "question": "¿Cuanto es 40-33?",
+    "question": "¿Cuánto es 40-33?",
     "choice1": "12",
     "choice2": "11",
     "choice3": "7",
@@ -16,7 +16,7 @@
     "answer": 3
   },
   {
-    "question": "¿Cuanto es 17-24?",
+    "question": "¿Cuánto es 17-24?",
     "choice1": "7",
     "choice2": "41",
     "choice3": "-41",
@@ -24,7 +24,7 @@
     "answer": 4
   },
   {
-    "question": "¿Cuanto es -137+30?",
+    "question": "¿Cuánto es -137+30?",
     "choice1": "-107",
     "choice2": "167",
     "choice3": "-93",
@@ -32,7 +32,7 @@
     "answer": 1
   },
   {
-    "question": "¿Cuanto es -40+63?",
+    "question": "¿Cuánto es -40+63?",
     "choice1": "103",
     "choice2": "31",
     "choice3": "-93",
@@ -40,7 +40,7 @@
     "answer": 4
   },
   {
-    "question": "¿Cuanto es -87+93?",
+    "question": "¿Cuánto es -87+93?",
     "choice1": "8",
     "choice2": "6",
     "choice3": "-11",
@@ -48,7 +48,7 @@
     "answer": 2
   },
   {
-    "question": "¿Cuanto es 57-13?",
+    "question": "¿Cuánto es 57-13?",
     "choice1": "36",
     "choice2": "19",
     "choice3": "44",
@@ -56,7 +56,7 @@
     "answer": 3
   },
   {
-    "question": "¿Cuanto es -37+45?",
+    "question": "¿Cuánto es -37+45?",
     "choice1": "15",
     "choice2": "7",
     "choice3": "21",
@@ -64,7 +64,7 @@
     "answer": 4
   },
   {
-    "question": "¿Cuanto es 54-17?",
+    "question": "¿Cuánto es 54-17?",
     "choice1": "37",
     "choice2": "24",
     "choice3": "41",
@@ -72,11 +72,91 @@
     "answer": 1
   },
   {
-    "question": "¿Cuanto es 233-254?",
+    "question": "¿Cuánto es 233-254?",
     "choice1": "312",
     "choice2": "43",
     "choice3": "7",
     "choice4": "21",
     "answer": 4
+  },
+  {
+    "question": "¿Cuánto es +40 x -30?",
+    "choice1": "70",
+    "choice2": "-1200",
+    "choice3": "-700",
+    "choice4": "900",
+    "answer": 2
+  },
+  {
+    "question": "¿Cuánto es -13 x -12?",
+    "choice1": "130",
+    "choice2": "-120",
+    "choice3": "156",
+    "choice4": "24",
+    "answer": 3
+  },
+  {
+    "question": "¿Cuánto es +31 x +11?",
+    "choice1": "42",
+    "choice2": "310",
+    "choice3": "-110",
+    "choice4": "341",
+    "answer": 4
+  },
+  {
+    "question": "¿Cuánto es -13 x +7?",
+    "choice1": "-91",
+    "choice2": "21",
+    "choice3": "-24",
+    "choice4": "70",
+    "answer": 1
+  },
+  {
+    "question": "¿Cuánto es -12 x -9?",
+    "choice1": "109",
+    "choice2": "108",
+    "choice3": "-97",
+    "choice4": "-21",
+    "answer": 2
+  },
+  {
+    "question": "¿Cuánto es -7 x -9?",
+    "choice1": "+13",
+    "choice2": "-16",
+    "choice3": "63",
+    "choice4": "24",
+    "answer": 3
+  },
+  {
+    "question": "¿Cuánto es -14 x +15?",
+    "choice1": "-29",
+    "choice2": "19",
+    "choice3": "-203",
+    "choice4": "-210",
+    "answer": 4
+  },
+  {
+    "question": "¿Cuánto es +12 x -7?",
+    "choice1": "-84",
+    "choice2": "19",
+    "choice3": "-19",
+    "choice4": "48",
+    "answer": 1
+  },
+  {
+    "question": "¿Cuánto es +14 x +9?",
+    "choice1": "23",
+    "choice2": "126",
+    "choice3": "-47",
+    "choice4": "140",
+    "answer": 2
+  },
+  {
+    "question": "¿Cuánto es -16 x -12?",
+    "choice1": "-31",
+    "choice2": "-43",
+    "choice3": "192",
+    "choice4": "43",
+    "answer": 3
   }
 ]
