@@ -35,6 +35,37 @@
 </head>
 <body>
 
+    <!-- Messenger Plugin de chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin de chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "107046827780484");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v14.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
     <nav class="nav" id="myNav">
         <a id="homepageLink" href="">
             <img id="logoNavbar" src="" alt="">
@@ -303,17 +334,9 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
-                <a href="contenido/inversiones/que-son-las-criptomonedas.html" class="swiper-slide">
-                    <img src="/images/contenido-portadas/que-son-las-criptomonedas-small.jpg" alt="">
-                    ¿Qué exactamente son las criptomonedas?
-                </a>
-                <a href="contenido/educacion/las-mejores-universidades-del-mundo.html" class="swiper-slide">
-                    <img src="/images/contenido-portadas/las-mejores-universidades-del-mundo-2022-small.jpg" alt="">
-                    Las mejores universidades del mundo 2022
-                </a>
-                <a href="contenido/negocios/los-neobancos-en-mexico.html" class="swiper-slide">
-                    <img src="/images/contenido-portadas/los-neobancos-en-mexico-small.jpg" alt="">
-                    Descubre los nuevos y modernos bancos en México
+                <a href="contenido/educacion/canales-de-youtube-imperdibles.html" class="swiper-slide">
+                    <img src="/images/contenido-portadas/canales-de-youtube-imperdibles-min.jpg" alt="">
+                    Canales de youtube imperdibles
                 </a>
                 <a href="contenido/programacion/cursos-de-programacion-con-certificacion-gratis.html" class="swiper-slide">
                     <img src="/images/contenido-portadas/cursos-de-programacion-con-certificado-gratis-small.jpg" alt="">
@@ -330,6 +353,14 @@
                         alt="">
                     Haz crecer tu dinero con estos servicios gratuitos
                 </a>
+                <a href="contenido/matematicas/salva-matematicas-con-esto.html" class="swiper-slide">
+                    <img src="/images/contenido-portadas/salva-matematicas-min.jpg" alt="">
+                    Si crees que vas a reprobar mate, esto te puede salvar
+                </a>
+                <a href="contenido/matematicas/domina-el-calculo-diferencial-con-estos-cursos.html" class="swiper-slide">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fnormatrevino.com%2Fwp-content%2Fuploads%2F2020%2F04%2FCalculo_diferencial.png&f=1&nofb=1" alt="">
+                    Domina el cálculo diferencial con estos cursos
+                </a>
                 <a href="contenido/inversiones/crece-tu-dinero-gratis-con-estos-servicios.html" class="swiper-slide">
                     <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.whizolosophy.com%2Fpublic%2Fuploads%2Fimages%2F2017%2F01%2Fquantumphysics.jpg&f=1&nofb=1"
                         alt="">
@@ -339,6 +370,18 @@
                     <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.azulweb.net%2Fwp-content%2Fuploads%2F2019%2F06%2FCursos-Gratuitos-De-Programaci%25C3%25B3n.png&f=1&nofb=1"
                         alt="">
                     Aprende a programar con cursos gratis de Harvard
+                </a>
+                <a href="contenido/inversiones/que-son-las-criptomonedas.html" class="swiper-slide">
+                    <img src="/images/contenido-portadas/que-son-las-criptomonedas-small.jpg" alt="">
+                    ¿Qué exactamente son las criptomonedas?
+                </a>
+                <a href="contenido/educacion/las-mejores-universidades-del-mundo.html" class="swiper-slide">
+                    <img src="/images/contenido-portadas/las-mejores-universidades-del-mundo-2022-small.jpg" alt="">
+                    Las mejores universidades del mundo 2022
+                </a>
+                <a href="contenido/negocios/los-neobancos-en-mexico.html" class="swiper-slide">
+                    <img src="/images/contenido-portadas/los-neobancos-en-mexico-small.jpg" alt="">
+                    Descubre los nuevos y modernos bancos en México
                 </a>
             </div>
             <!-- If we need pagination -->
@@ -355,6 +398,59 @@
             <a href="biblioteca.html">EXPLORA TODO</a>
         </div>
     </section>
+
+    <!-- <section class="seccion-contenido">
+        <h3>Programas de estudio populares</h3>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <a href="contenido/educacion/canales-de-youtube-imperdibles.html" class="swiper-slide">
+                    <img src="/images/imagenes-carreras/licenciatura-fisica.png" alt="">
+                    Canales de youtube imperdibles
+                </a>
+                <a href="contenido/programacion/cursos-de-programacion-con-certificacion-gratis.html" class="swiper-slide">
+                    <img src="/images/imagenes-carreras/licenciatura-matematicas.png" alt="">
+                    Cursos de programación con certificado gratis
+                </a>
+                <a href="contenido/inversiones/de-cero-a-inversor-avanzado-con-estos-cursos-gratuitos.html"
+                    class="swiper-slide">
+                    <img src="/images/imagenes-carreras/licenciatura-finanzas.png"
+                        alt="">
+                    Pasa de cero a inversor avanzado con estos cursos gratuitos
+                </a>
+                <a href="contenido/inversiones/crece-tu-dinero-gratis-con-estos-servicios.html" class="swiper-slide">
+                    <img src="/images/imagenes-carreras/licenciatura-medicina.png"
+                        alt="">
+                    Haz crecer tu dinero con estos servicios gratuitos
+                </a>
+                <a href="contenido/matematicas/salva-matematicas-con-esto.html" class="swiper-slide">
+                    <img src="/images/imagenes-carreras/licenciatura-psicologia.png" alt="">
+                    Si crees que vas a reprobar mate, esto te puede salvar
+                </a>
+                <a href="contenido/matematicas/domina-el-calculo-diferencial-con-estos-cursos.html" class="swiper-slide">
+                    <img src="/images/imagenes-carreras/licenciatura-derecho.png" alt="">
+                    Domina el cálculo diferencial con estos cursos
+                </a>
+                <a href="contenido/inversiones/crece-tu-dinero-gratis-con-estos-servicios.html" class="swiper-slide">
+                    <img src="/images/imagenes-carreras/licenciatura-contabilidad.png"
+                        alt="">
+                    Los mejores cursos de física del MIT
+                </a>
+                <a href="contenido/inversiones/crece-tu-dinero-gratis-con-estos-servicios.html" class="swiper-slide">
+                    <img src="/images/imagenes-carreras/licenciatura-computacion.png"
+                        alt="">
+                    Aprende a programar con cursos gratis de Harvard
+                </a>
+            </div>
+    
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+    
+        </div>
+        <div class="todos">
+            <a href="programas-de-estudio.html">EXPLORA TODO</a>
+        </div>
+    </section> -->
 
     <!-- <section id="utilidades-lernist">
         <div class="materiales-contenedor">
@@ -472,7 +568,7 @@
         </div>
     </section>
 
-    <div class="donar">
+    <!-- <div class="donar">
         <div class="donacion">
             <p>
                 El trabajo que realizo en Lernist me ayuda con mis gastos de universidad.
@@ -481,7 +577,7 @@
             </p>
             <a target="_blank" href="https://paypal.me/lernist?country.x=MX&locale.x=es_XC">Donar</a>
         </div>
-    </div>
+    </div> -->
     <!-- <div class="quizzes">
         <p>Quizzes del momento</p>
         <br>
