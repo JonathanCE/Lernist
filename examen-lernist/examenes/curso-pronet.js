@@ -54,9 +54,9 @@ $(document).ready(function() {
   $("#titulo-lecciones").text("Navega por el curso:");
   $(".leccionBotonMas").text("+");
   $(".leccionBotonMenos").text("-");
-  $("#VideosBotonPrevious").attr("src", "/i_temas/previous.png");
+  $("#VideosBotonPrevious").attr("src", "/images/archive/previous.png");
   $("#VideosBotonPreviousText").text("Anterior");
-  $("#VideosBotonNext").attr("src", "/i_temas/next.png");
+  $("#VideosBotonNext").attr("src", "/images/archive/next.png");
   $("#VideosBotonNextText").text("Siguiente");
 
   // DEFAULT DATA

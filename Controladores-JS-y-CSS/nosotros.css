@@ -12,7 +12,7 @@
     align-items: center;
     padding: 60px 30px;
     text-align: center;
-    background-image: url(/i_temas/black7-background.jpg);
+    background-image: url(/images/archive/black7-background.jpg);
 
     background-attachment: fixed; /* Codigo para el efecto parallax */
     background-position: center;
@@ -39,7 +39,7 @@
     grid-template-columns: 0.7fr 0.8fr;
     grid-column-gap: 70px;
     padding: 40px;
-    background-image: url(/i_temas/other/Vallarta.jpg);
+    background-image: url(/images/other/Vallarta.jpg);
 
     background-attachment: fixed; /* Codigo para el efecto parallax */
     background-position: center;

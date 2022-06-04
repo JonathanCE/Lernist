@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
   $("#homepageLink").attr("href", "/");
-  $("#logoNavbar").attr("src", "/i_temas/Logo Lernist.png")
+  $("#logoNavbar").attr("src", "/images/Logo Lernist.png")
   $(".Inicio").text("Inicio");
   $("#programasLink").text("Programas de Estudio");
   $("#programasLink").attr("href", "/programas-de-estudio.html")
