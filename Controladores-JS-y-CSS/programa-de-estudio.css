@@ -54,7 +54,6 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 900px;
     margin: 0 auto 30px;
     padding: 20px;
 }
@@ -97,11 +96,12 @@ main {
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    max-width: 900px;
+    max-width: 1000px;
     background-color: #090c0f;
     box-sizing: border-box;
     border-radius: 3px;
     cursor: pointer;
+    margin: 0 auto;
 }
 .acordion-title h3 {
     font-size: 30px;
@@ -121,6 +121,8 @@ main {
     grid-column-gap: 30px;
     grid-row-gap: 30px;
     padding: 15px 0;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 .acordionTabla h3 {
     font-size: 27px;
@@ -165,9 +167,12 @@ main {
 
 #contenido {
     margin: 20px 0;
+    max-width: 1000px;
 }
 .acordionNormal {
-    margin-top: 20px;
+    /* margin-top: 20px; */
+    max-width: 1000px;
+    margin: 20px auto 0;
 }
 .articulo, .acordionNormal {
     display: grid;
@@ -240,7 +245,54 @@ main {
     font-size: 25px;
 }
 
-.referido {
+.contenedor-materiales {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    max-width: 1000px;
+}
+
+.contenedor-materiales a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #090c0f;
+    border-radius: 4px;
+
+    text-decoration: none;
+    color: white;
+
+    width: auto;
+}
+.contenedor-materiales h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    text-align: center;
+}
+.contenedor-materiales p {
+    font-size: 17px;
+    text-align: left;
+    line-height: 29px;
+    text-align: justify;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+}
+
+.contenedor-materiales img{
+    width: 100%;
+    border-radius: 3px;
+    max-width: 220px;
+    width: 60%;
+    margin: 10px auto;
+    border: 0;
+}
+.contenedor-materiales button{
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* .referido {
     padding: 15px;
     border: 1.5px solid black;
     border-radius: 7px;
@@ -289,7 +341,7 @@ main {
     font-weight: 700;
     font-style: italic;
     text-decoration: underline;
-}
+} */
 
 .donacion {
     padding: 15px 40px;
@@ -362,6 +414,17 @@ main {
 #contenido a:hover {
     color: #95a5a6;
 }
+.acordion-title:hover {
+    background-color: black;
+    transform: translateY(-1px);
+    transition: transform 150ms;
+}
+.contenedor-materiales a:hover{
+    cursor: pointer;
+    box-shadow: 0 4px 14px 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-3px);
+    transition: transform 150ms;
+}
 .donacion a:hover {
     box-shadow: 0 4px 14px 0 rgba(86, 185, 235, 0.5);
     transform: translateY(-1px);
@@ -423,6 +486,12 @@ main {
     }
 }
 
+@media screen and (max-width: 770px) {
+    .contenedor-materiales {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 @media screen and (max-width: 660px) {
     .acordionTabla {
         grid-template-columns: 1fr;
@@ -479,6 +548,17 @@ main {
     }
     .referido a {
         display: flex;
+    }
+    .contenedor-materiales {
+        grid-template-columns: 1fr;
+        padding: 4px;
+        grid-gap: 10px;
+    }
+    .contenedor-materiales a{
+        font-size: 25px;
+    }
+    .contenedor-materiales a {
+        margin-bottom: 10px;
     }
 }
 

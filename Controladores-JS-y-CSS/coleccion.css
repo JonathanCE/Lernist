@@ -17,9 +17,10 @@
 
 .Presentacion p {
     font-family: 'Poppins', sans-serif;
-    font-size: 17px;
+    font-size: 18px;
     text-align: center;
     margin-top: 10px;
+    line-height: 33px;
 }
 
 .materia {
@@ -36,11 +37,21 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
-    grid-gap: 10px;
+    grid-gap: 20px;
 }
 
 .contenedor-temas a{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    background-color: #090c0f;
+    border-radius: 4px;
+
+    text-decoration: none;
+    color: white;
+    /* display: block;
     text-decoration: none;
     color: white;
 
@@ -57,7 +68,19 @@
     display: grid;
     grid-template-columns: 0.4fr 1fr;
     grid-column-gap: 10px;
-    align-items: center;
+    align-items: center; */
+}
+.contenedor-temas h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    text-align: center;
+}
+.contenedor-temas p {
+    font-size: 17px;
+    text-align: left;
+    line-height: 29px;
+    text-align: justify;
+    font-family: 'Fira Sans', sans-serif;
 }
 
 /* .contenedor-temas a{
@@ -82,6 +105,21 @@
 .contenedor-temas img{
     width: 100%;
     border-radius: 3px;
+    max-width: 220px;
+    width: 60%;
+    margin: 10px auto 30px;
+}
+.contenedor-temas button{
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    margin: 20px auto 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    background-color: #0f1318;
+    border: 0;
+    cursor: pointer;
 }
 
 /* .tema {
@@ -102,7 +140,7 @@
 .contenedor-temas a:hover{
     cursor: pointer;
     box-shadow: 0 4px 14px 0 rgba(86, 185, 235, 0.5);
-    border: 3px solid rgb(86, 165, 235, 0.25);
+    /* border: 3px solid rgb(86, 165, 235, 0.25); */
     transform: translateY(-3px);
     transition: transform 150ms;
 }
@@ -135,6 +173,9 @@
     }
     .presentacion-texto {
         padding: 20px;
+    }
+    .contenedor-temas a {
+        margin-bottom: 10px;
     }
 }
 

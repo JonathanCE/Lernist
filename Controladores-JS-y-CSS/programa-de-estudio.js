@@ -8,8 +8,15 @@ $(document).ready(function() {
     $(".acordionTabla").hide();
     $(".acordionNormal").hide();
     //$("#info-carrera-content").show();
+
+    // ANIMACION PARA INFO-CARRERA
+    $("#hub-info").click(function() {
+        $("#hub-info-content").slideToggle(400);
+        $("#hubBtnMas").toggle();
+        $("#hubBtnMenos").toggle();
+      });
   
-    // ANIMACION PARA MENU VIDEO-INFO
+    // ANIMACION PARA INFO-CARRERA
     $("#info-carrera").click(function() {
       $("#info-carrera-content").slideToggle(400);
       $("#infoBtnMas").toggle();
