@@ -72,15 +72,17 @@
 }
 .contenedor-temas h3 {
     font-family: 'Poppins', sans-serif;
-    font-size: 24px;
+    font-size: 22px;
     text-align: center;
+    font-weight: 500;
 }
 .contenedor-temas p {
     font-size: 17px;
     text-align: left;
     line-height: 29px;
     text-align: justify;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: #b3b3b3;
 }
 
 /* .contenedor-temas a{
