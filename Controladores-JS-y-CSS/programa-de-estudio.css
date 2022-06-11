@@ -166,8 +166,9 @@ main {
 
 
 #contenido {
-    margin: 20px 0;
+    margin: 20px auto;
     max-width: 1000px;
+    padding: 20px;
 }
 .acordionNormal {
     /* margin-top: 20px; */
@@ -579,7 +580,7 @@ main {
 }
 
 @media screen and (max-width: 470px) {
-    main {
+    main, #contenido {
         padding: 15px;
     }
     .video iframe {
