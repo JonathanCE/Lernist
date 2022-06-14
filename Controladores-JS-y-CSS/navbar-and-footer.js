@@ -15,6 +15,7 @@ $(document).ready(function() {
   $("#tiendaLink").attr("href", "/tienda.html")
   $("#quizzesLink").text("Quizzes");
   $("#quizzesLink").attr("href", "/quizzes.html")
+  $("#quizzesLink").hide()
 
   $("#fraseFooter").text("Aprende cosas Increíbles, con contenido Increíble.");
   $("#footerTikTok").attr("href", "https://www.tiktok.com/@lernist.com");

@@ -1,8 +1,4 @@
 #presentacion {
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
     padding: 100px 30px;
     height: 400px;
     text-align: center;
@@ -23,40 +19,6 @@
     font-family: 'Poppins', sans-serif;
     font-size: 25px;
     margin-top: 50px;
-}
-
-.presentacion-description {
-    display: grid;
-    grid-column-gap: 40px;
-    grid-row-gap: 30px;
-    align-items: center;
-    padding: 40px 25px;
-    text-align: center;
-    background-color: #090c0f;
-}
-#presentacion-description1,  #presentacion-description3 {
-    grid-template-columns: 0.4fr 1fr;
-    padding-right: 100px;
-}
-#presentacion-description2 {
-    grid-template-columns: 1fr 0.4fr;
-    padding-left: 100px;
-}
-#presentacion-description3 {
-    padding-bottom: 100px;
-}
-.presentacion-description img {
-    width: 100%;
-    margin: 0 auto;
-}
-.presentacion-description p {
-    font-size: 25px;
-    line-height: 38px;
-    text-align: justify;
-    font-family: 'Fira Sans', sans-serif;
-}
-.descripcion-2 {
-    margin-top: 15px;
 }
 
 .seccion-contenido {
@@ -122,39 +84,39 @@
     border-radius: 3px;
 }
 
-#aprendedores, #empresas {
-    padding: 40px 100px;
-    display: grid;
-    grid-template-columns: 0.7fr 1fr;
-    grid-gap: 100px;
-    align-items: center;
-}
-#educadores {
-    padding: 40px 100px;
-    display: grid;
-    grid-template-columns: 1fr 0.7fr;
-    grid-gap: 100px;
-    background-color: #090c0f;
-    align-items: center;
-}
-#aprendedores img, #educadores img, #empresas img {
-    width: 100%;
-}
-#aprendedores h2, #educadores h2, #empresas h2 {
+#todo-title {
     font-size: 50px;
-    font-family: 'Fira Sans', sans-serif;
-    margin-bottom: 30px;
-}
-#aprendedores p, #educadores p, #empresas p {
-    font-size: 22px;
+    text-align: center;
     font-family: 'Montserrat', sans-serif;
-    color: #b3b3b3;
-    line-height: 35px;
+    font-weight: 400;
+    margin: 0 15px 30px;
 }
-#aprendedores h3, #educadores h3, #empresas h3 {
-    font-size: 25px;
-    font-family: 'Fira Sans', sans-serif;
-    margin: 20px 0;
+
+#contenidos {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+#contenidos a {
+    background: #090c0f;
+    color: white;
+    border: 0;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+}
+#contenidos img {
+    width: 100%;
+    height: auto;
+}
+#contenidos p {
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
 }
 
 #materiales-lernist, #utilidades-lernist {
@@ -224,7 +186,7 @@
     text-align: center;
 }
 
-.contenido, .certificaciones, .quizzes {
+.contenido {
     padding: 20px 20px;
 }
 .contenido {
@@ -249,10 +211,9 @@
     text-align: center;
     line-height: 35px;
     color: #b3b3b3;
-    margin-bottom: 20px;
 }
 
-.cursos p, .certificaciones p, .quizzes p {
+.cursos p {
     font-size: 60px;
     text-align: center;
     font-family: 'Fira Sans', sans-serif;
@@ -263,18 +224,6 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-gap: 5px;
-}
-.contenedor-quizzes {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-gap: 20px;
-}
-.contenedor-articulos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-gap: 20px;
 }
 
 .contenedor-cursos a{
@@ -291,61 +240,8 @@
     text-align: center;
     background-color: #090c0f;
 }
-.contenedor-articulos a{
-    text-decoration: none;
-    color: white;
-    text-align: center;
 
-    padding: 12px;
-    border-radius: 7px;
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    cursor: pointer;
-    background-color: #090c0f;
-
-    display: grid;
-    grid-template-columns: 0.4fr 1fr;
-    grid-column-gap: 20px;
-}
-.theme-icon {
-    color: white;
-
-    padding: 13px;
-    border-radius: 2px;
-    font-size: 25px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    text-align: center;
-    background-color: #090c0f;
-}
-/* .articulo-info {
-    font-weight: 400;
-} */
-.imagen-articulo {
-    display: flex;
-    align-items: center;
-}
-.contenedor-quizzes a{
-    text-decoration: none;
-    color: white;
-
-    padding: 8px;
-    border-radius: 7px;
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    cursor: pointer;
-    text-align: center;
-    background-color: #090c0f;
-
-    display: grid;
-    grid-template-columns: 0.4fr 1fr;
-    grid-column-gap: 10px;
-    align-items: center;
-}
-
-.contenedor-cursos img, .contenedor-articulos img, .contenedor-quizzes img{
+.contenedor-cursos img {
     width: 100%;
     border-radius: 3px;
 }
@@ -367,46 +263,6 @@
     cursor: pointer;
 }
 
-.donar {
-    display: flex;
-    align-items: center;
-    padding: 50px;
-}
-.donacion {
-    padding: 20px 45px;
-    border-radius: 7px;
-    background-color: #090c0f;
-    width: 60%;
-    margin: 0 auto;
-
-    display: grid;
-    grid-template-columns: 1fr 0.4fr;
-    grid-column-gap: 25px;
-    align-items: center;
-}
-.donacion p {
-    text-align: justify;
-    font-size: 20px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 200;
-    line-height: 30px;
-}
-.donacion a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    font-family: 'Fira Sans', sans-serif;
-    font-weight: 600;
-    color: white;
-    height: 70px;
-    width: 100%;
-    font-size: 25px;
-    background-color: #0f1318;
-    border: 4px solid rgb(86, 165, 235, 0.25);
-    border-radius: 10px;
-}
-
 .swiper a:hover, .material-info a:hover, .todos a:hover {
     background-color: black;
     transform: translateY(-4px);
@@ -419,66 +275,17 @@
     transform: translateY(-3px);
     transition: transform 150ms;
 }
-.contenedor-articulos a:hover{
-    cursor: pointer;
-    box-shadow: 0 4px 14px 0 rgba(86, 185, 235, 0.5);
-    border: 3px solid rgb(86, 165, 235, 0.25);
-    transform: translateY(-3px);
-    transition: transform 150ms;
-}
-.contenedor-quizzes a:hover{
-    cursor: pointer;
-    box-shadow: 0 4px 14px 0 rgba(86, 185, 235, 0.5);
-    border: 3px solid rgb(86, 165, 235, 0.25);
-    transform: translateY(-3px);
-    transition: transform 150ms;
-}
-.donacion a:hover {
-    box-shadow: 0 4px 14px 0 rgba(86, 185, 235, 0.5);
-    transform: translateY(-1px);
-    transition: transform 150ms;
-}
-
-@media screen and (max-width: 1270px) {
-    #aprendedores, #educadores, #empresas {
-        padding: 40px;
-        grid-gap: 50px;
-    }
-    .instrucciones {
-        padding: 20px;
-    }
-    .instrucciones h1 {
-        margin: 0 150px;
-    }
-    .pasos-instrucciones {
-        margin: 40px 50px 0 50px;
-    }
-}
 
 @media screen and (max-width: 1070px) {
     .Presentacion {
         padding: 10px;
     }
-    #aprendedores, #educadores, #empresas {
-        display: flex;
-        flex-direction: column;
-    }
-    #aprendedores img, #educadores img, #empresas img {
-        width: 500px;
-    }
     .sector-texto {
         max-width: 700px;
         text-align: center;
     }
-    #educadores {
-        flex-direction: column-reverse;
-    }
-    #materiales-lernist, #utilidades-lernist {
+    #materiales-lernist {
         padding: 50px;
-    }
-    .donacion {
-        padding: 20px 30px;
-        width: 80%;
     }
 }
 
@@ -489,9 +296,6 @@
     .banner-info {
         padding: 50px;
     }
-    .instrucciones {
-        background-attachment: scroll;
-    }
     .presentacion-title {
         font-size: 65px;
     }
@@ -499,28 +303,7 @@
         grid-column-gap: 30px;
         padding: 25px;
     }
-    #presentacion-description1, #presentacion-description3 {
-        grid-template-columns: 0.6fr 1fr;
-        padding-right: 50px;
-    }
-    #presentacion-description2 {
-        grid-template-columns: 1fr 0.6fr;
-        padding-left: 50px;
-    }
-    .presentacion-description p{
-        text-align: center;
-    }
-    .contenedor-quizzes {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    .contenedor-articulos {
-        grid-template-columns: 1fr;
-    }
-    .contenedor-articulos a {
-        width: 80%;
-        margin: 0 auto;
-    }
-    #materiales-resumen, #utilidades-resumen {
+    #materiales-resumen {
         grid-template-columns: 1fr;
     }
     .material-info {
@@ -528,14 +311,6 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-    }
-
-    .instrucciones h1 {
-        margin: 0 100px;
-    }
-    .pasos-instrucciones {
-        margin: 40px 50px 0 50px;
-        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -556,90 +331,34 @@
     .presentacion-title {
         font-size: 55px;
     }
-    #aprendedores img, #educadores img, #empresas img {
-        width: 400px;
-    }
-    #materiales-resumen img, #utilidades-resumen img {
-        max-width: 400px;
-        text-align: center;
-    }
-    .donacion {
-        grid-template-columns: 1fr 0.5fr;
-    }
     .contenido {
-        padding: 30px 20px 10px;
-    }
-
-    .instrucciones h1 {
-        margin: 0 70px;
-    }
-    .pasos-instrucciones {
-        margin: 40px 20px 0 20px;
-        grid-template-columns: 1fr 1fr;
+        padding: 45px 20px;
     }
     .busqueda {
         padding: 30px 50px;
     }
+    #contenidos p {
+        font-size: 26px;
+    }
 }
 
 @media screen and (max-width: 750px) {
-    .contenedor-quizzes {
-        grid-template-columns: 1fr 1fr;
-    }
     .contenedor-cursos {
         grid-template-columns: 1fr 1fr 1fr;
     }
-    .contenedor-articulos a {
-        width: 90%;
+    #contenidos {
+        grid-template-columns: 1fr;
     }
-    .donacion {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 650px) {
-    .presentacion-description {
-        display: flex;
-        flex-direction: column;
-        padding: 25px;
-    }
-    #presentacion-description1, #presentacion-description3 {
-        padding-right: 25px;
-    }
-    #presentacion-description2 {
-        flex-direction: column-reverse;
-        padding-left: 25px;
-    }
-    .presentacion-description img {
-        width: 80%;
-    }
-    #aprendedores img, #educadores img, #empresas img {
-        width: 350px;
-    }
-    .contenedor-articulos a {
-        width: fit-content;
-    }
-    .descripcion-2 {
-        margin-top: 15px;
-    }
-    .donacion {
-        grid-column-gap: 15px;
-    }
-
-    .instrucciones h1 {
-        margin: 0 30px;
-    }
-    .pasos-instrucciones {
-        margin: 40px 0 0 0;
-        grid-template-columns: 1fr 1fr;
+    #contenidos a {
+        grid-template-columns: 0.3fr 1fr;
     }
 }
 
 @media screen and (max-width: 610px) {
-    /*.contenedor-cursos,*/ .contenedor-quizzes {
+    .contenedor-cursos {
         grid-template-columns: 1fr;
     }
-    .contenedor-cursos a/*, .theme-icon*/{
+    .contenedor-cursos a {
         display: grid;
         grid-template-columns: 0.5fr 1fr;
         grid-column-gap: 10px;
@@ -649,78 +368,20 @@
         font-size: 30px;
         padding: 10px;
     }
-    .contenedor-quizzes a{
-        font-size: 25px;
-    }
-    /* .donar {
-        padding: 0;
-        background-color: black;
-    } */
-    .donacion {
-        grid-template-columns: 1fr;
-        padding: 25px;
-    }
-    .donacion p {
-        text-align: center;
-    }
-    .donacion a {
-        margin: 30px auto 0;
-        width: 200px;
-    }
     .busqueda-texto {
         padding: 20px;
     }
 }
 
 @media screen and (max-width: 550px) {
-    #aprendedores, #educadores, #empresas {
-        padding: 40px 20px;
-    }
-    #materiales-lernist, #utilidades-lernist {
+    #materiales-lernist {
         padding: 50px 30px;
     }
-    #materiales-lernist h3, #utilidades-lernist h3 {
+    #materiales-lernist h3 {
         margin: 10px 0 30px;
-    }
-
-    .descripcion {
-        border-radius: 10px;
-    }
-    .presentacion-description {
-        padding: 20px 10px;
-    }
-    #presentacion-description1, #presentacion-description3 {
-        padding-right: 10px;
-    }
-    #presentacion-description2 {
-        flex-direction: column-reverse;
-        padding-left: 10px;
-    }
-    .presentacion-description img {
-        width: 90%;
-    }
-    .contenedor-articulos a {
-        grid-template-columns: 1fr;
-        padding: 20px 15px;
-    }
-    .imagen-articulo img{
-        width: 80%;
-        margin: 0 auto;
     }
     .todos a{
         font-size: 40px;
-    }
-
-    .instrucciones h1 {
-        margin: 0;
-    }
-    .pasos-instrucciones {
-        margin: 40px 0 0 0;
-        grid-template-columns: 1fr;
-        grid-row-gap: 40px;
-    }
-    .pasos-instrucciones h2 {
-        margin-bottom: 10px;
     }
     .busqueda {
         padding: 20px;
@@ -728,13 +389,7 @@
 }
 
 @media screen and (max-width: 470px) {
-    #aprendedores h2, #educadores h2, #empresas h2 {
-        font-size: 40px;
-    }
-    #aprendedores img, #educadores img, #empresas img {
-        width: 300px;
-    }
-    .cursos p, .certificaciones p {
+    .cursos p {
         font-size: 45px;
     }
     .banner-info {
@@ -747,9 +402,6 @@
         font-size: 33px;
         padding: 40px 10px;
     }
-    .donar {
-        padding: 20px;
-    }
     .contenedor-cursos a/*, .theme-icon*/{
         display: grid;
         grid-template-columns: 0.6fr 1fr;
@@ -758,7 +410,7 @@
         font-size: 25px;
     }
     .seccion-contenido {
-        padding: 15px;
+        padding: 20px;
     }
     .swiper a {
         font-size: 20px;
@@ -768,12 +420,6 @@
 @media screen and (max-width: 400px) {
     .presentacion-title {
         font-size: 45px;
-    }
-    .certificaciones-a a {
-        grid-template-columns: 1fr;
-    }
-    .certificaciones-a img {
-        margin-bottom: 20px;
     }
     .contenedor-cursos a, .theme-icon{
         font-size: 22px;
