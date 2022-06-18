@@ -80,6 +80,70 @@
     border-radius: 3px;
 }
 
+.materia {
+    padding: 20px 20px;
+}
+
+.materia p {
+    font-size: 55px;
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.contenedor-temas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+}
+
+.contenedor-temas a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    background-color: #090c0f;
+    border-radius: 4px;
+
+    text-decoration: none;
+    color: white;
+}
+.contenedor-temas h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 500;
+}
+.contenedor-temas p {
+    font-size: 17px;
+    text-align: left;
+    line-height: 29px;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    color: #b3b3b3;
+}
+
+.contenedor-temas img{
+    width: 100%;
+    border-radius: 3px;
+    max-width: 220px;
+    width: 60%;
+    margin: 10px auto 30px;
+}
+.contenedor-temas button{
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    margin: 20px auto 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    background-color: #0f1318;
+    border: 0;
+    cursor: pointer;
+}
+
 #categories {
     padding: 30px 20px;
     display: grid;
@@ -162,6 +226,13 @@
 #categories button:hover {
     cursor: pointer;
 }
+.contenedor-temas a:hover{
+    cursor: pointer;
+    box-shadow: 0 4px 14px 0 rgba(86, 185, 235, 0.5);
+    /* border: 3px solid rgb(86, 165, 235, 0.25); */
+    transform: translateY(-3px);
+    transition: transform 150ms;
+}
 
 @media screen and (max-width: 1270px) {
     #presentacion-utilidades {
@@ -207,6 +278,9 @@
     .swiper a {
         grid-template-columns: 0.4fr 1fr;
     }
+    .contenedor-temas {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 @media screen and (max-width: 850px) {
@@ -222,6 +296,9 @@
     .utilidad p {
         font-size: 19px;
     }
+    .contenedor-temas {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media screen and (max-width: 610px) {
@@ -236,6 +313,19 @@
     }
     .swiper a {
         grid-template-columns: 0.5fr 1fr;
+    }
+    .contenedor-temas {
+        grid-template-columns: 1fr;
+        padding: 4px;
+    }
+    .contenedor-temas a{
+        font-size: 25px;
+    }
+    .presentacion-texto {
+        padding: 20px;
+    }
+    .contenedor-temas a {
+        margin-bottom: 10px;
     }
 }
 

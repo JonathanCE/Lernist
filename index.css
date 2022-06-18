@@ -275,6 +275,12 @@
     transform: translateY(-3px);
     transition: transform 150ms;
 }
+#contenidos a:hover{
+    cursor: pointer;
+    box-shadow: 0 4px 14px 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-3px);
+    transition: transform 150ms;
+}
 
 @media screen and (max-width: 1070px) {
     .Presentacion {

@@ -1,23 +1,32 @@
 .Presentacion {
-    background: linear-gradient(35deg, #0c5c5c, #b84e4e);
-    padding: 30px 100px;
+    padding: 30px;
 }
 
 .presentacion-texto {
-    background-color: #0f1318;
+    background-color: #090c0f;
     border-radius: 7px;
     padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Presentacion img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 10px;
 }
 
 .Presentacion h1{
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .Presentacion p {
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
     margin-top: 10px;
     line-height: 33px;
@@ -160,9 +169,6 @@
 }
 
 @media screen and (max-width: 610px) {
-    .Presentacion {
-        padding: 30px 50px;
-    }
     .Presentacion h1 {
         margin-bottom: 20px;
     }
@@ -183,7 +189,7 @@
 
 @media screen and (max-width: 450px) {
     .Presentacion {
-        padding: 30px;
+        padding: 20px;
     }
     #search {
         padding: 10px;
