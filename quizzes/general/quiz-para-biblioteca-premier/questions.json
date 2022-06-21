@@ -1,0 +1,82 @@
+[
+  {
+    "question": "¿Quién lleva más en la Tierra, los humanos o los virus?",
+    "choice1": "Humanos",
+    "choice2": "Virus",
+    "choice3": "Bacterias",
+    "choice4": "Piedras",
+    "answer": 2
+  },
+  {
+    "question": "¿Cuantas personas fallecieron en la Segunda Guerra Mundial?",
+    "choice1": "60 millones",
+    "choice2": "30 millones",
+    "choice3": "20 millones",
+    "choice4": "40 millones",
+    "answer": 1
+  },
+  {
+    "question": "Si facebook y google son gratis, ¿cuál es su negocio?",
+    "choice1": "Ninguno, tienen buenas intenciones",
+    "choice2": "Viven de donaciones",
+    "choice3": "Las empresas les pagan",
+    "choice4": "Nuestros datos",
+    "answer": 4
+  },
+  {
+    "question": "¿Qué generó y genera el problema del calentamiento global?",
+    "choice1": "Las oposiciones políticas",
+    "choice2": "No existe, es una conspiración",
+    "choice3": "La emisión de gases de efecto invernadero",
+    "choice4": "Una nación rica que no me agrada",
+    "answer": 3
+  },
+  {
+    "question": "¿Que contribuye más a la generación de oxígeno en la Tierra?",
+    "choice1": "Los bosques",
+    "choice2": "Los océanos",
+    "choice3": "Las playas",
+    "choice4": "Las montañas",
+    "answer": 2
+  },
+  {
+    "question": "¿Cuál es el verdadero significado de OVNI?",
+    "choice1": "Objeto volador no identificado",
+    "choice2": "Los aliens",
+    "choice3": "Vehículos militares secretos",
+    "choice4": "Criaturas voladoras",
+    "answer": 1
+  },
+  {
+    "question": "¿Qué nación ha cometido violaciones de derechos humanos?",
+    "choice1": "China",
+    "choice2": "Rusia",
+    "choice3": "Estados Unidos",
+    "choice4": "Todas las anteriores",
+    "answer": 4
+  },
+  {
+    "question": "¿Para que existe el requisito de mínima edad para votar?",
+    "choice1": "Porque los niños son muy berrinchudos",
+    "choice2": "Porque solo los adultos piensan y tienen voz",
+    "choice3": "En teoría, para que solo personas responsables e informadas voten",
+    "choice4": "Está escrito en la Biblia",
+    "answer": 3
+  },
+  {
+    "question": "¿Qué virtud es más importante para relaciones positivas?",
+    "choice1": "Inteligencia Emocional",
+    "choice2": "Músculos",
+    "choice3": "Sentirse mejor que los demás",
+    "choice4": "Tener muchos títulos académicos",
+    "answer": 1
+  },
+  {
+    "question": "¿Cuál de las siguientes industrias es más dañina para el planeta?",
+    "choice1": "Trenes",
+    "choice2": "Energía eólica",
+    "choice3": "La aviación",
+    "choice4": "Textil (ropa)",
+    "answer": 4
+  }
+]

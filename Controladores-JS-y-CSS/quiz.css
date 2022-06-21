@@ -26,6 +26,19 @@
 #home h1, #end h1 {
   margin-bottom: 70px;
 }
+#home p {
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 19px;
+  color: white;
+  background-color: #0f1318;
+  border: 3px solid rgb(86, 165, 235, 0.25);
+  font-weight: 200;
+  border-radius: 4px;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
 h2 {
   font-size: 42px;
   margin-bottom: 40px;
