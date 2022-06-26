@@ -72,6 +72,9 @@ main iframe {
     line-height: 30px;
     text-align: justify;
 }
+.articulo a {
+    font-family: 'Poppins', sans-serif;
+}
 .articulo li {
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
@@ -126,6 +129,58 @@ main iframe {
 .recomendacion img {
     width: 100%;
     border-radius: 3px;
+}
+
+.contenedor-materiales {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    max-width: 1000px;
+}
+
+.contenedor-materiales a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* display: grid;
+    grid-template-columns: 0.4fr 1fr;
+    align-items: center; */
+    padding: 15px 20px;
+    /* padding: 15px; */
+    background-color: #090c0f;
+    border-radius: 4px;
+
+    text-decoration: none;
+    color: white;
+
+    width: auto;
+}
+.contenedor-materiales h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+}
+.contenedor-materiales p {
+    font-size: 17px;
+    text-align: left;
+    line-height: 29px;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #b3b3b3;
+}
+
+.contenedor-materiales img{
+    border-radius: 3px;
+    max-width: 220px;
+    width: 60%;
+    margin: 10px auto;
+    border: 0;
+}
+.contenedor-materiales button{
+    width: 100%;
+    margin-top: 20px;
 }
 
 .referido {
@@ -267,6 +322,12 @@ main iframe {
     transform: translateY(-1px);
     transition: transform 150ms;
 }
+.contenedor-materiales a:hover{
+    cursor: pointer;
+    box-shadow: 0 4px 14px 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-3px);
+    transition: transform 150ms;
+}
 .referido a:hover {
     box-shadow: 0 4px 14px 0 rgba(86, 185, 235, 0.5);
     transform: translateY(-1px);
@@ -285,6 +346,12 @@ main iframe {
     }
     .donacion a {
         height: 70%;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .contenedor-materiales {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -321,6 +388,17 @@ main iframe {
     }
     .articulos a {
         text-align: center;
+    }
+    .contenedor-materiales {
+        grid-template-columns: 1fr;
+        padding: 4px;
+        grid-gap: 10px;
+    }
+    .contenedor-materiales a{
+        font-size: 25px;
+    }
+    .contenedor-materiales a {
+        margin-bottom: 10px;
     }
 }
 
