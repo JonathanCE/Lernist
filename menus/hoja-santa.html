@@ -13,19 +13,36 @@
     <link rel="stylesheet" href="hoja-santa.css">
     <link rel="icon" href="/lernist-mini.png">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu | Hoja Santa</title>
 </head>
 <body>
 
-    <nav class="nav" id="myNav">
-        <img src="" alt="">
+    <button onclick="topFunction()" id="topBtn">
+        <img src="up-arrow.png" alt="">
+    </button>
+
+    <nav>
+        <img src="/images/archive/Educacion Emocional-min.jpg" alt="">
+        <h1>Menu - La Hoja Santa</h1>
     </nav>
 
     <main>
-        <h2>Comidas</h2>
-        <section>
+        <!-- <div id="filter-articles">
+            <select name="filter" id="">
+                <option value="">MENU</option>
+                <option onclick="todo()" value="">Todo</option>
+                <option onclick="comidas()" value="">Comidas</option>
+                <option onclick="bebidas()" value="">Bebidas</option>
+            </select>
+        </div> -->
+
+        <div class=""></div>
+
+        <h2 class="menu comidas">Comidas</h2>
+        <section class="menu comidas">
             <div class="platillo" data-aos="zoom-in">
                 <img src="/images/menus-restaurantes/hoja-santa-PV/enmolada.jpg" alt="">
                 <p>Enmolada</p>
@@ -51,7 +68,7 @@
                 <p>Tostada de Aguacate</p>
             </div>
             <div class="platillo" data-aos="zoom-in">
-                <img src="/images/menus-restaurantes/hoja-santa-PV/enmolada.jpg" alt="">
+                <img src="/images/menus-restaurantes/hoja-santa-PV/chancha-dorada.jpg" alt="">
                 <p>Chancha Dorada</p>
             </div>
             <div class="platillo" data-aos="zoom-in">
@@ -89,8 +106,8 @@
         </section>
 
 
-        <h2>Bebidas</h2>
-        <section>
+        <h2 class="menu bebidas">Bebidas</h2>
+        <section class="menu bebidas">
             <div class="platillo" data-aos="zoom-in">
                 <img src="/images/menus-restaurantes/hoja-santa-PV/cappucino.jpg" alt="">
                 <p>Cappucino</p>
@@ -123,9 +140,22 @@
     </main>
 
     <footer>
-        
+        <h3>¡Síguenos en nuestras redes!</h3>
+        <a href="">
+            <img src="facebook.png" alt="">
+            Facebook
+        </a>
+        <a href="">
+            <img src="instagram.png" alt="">
+            Instagram
+        </a>
+        <a href="">
+            <img src="google-maps.png" alt="">
+            Google Maps
+        </a>
     </footer>
 
+    <script src="hoja-santa.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
