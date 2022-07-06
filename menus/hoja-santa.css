@@ -1,0 +1,73 @@
+/* font-family: 'Caveat', cursive;
+
+font-family: 'The Nautigal', cursive;
+
+font-family: 'Yellowtail', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=The+Nautigal:wght@700&family=Yellowtail&display=swap');
+* {
+    margin: 0;
+}
+
+nav {
+    background-color: black;
+}
+
+main {
+    background-color: black;
+    padding: 20px;
+}
+main h2 {
+    font-family: 'The Nautigal', cursive;
+    font-size: 80px;
+    color: white;
+    text-align: center;
+    margin-top: 80px;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    margin-top: 40px;
+}
+
+.platillo {
+    display: flex;
+    flex-direction: column;
+}
+.platillo img {
+    width: 100%;
+    height: auto;
+    border: 5px solid white;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+.platillo p {
+    font-size: 36px;
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+}
+
+@media screen and (max-width: 980px) {
+    section {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    section {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 500px) {
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .platillo {
+        max-width: 370px;
+    }
+}
