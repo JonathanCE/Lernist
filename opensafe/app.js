@@ -141,6 +141,66 @@ resetPasswordForm.addEventListener('submit', (e) => {
   })
 })
 
+// log out users
+logOutBtn.addEventListener('click', () => {
+  const userRef = doc(usersRef, auth.currentUser.uid);
+  updateDoc(userRef, {
+    online: false
+  })
+
+  const userID = auth.currentUser.uid;
+  const userChats = query(chatsRef, where('members', 'array-contains', userID), orderBy("created_at", "desc"));
+
+  getDocs(userChats).then((snapshot) => {
+    
+    snapshot.forEach((chat) => {
+      const chatID = chat.id;
+
+      const chatCreation = chat.data().created_at.seconds / 60 / 60/* /24 */;
+      //console.log('Chat created: ' + chatCreation);
+
+      const now = new Date;
+      const nowInHours = Date.parse(now) / 1000 / 60 / 60/* /24 */;
+      //console.log('Date from today: ' + nowInHours);
+
+      const chatRef = doc(chatsRef, chatID);
+
+      if (chatCreation + 2 <= nowInHours) {
+        deleteDoc(chatRef)
+        console.log('Chat deleted after 2 hours');
+      }
+    })
+    console.log('Checked chats to delete')
+  })
+
+  getDocs(userMessages).then((snapshot) => {
+    snapshot.forEach((message) => {
+      const messageCreation = message.data().created_at.seconds / 60 / 60/* /24 */;
+
+      const now = new Date();
+      const nowInHours = Date.parse(now) / 1000 / 60 / 60/* /24 */;
+
+      const messageRef = doc(messagesRef, message.id);
+
+      if (messageCreation + 2 <= nowInHours) {
+        deleteDoc(messageRef)
+        console.log('Message deleted after 2 hours');
+      }
+    })
+    console.log('Checked messages to delete')
+  })
+
+  signOut(auth).then(() => {
+
+    chatsContainer.innerHTML = '';
+    appContainer.style.display = 'none';
+    landingPage.style.display = 'block';
+    //clearInterval(deletingDocs);
+    console.log('User has logged out')
+  })
+  scrollTop();
+})
+
 
 
 
@@ -223,64 +283,6 @@ onAuthStateChanged(auth, (user) => {
         }
       })
       console.log('Checked messages to delete')
-    })
-
-
-    // log out users
-    logOutBtn.addEventListener('click', () => {
-      const userRef = doc(usersRef, auth.currentUser.uid);
-      updateDoc(userRef, {
-        online: false
-      })
-
-      getDocs(userChats).then((snapshot) => {
-        
-        snapshot.forEach((chat) => {
-          const chatID = chat.id;
-
-          const chatCreation = chat.data().created_at.seconds / 60 / 60/* /24 */;
-          //console.log('Chat created: ' + chatCreation);
-
-          const now = new Date;
-          const nowInHours = Date.parse(now) / 1000 / 60 / 60/* /24 */;
-          //console.log('Date from today: ' + nowInHours);
-
-          const chatRef = doc(chatsRef, chatID);
-
-          if (chatCreation + 2 <= nowInHours) {
-            deleteDoc(chatRef)
-            console.log('Chat deleted after 2 hours');
-          }
-        })
-        console.log('Checked chats to delete')
-      })
-
-      getDocs(userMessages).then((snapshot) => {
-        snapshot.forEach((message) => {
-          const messageCreation = message.data().created_at.seconds / 60 / 60/* /24 */;
-
-          const now = new Date();
-          const nowInHours = Date.parse(now) / 1000 / 60 / 60/* /24 */;
-
-          const messageRef = doc(messagesRef, message.id);
-
-          if (messageCreation + 2 <= nowInHours) {
-            deleteDoc(messageRef)
-            console.log('Message deleted after 2 hours');
-          }
-        })
-        console.log('Checked messages to delete')
-      })
-
-      signOut(auth).then(() => {
-
-        chatsContainer.innerHTML = '';
-        appContainer.style.display = 'none';
-        landingPage.style.display = 'block';
-        //clearInterval(deletingDocs);
-        console.log('User has logged out')
-      })
-      scrollTop();
     })
 
   } else {
@@ -463,6 +465,7 @@ escucharChatBtn.addEventListener('click', () => {
               inChat: false
             })
 
+            chatsContainer.innerHTML = ''
             chatUI.style.display = 'none'
             appContainer.style.display = 'block'
             console.log('Chat Ended By Other user.');
@@ -646,6 +649,7 @@ expresarChatBtn.addEventListener('click', () => {
                 inChat: false
               })
 
+              chatsContainer.innerHTML = ''
               chatUI.style.display = 'none'
               appContainer.style.display = 'block'
               console.log('Chat Ended By Other user.');
