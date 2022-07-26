@@ -494,13 +494,16 @@ expresarChatBtn.addEventListener('click', () => {
     updateDoc(userRef, {
       ser_escuchado: true
     })
-    const waitMatch = setTimeout(() => {
-      console.log('Could not find any match')
-      clearInterval(searchMatchInterval);
-    }, 30000)
 
     const matches = query(usersRef, where('escuchar', '==', true), where('inChat', '==', false), where('online', '==', true))
-    const searchMatchInterval = setInterval(getDocs(matches).then((snapshot) => {
+    const searchMatchInterval = onSnapshot(matches, (snapshot) => {
+
+      const waitMatch = setTimeout(() => {
+        console.log('Could not find any match')
+        searchMatchInterval();
+      }, 30000)
+
+      console.log('Listener for matches')
       // get the number of results
       const numberResults = snapshot.docs.length;
       //console.log(Math.floor(Math.random() * numberResults))
@@ -510,7 +513,7 @@ expresarChatBtn.addEventListener('click', () => {
         // choose a random document
         const randomDoc = snapshot.docs[Math.floor(Math.random() * numberResults)]
         clearTimeout(waitMatch)
-        clearInterval(searchMatchInterval);
+        searchMatchInterval();
 
         //Create chat with both users
         const matchID = randomDoc.id;
@@ -626,8 +629,8 @@ expresarChatBtn.addEventListener('click', () => {
 
           //end chat by doc data changed
           const chatRef = doc(chatsRef, chatID)
-          const endChatByOther = onSnapshot(chatRef, (doc) => {
-            const chatStatus = doc.data().ended;
+          const endChatByOther = onSnapshot(chatRef, (document) => {
+            const chatStatus = document.data().ended;
             if (chatStatus) {
               messagesListener();
               endChatByOther();
@@ -651,7 +654,8 @@ expresarChatBtn.addEventListener('click', () => {
         })
       }
       console.log('Search made')
-    }), 1000)
+
+    })
 
     /* const searchMatch = onSnapshot(matches, (snapshot) => {
       const numberResults = snapshot.docs.length;
