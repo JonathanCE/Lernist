@@ -150,6 +150,7 @@ logOutBtn.addEventListener('click', () => {
 
   const userID = auth.currentUser.uid;
   const userChats = query(chatsRef, where('members', 'array-contains', userID), orderBy("created_at", "desc"));
+  const userMessages = query(messagesRef, where('senderID', '==', userID));
 
   getDocs(userChats).then((snapshot) => {
     
@@ -465,7 +466,7 @@ escucharChatBtn.addEventListener('click', () => {
               inChat: false
             })
 
-            chatsContainer.innerHTML = ''
+            messagesContainer.innerHTML = ''
             chatUI.style.display = 'none'
             appContainer.style.display = 'block'
             console.log('Chat Ended By Other user.');
@@ -649,7 +650,7 @@ expresarChatBtn.addEventListener('click', () => {
                 inChat: false
               })
 
-              chatsContainer.innerHTML = ''
+              messagesContainer.innerHTML = ''
               chatUI.style.display = 'none'
               appContainer.style.display = 'block'
               console.log('Chat Ended By Other user.');
