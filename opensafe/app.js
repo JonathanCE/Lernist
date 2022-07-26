@@ -143,12 +143,8 @@ resetPasswordForm.addEventListener('submit', (e) => {
 
 // log out users
 logOutBtn.addEventListener('click', () => {
-  const userRef = doc(usersRef, auth.currentUser.uid);
-  updateDoc(userRef, {
-    online: false
-  })
-
   const userID = auth.currentUser.uid;
+
   const userChats = query(chatsRef, where('members', 'array-contains', userID), orderBy("created_at", "desc"));
   const userMessages = query(messagesRef, where('senderID', '==', userID));
 
@@ -191,13 +187,20 @@ logOutBtn.addEventListener('click', () => {
     console.log('Checked messages to delete')
   })
 
-  signOut(auth).then(() => {
+  const userRef = doc(usersRef, userID);
+  updateDoc(userRef, {
+    online: false
+  }).then(() => {
 
-    chatsContainer.innerHTML = '';
-    appContainer.style.display = 'none';
-    landingPage.style.display = 'block';
-    //clearInterval(deletingDocs);
-    console.log('User has logged out')
+    signOut(auth).then(() => {
+
+      chatsContainer.innerHTML = '';
+      appContainer.style.display = 'none';
+      landingPage.style.display = 'block';
+      //clearInterval(deletingDocs);
+      console.log('User has logged out')
+    })
+
   })
   scrollTop();
 })
@@ -331,7 +334,12 @@ escucharChatBtn.addEventListener('click', () => {
       const waitMatch = setTimeout(() => {
         console.log('Could not find any match, try again')
         matchmaking();
+        updateDoc(userRef, {
+          escuchar: false
+        })
       }, 30000)
+
+      console.log('Listener for matches')
 
       const matchedChat = snapshot.docs[0].data();
       const matchedChatID = snapshot.docs[0].id;
@@ -473,6 +481,7 @@ escucharChatBtn.addEventListener('click', () => {
           }
         })
       }
+      console.log('Search made')
     })
 
   } else {
@@ -505,6 +514,9 @@ expresarChatBtn.addEventListener('click', () => {
       const waitMatch = setTimeout(() => {
         console.log('Could not find any match')
         searchMatchInterval();
+        updateDoc(userRef, {
+          ser_escuchado: false
+        })
       }, 30000)
 
       console.log('Listener for matches')
