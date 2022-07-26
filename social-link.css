@@ -22,6 +22,12 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 20px;
+}
+#contents img {
+    max-width: 200px;
+    width: 100%;
+    border-radius: 5px;
 }
 #contents a {
     padding: 15px;
@@ -34,6 +40,7 @@ main {
     font-family: 'Poppins', sans-serif;
     font-size: 21px;
 
+    width: 100%;
     max-width: 400px;
     text-align: center;
 }

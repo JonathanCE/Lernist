@@ -186,8 +186,51 @@
     text-align: center;
 }
 
-.contenido {
-    padding: 20px 20px;
+.aviso-container {
+    display: flex;
+    justify-content: center;
+}
+.aviso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 20px;
+    background-color: #090c0f;
+    padding: 30px;
+    max-width: 600px;
+    border-radius: 2px;
+}
+.aviso img {
+    margin-top: 20px;
+    max-width: 300px;
+    border-radius: 4px;
+}
+.aviso a {
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 9px;
+    display: block;
+    text-decoration: none;
+    color: #f0ece2;
+    font-size: 19px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-top: 30px;
+    background-color: #0f1318;
+    width: 200px;
+}
+.aviso span {
+    font-size: 19px;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+    line-height: 35px;
+    color: yellow;
+}
+.aviso p {
+    font-size: 19px;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+    line-height: 35px;
 }
 .contenido {
     display: flex;
@@ -264,6 +307,11 @@
 }
 
 .swiper a:hover, .material-info a:hover, .todos a:hover {
+    background-color: black;
+    transform: translateY(-4px);
+    transition: transform 150ms;
+}
+.aviso a:hover {
     background-color: black;
     transform: translateY(-4px);
     transition: transform 150ms;
