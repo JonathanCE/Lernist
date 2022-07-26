@@ -446,8 +446,8 @@ escucharChatBtn.addEventListener('click', () => {
 
         //end chat by doc data changed
         const chatRef = doc(chatsRef, matchedChatID)
-        const endChatByOther = onSnapshot(chatRef, (doc) => {
-          const chatStatus = doc.data().ended;
+        const endChatByOther = onSnapshot(chatRef, (document) => {
+          const chatStatus = document.data().ended;
           if (chatStatus) {
             messagesListener();
             endChatByOther();
