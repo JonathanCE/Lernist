@@ -266,9 +266,10 @@ onAuthStateChanged(auth, (user) => {
         chatNames.forEach((member) => {
 
           if (member != userID) {
+            const otherUser = member;
             chatsContainer.innerHTML += `
               <div class="chats" id="${chatID}">
-                ${member}
+                ${otherUser}
               </div>
             `
           }
