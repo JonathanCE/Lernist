@@ -400,6 +400,8 @@ escucharChatBtn.addEventListener('click', () => {
                     `);
                 }
 
+                messagesContainer.scrollTop = messagesContainer.scrollHeight;
+
               })
 
               /* let containerHeight = document.querySelector('#messages-container')
@@ -410,7 +412,6 @@ escucharChatBtn.addEventListener('click', () => {
             }
           })
           console.log('Message inserted.');
-          messagesContainer.scrollTop = messagesContainer.scrollHeight;
           //messagesContainer.scrollIntoView();
           //scrollTo(0, messagesContainer.scrollHeight)
         })
@@ -591,6 +592,8 @@ expresarChatBtn.addEventListener('click', () => {
                       </div>
                     `);
                   }
+
+                  messagesContainer.scrollTop = messagesContainer.scrollHeight;
       
                 })
 
@@ -602,7 +605,6 @@ expresarChatBtn.addEventListener('click', () => {
               }
             })
             console.log('Message inserted.');
-            messagesContainer.scrollTop = messagesContainer.scrollHeight;
             //messagesContainer.scrollIntoView();
             //scrollTo(0, messagesContainer.scrollHeight)
           })
