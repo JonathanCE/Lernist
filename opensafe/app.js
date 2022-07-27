@@ -262,22 +262,29 @@ onAuthStateChanged(auth, (user) => {
           console.log('Chat deleted after 2 hours');
         }
 
-        chatMembers.forEach((member) => {
+        /* chatMembers.forEach((member) => {
           if(member != userID){
             const userRef = doc(usersRef, member)
             getDoc(userRef).then((document) => {
               const userName = document.data().userName;
 
-              // Falta añadir el <p> que contenga el ultimo mensaje de dicha conversacion
+              
               chatsContainer.innerHTML += `
                 <div class="chats" id="${chatID}">
                   ${userName}
                 </div>
               `
             })
-            //const userName = member
+            console.log('Each time member is not equal to now user')
           }
-        })
+        }) */
+
+        chatsContainer.innerHTML += `
+          <div class="chats" id="${chatID}">
+            ${chatID}
+            <p>Ultimo mensaje...</p>
+          </div>
+        `
 
       })
       console.log("Current chats from user: ", snapshot);
@@ -773,7 +780,7 @@ chatsContainer.addEventListener('click', (e) => {
     //end chat by click
     endChatBtn.addEventListener('click', () => {
       
-      messageInputForm.style.display = 'block'
+      messageInputForm.style.display = 'flex'
       messagesContainer.innerHTML = ''
       chatUI.style.display = 'none'
       appContainer.style.display = 'block'
