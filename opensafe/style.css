@@ -164,7 +164,7 @@ input {
     cursor: pointer;
 }
 #messages-container {
-    overflow: auto;
+    overflow-y: scroll;
     padding-bottom: 15px;
 }
 .message-container {

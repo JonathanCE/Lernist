@@ -61,7 +61,7 @@ const endChatBtn = document.querySelector('#end-chat');
 
 const chatUI = document.querySelector('#chat');
 const chatsContainer = document.querySelector('#chats-container');
-const messagesContainer = document.querySelector('#messages-container');
+let messagesContainer = document.querySelector('#messages-container');
 const landingPage = document.querySelector('#landing-page');
 const appContainer = document.querySelector('#app-container');
 
@@ -402,14 +402,15 @@ escucharChatBtn.addEventListener('click', () => {
 
               })
 
-              let containerHeight = document.querySelector('#messages-container')
-              containerHeight.scrollIntoView(false);
+              /* let containerHeight = document.querySelector('#messages-container')
+              containerHeight.scrollIntoView(false); */
 
 
               //console.log('Doc added has: ' + change.doc.data().text)
             }
           })
           console.log('Message inserted.');
+          messagesContainer.scrollTop = messagesContainer.scrollHeight;
           //messagesContainer.scrollIntoView();
           //scrollTo(0, messagesContainer.scrollHeight)
         })
@@ -593,14 +594,15 @@ expresarChatBtn.addEventListener('click', () => {
       
                 })
 
-                let containerHeight = document.querySelector('#messages-container')
-                containerHeight.scrollIntoView(false);
+                /* let containerHeight = document.querySelector('#messages-container')
+                containerHeight.scrollIntoView(false); */
 
 
                 //console.log('Doc added has: ' + change.doc.data().text)
               }
             })
             console.log('Message inserted.');
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
             //messagesContainer.scrollIntoView();
             //scrollTo(0, messagesContainer.scrollHeight)
           })
