@@ -373,7 +373,7 @@ escucharChatBtn.addEventListener('click', () => {
             const texto = change.doc.data().text;
             const creador = change.doc.data().sender;
 
-            const senderDoc = doc(usersRef, auth.currentUser.uid);
+            const senderDoc = doc(usersRef, auth.currentUser.uid); 
 
             if (change.type === 'added') {
 
@@ -401,6 +401,9 @@ escucharChatBtn.addEventListener('click', () => {
                 }
 
               })
+
+              let containerHeight = document.querySelector('#messages-container')
+              containerHeight.scrollIntoView(false);
 
 
               //console.log('Doc added has: ' + change.doc.data().text)
@@ -589,8 +592,11 @@ expresarChatBtn.addEventListener('click', () => {
                   }
       
                 })
-    
-    
+
+                let containerHeight = document.querySelector('#messages-container')
+                containerHeight.scrollIntoView(false);
+
+
                 //console.log('Doc added has: ' + change.doc.data().text)
               }
             })
