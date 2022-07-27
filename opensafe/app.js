@@ -255,18 +255,30 @@ onAuthStateChanged(auth, (user) => {
         const nowInHours = Date.parse(now) / 1000 / 60 / 60;
 
         const chatRef = doc(chatsRef, chatID);
+        const chatMembers = chat.data().members;
 
         if (chatCreation + 2 <= nowInHours) {
           deleteDoc(chatRef)
           console.log('Chat deleted after 2 hours');
         }
 
-        chatsContainer.innerHTML += `
-          <div class="chats" id="${chatID}">
-            ${chatID}
-            <p>Ultimo mensaje...</p>
-          </div>
-        `
+        chatMembers.forEach((member) => {
+          if(member != userID){
+            const userRef = doc(usersRef, member)
+            getDoc(userRef).then((document) => {
+              const userName = document.data().userName;
+
+              // Falta añadir el <p> que contenga el ultimo mensaje de dicha conversacion
+              chatsContainer.innerHTML += `
+                <div class="chats" id="${chatID}">
+                  ${userName}
+                </div>
+              `
+            })
+            //const userName = member
+          }
+        })
+
       })
       console.log("Current chats from user: ", snapshot);
     })
@@ -400,6 +412,7 @@ escucharChatBtn.addEventListener('click', () => {
                     `);
                 }
 
+                // Esto hace que se haga scroll para ver los nuevos mensajes
                 messagesContainer.scrollTop = messagesContainer.scrollHeight;
 
               })
@@ -593,6 +606,7 @@ expresarChatBtn.addEventListener('click', () => {
                     `);
                   }
 
+                  // Esto hace que se haga scroll para ver los nuevos mensajes
                   messagesContainer.scrollTop = messagesContainer.scrollHeight;
       
                 })
@@ -698,7 +712,73 @@ expresarChatBtn.addEventListener('click', () => {
   }
 })
 
-// Abrir conversaciones terminadas
-/* chatsContainer.addEventListener('click', (e) => {
 
-}) */
+
+
+
+
+
+
+
+
+
+
+// Abrir conversaciones terminadas
+chatsContainer.addEventListener('click', (e) => {
+  //console.log(e.target);
+  if (e.target.className == 'chats') {
+    chatUI.style.display = 'flex'
+    appContainer.style.display = 'none'
+    messageInputForm.style.display = 'none'
+    
+    const chatID = e.target.id;
+
+    const chatMessages = query(messagesRef, where('chatID', '==', chatID), orderBy("created_at", "asc"))
+    getDocs(chatMessages).then((snapshot) => {
+      if (snapshot.docs.length > 0) {
+        snapshot.forEach((message) => {
+
+          const texto = message.data().text;
+          const creador = message.data().sender;
+          const senderDoc = doc(usersRef, auth.currentUser.uid);
+
+          getDoc(senderDoc).then((doc) => {
+            const senderName = doc.data().userName;
+
+            if (creador == senderName) {
+              $(messagesContainer).append(`
+                <div class="message-container" style="justify-content:flex-end">
+                  <div class="message" style="color:var(--pink)">
+                    ${creador}
+                    <p>${texto}</p>
+                  </div>
+                </div>
+              `);
+            } else {
+              $(messagesContainer).append(`
+                <div class="message-container">
+                  <div class="message">
+                    ${creador}
+                    <p>${texto}</p>
+                  </div>
+                </div>
+              `);
+            }
+
+          })
+        })
+      }
+      console.log('Messages inserted.');
+    })
+    //end chat by click
+    endChatBtn.addEventListener('click', () => {
+      
+      messageInputForm.style.display = 'block'
+      messagesContainer.innerHTML = ''
+      chatUI.style.display = 'none'
+      appContainer.style.display = 'block'
+      console.log('Back to the chat list');
+
+    })
+  }
+})
