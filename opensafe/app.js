@@ -225,16 +225,19 @@ onAuthStateChanged(auth, (user) => {
   if (user) {
     landingPage.style.display = 'none';
     const userID = user.uid;
+    const userRef = doc(usersRef, userID)
 
     const userChats = query(chatsRef, where('members', 'array-contains', userID), orderBy("created_at", "desc"));
     const userMessages = query(messagesRef, where('senderID', '==', userID));
 
-    // real time listener for chats, and also deletes them
-    onSnapshot(userChats, (snapshot) => {
-      if (snapshot.docs.length > 0) {
-        chatsContainer.innerHTML = '';
-      } else {
-        chatsContainer.innerHTML = `
+    getDoc(userRef).then((userDoc => {
+
+      // real time listener for chats, and also deletes them
+      onSnapshot(userChats, (snapshot) => {
+        if (snapshot.docs.length > 0) {
+          chatsContainer.innerHTML = '';
+        } else {
+          chatsContainer.innerHTML = `
           <h3>
                 Comienza a conectar con otras personas. <br>
                 Puedes escuchar a alguien que lo necesita
@@ -245,47 +248,49 @@ onAuthStateChanged(auth, (user) => {
                 vez.
           </h3>
         `;
-      }
-      snapshot.forEach((chat) => {
-        const chatID = chat.id;
-
-        const chatCreation = chat.data().created_at.seconds / 60 / 60;
-
-        const now = new Date;
-        const nowInHours = Date.parse(now) / 1000 / 60 / 60;
-
-        const chatRef = doc(chatsRef, chatID);
-        const chatNames = chat.data().membersNames;
-        //console.log(chatMembers);
-
-        if (chatCreation + 2 <= nowInHours) {
-          deleteDoc(chatRef)
-          console.log('Chat deleted after 2 hours');
         }
+        snapshot.forEach((chat) => {
+          const chatID = chat.id;
 
-        chatNames.forEach((member) => {
+          const chatCreation = chat.data().created_at.seconds / 60 / 60;
 
-          if (member != userID) {
-            const otherUser = member;
-            chatsContainer.innerHTML += `
+          const now = new Date;
+          const nowInHours = Date.parse(now) / 1000 / 60 / 60;
+
+          const chatRef = doc(chatsRef, chatID);
+          const chatNames = chat.data().membersNames;
+          //console.log(chatMembers);
+
+          if (chatCreation + 2 <= nowInHours) {
+            deleteDoc(chatRef)
+            console.log('Chat deleted after 2 hours');
+          }
+
+          chatNames.forEach((member) => {
+
+            if (member != userDoc.data().userName) {
+              const otherUser = member;
+              chatsContainer.innerHTML += `
               <div class="chats" id="${chatID}">
                 ${otherUser}
               </div>
             `
-          }
-          
+            }
+
+          })
+
+          /* chatsContainer.innerHTML += `
+            <div class="chats" id="${chatID}">
+              ${chatID}
+              <p>Ultimo mensaje...</p>
+            </div>
+          ` */
+
         })
-
-        /* chatsContainer.innerHTML += `
-          <div class="chats" id="${chatID}">
-            ${chatID}
-            <p>Ultimo mensaje...</p>
-          </div>
-        ` */
-
+        console.log("Current chats from user: ", snapshot.docs.length);
       })
-      console.log("Current chats from user: ", snapshot.docs.length);
-    })
+
+    }))
 
     // Checks messages and deletes them
     getDocs(userMessages).then((snapshot) => {
