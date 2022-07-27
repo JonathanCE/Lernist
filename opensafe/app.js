@@ -255,39 +255,35 @@ onAuthStateChanged(auth, (user) => {
         const nowInHours = Date.parse(now) / 1000 / 60 / 60;
 
         const chatRef = doc(chatsRef, chatID);
-        const chatMembers = chat.data().members;
+        const chatNames = chat.data().membersNames;
+        //console.log(chatMembers);
 
         if (chatCreation + 2 <= nowInHours) {
           deleteDoc(chatRef)
           console.log('Chat deleted after 2 hours');
         }
 
-        /* chatMembers.forEach((member) => {
-          if(member != userID){
-            const userRef = doc(usersRef, member)
-            getDoc(userRef).then((document) => {
-              const userName = document.data().userName;
+        chatNames.forEach((member) => {
 
-              
-              chatsContainer.innerHTML += `
-                <div class="chats" id="${chatID}">
-                  ${userName}
-                </div>
-              `
-            })
-            console.log('Each time member is not equal to now user')
+          if (member != userID) {
+            chatsContainer.innerHTML += `
+              <div class="chats" id="${chatID}">
+                ${member}
+              </div>
+            `
           }
-        }) */
+          
+        })
 
-        chatsContainer.innerHTML += `
+        /* chatsContainer.innerHTML += `
           <div class="chats" id="${chatID}">
             ${chatID}
             <p>Ultimo mensaje...</p>
           </div>
-        `
+        ` */
 
       })
-      console.log("Current chats from user: ", snapshot);
+      console.log("Current chats from user: ", snapshot.docs.length);
     })
 
     // Checks messages and deletes them
@@ -345,18 +341,18 @@ escucharChatBtn.addEventListener('click', () => {
       escuchar: true
     })
 
+    const waitMatch = setTimeout(() => {
+      console.log('Could not find any match, try again')
+      matchmaking();
+      updateDoc(userRef, {
+        escuchar: false
+      })
+    }, 30000)
+
     const matches = query(chatsRef, where('members', 'array-contains', userID), where('ended', '==', false))
     const matchmaking = onSnapshot(matches, (snapshot) => {
 
       //console.log('Here is the new snapshot' + snapshot);
-
-      const waitMatch = setTimeout(() => {
-        console.log('Could not find any match, try again')
-        matchmaking();
-        updateDoc(userRef, {
-          escuchar: false
-        })
-      }, 30000)
 
       console.log('Listener for matches')
 
@@ -470,29 +466,25 @@ escucharChatBtn.addEventListener('click', () => {
           }
         })
 
+        const chatRef = doc(chatsRef, matchedChatID)
+
         //end chat by click
         endChatBtn.addEventListener('click', () => {
 
           const chatRef = doc(chatsRef, matchedChatID);
           updateDoc(chatRef, {
+            created_at: new Date(),
             ended: true
           })
 
         })
 
         //end chat by doc data changed
-        const chatRef = doc(chatsRef, matchedChatID)
         const endChatByOther = onSnapshot(chatRef, (document) => {
           const chatStatus = document.data().ended;
           if (chatStatus) {
             messagesListener();
             endChatByOther();
-
-            const chatRef = doc(chatsRef, matchedChatID);
-            updateDoc(chatRef, {
-              created_at: new Date(),
-              ended: true
-            })
 
             const userRef = doc(usersRef, userID);
             updateDoc(userRef, {
@@ -533,16 +525,16 @@ expresarChatBtn.addEventListener('click', () => {
       ser_escuchado: true
     })
 
+    const waitMatch = setTimeout(() => {
+      console.log('Could not find any match')
+      searchMatchInterval();
+      updateDoc(userRef, {
+        ser_escuchado: false
+      })
+    }, 30000)
+
     const matches = query(usersRef, where('escuchar', '==', true), where('inChat', '==', false), where('online', '==', true))
     const searchMatchInterval = onSnapshot(matches, (snapshot) => {
-
-      const waitMatch = setTimeout(() => {
-        console.log('Could not find any match')
-        searchMatchInterval();
-        updateDoc(userRef, {
-          ser_escuchado: false
-        })
-      }, 30000)
 
       console.log('Listener for matches')
       // get the number of results
@@ -558,146 +550,149 @@ expresarChatBtn.addEventListener('click', () => {
 
         //Create chat with both users
         const matchID = randomDoc.id;
+        const matchName = randomDoc.data().userName;
+        const userRef = doc(usersRef, userID);
 
-        addDoc(chatsRef, {
-          created_at: new Date(),
-          ended: false,
-          members: [userID, matchID]
-        }).then((document) => {
-          updateDoc(userRef, {
-            ser_escuchado: false,
-            inChat: true
-          })
+        getDoc(userRef).then((userDoc) => {
+          const userName = userDoc.data().userName;
 
-          chatUI.style.display = 'flex'
-          appContainer.style.display = 'none'
-          
-          console.log('DONE, Chat ID is ' + document.id);
-    
-          const chatID = document.id;
-          const chatMessages = query(messagesRef, where('chatID', '==', chatID), orderBy("created_at", "asc"));
+          addDoc(chatsRef, {
+            created_at: new Date(),
+            ended: false,
+            members: [userID, matchID],
+            membersNames: [matchName, userName]
+          }).then((document) => {
+            updateDoc(userRef, {
+              ser_escuchado: false,
+              inChat: true
+            })
+  
+            chatUI.style.display = 'flex'
+            appContainer.style.display = 'none'
+            
+            console.log('DONE, Chat ID is ' + document.id);
       
-          // real time listener for the chat
-          const messagesListener = onSnapshot(chatMessages, (snapshot) => {
-            const changes = snapshot.docChanges();
-            changes.forEach((change) => {
-    
-              //const userName = 
-              const texto = change.doc.data().text;
-              const creador = change.doc.data().sender;
-    
-              const senderDoc = doc(usersRef, auth.currentUser.uid);
-    
-              if(change.type === 'added') {
-    
+            const chatID = document.id;
+            const chatMessages = query(messagesRef, where('chatID', '==', chatID), orderBy("created_at", "asc"));
+        
+            // real time listener for the chat
+            const messagesListener = onSnapshot(chatMessages, (snapshot) => {
+              const changes = snapshot.docChanges();
+              changes.forEach((change) => {
+      
+                //const userName = 
+                const texto = change.doc.data().text;
+                const creador = change.doc.data().sender;
+      
+                const senderDoc = doc(usersRef, auth.currentUser.uid);
+      
+                if(change.type === 'added') {
+      
+                  getDoc(senderDoc).then((doc) => {
+                    const senderName = doc.data().userName;
+        
+                    if (creador == senderName) {
+                      $(messagesContainer).append(`
+                        <div class="message-container" style="justify-content:flex-end">
+                          <div class="message" style="color:var(--pink)">
+                            ${creador}
+                            <p>${texto}</p>
+                          </div>
+                        </div>
+                      `);
+                    } else {
+                      $(messagesContainer).append(`
+                        <div class="message-container">
+                          <div class="message">
+                            ${creador}
+                            <p>${texto}</p>
+                          </div>
+                        </div>
+                      `);
+                    }
+  
+                    // Esto hace que se haga scroll para ver los nuevos mensajes
+                    messagesContainer.scrollTop = messagesContainer.scrollHeight;
+        
+                  })
+  
+                  /* let containerHeight = document.querySelector('#messages-container')
+                  containerHeight.scrollIntoView(false); */
+  
+  
+                  //console.log('Doc added has: ' + change.doc.data().text)
+                }
+              })
+              console.log('Message inserted.');
+              //messagesContainer.scrollIntoView();
+              //scrollTo(0, messagesContainer.scrollHeight)
+            })
+      
+            // send new message
+            messageInputForm.addEventListener('submit', (e) => {
+              e.preventDefault();
+      
+              const messageText = messageInputForm.text.value;
+      
+              const senderID = auth.currentUser.uid;
+              console.log('Sender ID is: ' + senderID)
+      
+              const senderDoc = doc(usersRef, senderID);
+              console.log(senderDoc);
+      
+              if (messageText != '') {
+      
                 getDoc(senderDoc).then((doc) => {
+                  //const chatID = chat.id;
                   const senderName = doc.data().userName;
       
-                  if (creador == senderName) {
-                    $(messagesContainer).append(`
-                      <div class="message-container" style="justify-content:flex-end">
-                        <div class="message" style="color:var(--pink)">
-                          ${creador}
-                          <p>${texto}</p>
-                        </div>
-                      </div>
-                    `);
-                  } else {
-                    $(messagesContainer).append(`
-                      <div class="message-container">
-                        <div class="message">
-                          ${creador}
-                          <p>${texto}</p>
-                        </div>
-                      </div>
-                    `);
-                  }
-
-                  // Esto hace que se haga scroll para ver los nuevos mensajes
-                  messagesContainer.scrollTop = messagesContainer.scrollHeight;
-      
+                  addDoc(messagesRef, {
+                    chatID: chatID, //this is important for the query of messages
+                    text: messageText,
+                    sender: senderName,
+                    created_at: new Date(),
+                    senderID: auth.currentUser.uid
+                  })
+                  console.log('message created');
+                  messageInputForm.reset();
                 })
-
-                /* let containerHeight = document.querySelector('#messages-container')
-                containerHeight.scrollIntoView(false); */
-
-
-                //console.log('Doc added has: ' + change.doc.data().text)
+      
+              } else {
+                console.log('No puede enviar un mensaje vacío');
               }
             })
-            console.log('Message inserted.');
-            //messagesContainer.scrollIntoView();
-            //scrollTo(0, messagesContainer.scrollHeight)
-          })
-    
-          // send new message
-          messageInputForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-    
-            const messageText = messageInputForm.text.value;
-    
-            const senderID = auth.currentUser.uid;
-            console.log('Sender ID is: ' + senderID)
-    
-            const senderDoc = doc(usersRef, senderID);
-            console.log(senderDoc);
-    
-            if (messageText != '') {
-    
-              getDoc(senderDoc).then((doc) => {
-                //const chatID = chat.id;
-                const senderName = doc.data().userName;
-    
-                addDoc(messagesRef, {
-                  chatID: chatID, //this is important for the query of messages
-                  text: messageText,
-                  sender: senderName,
-                  created_at: new Date(),
-                  senderID: auth.currentUser.uid
-                })
-                console.log('message created');
-                messageInputForm.reset();
-              })
-    
-            } else {
-              console.log('No puede enviar un mensaje vacío');
-            }
-          })
-    
-          //end chat by click
-          endChatBtn.addEventListener('click', () => {
-            
-            const chatRef = doc(chatsRef, chatID);
-            updateDoc(chatRef, {
-              ended: true
-            })
-
-          })
-
-          //end chat by doc data changed
-          const chatRef = doc(chatsRef, chatID)
-          const endChatByOther = onSnapshot(chatRef, (document) => {
-            const chatStatus = document.data().ended;
-            if (chatStatus) {
-              messagesListener();
-              endChatByOther();
-
+  
+            const chatRef = doc(chatsRef, chatID)
+      
+            //end chat by click
+            endChatBtn.addEventListener('click', () => {
+              
               const chatRef = doc(chatsRef, chatID);
               updateDoc(chatRef, {
                 created_at: new Date(),
                 ended: true
               })
-
-              const userRef = doc(usersRef, userID);
-              updateDoc(userRef, {
-                inChat: false
-              })
-
-              messagesContainer.innerHTML = ''
-              chatUI.style.display = 'none'
-              appContainer.style.display = 'block'
-              console.log('Chat Ended By Other user.');
-            }
+  
+            })
+  
+            //end chat by doc data changed
+            const endChatByOther = onSnapshot(chatRef, (document) => {
+              const chatStatus = document.data().ended;
+              if (chatStatus) {
+                messagesListener();
+                endChatByOther();
+  
+                const userRef = doc(usersRef, userID);
+                updateDoc(userRef, {
+                  inChat: false
+                })
+  
+                messagesContainer.innerHTML = ''
+                chatUI.style.display = 'none'
+                appContainer.style.display = 'block'
+                console.log('Chat Ended By Other user.');
+              }
+            })
           })
         })
       }
