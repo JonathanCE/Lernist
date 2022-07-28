@@ -146,45 +146,54 @@ logOutBtn.addEventListener('click', () => {
   const userID = auth.currentUser.uid;
 
   const userChats = query(chatsRef, where('members', 'array-contains', userID), orderBy("created_at", "desc"));
-  const userMessages = query(messagesRef, where('senderID', '==', userID));
 
   getDocs(userChats).then((snapshot) => {
+
+    if (snapshot.docs.length > 0) {
+
+      snapshot.forEach((chat) => {
+        const chatID = chat.id;
+        const userMessages = query(messagesRef, where('chatID', '==', chatID));
+
+        const chatCreation = chat.data().created_at.seconds / 60 / 60/* /24 */;
+        //console.log('Chat created: ' + chatCreation);
+
+        const now = new Date;
+        const nowInHours = Date.parse(now) / 1000 / 60 / 60/* /24 */;
+        //console.log('Date from today: ' + nowInHours);
+
+        const chatRef = doc(chatsRef, chatID);
+
+        if (chatCreation + 1 <= nowInHours) {
+          deleteDoc(chatRef)
+          console.log('Chat deleted after 2 hours');
+        }
+
+        getDocs(userMessages).then((snapshot) => {
+          snapshot.forEach((message) => {
+            const messageCreation = message.data().created_at.seconds / 60 / 60/* /24 */;
+
+            const now = new Date();
+            const nowInHours = Date.parse(now) / 1000 / 60 / 60/* /24 */;
+
+            const messageRef = doc(messagesRef, message.id);
+
+            if (messageCreation + 1 <= nowInHours) {
+              deleteDoc(messageRef)
+              console.log('Message deleted after 2 hours');
+            }
+          })
+          console.log('Checked messages to delete')
+        })
+
+        console.log('Checked chats to delete')
+
+      })
+
+    } else {
+      console.log('There are no chatDocs')
+    }
     
-    snapshot.forEach((chat) => {
-      const chatID = chat.id;
-
-      const chatCreation = chat.data().created_at.seconds / 60 / 60/* /24 */;
-      //console.log('Chat created: ' + chatCreation);
-
-      const now = new Date;
-      const nowInHours = Date.parse(now) / 1000 / 60 / 60/* /24 */;
-      //console.log('Date from today: ' + nowInHours);
-
-      const chatRef = doc(chatsRef, chatID);
-
-      if (chatCreation + 2 <= nowInHours) {
-        deleteDoc(chatRef)
-        console.log('Chat deleted after 2 hours');
-      }
-    })
-    console.log('Checked chats to delete')
-  })
-
-  getDocs(userMessages).then((snapshot) => {
-    snapshot.forEach((message) => {
-      const messageCreation = message.data().created_at.seconds / 60 / 60/* /24 */;
-
-      const now = new Date();
-      const nowInHours = Date.parse(now) / 1000 / 60 / 60/* /24 */;
-
-      const messageRef = doc(messagesRef, message.id);
-
-      if (messageCreation + 2 <= nowInHours) {
-        deleteDoc(messageRef)
-        console.log('Message deleted after 2 hours');
-      }
-    })
-    console.log('Checked messages to delete')
   })
 
   const userRef = doc(usersRef, userID);
@@ -228,14 +237,82 @@ onAuthStateChanged(auth, (user) => {
     const userRef = doc(usersRef, userID)
 
     const userChats = query(chatsRef, where('members', 'array-contains', userID), orderBy("created_at", "desc"));
-    const userMessages = query(messagesRef, where('senderID', '==', userID));
+
+    updateDoc(userRef, {
+      escuchar: false,
+      inChat: false,
+      online: true,
+      ser_escuchado: false,
+    })
 
     getDoc(userRef).then((userDoc => {
 
       // real time listener for chats, and also deletes them
       onSnapshot(userChats, (snapshot) => {
+
         if (snapshot.docs.length > 0) {
+
           chatsContainer.innerHTML = '';
+
+          snapshot.forEach((chat) => {
+            const chatID = chat.id;
+            const userMessages = query(messagesRef, where('chatID', '==', chatID));
+
+            const chatCreation = chat.data().created_at.seconds / 60 / 60;
+
+            const now = new Date;
+            const nowInHours = Date.parse(now) / 1000 / 60 / 60;
+
+            const chatRef = doc(chatsRef, chatID);
+            const chatNames = chat.data().membersNames;
+            //console.log(chatMembers);
+
+            if (chatCreation + 1 <= nowInHours) {
+              deleteDoc(chatRef)
+              console.log('Chat deleted after 2 hours');
+            }
+
+            // Checks messages and deletes them
+            getDocs(userMessages).then((snapshot) => { //it doesnt work because there is no chat
+              snapshot.forEach((message) => {
+                const messageCreation = message.data().created_at.seconds / 60 / 60;
+
+                const now = new Date();
+                const nowInHours = Date.parse(now) / 1000 / 60 / 60;
+
+                const messageRef = doc(messagesRef, message.id);
+
+                if (messageCreation + 1 <= nowInHours) {
+                  deleteDoc(messageRef)
+                  console.log('Message deleted after 2 hours');
+                }
+              })
+              console.log('Checked messages to delete')
+            })
+
+            chatNames.forEach((member) => {
+
+              if (member != userDoc.data().userName) {
+                const otherUser = member;
+                chatsContainer.innerHTML += `
+                <div class="chats" id="${chatID}">
+                  ${otherUser}
+                </div>
+              `
+              }
+
+            })
+
+            console.log('Checked chats to delete')
+
+            /* chatsContainer.innerHTML += `
+              <div class="chats" id="${chatID}">
+                ${chatID}
+                <p>Ultimo mensaje...</p>
+              </div>
+            ` */
+
+          })
         } else {
           chatsContainer.innerHTML = `
           <h3>
@@ -249,56 +326,18 @@ onAuthStateChanged(auth, (user) => {
           </h3>
         `;
         }
-        snapshot.forEach((chat) => {
-          const chatID = chat.id;
-
-          const chatCreation = chat.data().created_at.seconds / 60 / 60;
-
-          const now = new Date;
-          const nowInHours = Date.parse(now) / 1000 / 60 / 60;
-
-          const chatRef = doc(chatsRef, chatID);
-          const chatNames = chat.data().membersNames;
-          //console.log(chatMembers);
-
-          if (chatCreation + 2 <= nowInHours) {
-            deleteDoc(chatRef)
-            console.log('Chat deleted after 2 hours');
-          }
-
-          chatNames.forEach((member) => {
-
-            if (member != userDoc.data().userName) {
-              const otherUser = member;
-              chatsContainer.innerHTML += `
-              <div class="chats" id="${chatID}">
-                ${otherUser}
-              </div>
-            `
-            }
-
-          })
-
-          /* chatsContainer.innerHTML += `
-            <div class="chats" id="${chatID}">
-              ${chatID}
-              <p>Ultimo mensaje...</p>
-            </div>
-          ` */
-
-        })
         console.log("Current chats from user: ", snapshot.docs.length);
       })
 
     }))
 
     // Checks messages and deletes them
-    getDocs(userMessages).then((snapshot) => {
+    /* getDocs(userMessages).then((snapshot) => {
       snapshot.forEach((message) => {
-        const messageCreation = message.data().created_at.seconds / 60 / 60/* /24 */;
+        const messageCreation = message.data().created_at.seconds / 60 / 60;
 
         const now = new Date();
-        const nowInHours = Date.parse(now) / 1000 / 60 / 60/* /24 */;
+        const nowInHours = Date.parse(now) / 1000 / 60 / 60;
 
         const messageRef = doc(messagesRef, message.id);
 
@@ -308,7 +347,7 @@ onAuthStateChanged(auth, (user) => {
         }
       })
       console.log('Checked messages to delete')
-    })
+    }) */
 
   } else {
     appContainer.style.display = 'none';
