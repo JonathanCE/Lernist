@@ -512,7 +512,7 @@ escucharChatBtn.addEventListener('click', () => {
         }, 606000) // el extra 6 es para adaptarse al timer
 
         // Timer UI
-        let seconds = 58;
+        let seconds = 59;
         let minutes = 9;
         const timerUI = setInterval(() => {
 
@@ -638,6 +638,8 @@ escucharChatBtn.addEventListener('click', () => {
         const endChatByOther = onSnapshot(chatRef, (document) => {
           const chatStatus = document.data().ended;
           if (chatStatus) {
+            chatMin.innerHTML = 9;
+            chatSec.innerHTML = 59;
             messagesListener();
             endChatByOther();
             clearTimeout(maxTime);
@@ -758,7 +760,7 @@ expresarChatBtn.addEventListener('click', () => {
             }, 606000)
 
             // Timer UI
-            let seconds = 58;
+            let seconds = 59;
             let minutes = 9;
             const timerUI = setInterval(() => {
 
@@ -884,6 +886,8 @@ expresarChatBtn.addEventListener('click', () => {
             const endChatByOther = onSnapshot(chatRef, (document) => {
               const chatStatus = document.data().ended;
               if (chatStatus) {
+                chatMin.innerHTML = 9;
+                chatSec.innerHTML = 59;
                 messagesListener();
                 endChatByOther();
                 clearTimeout(maxTime);
