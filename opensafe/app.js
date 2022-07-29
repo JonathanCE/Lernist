@@ -71,6 +71,7 @@ const appContainer = document.querySelector('#app-container');
 const welcomeAnimation = document.querySelector('#welcome-animation');
 const searchingAnimation = document.querySelector('#searching-animation');
 const contextualMessage = document.querySelector('#contextual-message');
+const bottomAd = document.querySelector('#bottom-ad');
 
 
 const scrollTop = () => scrollTo(0,0);
@@ -99,6 +100,16 @@ registerForm.addEventListener('submit', (e) => {
     registerForm.reset()
     landingPage.style.display = 'none';
     appContainer.style.display = 'block';
+    /* bottomAd.innerHTML = `
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8087632256608585"
+                crossorigin="anonymous"></script>
+            <!-- OpenSafeMain -->
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8087632256608585" data-ad-slot="2370819687"
+                data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+    ` */
     scrollTop();
 
     // Mensaje contextual
@@ -139,6 +150,16 @@ logInForm.addEventListener('submit', (e) => {
     logInForm.reset()
     landingPage.style.display = 'none';
     appContainer.style.display = 'block';
+    /* bottomAd.innerHTML = `
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8087632256608585"
+                crossorigin="anonymous"></script>
+            <!-- OpenSafeMain -->
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8087632256608585" data-ad-slot="2370819687"
+                data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+    ` */
 
     // Mensaje contextual
     contextualMessage.innerHTML = 'Bienvenid@ de vuelta'
@@ -251,6 +272,7 @@ logOutBtn.addEventListener('click', () => {
       chatsContainer.innerHTML = '';
       appContainer.style.display = 'none';
       landingPage.style.display = 'block';
+      bottomAd.innerHTML = ''
       //clearInterval(deletingDocs);
       console.log('User has logged out')
 
@@ -288,6 +310,16 @@ onAuthStateChanged(auth, (user) => {
       welcomeAnimation.style.display = 'none'
     }, 2000)
     appContainer.style.display = 'block';
+    bottomAd.innerHTML = `
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8087632256608585"
+                crossorigin="anonymous"></script>
+            <!-- OpenSafeMain -->
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8087632256608585" data-ad-slot="2370819687"
+                data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+    `
     const userID = user.uid;
     const userRef = doc(usersRef, userID)
 
@@ -320,16 +352,6 @@ onAuthStateChanged(auth, (user) => {
 
             const chatRef = doc(chatsRef, chatID);
             const chatNames = chat.data().membersNames;
-            //console.log(chatMembers);
-
-            /* updateDoc(chatRef, {
-              ended: true
-            }) */
-
-            if (chatCreation + 2 <= nowInHours) {
-              deleteDoc(chatRef)
-              console.log('Chat deleted after 2 hours');
-            }
 
             // Checks messages and deletes them
             getDocs(userMessages).then((messages) => {
@@ -340,8 +362,8 @@ onAuthStateChanged(auth, (user) => {
               messages.forEach((message) => {
                 const messageCreation = message.data().created_at.seconds / 60 / 60;
 
-                const now = new Date();
-                const nowInHours = Date.parse(now) / 1000 / 60 / 60;
+                /* const now = new Date();
+                const nowInHours = Date.parse(now) / 1000 / 60 / 60; */
 
                 const messageRef = doc(messagesRef, message.id);
 
@@ -351,6 +373,11 @@ onAuthStateChanged(auth, (user) => {
                 }
               })
               console.log('Checked messages to delete')
+            }).then(() => {
+              if (chatCreation + 2 <= nowInHours) {
+                deleteDoc(chatRef)
+                console.log('Chat deleted after 2 hours');
+              }
             })
 
             chatNames.forEach((member) => {
@@ -367,13 +394,6 @@ onAuthStateChanged(auth, (user) => {
             })
 
             console.log('Checked chats to delete')
-
-            /* chatsContainer.innerHTML += `
-              <div class="chats" id="${chatID}">
-                ${chatID}
-                <p>Ultimo mensaje...</p>
-              </div>
-            ` */
 
           })
         } else {
@@ -393,24 +413,6 @@ onAuthStateChanged(auth, (user) => {
       })
 
     }))
-
-    // Checks messages and deletes them
-    /* getDocs(userMessages).then((snapshot) => {
-      snapshot.forEach((message) => {
-        const messageCreation = message.data().created_at.seconds / 60 / 60;
-
-        const now = new Date();
-        const nowInHours = Date.parse(now) / 1000 / 60 / 60;
-
-        const messageRef = doc(messagesRef, message.id);
-
-        if (messageCreation + 2 <= nowInHours) {
-          deleteDoc(messageRef)
-          console.log('Message deleted after 2 hours');
-        }
-      })
-      console.log('Checked messages to delete')
-    }) */
 
   } else {
     setTimeout(() => {
