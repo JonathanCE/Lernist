@@ -65,6 +65,9 @@ let messagesContainer = document.querySelector('#messages-container');
 const landingPage = document.querySelector('#landing-page');
 const appContainer = document.querySelector('#app-container');
 
+const welcomeAnimation = document.querySelector('#welcome-animation');
+const searchingAnimation = document.querySelector('#searching-animation');
+const contextualMessage = document.querySelector('#contextual-message');
 
 
 const scrollTop = () => scrollTo(0,0);
@@ -94,9 +97,23 @@ registerForm.addEventListener('submit', (e) => {
     landingPage.style.display = 'none';
     appContainer.style.display = 'block';
     scrollTop();
+
+    // Mensaje contextual
+    contextualMessage.innerHTML = 'Bienvenid@ a OpenSafe'
+    contextualMessage.style.marginTop = '0'
+    setTimeout(() => {
+      contextualMessage.style.marginTop = '-100%'
+    }, 3000)
   }).catch((error) => {
     console.log(error.code);
     console.log(error.message);
+
+    // Mensaje contextual
+    contextualMessage.innerHTML = 'Correo o contraseña no válidos'
+    contextualMessage.style.marginTop = '0'
+    setTimeout(() => {
+      contextualMessage.style.marginTop = '-100%'
+    }, 3000)
   })
 })
 
@@ -119,10 +136,24 @@ logInForm.addEventListener('submit', (e) => {
     logInForm.reset()
     landingPage.style.display = 'none';
     appContainer.style.display = 'block';
+
+    // Mensaje contextual
+    contextualMessage.innerHTML = 'Bienvenid@ de vuelta'
+    contextualMessage.style.marginTop = '0'
+    setTimeout(() => {
+      contextualMessage.style.marginTop = '-100%'
+    }, 3000)
   })
   .catch((error) => {
     console.log(error.code);
     console.log(error.message);
+
+    // Mensaje contextual
+    contextualMessage.innerHTML = 'Correo o contraseña incorrectos'
+    contextualMessage.style.marginTop = '0'
+    setTimeout(() => {
+      contextualMessage.style.marginTop = '-100%'
+    }, 3000)
   })
   scrollTop();
 })
@@ -135,6 +166,13 @@ resetPasswordForm.addEventListener('submit', (e) => {
   sendPasswordResetEmail(auth, email).then(() => {
     console.log('Password reset email sent')
     resetPasswordForm.reset()
+
+    // Mensaje contextual
+    contextualMessage.innerHTML = 'Te enviamos un correo para cambiar tu contraseña.'
+    contextualMessage.style.marginTop = '0'
+    setTimeout(() => {
+      contextualMessage.style.marginTop = '-100%'
+    }, 3000)
   }).catch((error) => {
     console.log(error.code);
     console.log(error.message);
@@ -164,12 +202,16 @@ logOutBtn.addEventListener('click', () => {
 
         const chatRef = doc(chatsRef, chatID);
 
-        if (chatCreation + 1 <= nowInHours) {
+        if (chatCreation + 2 <= nowInHours) {
           deleteDoc(chatRef)
           console.log('Chat deleted after 2 hours');
         }
 
         getDocs(userMessages).then((snapshot) => {
+          if (snapshot.docs.length == 0 && chatCreation + 1 <= nowInHours) {
+            deleteDoc(chatRef)
+          }
+
           snapshot.forEach((message) => {
             const messageCreation = message.data().created_at.seconds / 60 / 60/* /24 */;
 
@@ -178,7 +220,7 @@ logOutBtn.addEventListener('click', () => {
 
             const messageRef = doc(messagesRef, message.id);
 
-            if (messageCreation + 1 <= nowInHours) {
+            if (messageCreation + 2 <= nowInHours) {
               deleteDoc(messageRef)
               console.log('Message deleted after 2 hours');
             }
@@ -208,6 +250,13 @@ logOutBtn.addEventListener('click', () => {
       landingPage.style.display = 'block';
       //clearInterval(deletingDocs);
       console.log('User has logged out')
+
+      // Mensaje contextual
+      contextualMessage.innerHTML = 'Sesión terminada'
+      contextualMessage.style.marginTop = '0'
+      setTimeout(() => {
+        contextualMessage.style.marginTop = '-100%'
+      }, 3000)
     })
 
   })
@@ -232,7 +281,10 @@ logOutBtn.addEventListener('click', () => {
 // Gets chats and messages if user is logged in, and deletes documents after certain time
 onAuthStateChanged(auth, (user) => {
   if (user) {
-    landingPage.style.display = 'none';
+    setTimeout(() => {
+      welcomeAnimation.style.display = 'none'
+    }, 2000)
+    appContainer.style.display = 'block';
     const userID = user.uid;
     const userRef = doc(usersRef, userID)
 
@@ -267,13 +319,21 @@ onAuthStateChanged(auth, (user) => {
             const chatNames = chat.data().membersNames;
             //console.log(chatMembers);
 
-            if (chatCreation + 1 <= nowInHours) {
+            /* updateDoc(chatRef, {
+              ended: true
+            }) */
+
+            if (chatCreation + 2 <= nowInHours) {
               deleteDoc(chatRef)
               console.log('Chat deleted after 2 hours');
             }
 
             // Checks messages and deletes them
-            getDocs(userMessages).then((snapshot) => { //it doesnt work because there is no chat
+            getDocs(userMessages).then((snapshot) => {
+              if (snapshot.docs.length == 0 && chatCreation + 1 <= nowInHours) {
+                deleteDoc(chatRef)
+              }
+              
               snapshot.forEach((message) => {
                 const messageCreation = message.data().created_at.seconds / 60 / 60;
 
@@ -282,7 +342,7 @@ onAuthStateChanged(auth, (user) => {
 
                 const messageRef = doc(messagesRef, message.id);
 
-                if (messageCreation + 1 <= nowInHours) {
+                if (messageCreation + 2 <= nowInHours) {
                   deleteDoc(messageRef)
                   console.log('Message deleted after 2 hours');
                 }
@@ -350,7 +410,10 @@ onAuthStateChanged(auth, (user) => {
     }) */
 
   } else {
-    appContainer.style.display = 'none';
+    setTimeout(() => {
+      welcomeAnimation.style.display = 'none'
+    }, 2000)
+    landingPage.style.display = 'flex';
   }
 })
 
@@ -380,6 +443,9 @@ escucharChatBtn.addEventListener('click', () => {
   if(auth.currentUser){
     const userID = auth.currentUser.uid;
 
+    // Animacion de busqueda
+    searchingAnimation.style.display = 'flex'
+
     //MATCHMAKING AT ESCUCHAR-CHAT
     const userRef = doc(usersRef, userID);
     updateDoc(userRef, {
@@ -388,6 +454,7 @@ escucharChatBtn.addEventListener('click', () => {
 
     const waitMatch = setTimeout(() => {
       console.log('Could not find any match, try again')
+      searchingAnimation.style.display = 'none'
       matchmaking();
       updateDoc(userRef, {
         escuchar: false
@@ -416,6 +483,7 @@ escucharChatBtn.addEventListener('click', () => {
         console.log('Stopped timeout');
 
 
+        searchingAnimation.style.display = 'none'
         chatUI.style.display = 'flex'
         appContainer.style.display = 'none'
 
@@ -423,6 +491,14 @@ escucharChatBtn.addEventListener('click', () => {
 
         const chatID = matchedChatID;
         const chatMessages = query(messagesRef, where('chatID', '==', chatID), orderBy("created_at", "asc"));
+
+        const maxTime = setTimeout(() => {
+          const chatRef = doc(chatsRef, chatID);
+          updateDoc(chatRef, {
+            created_at: new Date(),
+            ended: true
+          })
+        }, 600000)
 
         // real time listener for the chat
         const messagesListener = onSnapshot(chatMessages, (snapshot) => {
@@ -530,6 +606,7 @@ escucharChatBtn.addEventListener('click', () => {
           if (chatStatus) {
             messagesListener();
             endChatByOther();
+            clearTimeout(maxTime);
 
             const userRef = doc(usersRef, userID);
             updateDoc(userRef, {
@@ -540,6 +617,13 @@ escucharChatBtn.addEventListener('click', () => {
             chatUI.style.display = 'none'
             appContainer.style.display = 'block'
             console.log('Chat Ended By Other user.');
+
+            // Mensaje contextual
+            contextualMessage.innerHTML = 'Conversación terminada'
+            contextualMessage.style.marginTop = '0'
+            setTimeout(() => {
+              contextualMessage.style.marginTop = '-100%'
+            }, 3000)
           }
         })
       }
@@ -558,11 +642,12 @@ escucharChatBtn.addEventListener('click', () => {
 
 
 
-// Creates Chat, real time listconsole.log(snapshot.doc[Math.floor()*numberResults]ener for messages, input and send messages
-// finish chat
 expresarChatBtn.addEventListener('click', () => {
   if(auth.currentUser) {
     const userID = auth.currentUser.uid;
+
+    // Animacion de busqueda
+    searchingAnimation.style.display = 'flex'
 
     //MATCHMAKING AT EXPRESAR-CHAT
     const userRef = doc(usersRef, userID);
@@ -572,6 +657,7 @@ expresarChatBtn.addEventListener('click', () => {
 
     const waitMatch = setTimeout(() => {
       console.log('Could not find any match')
+      searchingAnimation.style.display = 'none'
       searchMatchInterval();
       updateDoc(userRef, {
         ser_escuchado: false
@@ -612,6 +698,7 @@ expresarChatBtn.addEventListener('click', () => {
               inChat: true
             })
   
+            searchingAnimation.style.display = 'none'
             chatUI.style.display = 'flex'
             appContainer.style.display = 'none'
             
@@ -619,6 +706,14 @@ expresarChatBtn.addEventListener('click', () => {
       
             const chatID = document.id;
             const chatMessages = query(messagesRef, where('chatID', '==', chatID), orderBy("created_at", "asc"));
+
+            const maxTime = setTimeout(() => {
+              const chatRef = doc(chatsRef, chatID);
+              updateDoc(chatRef, {
+                created_at: new Date(),
+                ended: true
+              })
+            }, 600000)
         
             // real time listener for the chat
             const messagesListener = onSnapshot(chatMessages, (snapshot) => {
@@ -726,6 +821,7 @@ expresarChatBtn.addEventListener('click', () => {
               if (chatStatus) {
                 messagesListener();
                 endChatByOther();
+                clearTimeout(maxTime);
   
                 const userRef = doc(usersRef, userID);
                 updateDoc(userRef, {
@@ -736,6 +832,13 @@ expresarChatBtn.addEventListener('click', () => {
                 chatUI.style.display = 'none'
                 appContainer.style.display = 'block'
                 console.log('Chat Ended By Other user.');
+
+                // Mensaje contextual
+                contextualMessage.innerHTML = 'Conversación terminada'
+                contextualMessage.style.marginTop = '0'
+                setTimeout(() => {
+                  contextualMessage.style.marginTop = '-100%'
+                }, 3000)
               }
             })
           })
