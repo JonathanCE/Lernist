@@ -310,7 +310,8 @@ onAuthStateChanged(auth, (user) => {
       welcomeAnimation.style.display = 'none'
     }, 2000)
     appContainer.style.display = 'block';
-    bottomAd.innerHTML = `
+    setTimeout(() => {
+      bottomAd.innerHTML = `
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8087632256608585"
                 crossorigin="anonymous"></script>
             <!-- OpenSafeMain -->
@@ -320,6 +321,7 @@ onAuthStateChanged(auth, (user) => {
                 (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
     `
+    }, 3000)
     const userID = user.uid;
     const userRef = doc(usersRef, userID)
 
