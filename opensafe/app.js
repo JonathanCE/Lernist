@@ -386,7 +386,7 @@ onAuthStateChanged(auth, (user) => {
   } else {
     setTimeout(() => {
       welcomeAnimation.style.display = 'none'
-    }, 2000)
+    }, 3000)
     appContainer.style.display = 'none';
   }
 })
