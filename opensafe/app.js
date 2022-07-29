@@ -509,7 +509,7 @@ escucharChatBtn.addEventListener('click', () => {
             created_at: new Date(),
             ended: true
           })
-        }, 606000) // el extra 6 es para adaptarse al timer
+        }, 600000) // el extra 6 es para adaptarse al timer
 
         // Timer UI
         let seconds = 58;
@@ -755,7 +755,7 @@ expresarChatBtn.addEventListener('click', () => {
                 created_at: new Date(),
                 ended: true
               })
-            }, 606000)
+            }, 600000)
 
             // Timer UI
             let seconds = 58;
