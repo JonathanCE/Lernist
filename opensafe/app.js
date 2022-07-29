@@ -100,16 +100,6 @@ registerForm.addEventListener('submit', (e) => {
     registerForm.reset()
     landingPage.style.display = 'none';
     appContainer.style.display = 'block';
-    /* bottomAd.innerHTML = `
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8087632256608585"
-                crossorigin="anonymous"></script>
-            <!-- OpenSafeMain -->
-            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8087632256608585" data-ad-slot="2370819687"
-                data-ad-format="auto" data-full-width-responsive="true"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-    ` */
     scrollTop();
 
     // Mensaje contextual
@@ -150,16 +140,6 @@ logInForm.addEventListener('submit', (e) => {
     logInForm.reset()
     landingPage.style.display = 'none';
     appContainer.style.display = 'block';
-    /* bottomAd.innerHTML = `
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8087632256608585"
-                crossorigin="anonymous"></script>
-            <!-- OpenSafeMain -->
-            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8087632256608585" data-ad-slot="2370819687"
-                data-ad-format="auto" data-full-width-responsive="true"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-    ` */
 
     // Mensaje contextual
     contextualMessage.innerHTML = 'Bienvenid@ de vuelta'
@@ -272,7 +252,6 @@ logOutBtn.addEventListener('click', () => {
       chatsContainer.innerHTML = '';
       appContainer.style.display = 'none';
       landingPage.style.display = 'block';
-      bottomAd.innerHTML = ''
       //clearInterval(deletingDocs);
       console.log('User has logged out')
 
@@ -310,18 +289,6 @@ onAuthStateChanged(auth, (user) => {
       welcomeAnimation.style.display = 'none'
     }, 2000)
     appContainer.style.display = 'block';
-    setTimeout(() => {
-      bottomAd.innerHTML = `
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8087632256608585"
-                crossorigin="anonymous"></script>
-            <!-- OpenSafeMain -->
-            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8087632256608585" data-ad-slot="2370819687"
-                data-ad-format="auto" data-full-width-responsive="true"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-    `
-    }, 3000)
     const userID = user.uid;
     const userRef = doc(usersRef, userID)
 
