@@ -36,7 +36,11 @@
             </nav>
             <div id="chat-header">
                 <button id="end-chat">Terminar</button>
-                <p>10:00</p>
+                <div id="timer">
+                    <p id="chat-minutes">9</p>
+                    <p>:</p>
+                    <p id="chat-seconds">59</p>
+                </div>
             </div>
         </div>
         <div id="messages-container">
@@ -50,7 +54,7 @@
 
         </div>
         <form id="chat-input">
-            <input type="text" name="text" placeholder="Escribe tu mensaje" autocomplete="off">
+            <input type="text" name="text" placeholder="Escribe tu mensaje..." autocomplete="off">
             <button type="submit" name="sendMessage">Enviar</button>
         </form>
     </div>
@@ -103,7 +107,7 @@
 
             <form id="forgotPasswordForm">
                 <label for="email">¿Olvidaste tu contraseña?</label>
-                <input type="email" name="email" placeholder="Correo...">
+                <input type="email" name="email" placeholder="Correo de tu cuenta...">
                 <p>
                     El correo para cambiar tu contraseña
                     podría llegar a la carpeta de spam.

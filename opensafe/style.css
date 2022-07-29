@@ -200,19 +200,18 @@ input {
     width: fit-content;
     margin: 0;
 }
+#chat-header #timer {
+    display: flex;
+    padding: 20px;
+    background-color: #151f28;
+}
 #chat-header p {
     display: block;
-    padding: 20px;
     text-align: center;
-    border-radius: 0;
-    background-color: #151f28;
-    border-style: none;
-    border-radius: 10px;
     color: #eceaf7;
-
+    background-color: #151f28;
     font-family: var(--secundary-font);
     font-size: 20px;
-    cursor: pointer;
 }
 #messages-container {
     overflow-y: scroll;

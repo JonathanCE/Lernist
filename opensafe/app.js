@@ -52,12 +52,15 @@ const messagesRef = collection(db, 'messages');
 const registerForm = document.querySelector('#registerForm');
 const logInForm = document.querySelector('#logInForm');
 const resetPasswordForm = document.querySelector('#forgotPasswordForm');
-
 const logOutBtn = document.querySelector('#logOutBtn');
+
 const escucharChatBtn = document.querySelector('#escuchar-chat');
 const expresarChatBtn = document.querySelector('#expresar-chat');
+
 const messageInputForm = document.querySelector('#chat-input');
 const endChatBtn = document.querySelector('#end-chat');
+const chatMin = document.querySelector('#chat-minutes');
+const chatSec = document.querySelector('#chat-seconds');
 
 const chatUI = document.querySelector('#chat');
 const chatsContainer = document.querySelector('#chats-container');
@@ -252,11 +255,11 @@ logOutBtn.addEventListener('click', () => {
       console.log('User has logged out')
 
       // Mensaje contextual
-      contextualMessage.innerHTML = 'Sesión terminada'
+      contextualMessage.innerHTML = 'Sesión terminada, hasta pronto &#10084;'
       contextualMessage.style.marginTop = '0'
       setTimeout(() => {
         contextualMessage.style.marginTop = '-100%'
-      }, 3000)
+      }, 4000)
     })
 
   })
@@ -329,12 +332,12 @@ onAuthStateChanged(auth, (user) => {
             }
 
             // Checks messages and deletes them
-            getDocs(userMessages).then((snapshot) => {
-              if (snapshot.docs.length == 0 && chatCreation + 1 <= nowInHours) {
+            getDocs(userMessages).then((messages) => {
+              if (messages.docs.length == 0 && chatCreation + 1 <= nowInHours) {
                 deleteDoc(chatRef)
               }
               
-              snapshot.forEach((message) => {
+              messages.forEach((message) => {
                 const messageCreation = message.data().created_at.seconds / 60 / 60;
 
                 const now = new Date();
@@ -459,6 +462,13 @@ escucharChatBtn.addEventListener('click', () => {
       updateDoc(userRef, {
         escuchar: false
       })
+
+      // Mensaje contextual
+      contextualMessage.innerHTML = 'No se encontró a otra persona, intenta otra vez'
+      contextualMessage.style.marginTop = '0'
+      setTimeout(() => {
+        contextualMessage.style.marginTop = '-100%'
+      }, 4000)
     }, 30000)
 
     const matches = query(chatsRef, where('members', 'array-contains', userID), where('ended', '==', false))
@@ -493,12 +503,36 @@ escucharChatBtn.addEventListener('click', () => {
         const chatMessages = query(messagesRef, where('chatID', '==', chatID), orderBy("created_at", "asc"));
 
         const maxTime = setTimeout(() => {
+          clearInterval(timerUI)
           const chatRef = doc(chatsRef, chatID);
           updateDoc(chatRef, {
             created_at: new Date(),
             ended: true
           })
-        }, 600000)
+        }, 606000) // el extra 6 es para adaptarse al timer
+
+        // Timer UI
+        let seconds = 58;
+        let minutes = 9;
+        const timerUI = setInterval(() => {
+
+          if (seconds == 59) {
+            chatMin.innerHTML = minutes
+          }
+
+          if (seconds < 10) {
+            chatSec.innerHTML = '0' + seconds;
+          } else {
+            chatSec.innerHTML = seconds;
+          }
+
+          if (seconds == 0) {
+            minutes -= 1
+            seconds = 60
+          }
+
+          seconds -= 1
+        }, 1000)
 
         // real time listener for the chat
         const messagesListener = onSnapshot(chatMessages, (snapshot) => {
@@ -607,6 +641,7 @@ escucharChatBtn.addEventListener('click', () => {
             messagesListener();
             endChatByOther();
             clearTimeout(maxTime);
+            clearInterval(timerUI);
 
             const userRef = doc(usersRef, userID);
             updateDoc(userRef, {
@@ -662,6 +697,13 @@ expresarChatBtn.addEventListener('click', () => {
       updateDoc(userRef, {
         ser_escuchado: false
       })
+
+      // Mensaje contextual
+      contextualMessage.innerHTML = 'No se encontró a otra persona, intenta otra vez'
+      contextualMessage.style.marginTop = '0'
+      setTimeout(() => {
+        contextualMessage.style.marginTop = '-100%'
+      }, 4000)
     }, 30000)
 
     const matches = query(usersRef, where('escuchar', '==', true), where('inChat', '==', false), where('online', '==', true))
@@ -713,8 +755,31 @@ expresarChatBtn.addEventListener('click', () => {
                 created_at: new Date(),
                 ended: true
               })
-            }, 600000)
-        
+            }, 606000)
+
+            // Timer UI
+            let seconds = 58;
+            let minutes = 9;
+            const timerUI = setInterval(() => {
+
+              if (seconds == 59) {
+                chatMin.innerHTML = minutes
+              }
+
+              if (seconds < 10) {
+                chatSec.innerHTML = '0' + seconds;
+              } else {
+                chatSec.innerHTML = seconds;
+              }
+
+              if (seconds == 0) {
+                minutes -= 1
+                seconds = 60
+              }
+
+              seconds -= 1
+            }, 1000)
+
             // real time listener for the chat
             const messagesListener = onSnapshot(chatMessages, (snapshot) => {
               const changes = snapshot.docChanges();
@@ -822,6 +887,7 @@ expresarChatBtn.addEventListener('click', () => {
                 messagesListener();
                 endChatByOther();
                 clearTimeout(maxTime);
+                clearInterval(timerUI);
   
                 const userRef = doc(usersRef, userID);
                 updateDoc(userRef, {
