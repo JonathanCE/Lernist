@@ -288,7 +288,7 @@ onAuthStateChanged(auth, (user) => {
     setTimeout(() => {
       welcomeAnimation.style.display = 'none'
     }, 2000)
-    appContainer.style.display = 'block';
+    landingPage.style.display = 'none';
     const userID = user.uid;
     const userRef = doc(usersRef, userID)
 
@@ -387,7 +387,7 @@ onAuthStateChanged(auth, (user) => {
     setTimeout(() => {
       welcomeAnimation.style.display = 'none'
     }, 2000)
-    landingPage.style.display = 'flex';
+    appContainer.style.display = 'none';
   }
 })
 
