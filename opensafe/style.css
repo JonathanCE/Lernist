@@ -196,7 +196,7 @@ input {
     width: 100%;
     height: 100px;
 }
-.OpenSafeInChat {
+/* .OpenSafeInChat {
     width: 320px;
     height: 100px;
 }
@@ -211,7 +211,7 @@ input {
         width: 728px;
         height: 90px;
     }
-}
+} */
 #chat-header {
     background-color: var(--dark);
     display: flex;

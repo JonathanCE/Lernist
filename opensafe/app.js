@@ -86,7 +86,7 @@ registerForm.addEventListener('submit', (e) => {
   const username = registerForm.username.value;
 
   createUserWithEmailAndPassword(auth, email, password).then((credentials) => {
-    console.log('User ID is ' + credentials.user.uid);
+    //console.log('User ID is ' + credentials.user.uid);
     setDoc(doc(usersRef, credentials.user.uid), {
       userID: credentials.user.uid,
       escuchar: false,
@@ -136,7 +136,7 @@ logInForm.addEventListener('submit', (e) => {
     }).then(() => {
       console.log('El usuario esta en linea');
     })
-    console.log('User has logged in: ' + credentials.user.uid);
+    //console.log('User has logged in: ' + credentials.user.uid);
     logInForm.reset()
     landingPage.style.display = 'none';
     appContainer.style.display = 'block';
@@ -168,7 +168,7 @@ resetPasswordForm.addEventListener('submit', (e) => {
   const email = resetPasswordForm.email.value
   
   sendPasswordResetEmail(auth, email).then(() => {
-    console.log('Password reset email sent')
+    //console.log('Password reset email sent')
     resetPasswordForm.reset()
 
     // Mensaje contextual
@@ -198,17 +198,15 @@ logOutBtn.addEventListener('click', () => {
         const userMessages = query(messagesRef, where('chatID', '==', chatID));
 
         const chatCreation = chat.data().created_at.seconds / 60 / 60/* /24 */;
-        //console.log('Chat created: ' + chatCreation);
 
         const now = new Date;
         const nowInHours = Date.parse(now) / 1000 / 60 / 60/* /24 */;
-        //console.log('Date from today: ' + nowInHours);
 
         const chatRef = doc(chatsRef, chatID);
 
         if (chatCreation + 2 <= nowInHours) {
           deleteDoc(chatRef)
-          console.log('Chat deleted after 2 hours');
+          //console.log('Chat deleted after 2 hours');
         }
 
         getDocs(userMessages).then((snapshot) => {
@@ -226,7 +224,7 @@ logOutBtn.addEventListener('click', () => {
 
             if (messageCreation + 2 <= nowInHours) {
               deleteDoc(messageRef)
-              console.log('Message deleted after 2 hours');
+              //console.log('Message deleted after 2 hours');
             }
           })
           console.log('Checked messages to delete')
@@ -237,7 +235,7 @@ logOutBtn.addEventListener('click', () => {
       })
 
     } else {
-      console.log('There are no chatDocs')
+      //console.log('There are no chats')
     }
     
   })
@@ -339,14 +337,14 @@ onAuthStateChanged(auth, (user) => {
 
                 if (messageCreation + 2 <= nowInHours) {
                   deleteDoc(messageRef)
-                  console.log('Message deleted after 2 hours');
+                  //console.log('Message deleted after 2 hours');
                 }
               })
               console.log('Checked messages to delete')
             }).then(() => {
               if (chatCreation + 2 <= nowInHours) {
                 deleteDoc(chatRef)
-                console.log('Chat deleted after 2 hours');
+                //console.log('Chat deleted after 2 hours');
               }
             })
 
@@ -379,7 +377,7 @@ onAuthStateChanged(auth, (user) => {
           </h3>
         `;
         }
-        console.log("Current chats from user: ", snapshot.docs.length);
+        //console.log("Current chats from user: ", snapshot.docs.length);
       })
 
     }))
@@ -429,7 +427,7 @@ escucharChatBtn.addEventListener('click', () => {
     })
 
     const waitMatch = setTimeout(() => {
-      console.log('Could not find any match, try again')
+      //console.log('Could not find any match, try again')
       searchingAnimation.style.display = 'none'
       matchmaking();
       updateDoc(userRef, {
@@ -447,30 +445,27 @@ escucharChatBtn.addEventListener('click', () => {
     const matches = query(chatsRef, where('members', 'array-contains', userID), where('ended', '==', false))
     const matchmaking = onSnapshot(matches, (snapshot) => {
 
-      //console.log('Here is the new snapshot' + snapshot);
-
-      console.log('Listener for matches')
+      //console.log('Listener for matches')
 
       const matchedChat = snapshot.docs[0].data();
       const matchedChatID = snapshot.docs[0].id;
 
       if (matchedChat) {
-        console.log(matchedChat);
         updateDoc(userRef, {
           escuchar: false,
           inChat: true
         })
         matchmaking();
-        console.log('Stopped real time listener');
+        //console.log('Stopped real time listener');
         clearTimeout(waitMatch);
-        console.log('Stopped timeout');
+        //console.log('Stopped timeout');
 
 
         searchingAnimation.style.display = 'none'
         chatUI.style.display = 'flex'
         appContainer.style.display = 'none'
 
-        console.log('DONE, Chat ID is ' + matchedChatID);
+        //console.log('DONE, Chat ID is ' + matchedChatID);
 
         const chatID = matchedChatID;
         const chatMessages = query(messagesRef, where('chatID', '==', chatID), orderBy("created_at", "asc"));
@@ -548,16 +543,9 @@ escucharChatBtn.addEventListener('click', () => {
 
               })
 
-              /* let containerHeight = document.querySelector('#messages-container')
-              containerHeight.scrollIntoView(false); */
-
-
-              //console.log('Doc added has: ' + change.doc.data().text)
             }
           })
-          console.log('Message inserted.');
-          //messagesContainer.scrollIntoView();
-          //scrollTo(0, messagesContainer.scrollHeight)
+          //console.log('Message inserted.');
         })
 
         // send new message
@@ -567,10 +555,9 @@ escucharChatBtn.addEventListener('click', () => {
           const messageText = messageInputForm.text.value;
 
           const senderID = auth.currentUser.uid;
-          console.log('Sender ID is: ' + senderID)
+          //console.log('Sender ID is: ' + senderID)
 
           const senderDoc = doc(usersRef, senderID);
-          console.log(senderDoc);
 
           if (messageText != '') {
 
@@ -585,12 +572,19 @@ escucharChatBtn.addEventListener('click', () => {
                 created_at: new Date(),
                 senderID: auth.currentUser.uid
               })
-              console.log('message created');
+              //console.log('message created');
               messageInputForm.reset();
             })
 
           } else {
-            console.log('No puede enviar un mensaje vacío');
+            // Mensaje contextual
+            contextualMessage.innerHTML = 'No se puede enviar un mensaje vacío'
+            contextualMessage.style.marginTop = '0'
+            setTimeout(() => {
+              contextualMessage.style.marginTop = '-100%'
+            }, 4000)
+
+            //console.log('No puede enviar un mensaje vacío');
           }
         })
 
@@ -626,7 +620,6 @@ escucharChatBtn.addEventListener('click', () => {
             messagesContainer.innerHTML = ''
             chatUI.style.display = 'none'
             appContainer.style.display = 'block'
-            console.log('Chat Ended By Other user.');
 
             // Mensaje contextual
             contextualMessage.innerHTML = 'Conversación terminada'
@@ -637,11 +630,11 @@ escucharChatBtn.addEventListener('click', () => {
           }
         })
       }
-      console.log('Search made')
+      //console.log('Search made')
     })
 
   } else {
-    console.log('User is not logged in');
+    console.log('User is not logged in, cannot do search');
   }
 })
 
@@ -684,11 +677,9 @@ expresarChatBtn.addEventListener('click', () => {
     const matches = query(usersRef, where('escuchar', '==', true), where('inChat', '==', false), where('online', '==', true))
     const searchMatchInterval = onSnapshot(matches, (snapshot) => {
 
-      console.log('Listener for matches')
+      //console.log('Listener for matches')
       // get the number of results
       const numberResults = snapshot.docs.length;
-      //console.log(Math.floor(Math.random() * numberResults))
-      //console.log(snapshot.docs[0].data())
 
       if (numberResults > 0) {
         // choose a random document
@@ -719,7 +710,7 @@ expresarChatBtn.addEventListener('click', () => {
             chatUI.style.display = 'flex'
             appContainer.style.display = 'none'
             
-            console.log('DONE, Chat ID is ' + document.id);
+            //console.log('DONE, Chat ID is ' + document.id);
       
             const chatID = document.id;
             const chatMessages = query(messagesRef, where('chatID', '==', chatID), orderBy("created_at", "asc"));
@@ -795,17 +786,10 @@ expresarChatBtn.addEventListener('click', () => {
                     messagesContainer.scrollTop = messagesContainer.scrollHeight;
         
                   })
-  
-                  /* let containerHeight = document.querySelector('#messages-container')
-                  containerHeight.scrollIntoView(false); */
-  
-  
-                  //console.log('Doc added has: ' + change.doc.data().text)
+
                 }
               })
-              console.log('Message inserted.');
-              //messagesContainer.scrollIntoView();
-              //scrollTo(0, messagesContainer.scrollHeight)
+              //console.log('Message inserted.');
             })
       
             // send new message
@@ -815,10 +799,9 @@ expresarChatBtn.addEventListener('click', () => {
               const messageText = messageInputForm.text.value;
       
               const senderID = auth.currentUser.uid;
-              console.log('Sender ID is: ' + senderID)
+              //console.log('Sender ID is: ' + senderID)
       
               const senderDoc = doc(usersRef, senderID);
-              console.log(senderDoc);
       
               if (messageText != '') {
       
@@ -833,12 +816,19 @@ expresarChatBtn.addEventListener('click', () => {
                     created_at: new Date(),
                     senderID: auth.currentUser.uid
                   })
-                  console.log('message created');
+                  //console.log('message created');
                   messageInputForm.reset();
                 })
       
               } else {
-                console.log('No puede enviar un mensaje vacío');
+                // Mensaje contextual
+                contextualMessage.innerHTML = 'No se puede enviar un mensaje vacío'
+                contextualMessage.style.marginTop = '0'
+                setTimeout(() => {
+                  contextualMessage.style.marginTop = '-100%'
+                }, 4000)
+
+                //console.log('No puede enviar un mensaje vacío');
               }
             })
   
@@ -874,7 +864,6 @@ expresarChatBtn.addEventListener('click', () => {
                 messagesContainer.innerHTML = ''
                 chatUI.style.display = 'none'
                 appContainer.style.display = 'block'
-                console.log('Chat Ended By Other user.');
 
                 // Mensaje contextual
                 contextualMessage.innerHTML = 'Conversación terminada'
@@ -887,21 +876,12 @@ expresarChatBtn.addEventListener('click', () => {
           })
         })
       }
-      console.log('Search made')
+      //console.log('Search made')
 
     })
 
-    /* const searchMatch = onSnapshot(matches, (snapshot) => {
-      const numberResults = snapshot.docs.length;
-
-      if (numberResults > 0) {
-        const randomDoc = snapshot.docs[Math.floor(Math.random() * numberResults)]
-        clearTimeout(waitMatch)
-        searchMatch();
-      }
-    }) */
   } else {
-    console.log('User is not logged in');
+    console.log('User is not logged in, cannot do search');
   }
 })
 
@@ -961,7 +941,7 @@ chatsContainer.addEventListener('click', (e) => {
           })
         })
       }
-      console.log('Messages inserted.');
+      //console.log('Messages inserted.');
     })
     //end chat by click
     endChatBtn.addEventListener('click', () => {
@@ -970,7 +950,7 @@ chatsContainer.addEventListener('click', (e) => {
       messagesContainer.innerHTML = ''
       chatUI.style.display = 'none'
       appContainer.style.display = 'block'
-      console.log('Back to the chat list');
+      //console.log('Back to the chat list');
 
     })
   }
