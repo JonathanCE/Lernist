@@ -187,9 +187,30 @@ input {
     height: 100%;
     width: 100%;
 
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+#chat-ad {
+    background-color: var(--dark);
+    width: 100%;
+    height: 100px;
+}
+.OpenSafeInChat {
+    width: 320px;
+    height: 100px;
+}
+@media(min-width: 500px) {
+    .OpenSafeInChat {
+        width: 468px;
+        height: 60px;
+    }
+}
+@media(min-width: 800px) {
+    .OpenSafeInChat {
+        width: 728px;
+        height: 90px;
+    }
 }
 #chat-header {
     background-color: var(--dark);

@@ -286,9 +286,10 @@ logOutBtn.addEventListener('click', () => {
 onAuthStateChanged(auth, (user) => {
   if (user) {
     setTimeout(() => {
+      chatUI.style.display = 'none';
+      landingPage.style.display = 'none';
       welcomeAnimation.style.display = 'none'
     }, 2000)
-    landingPage.style.display = 'none';
     const userID = user.uid;
     const userRef = doc(usersRef, userID)
 
@@ -385,6 +386,7 @@ onAuthStateChanged(auth, (user) => {
 
   } else {
     setTimeout(() => {
+      chatUI.style.display = 'none';
       appContainer.style.display = 'none';
       welcomeAnimation.style.display = 'none'
     }, 2000)
