@@ -204,9 +204,9 @@ logOutBtn.addEventListener('click', () => {
 
         const chatRef = doc(chatsRef, chatID);
 
-        if (chatCreation + 2 <= nowInHours) {
+        if (chatCreation + 24 <= nowInHours) {
           deleteDoc(chatRef)
-          //console.log('Chat deleted after 2 hours');
+          //console.log('Chat deleted after 24 hours');
         }
 
         getDocs(userMessages).then((snapshot) => {
@@ -222,9 +222,9 @@ logOutBtn.addEventListener('click', () => {
 
             const messageRef = doc(messagesRef, message.id);
 
-            if (messageCreation + 2 <= nowInHours) {
+            if (messageCreation + 24 <= nowInHours) {
               deleteDoc(messageRef)
-              //console.log('Message deleted after 2 hours');
+              //console.log('Message deleted after 24 hours');
             }
           })
           console.log('Checked messages to delete')
@@ -335,16 +335,16 @@ onAuthStateChanged(auth, (user) => {
 
                 const messageRef = doc(messagesRef, message.id);
 
-                if (messageCreation + 2 <= nowInHours) {
+                if (messageCreation + 24 <= nowInHours) {
                   deleteDoc(messageRef)
-                  //console.log('Message deleted after 2 hours');
+                  //console.log('Message deleted after 24 hours');
                 }
               })
               console.log('Checked messages to delete')
             }).then(() => {
-              if (chatCreation + 2 <= nowInHours) {
+              if (chatCreation + 24 <= nowInHours) {
                 deleteDoc(chatRef)
-                //console.log('Chat deleted after 2 hours');
+                //console.log('Chat deleted after 24 hours');
               }
             })
 
